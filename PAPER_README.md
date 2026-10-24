@@ -1,4 +1,4 @@
-# Reliability-screened manuscript — 23 October 2026
+# Reliability-screened manuscript — 24 October 2026
 
 Current journal revision: IEEE Open Journal of the Communications Society,
 using the bundled IEEEoj class. The model includes an exact age-resolved
@@ -53,6 +53,7 @@ python verify_paper.py
 python verify_reliability.py
 python build_reliability_paper.py
 python build_submission_figures.py
+python scripts/render_repository_figures.py
 python build_release.py
 ```
 
@@ -92,9 +93,15 @@ This is a complete written synthetic-model study with executed results. It is
 not a physical O-RAN implementation, a rare-event reliability certificate, or
 a demonstrated state-of-the-art advantage. HPA-inspired and DPP-inspired
 comparators are disclosed adaptations rather than faithful system reproductions.
-The remaining research requirements are stated in `VALIDATION_GATE.md`.
+The scientific limitations and directions for physical validation are discussed in the manuscript. `VALIDATION_GATE.md` retains the historical development checklist.
 No journal quartile, publication readiness or acceptance is guaranteed.
 
 Historical `paper/`, `paper_results.json`, `PAPER_PROTOCOL.md` and the earlier
 technical reports are retained for provenance only. They describe different
 experiments and are not the current manuscript or independent additional seeds.
+
+## Repository alignment
+
+`docs/current_study_manifest.json` identifies the current paper and frozen data.
+`verify_repository_alignment.py` checks figure order, exact preview pixels, source drawings, navigation, terminology and data hashes.
+The current reproduction instructions are in [REPRODUCE.md](REPRODUCE.md).

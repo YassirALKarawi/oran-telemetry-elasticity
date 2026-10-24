@@ -226,6 +226,8 @@ T=enrich(T)
 T=polish(T)
 T=replace_schematics(T)
 T=journal_revision(T,OUT,ROOT)
+from final_editorial_audit import audit_editorial
+T=audit_editorial(T)
 keys=list(dict.fromkeys(k for match in re.findall(r'\\cite\{([^}]+)\}',T) for k in match.split(',')))
 assert set(keys)==set(REFS) and len(keys)==43
 assert '@@' not in T

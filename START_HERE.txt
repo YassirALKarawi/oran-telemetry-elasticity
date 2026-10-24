@@ -1,47 +1,17 @@
-CURRENT RELEASE - RELIABILITY-SCREENED MANUSCRIPT, 22 OCTOBER 2026
+CURRENT STUDY — 24 OCTOBER 2026
 
-Start with paper_reliability/Manuscript.pdf and PAPER_README.md.
-Editable manuscript: paper_reliability/Manuscript.tex.
-Build: reliability_sections.py and build_reliability_paper.py.
-New results: reliability_results.json (840 held-out runs).
-Calibration: reliability_calibration.json (336 runs).
-Protocol: RELIABILITY_PROTOCOL.md. Controller: reliability_study.py.
-Earlier technical study: professional_report/Research_Study.pdf.
-Reproduction and evidence map: PAPER_README.md and REPRODUCE.md.
-Remaining scientific requirements: VALIDATION_GATE.md.
-Bibliography: paper_references.py (43 sources). Audit: PAPER_SOURCE_AUDIT.md.
-Tests: 51 passing unit-test methods plus independent result verifiers.
+Paper: paper_reliability/Manuscript.pdf
+Editable source: paper_reliability/Manuscript.tex
+Figure gallery: docs/figures/README.md
+Reproduction: REPRODUCE.md
+Evidence and methods: PAPER_README.md
+Repository: https://github.com/YassirALKarawi/oran-telemetry-elasticity
 
-Common-target cost advantages occur in three tested settings. Markov arrivals,
-compound batches and constant fifty-slot delay fail the proposed reliability
-screen. Do not claim universal superiority or completed Q1-ready O-RAN papers.
+The current study contains 336 calibration and 840 held-out executions,
+43 references, 10 figures, 7 tables and 2 algorithms.
+The canonical data files are reliability_calibration.json,
+reliability_selection.json and reliability_results.json.
 
-HISTORICAL EXTENSION V4 - retained below for reproduction
-
-V4 method and limitations: V4_METHOD.md
-V4 experiment results: RESULTS_V4.txt and results_v4.json
-V4 driver: evaluate_v4.py
-V4 simulator: engine_v4.py
-Finite-grid decision (default behavior preserved): elastic.py
-
-Run from this extracted directory with Python 3.10+:
-  python evaluate_v4.py --test
-  python evaluate_v4.py --seeds 20 --measure 3000 --output results_v4.json
-  python summarize_v4.py
-
-Earlier stages remain preserved for reproducibility:
-  baseline/               Original pilot and raw output
-  experiment.py           V2 scheduler/predictor ablations
-  evaluate_v3.py          V3 modeled two-class constraints
-  feasibility_audit.py    Independent necessary capacity check
-
-All automated test suites:
-  python baseline/simulate.py --test
-  python experiment.py --test
-  python evaluate_v3.py --test
-  python evaluate_v4.py --test
-
-This package does not implement O-RAN interfaces or a radio physical layer.
-It includes a written synthetic-model manuscript, not validated O-RAN results.
-Synthetic cost units are not monetary prices. Modeled feasibility is not a
-probabilistic SLA guarantee. Read classwise results as well as aggregate ones.
+Historical studies in paper/, professional_report/, results_report/ and
+baseline/ have separate outputs and are not the current manuscript.
+Do not combine their executions with the current study.

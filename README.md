@@ -1,4 +1,4 @@
-# Reliability-Screened Capacity Elasticity under Delayed Telemetry and Actuation
+# Reliability-Screened Capacity Elasticity under Delayed Telemetry and Actuation: An O-RAN-Motivated Study
 
 <p align="center"><strong>Reproducible simulation · Delayed telemetry · Capacity elasticity</strong><br>1,176 execution records · 10 figures · 2 algorithms</p>
 

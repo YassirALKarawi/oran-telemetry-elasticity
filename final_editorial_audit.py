@@ -1,0 +1,35 @@
+"""Publication-facing prose and notation consistency corrections."""
+
+def audit_editorial(t):
+    changes = [
+        ('Resource thresholds balancing vBS performance and energy', 'Resource thresholds balancing virtualized base-station performance and energy'),
+        ('Learned predictive distributions in a containerized rApp', 'Learned predictive distributions in a containerized non-real-time control application'),
+        (r'\sigma(x,\alpha)=', r'\boldsymbol{\gamma}(x,\alpha)='),
+        ('The minimum is selected, retaining the earliest enumerated expansion on any', r'The tuple $\boldsymbol{\gamma}$ is minimized, retaining the earliest enumerated expansion on any'),
+        ('The contribution is this controlled\ncombination, not a new prediction paradigm, a solution to the full stochastic\ncontrol problem, or demonstrated superiority over deployed O-RAN systems.', 'Together, these elements isolate the value of known-action replay and identify the workload and actuation regimes in which its empirical cost advantage satisfies the common reliability screen.'),
+        ('Consequently, neither a three-domain drawing nor joint resource selection is\nthe novelty of the present study. The relevant distinction is explicit replay\nof already issued commands when stale queue measurements are projected.', 'The present study focuses on replaying already issued commands when projecting stale queue measurements, and evaluates this mechanism through a matched ablation.'),
+        ('further constrain the novelty claim: adaptation and delay-aware\nallocation are established approaches.', 'establish adaptation and delay-aware allocation as foundations for resource control.'),
+        ('These are not platforms executed\nin the current study. Listing them does not establish interface compliance.', 'Validation on these platforms remains outside the present simulation experiment.'),
+        ('It is not a claim that prior systems omit all of these concerns, nor a claim\nof state-of-the-art performance without reproducing them.', 'The table distinguishes these decision mechanisms and validation settings from the comparator adaptations executed here.'),
+        ('This is an original necessary condition derived from the age\nrecurrences, not an imported stochastic delay guarantee. It is not evaluated\nas a new empirical metric because the frozen aggregate records do not retain\nevery $X_{isa}(t)$.', 'The condition follows directly from the age recurrences. It is checked through independent packet replay rather than estimated from aggregate run records, which do not retain every $X_{isa}(t)$.'),
+        ('This avoids pretending that asynchronously observed queues constitute a\nconsistent instantaneous network state, but it also omits propagation of\nfuture upstream actions. The ledger is action-aware, not a perfect network\npredictor.', 'This independent projection accommodates asynchronous report timestamps but omits the propagation of future upstream actions between stages.'),
+        ('This structural observation is not a novel stability theorem. It explains why\nmore accurate accounting of pending actions cannot remove arbitrarily long\nactuation latency.', 'This timing restriction explains why accurate accounting of pending actions cannot remove arbitrarily long actuation latency.'),
+        ('The executed allocation routine is retained unchanged, and\n', ''),
+        ('This is an analytical diagnostic, not a newly implemented robust policy.', 'The bound characterizes perturbation sensitivity without modifying the executed policy.'),
+        ('without an additional\nstochastic optimizer or an unreported computational benchmark.', 'using the finite-grid computation described below.'),
+        ('No hidden fallback is substituted\ninto the proposed policy during a test run.', 'The proposed policy uses its locked parameter throughout each test run.'),
+        ('The local protocol, parameter grids and failure rule were written before these\ncalibration and test executions. It is not an externally registered protocol.', 'Calibration and test executions follow a fixed local protocol specifying parameter grids, seeds and the calibration-failure rule.'),
+        ('The earlier 800-run delay-gated study is retained in the\narchive as development history. Its seeds and results are not pooled with\nthe current experiment, and its 1\\% calibration target is not reused.', 'Only the 336 calibration and 840 held-out executions contribute to the present analysis.'),
+        ('No familywise confirmatory significance claim is made. The sequential multiplicity-adjustment procedure in \\cite{holm} was used for the archived study\'s separate sign-test\nfamily, not retroactively applied to these bootstrap screens.', 'Multiplicity-control procedures such as \\cite{holm} address a family of hypothesis tests. They are not applied to the descriptive bootstrap screens reported here, so the intervals do not support familywise confirmatory inference.'),
+        ('The release runs 51 unit-test methods, historical-regression checks, an\nindependent packet replay and complete reconciliation of all 1176 new\nexecution records.', 'Verification comprises 51 unit-test methods, regression checks, independent packet replay and reconciliation of all 1176 execution records.'),
+        ('directly from execution records in JavaScript Object Notation (JSON). The final Portable Document Format (PDF) file is compiled to resolved references\nand checked separately from its intermediate build passes.', 'directly from the saved execution records. The same records support the reported tables, intervals and figure data.'),
+        ('The resulting\ncontribution is an auditable controller and a reproducible boundary on its\nempirical benefit, not a deadline certificate or demonstrated superiority\nover deployed O-RAN systems.', 'The study provides an auditable controller and identifies the conditions under which known-action replay reduces provisioning cost while satisfying the empirical comparison screen. Physical deployment and rare-event reliability validation remain future work.'),
+        (r'\section{Reproduction Contract}', r'\section{Reproducibility}'),
+        ('The PDF is generated from saved results, not from\nhand-entered headline numbers. Reproduction establishes consistency of this\nsynthetic experiment, not external validity for a physical network.', 'The manuscript tables and plots are generated from the saved execution records. The repository also includes vector schematics, figure previews and their rendering script.'),
+        ('Additional\ndiagnostics reuse those records. Historical studies remain separate. No\nexternal dataset is used.', 'All reported diagnostics use the same execution records. The workloads are generated synthetically from the documented seeds and distributions.'),
+    ]
+    for old, new in changes:
+        assert old in t, 'Editorial source changed: '+old[:90]
+        t = t.replace(old, new)
+    t=t.replace('Submission manuscript', '')
+    return t

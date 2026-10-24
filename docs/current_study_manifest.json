@@ -1,0 +1,20 @@
+{
+  "title": "Reliability-Screened Capacity Elasticity under Delayed Telemetry and Actuation: An O-RAN-Motivated Study",
+  "repository": "https://github.com/YassirALKarawi/oran-telemetry-elasticity",
+  "manuscript": "paper_reliability/Manuscript.pdf",
+  "source": "paper_reliability/Manuscript.tex",
+  "calibration_runs": 336,
+  "held_out_runs": 840,
+  "summaries": 42,
+  "paired_contrasts": 35,
+  "figures": 10,
+  "tables": 7,
+  "algorithms": 2,
+  "references": 43,
+  "frozen_data_sha256": {
+    "reliability_results.json": "dcbb36bd47f0c66f792bb459a22103fd6e1bf78a3af9f2a70c2e845c7033d64a",
+    "reliability_calibration.json": "5931e7356902a0576de6dee2c6041880f45f8b1419aac2d4b1371adc55d227c9",
+    "reliability_selection.json": "454c0dc533c4d215c8b6bb04c89f4336662bf27f464273798f28e923cb60df0b",
+    "RELIABILITY_PROTOCOL.md": "cfb9c71aaae0aa9c15f80cb1faa51ac9f57de26304d4d7a8d7858876692558b1"
+  }
+}

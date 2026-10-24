@@ -11,7 +11,7 @@ assert t.count(r'\hrule\smallskip % journal top rule')==2
 algorithm_floats=[m[0] for m in re.finditer(r'\\begin\{figure\*?\}.*?\\end\{figure\*?\}',t,re.S) if r'\textbf{Algorithm' in m[0]]
 assert len(algorithm_floats)==2
 assert all(r'\begin{figure}[' in x and '[x=1cm,y=1.75cm]' in x for x in algorithm_floats)
-for phrase in ['multiple-input multiple-output (MIMO)','JavaScript Object Notation (JSON)','Portable Document Format (PDF)']:
+for phrase in ['multiple-input multiple-output (MIMO)',r'\boldsymbol{\gamma}(x,\alpha)']:
     assert phrase in t
 names=['FATIMA SUBHI KHALEEL','YASSIR AL-AMEEN','HAMED AL-RAWESHIDY']
 assert [t.index(n) for n in names]==sorted(t.index(n) for n in names)

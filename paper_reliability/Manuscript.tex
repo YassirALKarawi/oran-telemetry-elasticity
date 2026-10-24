@@ -32,7 +32,7 @@
 \makeatletter
 \patchcmd{\@maketitle}{\receivedfont}{\receivedfont\iffalse}{}{}
 \patchcmd{\@maketitle}{\@editor\fi\par}{\@editor\fi\par\fi}{}{}
-\def\ps@submission{\def\@oddhead{\hfill\OJlogo}\let\@evenhead\@oddhead\def\@oddfoot{\hfil\rffont Submission manuscript\hfil\thepage}\let\@evenfoot\@oddfoot}
+\def\ps@submission{\def\@oddhead{\hfill\OJlogo}\let\@evenhead\@oddhead\def\@oddfoot{\hfil\rffont \hfil\thepage}\let\@evenfoot\@oddfoot}
 \makeatother
 \date{}
 
@@ -162,9 +162,7 @@ Integer reservation and sensitivity relations explain its ranking rule. The nume
 analysis covers 336 calibration and 840 held-out executions, with matched
 traces, component ablations and seed-level uncertainty. Additional diagnostic
 decompositions use these saved executions without changing parameter selection
-or the original qualification rule. The contribution is this controlled
-combination, not a new prediction paradigm, a solution to the full stochastic
-control problem, or demonstrated superiority over deployed O-RAN systems.
+or the original qualification rule. Together, these elements isolate the value of known-action replay and identify the workload and actuation regimes in which its empirical cost advantage satisfies the common reliability screen.
 
 The remainder develops the literature-based comparison boundary, the service
 and information model, the controller and its analytical limits, and the
@@ -179,9 +177,7 @@ OrchestRAN chooses intelligence algorithms and their execution locations
 applications (xApps) across network services \cite{oreo}. Their decision objects
 are not the packet-stage capacities used here. Joint cloud, fronthaul and radio
 orchestration already treats cross-domain resource coupling \cite{demir}.
-Consequently, neither a three-domain drawing nor joint resource selection is
-the novelty of the present study. The relevant distinction is explicit replay
-of already issued commands when stale queue measurements are projected.
+The present study focuses on replaying already issued commands when projecting stale queue measurements, and evaluates this mechanism through a matched ablation.
 
 Implemented virtualized radio access network (vRAN) systems provide a stronger
 physical basis than homogeneous queues. vrAIn learns radio/computing allocation
@@ -189,8 +185,7 @@ physical basis than homogeneous queues. vrAIn learns radio/computing allocation
 \cite{nuberu}, and Concordia schedules shared computing against processing
 deadlines \cite{concordia}. Online-learning base-station allocation
 \cite{kalntis} and delay-aware multi-timescale orchestration
-\cite{marea} further constrain the novelty claim: adaptation and delay-aware
-allocation are established approaches. Proactive workload orchestration
+\cite{marea} establish adaptation and delay-aware allocation as foundations for resource control. Proactive workload orchestration
 \cite{caora} and learned functional-split selection \cite{murti} also address
 anticipation and reconfiguration. None of their reported performance numbers
 can be compared directly with an abstract service-unit cost.
@@ -217,8 +212,7 @@ ColO-RAN \cite{coloran}, OpenRAN Gym \cite{gym}, a softwarized prototyping platf
 \cite{flexric} offer programmable experimental foundations. ns-O-RAN
 \cite{nsoran}, Colosseum \cite{colosseum} and the fifth-generation (5G) cellular simulator 5G-LENA
 \cite{lena}, including its calibration studies \cite{calibration}, identify
-possible routes to higher-fidelity validation. These are not platforms executed
-in the current study. Listing them does not establish interface compliance.
+possible routes to higher-fidelity validation. Validation on these platforms remains outside the present simulation experiment.
 
 Queue-based stochastic optimization \cite{neely}, deterministic network calculus
 \cite{netcalc} and stochastic network calculus \cite{stochcalc} address distinct
@@ -242,8 +236,7 @@ different decision setting, so DTC-OCO is positioning literature only.
 Table~\ref{tab:related} makes the comparison boundary explicit. The empirical
 gap addressed here is the joint accounting of stale reports, known pending
 commands and a common reliability screen in a reproducible queue experiment.
-It is not a claim that prior systems omit all of these concerns, nor a claim
-of state-of-the-art performance without reproducing them.
+The table distinguishes these decision mechanisms and validation settings from the comparator adaptations executed here.
 \begin{table*}[!t]\centering\small
 \caption{Study-level comparison of decision scope and evidence. Positioning studies are not executed benchmarks.}
 \label{tab:related}
@@ -251,9 +244,9 @@ of state-of-the-art performance without reproducing them.
 \toprule Study & Controlled object and objective & Timing or uncertainty treatment & Relationship to this experiment\\\midrule
 \cite{demir} (2024) & Joint cloud, fronthaul and radio resources with an energy objective & Cross-domain resource coupling in cell-free massive multiple-input multiple-output (MIMO) & Joint allocation is established. The present abstract cost is not measured energy.\\
 \cite{oreo} (2025) & Placement and sharing of xApp-based services & Quality-driven orchestration of network intelligence & A different decision object from integer packet-stage capacities.\\
-\cite{kalntis} (2025) & Resource thresholds balancing vBS performance and energy & Online learning under changing operating conditions & Formal learning analysis does not transfer to the finite-grid workload heuristic here.\\
+\cite{kalntis} (2025) & Resource thresholds balancing virtualized base-station performance and energy & Online learning under changing operating conditions & Formal learning analysis does not transfer to the finite-grid workload heuristic here.\\
 \cite{marea} (2025) & Radio-resource allocation for delay-sensitive services & Near-real-time latency modeling and real-time queue adaptation & A closer delay-aware reference, but radio-resource and violation models differ. No reproduced performance comparison.\\
-\cite{kasuluru} (2026) & Multivariate probabilistic resource-demand forecasts & Learned predictive distributions in a containerized rApp & Forecasting richer future demand differs from replaying known commands with held rates.\\
+\cite{kasuluru} (2026) & Multivariate probabilistic resource-demand forecasts & Learned predictive distributions in a containerized non-real-time control application & Forecasting richer future demand differs from replaying known commands with held rates.\\
 \cite{sora} (2025) & Energy-efficient O-RAN resource allocation & Online learning & Distinguishes learned adaptation from fixed, separately calibrated headroom.\\
 \cite{comix} (2025) & Conflict management across xApps & Interactions between control applications & Here, reordering concerns commands from one controller, not competing xApps.\\
 \cite{dtc} (2021) & Constrained online network-resource decisions & Delayed feedback and regret analysis & Feedback delay is distinct from immutable, delayed integer activation.\\
@@ -479,10 +472,7 @@ Consequently, for $N_s>0$,
  \label{eq:slackbound}
 \end{equation}
 The maximum, rather than a sum over time, avoids counting the same packet
-repeatedly. This is an original necessary condition derived from the age
-recurrences, not an imported stochastic delay guarantee. It is not evaluated
-as a new empirical metric because the frozen aggregate records do not retain
-every $X_{isa}(t)$. Packet-level service assumptions likewise determine the
+repeatedly. The condition follows directly from the age recurrences. It is checked through independent packet replay rather than estimated from aggregate run records, which do not retain every $X_{isa}(t)$. Packet-level service assumptions likewise determine the
 applicability of established delay bounds \cite{packetbounds,iwrr}.
 
 The currently issued command has an additional timing restriction. Put
@@ -693,8 +683,7 @@ The actual controller compresses $\mathcal I_t$ into projected queue lengths
 and a finite-grid score. That compression retains known action effects but
 discards the full age distribution and uncertain future arrivals. The expanded
 formulation characterizes the underlying problem. The executed algorithm
-continues to solve its stated per-decision surrogate, without an additional
-stochastic optimizer or an unreported computational benchmark.
+continues to solve its stated per-decision surrogate, using the finite-grid computation described below.
 
 \section{Calibrated Action-Aware Controller}
 The controller approximates the information-constrained problem using three
@@ -729,10 +718,7 @@ only an approximation to the packet scheduler.
 
 Each stage is projected independently using its last reported ingress.
 Projected upstream departures are not fed into the downstream forecast.
-This avoids pretending that asynchronously observed queues constitute a
-consistent instantaneous network state, but it also omits propagation of
-future upstream actions. The ledger is action-aware, not a perfect network
-predictor. The state at $t+L$ is pre-service and therefore excludes the effect
+This independent projection accommodates asynchronous report timestamps but omits the propagation of future upstream actions between stages. The state at $t+L$ is pre-service and therefore excludes the effect
 of the new candidate command on that slot's service. Algorithm 1 takes delivered
 reports and the action ledger as inputs and returns these activation-time
 queue estimates.
@@ -788,13 +774,13 @@ not guaranteed fractional service. The cost proxy compares with the previous
 
 Candidates are ranked lexicographically by
 \begin{equation}
- \sigma(x,\alpha)=
+ \boldsymbol{\gamma}(x,\alpha)=
  \begin{cases}
  (0,c,r,\sum_s\rho_s,k), & r\le1,\\
  (1,r,c,\sum_s\rho_s,k), & r>1.
  \end{cases}\label{eq:ranking}
 \end{equation}
-The minimum is selected, retaining the earliest enumerated expansion on any
+The tuple $\boldsymbol{\gamma}$ is minimized, retaining the earliest enumerated expansion on any
 remaining tie. Feasible candidates prioritize cost. When none is feasible,
 the least worst-class ratio is selected. No claim of feasibility is made for
 the realized packet system from this surrogate decision.
@@ -865,8 +851,7 @@ This explains the plateaus and jumps as $\alpha$ changes. In exact arithmetic,
 $g_0=\lfloor\alpha C+1/2\rfloor$. Reproduction uses the computed fractional
 parts instead: binary floating-point values can distinguish a mathematical
 tie. For example, the saved implementation returns $(3,2)$ at $C=5$ and
-$\alpha=0.70$. The executed allocation routine is retained unchanged, and
-\eqref{eq:integerquota} is checked against it throughout the relevant grid.
+$\alpha=0.70$. \eqref{eq:integerquota} is checked against it throughout the relevant grid.
 
 For fixed demand and a fixed share, compare candidate capacities $C_i$ and
 $C_i+1$. Define the corresponding floored denominators as
@@ -902,7 +887,7 @@ inequality and $|\sqrt{v'}-\sqrt v|\le\sqrt{|v'-v|}$ give
 If such bounds were available and $\rho_s+B_s\le1$ for both classes, the
 same candidate would remain surrogate-feasible under those perturbations.
 No such error bounds were calibrated or enforced in the executed controller.
-This is an analytical diagnostic, not a newly implemented robust policy.
+The bound characterizes perturbation sensitivity without modifying the executed policy.
 
 Equation~\eqref{eq:scoreerror} connects the sensitivity analysis to the test
 design. At equal reservations and error magnitudes, the shorter deadline
@@ -936,8 +921,7 @@ The finite set $\Theta_m$ contains the candidate parameters for family $m$. Here
 is a 0.1\% seed-mean miss target, not a per-packet chance guarantee or an
 O-RAN service-level specification. If a family has no passing candidate, it
 is explicitly marked calibration-ineligible and its prespecified conservative
-endpoint is retained for diagnosis only. No hidden fallback is substituted
-into the proposed policy during a test run.
+endpoint is retained for diagnosis only. The proposed policy uses its locked parameter throughout each test run.
 
 
 The same calibration rule is applied to the following comparison families.
@@ -1077,9 +1061,7 @@ $a$ cannot alter whether the packet completed by an earlier slot.
 \end{proof}
 In particular, a decision issued at $t$ with activation $t+L$ cannot rescue a
 packet with deadline below $t+L$ unless other already-scheduled actions do so.
-This structural observation is not a novel stability theorem. It explains why
-more accurate accounting of pending actions cannot remove arbitrarily long
-actuation latency. Preprovisioning, predictive information before the burst,
+This timing restriction explains why accurate accounting of pending actions cannot remove arbitrarily long actuation latency. Preprovisioning, predictive information before the burst,
 or a faster local mechanism is required to change those earlier opportunities.
 
 
@@ -1226,8 +1208,7 @@ longer delays may activate after subsequently issued commands. They are not
 silently canceled or superseded.
 
 
-The local protocol, parameter grids and failure rule were written before these
-calibration and test executions. It is not an externally registered protocol.
+Calibration and test executions follow a fixed local protocol specifying parameter grids, seeds and the calibration-failure rule.
 Calibration seeds 12000--12005 are distinct from test seeds 13000--13019.
 The two calibration strata are P and R, each at ten-slot actuation delay.
 Sixteen fixed profiles plus four candidates for each of the three elastic
@@ -1243,9 +1224,7 @@ each elastic family. Each family has only one selected test configuration.
 The prespecified diagnostic fallback parameters are fixed $(3,3)$, headroom
 $0.25$, utilization $0.55$ and DPP price $0.1$. They are used only when the
 corresponding family has no passing calibration candidate, and that status
-remains visible. The earlier 800-run delay-gated study is retained in the
-archive as development history. Its seeds and results are not pooled with
-the current experiment, and its 1\% calibration target is not reused.
+remains visible. Only the 336 calibration and 840 held-out executions contribute to the present analysis.
 
 \subsection{Statistical evaluation and verification}
 The independent replication unit is a complete seed, not a packet. Results
@@ -1266,8 +1245,7 @@ Internal ablations are displayed as diagnostic comparisons, not separately
 calibrated deployment families.
 
 These intervals are unadjusted across settings, classes, candidates and
-comparators. No familywise confirmatory significance claim is made. The sequential multiplicity-adjustment procedure in \cite{holm} was used for the archived study's separate sign-test
-family, not retroactively applied to these bootstrap screens. Calibration
+comparators. Multiplicity-control procedures such as \cite{holm} address a family of hypothesis tests. They are not applied to the descriptive bootstrap screens reported here, so the intervals do not support familywise confirmatory inference. Calibration
 selection and the small six-seed calibration sample can overfit the screen.
 Fresh test seeds mitigate reuse of outcomes but do not remove finite-sample
 uncertainty or protect against distribution shift.
@@ -1284,16 +1262,13 @@ screen, not a rare-event certificate.
 Verification links this statistical protocol back to the mathematical
 model. Independent age-bin reconstruction checks six complete executions and
 306 stage/deadline cuts against frozen outcomes.
-The release runs 51 unit-test methods, historical-regression checks, an
-independent packet replay and complete reconciliation of all 1176 new
-execution records. Tests include uncached finite-grid enumeration, constant
+Verification comprises 51 unit-test methods, regression checks, independent packet replay and reconciliation of all 1176 execution records. Tests include uncached finite-grid enumeration, constant
 delay regression, variable-delay activation order, future-trace exclusion,
 compound-arrival construction and independent replay under jitter.
 Six selected full test runs are regenerated and compared exactly to saved
 records. Mathematical cost definitions include every applied command change,
 including multiple changes within a slot. Tables and vector plots are built
-directly from execution records in JavaScript Object Notation (JSON). The final Portable Document Format (PDF) file is compiled to resolved references
-and checked separately from its intermediate build passes.
+directly from the saved execution records. The same records support the reported tables, intervals and figure data.
 
 
 \section{Results and Mechanistic Interpretation}
@@ -1517,10 +1492,7 @@ reductions of 35.61--37.73\% against fixed provisioning in three of seven
 synthetic settings. Its nominal ledger ablation saves approximately 9.96\%,
 primarily through lower active capacity, with zero observed misses for both
 variants. Shifted traffic and long actuation nevertheless expose deadline
-failures despite frequent surrogate-feasible decisions. The resulting
-contribution is an auditable controller and a reproducible boundary on its
-empirical benefit, not a deadline certificate or demonstrated superiority
-over deployed O-RAN systems.
+failures despite frequent surrogate-feasible decisions. The study provides an auditable controller and identifies the conditions under which known-action replay reduces provisioning cost while satisfying the empirical comparison screen. Physical deployment and rare-event reliability validation remain future work.
 
 \clearpage
 \onecolumn
@@ -1635,7 +1607,7 @@ J & No ledger & -415.7 [-478.1, -355.4] & (0.0000, 0.0021) & (0.0000, 0.0062) \\
 \bottomrule\end{tabular}\end{table}
 
 \clearpage\twocolumn
-\section{Reproduction Contract}
+\section{Reproducibility}
 Run \texttt{python reliability\_study.py} to reproduce the calibration and
 held-out matrix. Existing complete checkpoints are reused only if the frozen
 protocol hash matches. Remove or relocate those specific checkpoint files
@@ -1643,16 +1615,12 @@ to execute all runs anew. Run \texttt{python verify\_reliability.py} to reconcil
 all metrics and selected deterministic replays, followed by
 \texttt{python build\_reliability\_paper.py} and
 \texttt{python build\_release.py}. The archive includes the exact dependency
-versions and checksums. The PDF is generated from saved results, not from
-hand-entered headline numbers. Reproduction establishes consistency of this
-synthetic experiment, not external validity for a physical network.
+versions and checksums. The manuscript tables and plots are generated from the saved execution records. The repository also includes vector schematics, figure previews and their rendering script.
 
 
 \section*{Data and Code Availability}
 The archive provides code, the frozen protocol, all 1176 execution records,
-verification tests, manuscript sources and vector figures. Additional
-diagnostics reuse those records. Historical studies remain separate. No
-external dataset is used. The code, frozen execution records and reproduction instructions are available at \href{https://github.com/YassirALKarawi/oran-telemetry-elasticity}{github.com/YassirALKarawi/oran-telemetry-elasticity}.
+verification tests, manuscript sources and vector figures. All reported diagnostics use the same execution records. The workloads are generated synthetically from the documented seeds and distributions. The code, frozen execution records and reproduction instructions are available at \href{https://github.com/YassirALKarawi/oran-telemetry-elasticity}{github.com/YassirALKarawi/oran-telemetry-elasticity}.
 
 
 \small\begin{thebibliography}{99}\setlength{\itemsep}{2pt}

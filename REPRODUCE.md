@@ -1,76 +1,67 @@
-# Reproduce and interpret this artifact
+# Reproduce the current study
 
-## Current reliability-screened revision, 22 October 2026
-
-Use `PAPER_README.md` for the current commands and evidence map. The authoritative
-manuscript is `paper_reliability/Manuscript.pdf`, with 336 calibration and 840
-held-out executions and 51 unit-test methods. The material below is a historical
-reproduction contract for the preceding technical extension, not the new paper.
-
-## Historical extension scope
-
-This package contains historical pilots plus a verified synthetic service-chain
-study. It is not an O-RAN deployment, a calibrated NR simulator, or three completed
-journal papers. Start with the new technical report and VALIDATION_GATE.md.
-Earlier outputs remain for audit and must not be pooled as independent replications.
+The authoritative paper is [paper_reliability/Manuscript.pdf](paper_reliability/Manuscript.pdf).
+Its editable source is [paper_reliability/Manuscript.tex](paper_reliability/Manuscript.tex).
+The [figure gallery](docs/figures/README.md) contains the same ten figures.
+Historical experiments are retained separately and are not additional replications of this study.
 
 ## Environment
 
-Python 3.12 was used. Simulation kernels use the standard library. The extension
-statistics require NumPy. Report generation uses Matplotlib and a LaTeX engine.
-Exact observed Python/NumPy versions are recorded in extension_results.json.
-Plots are exported as vector PDFs. Runtime-specific measurements are not claims
-about production controller latency.
-
-## Commands, from this directory
+Run commands from the repository root. The recorded environment uses Python 3.12,
+NumPy 2.3.5, Matplotlib 3.10.8, PyMuPDF 1.26.6 and pdfTeX 1.40.25.
+PDF generation also requires `pdftotext` and a LaTeX installation containing
+TikZ, standalone, amsmath, amssymb, booktabs and the packages loaded by the sources.
+The IEEEoj class is included in `journal_template/`.
 
 ```bash
-python -m unittest baseline.simulate experiment evaluate_v3 evaluate_v4 independent_validation verify_extension -v
-python verify_frozen.py
-python verify_extension.py
+python -m venv .venv
+# Activate .venv using the command for your operating system.
+python -m pip install -r requirements.txt
 ```
 
-The suite contains 37 unit-test methods, including 18 packet-replay comparisons
-and 30 randomly generated independent optimizer comparisons inside two methods.
-The frozen-result verifier additionally runs six regression comparisons.
-
-To regenerate the 600 new runs:
+## Build and verify the saved experiment
 
 ```bash
-python extension_evaluation.py
-python verify_extension.py
-python build_professional_report.py
+python build_reliability_paper.py
+python build_submission_figures.py
+python scripts/render_repository_figures.py
+python build_release.py
 ```
 
-The full original frozen evaluation can be regenerated with
-`python frozen_evaluation.py`. This reruns 340 calibration and 320 held-out cases.
-Default controller behavior remains unchanged after optional ablation arguments
-were added. Both the old and new outputs are retained separately.
+The final command runs 51 unit-test methods and the numerical, manuscript and
+repository alignment verifiers. It writes `verification_receipt.json`, refreshes
+`SHA256.json`, and creates `ORAN_Telemetry_Pilot.zip` in the parent directory.
+It checks every file in the ZIP against its SHA-256 entry.
 
-## Evidence map
+The alignment verifier compares all ten preview images pixel-for-pixel with
+fresh renders of the vector figures, checks the two diagram sources against
+the manuscript, validates relative documentation links and confirms that the
+frozen data hashes match `docs/current_study_manifest.json`.
 
-| File | Purpose |
-|---|---|
-| MATHEMATICAL_MODEL.md | Symbols, event order, equations, finite-grid proof and limitations |
-| EXTENSION_PROTOCOL.md | Local design lock written before the new seed outcomes |
-| extension_results.json | All 600 new run records, summaries, paired intervals and adjusted tests |
-| independent_validation.py | Independent packet replay and uncached optimizer implementation |
-| verify_extension.py | Accounting and statistical unit tests |
-| frozen_results.json | Original calibration and independent evaluation, retained unchanged |
-| SOURCE_AUDIT.md | Thirteen focused references with access/claim limits |
-| VALIDATION_GATE.md | Remaining requirements before a physical O-RAN or journal-readiness claim |
-| professional_report/Research_Study.pdf | Consolidated technical report and numerical analysis |
-| professional_report/Research_Study.tex | Editable source with equations and linked bibliography |
-| SHA256.json | Integrity hashes, excluding itself, caches, checkpoints and compiler intermediates |
+## Re-execute simulations
 
-## Interpretation rules
+```bash
+python reliability_study.py
+python verify_reliability.py
+```
 
-- Miss rates use all measured arrivals, including overdue unfinished packets.
-- Twenty independent seed runs, not the total packet count, are the replication units.
-- Zero observations do not establish zero failure probability.
-- Sign tests test paired direction, not mean equality or noninferiority.
-- Resource cost has abstract units and excludes base infrastructure cost.
-- Components that fail ablation tests must not be presented as proven improvements.
-- Static capacity is preprovisioned. Dynamic capacity has a delayed activation queue.
-- Per-decision grid optimality is not global optimal resource allocation.
-- All supplied numbers describe the implemented abstraction only.
+The calibration file is reused when its protocol hash matches. The transient
+`reliability_test_checkpoint.json` is omitted from distributed archives, so a
+fresh checkout re-executes the 840 held-out runs. To rerun all 336 calibration
+runs as well, move `reliability_calibration.json` and any existing
+`reliability_test_checkpoint.json` to a separate backup directory before running.
+The script writes new selection and result files. Preserve the frozen files
+in a separate checkout if comparing execution environments.
+
+The current matrix has seven settings, six methods and twenty test seeds.
+`verify_reliability.py` reconciles all 42 summaries and 35 paired contrasts,
+then replays six selected complete runs. Runtime metadata can change on a
+rerun even when the scientific records agree, so compare run records separately
+from whole-file hashes when intentionally regenerating results.
+
+## Evidence boundaries
+
+The 0.1% threshold is a descriptive seed-mean reliability screen. Qualified
+cost savings against fixed provisioning occur in P, R and J. Shifted workloads
+and long actuation delays include failures. These are synthetic service-chain
+results, with no physical O-RAN deployment or rare-event reliability certificate.
