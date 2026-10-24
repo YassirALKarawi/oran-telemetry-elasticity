@@ -7,7 +7,7 @@
   "PAPER_PROTOCOL.md": "e87512c0459f5c63a63a4c66da75142b65048edde85c9cc20f7133f7a882358d",
   "PAPER_README.md": "774af03f036074e16ff8354205e1cee89f7f617f7ade88ac565900823a27808e",
   "PAPER_SOURCE_AUDIT.md": "98e81c0f1ac3a51e09a6ac5cfdd891547e2938199bcc29012b3f96f3e4d25020",
-  "README.md": "0bc900ba84869df2d14639dd53926ef55fbce335052392ffc8b277c4393e0387",
+  "README.md": "204c32d87106477579fb1ed218bdf7620b42101632a9fc8ebb6ac465ee0aa6b4",
   "RELIABILITY_PROTOCOL.md": "cfb9c71aaae0aa9c15f80cb1faa51ac9f57de26304d4d7a8d7858876692558b1",
   "REPRODUCE.md": "24a61e0c65000c4bf00273e1e585bd401f3168a39f14f321fed767861ab9deed",
   "RESULTS.txt": "cb1ed561997629881258ef87802cc54587f05e07c0d3ab144d92fac31ef81b4a",
@@ -121,5 +121,17 @@
   "verify_reliability.py": "ebedbe1a7b989f4ea30b2ffe1b841c936b44b01fe1fd43e2e55e836f4a4e3ffe",
   "verify_substantive.py": "75ed316db6067b10b595862b4eeabf0b1a96b5b5da05f85048b23c34ca2bab4e",
   "yasq_quality.py": "7d396c3a47a3b0b687cf2f219905498de0b5ab8512a8af720c845fb173f1f54f",
-  "yasq_revision.py": "19a112b6cb638668c7ca6788aa9845f4d3c475d8f10a25b85f04425a37cdff0c"
+  "yasq_revision.py": "19a112b6cb638668c7ca6788aa9845f4d3c475d8f10a25b85f04425a37cdff0c",
+  "scripts/render_repository_figures.py": "eacc2e8bf0ae54bc4bbe4e8310e2529bd8d41a93fb3d79a4b8b64ed3ffe786ed",
+  "docs/figures/10-proxy-outcome.png": "fa259c202bc87ab734651297af1cf9a890fc2cdbea59eb9ccd46f66bdd27bac7",
+  "docs/figures/09-cost-components.png": "930daa88aaa209c37c1e75e5a1a08f171aec4ee814b38cfacbe59efc19489c09",
+  "docs/figures/08-component-ablations.png": "9ae711755d6415b99706e2d994571c05a8e0cb2b15e34ff1b99bd5ea644377d2",
+  "docs/figures/01-architecture.png": "75b2fdeaf222d0215e6e15de6add5798036bad4b92360cdc7a056a07936606e1",
+  "docs/figures/05-reliability-screen.png": "cec7d5e573e75ad8503c656ca7293e9867fbb3a3006ae87c62471598e285c9b0",
+  "docs/figures/06-qualified-cost.png": "d49f258f214beab6dce3b3aceaa222fffd84b1e63c1aa8851c34864d4264d708",
+  "docs/figures/02-control-timeline.png": "fd9a576f1193ddff78c5171e6fac47b041ca2bee3fb35a822242b18a12749a2e",
+  "docs/figures/07-held-out-results.png": "4d3563547e1de4ef8434b7f36374e79668b1f2b24dd69e02ebf0d189da8a09eb",
+  "docs/figures/03-calibration.png": "7245b84f28fc38be375424c5e8ea1489bb0f1b1c9102eda10fd85a7582f277e2",
+  "docs/figures/README.md": "1eb5851206cd470bb0a3239f664a16cedc11ed27e4f0a704959143b814cd521a",
+  "docs/figures/04-headroom-sensitivity.png": "40615dee916e63158d75c19dc478da9343ea3044caffc6bbe8619a7264418162"
 }

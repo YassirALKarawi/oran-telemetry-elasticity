@@ -1,6 +1,54 @@
 # Reliability-Screened Capacity Elasticity under Delayed Telemetry and Actuation
 
-## Current release: 24 October 2026
+<p align="center"><strong>Reproducible simulation · Delayed telemetry · Capacity elasticity</strong><br>1,176 execution records · 10 figures · 2 algorithms</p>
+
+<p align="center"><a href="paper_reliability/Manuscript.pdf">Read the paper</a> · <a href="docs/figures/README.md">Explore all figures</a> · <a href="PAPER_README.md">Reproduce the study</a></p>
+
+## Architecture and control sequence
+
+### System architecture
+
+[![System architecture](docs/figures/01-architecture.png)](submission_figures/Figure_1_Architecture.pdf)
+
+Access, transport and compute stages, telemetry reports and the controller's action ledger. Equipment icons describe model roles rather than implemented O-RAN hardware.
+
+[Vector PDF](submission_figures/Figure_1_Architecture.pdf) · [PNG](docs/figures/01-architecture.png)
+
+### Observation-to-activation timeline
+
+[![Observation-to-activation timeline](docs/figures/02-control-timeline.png)](submission_figures/Figure_2_Timeline.pdf)
+
+The causal sequence from delayed reports to command activation. Projection replays only actions already issued.
+
+[Vector PDF](submission_figures/Figure_2_Timeline.pdf) · [PNG](docs/figures/02-control-timeline.png)
+
+## Results at a glance
+
+The panels reproduce the manuscript figures. Open the [full figure gallery](docs/figures/README.md) for larger previews, interpretation and downloads. This is an abstract service-chain simulation. Distribution-shift and long-delay failures remain part of the reported results.
+
+| Figure 3 · Calibration and candidate selection | Figure 4 · Headroom sensitivity |
+| :---: | :---: |
+| [![Calibration and candidate selection](docs/figures/03-calibration.png)](paper_reliability/calibration.pdf) | [![Headroom sensitivity](docs/figures/04-headroom-sensitivity.png)](paper_reliability/headroom_sensitivity.pdf) |
+| [Vector PDF](paper_reliability/calibration.pdf) · [PNG](docs/figures/03-calibration.png) | [Vector PDF](paper_reliability/headroom_sensitivity.pdf) · [PNG](docs/figures/04-headroom-sensitivity.png) |
+
+| Figure 5 · Reliability qualification | Figure 6 · Paired cost differences |
+| :---: | :---: |
+| [![Reliability qualification](docs/figures/05-reliability-screen.png)](paper_reliability/screen_matrix.pdf) | [![Paired cost differences](docs/figures/06-qualified-cost.png)](paper_reliability/qualified_cost.pdf) |
+| [Vector PDF](paper_reliability/screen_matrix.pdf) · [PNG](docs/figures/05-reliability-screen.png) | [Vector PDF](paper_reliability/qualified_cost.pdf) · [PNG](docs/figures/06-qualified-cost.png) |
+
+| Figure 7 · Held-out performance | Figure 8 · Component ablations |
+| :---: | :---: |
+| [![Held-out performance](docs/figures/07-held-out-results.png)](paper_reliability/reliability_primary.pdf) | [![Component ablations](docs/figures/08-component-ablations.png)](paper_reliability/reliability_ablation.pdf) |
+| [Vector PDF](paper_reliability/reliability_primary.pdf) · [PNG](docs/figures/07-held-out-results.png) | [Vector PDF](paper_reliability/reliability_ablation.pdf) · [PNG](docs/figures/08-component-ablations.png) |
+
+| Figure 9 · Cost decomposition | Figure 10 · Proxy versus realized outcome |
+| :---: | :---: |
+| [![Cost decomposition](docs/figures/09-cost-components.png)](paper_reliability/cost_components.pdf) | [![Proxy versus realized outcome](docs/figures/10-proxy-outcome.png)](paper_reliability/proxy_vs_outcome.pdf) |
+| [Vector PDF](paper_reliability/cost_components.pdf) · [PNG](docs/figures/09-cost-components.png) | [Vector PDF](paper_reliability/proxy_vs_outcome.pdf) · [PNG](docs/figures/10-proxy-outcome.png) |
+
+## Study and reproduction notes
+
+### Current release: 24 October 2026
 
 See `COLUMN_REVISION.md` for single-column algorithms, reference updates and GitHub publication status.
 
@@ -16,6 +64,10 @@ This is an abstract simulation paper, not a physical O-RAN validation or a
 guarantee of publication. Earlier manuscripts and reports remain as history.
 The historical V2 description below is preserved. NumPy is required for the new
 statistical analysis, while the simulation kernels remain standard-library Python.
+
+
+<details>
+<summary><strong>Historical pilot documentation</strong></summary>
 
 ## Historical V2 description
 
@@ -161,3 +213,5 @@ a constrained decision that includes both classes' SLA budgets, calibrate the
 prediction errors, and add a real joint resource-allocation formulation. The
 fixed-size-report/equal-budget comparison remains an experimental control, not
 a realistic transport-cost model.
+
+</details>
