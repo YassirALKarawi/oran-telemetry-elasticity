@@ -1,0 +1,1670 @@
+                                                                                                                         IEEE OPEN JOURNAL OF THE
+                                                                                                                         COMMUNICATIONS SOCIETY
+
+
+
+
+                 Reliability-Screened Capacity
+            Elasticity under Delayed Telemetry and
+            Actuation: An O-RAN-Motivated Study
+                  FATIMA SUBHI KHALEEL1 , YASSIR AL-AMEEN1 , AND HAMED AL-RAWESHIDY2
+                     1
+                         Department of Communications Engineering, College of Engineering, University of Diyala, Baqubah, Iraq (e-mail:
+                                                             fatima.subhi_eng@uodiyala.edu.iq).
+                             2
+                               College of Engineering, Design and Physical Sciences, Brunel University of London, Uxbridge, U.K.
+                             CORRESPONDING AUTHOR: HAMED AL-RAWESHIDY (e-mail: hamed.al-raweshidy@brunel.ac.uk).
+
+
+
+
+         ABSTRACT Resource elasticity under delayed telemetry can reduce provisioning cost while increasing
+         deadline violations. This study examines that trade-off in an Open Radio Access Network (O-RAN)-
+         motivated, three-stage service chain. A causal controller projects reported queues using applied actions
+         and pending commands, then selects capacity and class reservations on a finite grid. A headroom parameter
+         is calibrated separately under a common classwise mean-miss target of 0.1%. The experiment comprises
+         336 calibration and 840 held-out executions across seven settings, with twenty independent test seeds
+         per setting. Comparisons include fixed capacity, target-utilization sizing, a queue-weighted cost controller
+         and component ablations. Three fixed-reference comparisons satisfy the complete descriptive reliability
+         screen and reduce mean incremental cost by 35.61–37.73%. Markov-modulated traffic, compound arrivals
+         and fifty-slot actuation expose failures of the selected policy. Derived sensitivity relations explain how
+         headroom and demand uncertainty affect surrogate feasibility, while paired intervals quantify observed
+         cost differences. The results establish conditional advantages within a synthetic packet-service model.
+         They do not certify rare-event reliability or validate a physical O-RAN implementation.
+
+         INDEX TERMS O-RAN, software-defined networking, delayed actuation, telemetry, reliability screening,
+         resource elasticity, reproducible simulation.
+
+
+
+
+I. Introduction                                                                  present experiment is narrower: how much does explicitly
+An elastic resource controller acts on two different timelines.                  retaining the known action history contribute to the cost–
+Its queue report describes a past state, whereas its next                        deadline trade-off of an otherwise simple allocator?
+command changes a future service opportunity. Between                               That question requires a reliability-aware comparison.
+those instants, earlier commands can already have altered                        Reducing active capacity almost automatically reduces a
+capacity. Open Radio Access Network (O-RAN) exposes                              capacity-based cost, but can also increase deadline misses.
+programmable control across disaggregated components [1].                        A lower cost alone is therefore not evidence of a bet-
+Software-defined networking (SDN) separates control from                         ter allocator. The experiment separates three objects: the
+forwarding [2], and virtualization makes resource provision-                     stochastic design objective, the finite-grid proxy used to
+ing an explicit orchestration decision [3]. These features                       issue commands, and the empirical screen used to interpret
+motivate accounting for the gap between observing, request-                      measured outcomes. This separation prevents a surrogate-
+ing and activating resources. They do not make those three                       feasible decision or a favorable average cost from being
+events simultaneous.                                                             mistaken for a packet-level guarantee.
+   The resulting ambiguity is operationally important. A                            The study considers two packet classes traversing three
+controller extrapolating an old service rate may request                         serial service stages, motivated by access, transport and
+capacity that is already scheduled to arrive. Conversely,                        compute domains. The controller receives one delayed stage
+a controller that assumes immediate activation may un-                           report per control epoch, projects workloads through already
+derestimate the workload accumulated before its command                          applied and pending commands, and chooses expansion and
+becomes effective. Information-age analysis characterizes                        class reservations. A headroom parameter is selected on
+observation freshness [4], networked control incorporates                        calibration seeds and locked before testing. All stages use
+delayed feedback [5], and predictive control uses models of                      abstract packet-service units. Physical radio channels, pro-
+future action effects [6]. The unresolved question for the
+
+
+                                                                    Submission manuscript                                                           1
+                                                                                                    IEEE OPEN JOURNAL OF THE
+                                                                                                    COMMUNICATIONS SOCIETY
+
+
+
+
+cessor execution times and O-RAN interface interoperability           reported performance numbers can be compared directly
+are outside the implemented model.                                    with an abstract service-unit cost.
+   Three research questions organize the analysis. First, can            Radio-intelligence-controller allocation [17], multivariate
+the calibrated controller reduce cost against a preprovisioned        probabilistic forecasting [18], and online-learning energy-
+reference while both pass the same classwise reliability              aware allocation [19] differ in both prediction machinery and
+screen? Second, is the ledger useful at fixed headroom, and           objective. The predictor here holds reported ingress and base
+how much of its cost difference comes from capacity versus            capacity constant. Its added information is the controller’s
+switching? Third, do shifted arrival patterns, bottleneck             own action history, not a learned model of future traffic.
+location and command delay reveal a gap between proxy                 This permits an inspectable ablation, but leaves uncertainty
+feasibility and measured deadline risk?                               from workload evolution unresolved.
+   The contributions are an executable action-ledger con-                Conflict management studies interactions between xApps
+troller, an explicit calibration-and-comparison protocol, and         [20]. In contrast, this paper tracks sequential commands from
+a reproducible account of its useful and failing regimes. The         a single controller. Service-enabled sub-slice isolation [21]
+mathematical analysis connects exact age-resolved service,            and RadioSaber’s channel-aware customizable schedulers
+delayed command activation and deadline-capacity limits               [22] also provide capabilities that quota borrowing does not
+to the implemented approximation. Integer reservation and             establish. EdgeRIC demonstrates control in an implemented
+sensitivity relations explain its ranking rule. The numerical         low-latency system [23]. Its evidence motivates examining
+analysis covers 336 calibration and 840 held-out executions,          delay, but does not justify assigning a measured real-time
+with matched traces, component ablations and seed-level               meaning to the synthetic slot used below.
+uncertainty. Additional diagnostic decompositions use these              ColO-RAN [24], OpenRAN Gym [25], a softwarized pro-
+saved executions without changing parameter selection or the          totyping platform [26] and FlexRIC [27] offer programmable
+original qualification rule. The contribution is this controlled      experimental foundations. ns-O-RAN [28], Colosseum [29]
+combination, not a new prediction paradigm, a solution to the         and the fifth-generation (5G) cellular simulator 5G-LENA
+full stochastic control problem, or demonstrated superiority          [30], including its calibration studies [31], identify possible
+over deployed O-RAN systems.                                          routes to higher-fidelity validation. These are not platforms
+   The remainder develops the literature-based comparison             executed in the current study. Listing them does not establish
+boundary, the service and information model, the controller           interface compliance.
+and its analytical limits, and the experimental evidence. Suc-           Queue-based stochastic optimization [32], deterministic
+cessful comparisons and counterexamples receive separate              network calculus [33] and stochastic network calculus [34]
+treatment before the deployment limitations are discussed.            address distinct types of guarantees. Analyses of interleaved
+                                                                      weighted round-robin [35], deficit round-robin [36] and
+II. Related Work and Comparison Boundary                              packet-level delay bounds [37] depend on precise arrival and
+OrchestRAN chooses intelligence algorithms and their exe-             service assumptions. The workload score in this paper is
+cution locations [7], while quality-driven intelligence orches-       not a service curve, a stability proof or a probabilistic delay
+tration deploys and shares near-real-time control applications        bound. Verification of its implementation is also different
+(xApps) across network services [8]. Their decision objects           from physical validation of the abstraction [38].
+are not the packet-stage capacities used here. Joint cloud,              The executed comparator families are deliberately trans-
+fronthaul and radio orchestration already treats cross-domain         parent. Kubernetes Horizontal Pod Autoscaling (HPA)
+resource coupling [9]. Consequently, neither a three-domain           supplies the target-utilization and downscale stabilization
+drawing nor joint resource selection is the novelty of the            ideas [39]. Drift-plus-penalty (DPP) scheduling supplies the
+present study. The relevant distinction is explicit replay of         queue-weighted resource-cost trade-off [40]. Both imple-
+already issued commands when stale queue measurements                 mentations below are adaptations, with changed metrics and
+are projected.                                                        timing, rather than reproductions of the original systems or
+   Implemented virtualized radio access network (vRAN)                their guarantees. Delay-Tolerant Constrained Online Convex
+systems provide a stronger physical basis than homogeneous            Optimization (DTC-OCO) studies delayed feedback with
+queues. vrAIn learns radio/computing allocation [10], Nu-             constraint and regret analysis [41]. Delayed activation of
+beru restructures processing under compute deficits [11], and         immutable integer commands is a different decision setting,
+Concordia schedules shared computing against processing               so DTC-OCO is positioning literature only.
+deadlines [12]. Online-learning base-station allocation [13]             Table 1 makes the comparison boundary explicit. The
+and delay-aware multi-timescale orchestration [14] further            empirical gap addressed here is the joint accounting of stale
+constrain the novelty claim: adaptation and delay-aware               reports, known pending commands and a common reliability
+allocation are established approaches. Proactive workload             screen in a reproducible queue experiment. It is not a claim
+orchestration [15] and learned functional-split selection [16]        that prior systems omit all of these concerns, nor a claim of
+also address anticipation and reconfiguration. None of their          state-of-the-art performance without reproducing them.
+
+
+
+                                                         Submission manuscript                                                      2
+                                                                                                              IEEE OPEN JOURNAL OF THE
+                                                                                                              COMMUNICATIONS SOCIETY
+
+
+
+TABLE 1. Study-level comparison of decision scope and evidence. Positioning studies are not executed benchmarks.
+
+
+ Study                  Controlled object and objective       Timing or uncertainty treatment             Relationship to this experiment
+
+ [9] (2024)             Joint cloud, fronthaul and radio      Cross-domain resource coupling in           Joint allocation is established. The
+                        resources with an energy objective    cell-free massive multiple-input            present abstract cost is not measured
+                                                              multiple-output (MIMO)                      energy.
+ [8] (2025)             Placement and sharing of              Quality-driven orchestration of network     A different decision object from integer
+                        xApp-based services                   intelligence                                packet-stage capacities.
+ [13] (2025)            Resource thresholds balancing vBS     Online learning under changing              Formal learning analysis does not
+                        performance and energy                operating conditions                        transfer to the finite-grid workload
+                                                                                                          heuristic here.
+ [14] (2025)            Radio-resource allocation for         Near-real-time latency modeling and         A closer delay-aware reference, but
+                        delay-sensitive services              real-time queue adaptation                  radio-resource and violation models
+                                                                                                          differ. No reproduced performance
+                                                                                                          comparison.
+ [18] (2026)            Multivariate probabilistic            Learned predictive distributions in a       Forecasting richer future demand differs
+                        resource-demand forecasts             containerized rApp                          from replaying known commands with
+                                                                                                          held rates.
+ [19] (2025)            Energy-efficient O-RAN resource       Online learning                             Distinguishes learned adaptation from
+                        allocation                                                                        fixed, separately calibrated headroom.
+ [20] (2025)            Conflict management across xApps      Interactions between control applications   Here, reordering concerns commands
+                                                                                                          from one controller, not competing
+                                                                                                          xApps.
+ [41] (2021)            Constrained online network-resource   Delayed feedback and regret analysis        Feedback delay is distinct from
+                        decisions                                                                         immutable, delayed integer activation.
+ [11], [12] (2021)      Shared vRAN computation and           Implemented processing and scheduling       Stronger physical evidence. No
+                        processing deadlines                  mechanisms                                  equivalence to the synthetic service
+                                                                                                          chain is asserted.
+ [39], [40]             Utilization-based sizing and          Stabilization or queue-dependent            Adapted comparator families executed
+                        queue-weighted cost                   resource decisions                          on the same traces, grids and delays.
+ Present study          Capacity and class shares under a     Stale reports, issued-command replay        336 calibration and 840 held-out
+                        mean-miss screen                      and locked headroom                         executions. Conditional savings and
+                                                                                                          failure regimes, without physical
+                                                                                                          validation.
+
+
+
+III. System Model and Problem Definition                                   total integer capacity Ci (t) = ci (t) + ei (t), comprising base
+The comparison boundary above motivates a model that                       capacity ci and active paid expansion ei . The implemented
+separates physical packet evolution from the information                   dynamics are
+available when a command is issued. The following formu-
+                                                                             Q1s (t + 1) = Q1s (t) + As (t) − S1s (t),                         (1)
+lation first specifies service and packet ages, then delayed
+observations and actions, and finally the cost and reliability                Qis (t + 1) = Qis (t) − Sis (t) + Si−1,s (t),          i = 2, 3. (2)
+objective.                                                                 Stage 1 can serve new arrivals immediately. Stages 2 and
+                                                                           3 serve before their upstream neighbors, so a packet cannot
+A. Service chain and scheduling                                            traverse two stages in one slot. Each packet requires one
+Figure 1 identifies the controlled stages and information                  service unit at every stage. Class queues are first-in, first-out
+paths. Table 2 summarizes the principal symbols and units.                 (FIFO). There are no drops, retransmissions, alternate routes
+   Let i ∈ {1, 2, 3} index stages, s ∈ {0, 1} index classes                or finite-buffer admission decisions.
+and t ∈ {0, . . . , T − 1} index discrete slots. A packet has                 At each slot the engine applies due commands, delivers
+a class s, birth slot b and absolute deadline b + Ds − 1.                  due reports, inserts external arrivals, requests a report and
+A packet completed in slot t has latency t − b + 1 and is                  computes a command if the slot is a control epoch, serves
+late if that value exceeds Ds . Let Qis (t) denote the queue               stages in order 3, 2, 1, and updates measurement histories.
+at the beginning of slot t, before external arrivals, and let              This ordering fixes otherwise consequential ambiguities at
+As (t) denote newly generated packets. Service Sis (t) uses                equal timestamps. Report snapshots are taken after external
+
+                                                              Submission manuscript                                                                  3
+                                                                                                           IEEE OPEN JOURNAL OF THE
+                                                                                                           COMMUNICATIONS SOCIETY
+
+
+
+
+arrivals and before service. No new snapshot is visible to the          Between classes, reserved quotas and earliest-deadline bor-
+controller before its configured delivery time.                         rowing still determine the totals Sis through the sched-
+   For weights (α, 1 − α), integer reserved service gis (Ci , α)        uler already specified. Thus (8)–(9) are necessary service
+is obtained by flooring proportional quotas and assigning the           constraints, not a replacement scheduling optimization with
+remainder to the largest fractionalP part, with deterministic           freely selectable departures. Late packets remain queued and
+class-index tie breaking. Thus       s gis = Ci . The local             consume service. Truncating all ages at Ds would therefore
+scheduler first reserves                                                change the model.
+                     uis = min{Bis , gis },                                Let χ(t, a) = 1{bmin ≤ t − a < bmax } identify the
+                                                             (3)        measured birth cohort, with bmin = 300 and bmax = 3300.
+           B1s = Q1s + As , Bis = Qis (i > 1).
+                                                                        The indicator 1{·} is one when its condition holds and zero
+Remaining units are borrowed by the eligible class whose                otherwise. For Ns > 0, the deadline-miss fraction has the
+next packet has the earliest absolute deadline, with class-             equivalent exact expression
+index ties. This is deadline-based borrowing after reserva-                                        T −1 Ds −1
+tions, P
+       not unrestricted earliest-deadline-first service. It en-                                 1 X X
+                          P                                                         Vs = 1 −                  χ(t, a)Y3sa (t),
+sures s Sis = min{Ci , s Bis }.                                                                 Ns t=0 a=0
+                                                                                                                                      (10)
+                                                                                             X−1
+                                                                                            bmax
+B. Packet ages and deadline accounting                                             Ns =              As (t).
+Queue length alone does not identify the number of packets                                  t=bmin
+approaching their deadline. Introduce Xisa (t), the number of           When Ns = 0, set Vs = 0. Completion latency is a + 1, so
+class-s packets at stage i whose age is a = t − b, measured             the upper limit Ds − 1 includes completion exactly at the
+after external arrivals and before service in slot t. Let Yisa (t)      deadline. Every cohort packet contributes once to either the
+count the packets of that age served at that stage in that slot.        on-time count or its complement. The tail extends beyond all
+Both variables are nonnegative integers. This representation            cohort deadlines, making that complement identical to late
+retains the birth timestamps already present in the simulator           completions plus unfinished packets in (22).
+and does not add a new measurement to the controller. Its                  This identity also exposes an information loss in the
+aggregation is                                                          workload proxy. Two states with the same Bis and service
+                   X                        X
+        Bis (t) =      Xisa (t), Sis (t) =       Yisa (t),              reservations can have different Xisa and hence different
+                   a≥0                      a≥0               (4)       attainable on-time counts. At the last stage, one packet of
+              0 ≤ Yisa (t) ≤ Xisa (t).                                  age Ds − 1 can still finish on time if served immediately,
+                                                                        whereas a packet of age Ds cannot. Their queue lengths are
+Here B1s = Q1s + As and Bis = Qis for i > 1, consistent                 identical. Aggregate feasibility therefore cannot be sufficient
+with the earlier pre-arrival queue convention. With initially           for deadline feasibility without additional age information or
+empty queues, the exact age dynamics are                                assumptions.
+              X1s,0 (t + 1) = As (t + 1),                                  The age state also gives a sharper necessary deadline
+              Xis,0 (t + 1) = 0   (i > 1),                      (5)     condition than queue length alone. A packet at stage i
+                                                                        requires at least mi = 4 − i further service slots because
+         X1s,a+1 (t + 1) = X1sa (t) − Y1sa (t),                 (6)
+                                                                        adjacent stages cannot serve it in the same slot. Define
+         Xis,a+1 (t + 1) = Xisa (t) − Yisa (t)                          its structural slack and the already-unrecoverable measured
+                             + Yi−1,s,a (t),   i = 2, 3.        (7)     workload by
+All survivors age by one slot. Upstream departures become                    σisa (t) = Ds − a − mi ,                                 (11)
+downstream work for the next slot because service is exe-                                 3 X
+                                                                                          X
+cuted in reverse stage order. Summing these equations over                  Msirr (t) =             χ(t, a)Xisa (t)1{σisa (t) < 0}.   (12)
+age recovers the aggregate queue recurrences. In particular,                              i=1 a≥0
+no packet can traverse two stages in a single slot.                     Even unlimited capacity cannot recover a packet counted
+  The service constraints combine the stage budget with                 by Msirr (t) under the specified event order. Each packet
+within-class FIFO:                                                      occupies only one stage at that instant. Consequently, for
+                          (                  )
+       X                          X                                     Ns > 0,
+           Yisa (t) = min Ci (t),    Xisa (t) ,         (8)                                    max0≤t<T Msirr (t)
+                                                                                         Vs ≥                     .            (13)
+        s,a
+                       X
+                                     s,a                                                               Ns
+                                            
+       Yisa (t) > 0 =⇒   Xisv (t) − Yisv (t) = 0.               (9)     The maximum, rather than a sum over time, avoids counting
+                            v>a                                         the same packet repeatedly. This is an original necessary
+Equation (9) requires every older packet of the same class              condition derived from the age recurrences, not an imported
+to be served before a younger age group receives service.               stochastic delay guarantee. It is not evaluated as a new
+                                                                        empirical metric because the frozen aggregate records do
+                                                                        not retain every Xisa (t). Packet-level service assumptions
+
+                                                           Submission manuscript                                                         4
+                                                                                                                         IEEE OPEN JOURNAL OF THE
+                                                                                                                         COMMUNICATIONS SOCIETY
+
+
+
+
+                                                                                              known action trajectory
+
+
+
+
+                                                  reports                                              issue
+
+
+                     Telemetry collector                            Resource controller                                    Action ledger
+                       ri , timestamp τi                        projection + finite-grid ranking                        applied L, pending P
+
+
+                                                        one selected report / h slots    delay R    loss p
+
+
+                                                  activation at t + L: capacity and class reservations
+
+
+
+
+                                                    S1s                                                S2s
+
+
+                           Access stage                                Transport stage                                    Compute stage
+                           Q1s    e1 = 0                            Q2s    e2 ∈ {0, 1, 2, 3}                        Q3s      e3 ∈ {0, 1, 2, 3}
+
+
+                           packet flow                       telemetry                               applied commands
+
+FIGURE 1. Equipment-inspired view of the three-stage service model and its control loop. Icons identify access, transport and compute roles. They do
+not imply implemented radio hardware or O-RAN interfaces.
+
+TABLE 2. Notation and units. All capacities and workloads are abstract.
+
+
+          Symbol                           Definition
+
+          Qis , As , Sis                   Queue, external arrivals and service counts, in packets
+          ci , e i , C i                   Base, expansion and total capacity, in packets per slot
+          Ds , b, T                        Class deadline, birth slot and run length, in slots
+          τi , ∆ i                         Timestamp of latest delivered stage report and its age t − τi
+          āis , µ̄is , vis                Historical mean ingress, mean service and variance of net ingress
+          h, W, R, L, p                    Control interval, history window, report delay, activation delay and report loss probability
+          α, k, X                          Class-0 share, share-grid index and candidate decision set
+          L, P                             Applied-action ledger and pending-command list
+          qbis , dis , ρs                  Projected pre-service queue, demand proxy and normalized delay score
+          η, ϵ, δ                          Headroom factor, absolute mean-risk target and paired miss margin
+          Xisa , Yisa                      Age-resolved queued and served packets
+          mi , σisa , ωsa                  Minimum remaining service slots, structural slack and command-relative slack
+          Msirr                            Cohort packets already unable to meet their deadline
+          J, Vs                            Full-run incremental cost and cohort deadline-miss fraction
+
+
+
+likewise determine the applicability of established delay                          C. Telemetry, actuation and switching cost
+bounds [37], [35].                                                                 Every h = 5 slots, one stage is selected for a report. Its
+   The currently issued command has an additional timing                           payload is
+restriction. Put ωsa (t) = Ds − a − Lt . When ωsa (t) ≤ 0,                                        ri = (qi , āi , µ̄i , vi , c̄i , τi ), (14)
+the last permissible completion slot t + Ds − a − 1 precedes
+                                                                                   where qi is the pre-service queue, c̄i is the base capacity at
+activation at t + Lt . Thus the new command cannot affect
+                                                                                   the snapshot, and the rate statistics use the preceding W =
+that packet’s on-time outcome. Earlier active or pending
+                                                                                   20 slots. Specifically, vis is the population variance of stage
+commands may still serve it successfully. This command-
+                                                                                   ingress minus service over that window. Empty histories use
+specific restriction does not imply that all such packets must
+                                                                                   fixed initialization values listed in the experiment setup. Each
+miss their deadlines.
+                                                                                   request is independently lost with probability p or delivered
+
+
+                                                                      Submission manuscript                                                            5
+                                                                                                                      IEEE OPEN JOURNAL OF THE
+                                                                                                                      COMMUNICATIONS SOCIETY
+
+
+
+
+after R slots. A report older than the stored timestamp is                   Thus charging only the net slot change is a lower bound
+discarded.                                                                   on the implemented switching charge. For example, simul-
+   The common risk-based report selector uses                                taneous changes (0, 0, 0) → (0, 3, 0) → (0, 0, 0) incur six
+                                      +
+  qeis (t) = [qis + ∆i (āis − µ̄is )] ,                            (15)     switching units, or cost 1.5 at κ = 0.25, although the net
+              X √∆i vis + 1                 qeis (t)
+                                                                            change is zero. This distinction matters in J, where multiple
+    zi (t) =                          1+                     + 0.01∆i .      commands can activate together. Equations (17)–(20) explain
+               s
+                         D  s             max(1,     c̄i )                   why a penalty relative to the previous requested action cannot
+                                                                    (16)     equal realized switching cost in every execution.
+The stage with greatest zi is selected, breaking ties by stage
+index. The final age term is a heuristic priority term, not                  D. Objective and information-constrained formulation
+a bounded-starvation proof. Different methods may select                     The incremental resource objective is
+different stages even though their request counts and request-                          T
+                                                                                        X −1 X                 X
+index loss flags are identical.                                                J=                 ei (t) + κ           xa − e−
+                                                                                                                             a 1,        κ = 0.25.
+   Figure 2 relates measurement age, report delivery and                                t=0   i                a∈AT
+command activation. A decision at time t creates an im-                                           P                                     (21)
+mutable command (t+L, x, w) containing an expansion vec-                     The norm ∥z∥1 = i |zi | sums componentwise expansion
+tor and stage-wise class weights. All due commands execute.                  changes for a vector z . The set AT contains all command
+There is no cancellation, acknowledgment loss or automatic                   activations within the run, xa is the activated expansion, and
+supersession. Constant-delay runs preserve issuance order.                   e−
+                                                                              a is expansion immediately before that activation. Every
+In the variable-delay setting, L is announced for each issued                activation is charged, even when several occur in one slot.
+command, activations may reorder, and commands due in                        The objective includes warm-up and tail capacity, charges
+the same slot execute in issuance order. Future delay draws                  actual changes, and excludes base-resource costs. Initial
+remain unavailable. Initial fixed capacity is preprovisioned,                provisioning incurs no switching charge. Units are abstract
+whereas elastic methods start with zero expansion. Fixed                     resource cost units, not money, energy or measured power.
+methods still update class shares through delayed commands.                     For the measured birth cohort Cs , let Ns = |Cs | and let ℓp
+   Index issued commands by k , with issue slot tk , an-                     be completion latency. The miss fraction is
+nounced delay Lk , activation slot dk = tk +Lk , expansion xk                                              Nslate + Nsunfinished
+and stage-weight matrix Wk . In the proposed controller, each                                       Vs =                         .               (22)
+                                                                                                               max(1, Ns )
+row of Wk is (αk , 1 − αk ). Let command k = 0 denote the
+                                                                             Here Nslate counts completed cohort packets with ℓp > Ds ,
+initialized action, with an activation time before the run. The
+                                                                             and Nsunfinished counts cohort packets unfinished at run
+action active after all due commands in slot t is characterized
+                                                                             end. The tail extends beyond all measured deadlines, so
+by
+                                                                             unfinished cohort packets are known misses rather than right-
+              k ∗ (t) = arg max (dk , k),
+                            k:dk ≤t lex                             (17)     censored successes. Background arrivals continue during
+                e(t) = xk∗ (t) ,         W (t) = Wk∗ (t) .                   that tail. Calibration uses a common 0.1% seed-mean miss
+                                                                             screening target for each class. This finite-sample selection
+The lexicographic maximum first selects the latest activation
+                                                                             rule is not a chance constraint.
+time and then the latest issue index among simultaneous acti-
+                                                                                Let It contain only delivered reports, previously issued
+vations. It is not the latest issue index across all commands.
+                                                                             commands, the applied ledger, and the current announced
+Consequently, an older command with a larger delay can
+                                                                             activation delay. A causal policy π maps this information to
+overwrite a newer command that became active earlier.
+                                                                             a command. Let Π be the class of such policies respecting
+   For the ordered list of commands activating in slot t, write
+                                                                             the finite capacity and share grids. For a specified workload
+Kt = (kt,1 , . . . , kt,nt ), ordered by issue index. Define et,0 =
+                                                                             law, the design objective can be written as
+e(t − 1) and et,j = xkt,j for j ≥ 1, using the initialized
+expansion for e(−1). The exact per-slot and full-run costs                      inf Eπ [J]        subject to Eπ [Vs ] ≤ ϵ,           s ∈ {0, 1}. (23)
+                                                                               π∈Π
+are
+                                      nt                                     The expectation is over independent complete runs under
+                                                                             that law, matching the seed-level estimand rather than treat-
+                    X                X
+             jt =        ei (t) + κ      ∥et,j − et,j−1 ∥1 ,        (18)
+                    i             j=1                                        ing packets as independent trials. Unobserved packet ages,
+                  T −1                                                       stochastic ingress and delayed immutable commands make
+                  X
+            J=           jt .                                      (19)      this a partially observed sequential problem. The proposed
+                   t=0                                                       controller does not solve (23). Instead, Algorithm 1 estimates
+An empty activation list contributes zero switching cost. The                a future queue, the finite-grid ranking selects a command
+triangle inequality gives                                                    from that estimate, and Algorithm 2 screens a fixed policy
+          nt
+          X                                                                  parameter on separate calibration runs. The test screen then
+             ∥et,j − et,j−1 ∥1 ≥ ∥e(t) − e(t − 1)∥1 .     (20)               evaluates its measured cost and miss fractions under each
+          j=1                                                                declared law.
+
+                                                                Submission manuscript                                                                6
+                                                                                                               IEEE OPEN JOURNAL OF THE
+                                                                                                               COMMUNICATIONS SOCIETY
+
+
+
+
+          Snapshot                  Report delivered             Command issued                                Command active
+
+                                                                                                                                       slot
+               τi                         τi + R                           t                                          t+L
+
+                                      report age ∆i                                      announced delay L
+
+                             Replay applied actions from L                        Replay pending commands from P
+
+
+
+                                                                         Earlier-issued commands may activate here
+                                          Projection ends at the pre-service state qbi (t + L).
+                                 The new command changes service at t + L, not that projected state.
+
+FIGURE 2. Observation-to-activation sequence with explicit equipment roles and action replay. Event positions are schematic. Only already issued
+commands enter the projection before the new command becomes active.
+
+
+
+  This separation has two consequences. First, minimizing                      quential resource-allocation problem. The actual controller
+the one-step proxy cost is not minimizing the full-run                         compresses It into projected queue lengths and a finite-grid
+objective in (21). A switching penalty relative to the last                    score. That compression retains known action effects but
+requested expansion can differ from the actual activation                      discards the full age distribution and uncertain future arrivals.
+charge when commands reorder. Second, ρs ≤ 1 is only a                         The expanded formulation characterizes the underlying prob-
+decision surrogate. It cannot replace the constraint on Vs in                  lem. The executed algorithm continues to solve its stated per-
+(23). The model, algorithms and experiments consequently                       decision surrogate, without an additional stochastic optimizer
+address three different objects: a design target, an executable                or an unreported computational benchmark.
+approximation, and finite-sample evidence about that approx-
+imation.                                                                       IV. Calibrated Action-Aware Controller
+  To make this information restriction explicit, the packet                    The controller approximates the information-constrained
+and command descriptions can be combined into a state                          problem using three steps: reconstruct known action effects,
+          Zt = Xt , et , Wt , Pt , Rt , Dt , Htmeas , ζt .
+                                                        
+                                                           (24)                rank a finite set of resource choices, and select headroom
+                                                                               on separate calibration runs. The projection uses only avail-
+Here Xt collects all age bins, Pt stores issued commands                       able information, while the age-resolved model remains the
+awaiting activation, Rt stores reports awaiting delivery, and                  reference for measuring actual deadline outcomes.
+Dt stores the latest accepted report from each stage. Htmeas
+contains the finite measurement histories, and ζt contains the                 A. Projection from the action ledger
+exogenous traffic/capacity state and periodic phase needed                     At decision time t, the ledger L(u) records the expansion
+for the selected workload law. State-dependent report con-                     and weights actually applied at slots u ≤ t. The list P(t)
+struction and the event order define a transition map                          contains commands already issued but not yet activated.
+   Zt+1 = Ft (Zt , ut , ξt+1 ),                    π ∈ ΠI .
+                                        ut = πt (It ),                         Their deterministic activation times define a known action
+                                                          (25)                 trajectory up to t + L − 1. This uses no future exogenous
+The random input ξt+1 accounts for exogenous evolution,                        arrivals or capacity realizations.
+report loss and any future announced delays. The action ut                         For each stage, initialize qbi (τi ) = qi and hold its latest
+specifies the requested command and the stage selected for                     reported base capacity and mean ingress constant. The fluid
+telemetry, and is null outside control epochs. The information                 recurrence is
+It consists of delivered reports and their timestamps, the                       qbis (u + 1) = [qbis (u)
+applied ledger, previously issued commands and the current                                      −Fs qbi (u), wi (u), c̄i + ei (u)
+                                                                                                                                 +
+                                                                                                                                     + āis , (26)
+announced delay. The set ΠI contains policies measurable
+with respect to this information. It excludes access to the                                        u = τi , . . . , t + L − 1.
+hidden age bins and undelivered reports, even though the                       The fluid service operator F first applies integer reservations,
+simulator retains them for execution.                                          limited by the real-valued projected workload, and assigns
+   The objective in (23), together with (5)–(10) and (17)–                     spare units in descending order of normalized residual work-
+(25), is therefore a partially observed, integer-valued se-                    load (qbis − uis )/Ds . Ties use the class index. The projection
+
+                                                                Submission manuscript                                                              7
+                                                                                                                 IEEE OPEN JOURNAL OF THE
+                                                                                                                 COMMUNICATIONS SOCIETY
+
+
+
+
+does not contain packet ages, so this borrowing rule is only                   The same share is applied at all stages. With reported base
+an approximation to the packet scheduler.                                      capacities, candidate integer reservations and headroom η
+   Each stage is projected independently using its last re-                    yield
+ported ingress. Projected upstream departures are not fed                                       1 X                 dis
+into the downstream forecast. This avoids pretending that                         ρs (x, α) =                                      , (29)
+                                                                                              ηDs i max{10−3 , gis (c̄i + xi , α)}
+asynchronously observed queues constitute a consistent in-
+stantaneous network state, but it also omits propagation of                          r(x, α) = max ρs (x, α),                                 (30)
+                                                                                                s
+future upstream actions. The ledger is action-aware, not a                                     X
+                                                                                       c(x) =     xi + κ x − xreq
+                                                                                                              prev 1 .                        (31)
+perfect network predictor. The state at t+L is pre-service and
+                                                                                                i
+therefore excludes the effect of the new candidate command
+                                                                               The small denominator floor defines a finite penalty for
+on that slot’s service. Algorithm 1 takes delivered reports and
+                                                                               zero reservations, not guaranteed fractional service. The cost
+the action ledger as inputs and returns these activation-time
+                                                                               proxy compares with the previous requested expansion. It
+queue estimates.
+                                                                               differs intentionally from the realized cost in (21), which
+                                                                               uses actual activation changes.
+ Algorithm 1. Applied-action and pending-command
+                                                                                  Candidates are ranked lexicographically by
+ projection                                                                                          (          P
+                                                                                                       (0, c, r, s ρs , k), r ≤ 1,
+   1   Input: reports ri , time t, delay L, ledger L, pending list P                      σ(x, α) =             P                        (32)
+                                                                                                       (1, r, c, s ρs , k), r > 1.
+       Construct known actions for u = t, . . . , t + L − 1 from L(t)
+   2
+       and P
+                                                                               The minimum is selected, retaining the earliest enumerated
+                                                                               expansion on any remaining tie. Feasible candidates priori-
+   3   for each stage i = 1, 2, 3 do                                           tize cost. When none is feasible, the least worst-class ratio
+                                                                               is selected. No claim of feasibility is made for the realized
+   4       Initialize qbi ← qi from the latest delivered report                packet system from this surrogate decision.
+                                                                                  The ranking can be interpreted through its workload-to-
+   5       for u = τi , . . . , t + L − 1 do                                   service ratio. For a fixed report state, define the unscaled
+                                                                               service-time proxy
+                 Read applied action from L(u) if u ≤ t, else the
+   6                                                                                         3
+                 known pending trajectory                                                    X dis
+                 Compute fluid service F using reported base                   Hs (x, α) =            ,      geis = max{10−3 , gis (c̄i + xi , α)}.
+   7                                                                                            ge
+                                                                                             i=1 is
+                 capacity and active expansion
+                                                                                                                                        (33)
+   8             Update qbi ← [qbi − F ]+ + āi                                The quantity geis is the floored reservation denominator used
+                                                                               in the implemented ranking. Dividing packet workload dis by
+   9       end for                                                             reserved packets per slot gives a stage service-time proxy.
+                                                                               Adding the stage proxies gives Hs in slots. This algebra
+  10   end for                                                                 does not incorporate the packet ages or joint stage dynamics
+                                                                               required for a true end-to-end delay bound. The controller
+  11   Return activation-time pre-service projections qbi (t + L)              normalizes this proxy by the headroom-adjusted deadline:
+                                                                                                          ρs = Hs /(ηDs ),
+                                                                                                                                              (34)
+                                                                                             F(η) = {(x, α) ∈ X : ρs ≤ 1 ∀s}.
+B. Finite-grid allocation and sensitivity
+                                                                               For the same reports and candidate actions, 0 < η1 ≤ η2
+The bounded-horizon demand proxy is                                            implies F(η1 ) ⊆ F(η2 ). Thus reducing η cannot create
+                                     p
+         dis = qbis (t + L) + hāis + hvis + 1.                      (27)      a newly feasible candidate at that decision state. If both
+                                                                               sets are nonempty, the minimum feasible proxy cost cannot
+The square-root term is a dispersion heuristic evaluated over
+                                                                               decrease when η is reduced. This local statement does not
+one control interval. It is not a confidence bound on the
+                                                                               imply monotone realized cost over a closed-loop run, where
+longer queue-projection horizon. The additive one-packet
+                                                                               actions also change future reports and queues.
+term is a fixed conservative offset. Both are explicit design
+                                                                                  Holding the projected state and reservations fixed, the
+choices, not parameters inferred from O-RAN measure-
+                                                                               corresponding local sensitivities are
+ments.
+   The decision grid contains                                                      ∂ρs      ρs                          ∂ρs        1
+                                                                                        =− ,                                   =          ,
+                                                                                   ∂η        η                          ∂ qbis   ηDs geis
+                     X = {((0, x2 , x3 ), k/20) :
+                                                                                                                                        (35)
+           x2 , x3 ∈ {0, 1, 2, 3}, k ∈ {1, . . . , 19}},             (28)                      √
+                                                                                  ∂ρs            h
+                              |X | = 304.                                               =          √ ,         vis > 0.                 (36)
+                                                                                  ∂vis    2ηDs geis vis
+
+
+                                                                  Submission manuscript                                                           8
+                                                                                                                IEEE OPEN JOURNAL OF THE
+                                                                                                                COMMUNICATIONS SOCIETY
+
+
+
+
+These derivatives describe the score between changes in                      is an analytical diagnostic, not a newly implemented robust
+integer reservations. They are not derivatives of the selected               policy.
+action, which can jump between grid points. Equation (35)                       Equation (40) connects the sensitivity analysis to the test
+explains why headroom can exclude cheap candidates, while                    design. At equal reservations and error magnitudes, the
+(36) identifies the greater sensitivity associated with small                shorter deadline D0 = 15 amplifies score perturbations
+reservations and short deadlines. At zero variance the square-               by D1 /D0 = 8/3 relative to D1 = 40. Meanwhile, the
+root term is continuous but its derivative is not finite.                    projection horizon is ∆i + L, but the dispersion allowance
+   The ranking is discrete, so a smooth derivative alone                     uses only h = 5. Increasing L therefore extends exposure to
+cannot describe its response to one added capacity unit.                     unmodeled ingress changes without automatically enlarging
+For two classes with integer total capacity C and weights                    that allowance. The ledger removes ambiguity about known
+(w0 , w1 ) = (α, 1 − α), define proportional quotas rs =                     actions, not uncertainty about future traffic. This distinction
+Cws /(w0 + w1 ), fractional
+                       P        parts fs = rs − ⌊rs ⌋ and                    motivates examining both proxy-feasibility frequency and
+remainder ν = C − s ⌊rs ⌋. Largest-remainder allocation                      actual misses in the results.
+gives
+              g0 (C, α) = ⌊r0 ⌋ + ν1{f0 ≥ f1 },                              C. Calibration, execution and comparison policies
+                                                          (37)
+              g1 (C, α) = C − g0 (C, α).                                     Let η ∈ {0.25, 0.5, 0.75, 1} be a dimensionless headroom
+To obtain this expression, floor both proportional quotas                    parameter. The ratios in the ranking are divided by η , so
+and allocate any remaining unit to the larger fractional part,               smaller values impose a stricter surrogate-feasibility thresh-
+using class index for equality. This explains the plateaus and               old. They do not impose a hard constraint on realized packet
+jumps as α changes. In exact arithmetic, g0 = ⌊αC + 1/2⌋.                    misses. The control interval, dispersion term and candidate
+Reproduction uses the computed fractional parts instead:                     grid remain fixed across the headroom candidates.
+binary floating-point values can distinguish a mathematical                     For each policy family m and candidate parameter θ, cal-
+tie. For example, the saved implementation returns (3, 2) at                 ibration estimates the seed mean of each class miss fraction
+C = 5 and α = 0.70. The executed allocation routine is                       in two report-quality strata. Let Umθcs be its one-sided 95%
+retained unchanged, and (37) is checked against it throughout                percentile-bootstrap upper endpoint, where c identifies the
+the relevant grid.                                                           stratum and s the class. Selection is
+                                                                                             ∗
+   For fixed demand and a fixed share, compare candidate                                   θm  = arg min J mθ
+                                                                                                        θ∈Θm
+capacities Ci and Ci + 1. Define the corresponding floored                                                                                 (41)
+                              ′                                                                subject to Umθcs ≤ ϵ       ∀c, s,
+denominators as geis and geis   , as in (33). Their exact contri-
+                                                                                                       −3
+bution to the class-score change is                                                            ϵ = 10       .
+                                         ′                                   The finite set Θm contains the candidate parameters for
+                                 dis (geis  − geis )
+                   ρ′s − ρs = −                ′      .             (38)     family m. Here J averages calibration costs across both
+                                    ηDs geis geis
+                                                                             strata. The threshold is a 0.1% seed-mean miss target, not
+This follows by subtracting the two reciprocal service terms.
+                                                                             a per-packet chance guarantee or an O-RAN service-level
+An added unit can leave one class’s score unchanged if
+                                                                             specification. If a family has no passing candidate, it is
+its reservation does not increase. Its effect is amplified
+                                                                             explicitly marked calibration-ineligible and its prespecified
+when it removes a zero reservation, where the numerical
+                                                                             conservative endpoint is retained for diagnosis only. No
+denominator floor is active. Thus a common share and an
+                                                                             hidden fallback is substituted into the proposed policy during
+integer service budget couple the two classes even though the
+                                                                             a test run.
+score is computed classwise. The quantity in (38) is a proxy
+                                                                                The same calibration rule is applied to the following
+improvement, not an observed change in packet latency.
+                                                                             comparison families. The fixed family enumerates all sixteen
+   The score also permits a finite perturbation bound. At fixed
+                                q      a            v                        profiles (0, x2 , x3 ) on the same calibration seeds. It starts
+candidate reservations, let Eis   , Eis    and Eis      bound the abso-
+                                                                             preprovisioned and retains the earlier drift-based share con-
+lute differences between two projected queues, mean-ingress
+                                                                             troller. It does not use future traffic, but its known bottleneck
+estimates and nonnegative net-flow   √ variance
+                                              √         estimates. From
+                                                         p                   location is used to transpose the selected profile for the
+(27), the triangle inequality and | v ′ − v| ≤ |v ′ − v| give
+                                                                             compute case. Consequently, the fixed comparison evaluates
+                    q
+  |d′is − dis | ≤ Eis       a
+                                  p
+                       + hEis  + hEis      v,                       (39)     complete policies, not the isolated effect of capacity switch-
+                                       q           a
+                                                          p v
+                                                                             ing under identical class shares.
+                           1    X   E  is  +  hE   is  +    hE is
+    |ρ′s − ρs | ≤ Bs :=                                           . (40)        The HPA-inspired adaptation computes a target expansion
+                          ηDs i                   geis
+                                                                             at each expandable stage using target utilization u:
+If such bounds were available and ρs + Bs ≤ 1 for                                                   P          P                3
+both classes, the same candidate would remain surrogate-                                                s āis +   s qis /h
+                                                                                          bi (t) =                            − c̄i ,
+feasible under those perturbations. No such error bounds                                                        u                   0     (42)
+were calibrated or enforced in the executed controller. This                             xi (t) = max bi (v).
+                                                                                                v∈Ht
+
+
+
+
+                                                                Submission manuscript                                                         9
+                                                                                                             IEEE OPEN JOURNAL OF THE
+                                                                                                             COMMUNICATIONS SOCIETY
+
+
+
+
+The clipping operator [z]30 limits z to [0, 3], and Ht con-             Algorithm 2. Reliability-screened selection and elastic
+tains recommendations generated in the last twenty slots.               execution
+Stage 1 has zero expansion. Candidate utilizations are
+                                                                                 Input: calibration seeds, parameter grid, ϵ, frozen test
+0.55, 0.70, 0.85, 0.95. Queue clearance over h slots is a task-           1
+                                                                                 settings
+specific addition to ratio-based sizing. The common finite-
+grid share ranking with η = 1 selects weights for this fixed              2      for each family and candidate parameter do
+target capacity, using the drift projection rather than the
+                                                                                     Execute both calibration strata and compute classwise
+action ledger. This is neither a Kubernetes deployment nor                3
+                                                                                     upper endpoints
+its default timing.
+   The DPP-inspired adaptation uses a price v ∈                           4      end for, select minimum-cost passing candidate by (41)
+{0.1, 0.3, 1, 3} and selects the candidate minimizing
+            X qeL + hāis                                                 5      Lock selections and record any calibration-ineligible family
+                  is
+   vc(x) −                  min{ddrift
+                                  is , gis (c̄i + xi , α)}. (43)
+             i,s
+                     Ds                                                   6      at each elastic control epoch t do
+       L
+Here qeis = [qis + (∆i + L)(āis − µ̄is )]+ , and ddrift replaces                    Read delivered reports, applied ledger and announced
+                                                                          7
+the action-aware queue in (27) with that drift projection.                           activation delay
+Cost breaks objective ties, followed by share index and enu-                         Project queues with Algorithm 1 and compute η -scaled
+                                                                          8
+meration order. Deadline normalization and clipped service                           ratios
+rewards are explicit adaptations. No virtual deadline-deficit                        Select the minimum-ranked candidate from all 304
+                                                                          9
+queues, backpressure differentials or imported Lyapunov                              possibilities
+guarantee are claimed. A failed calibration for this adaptation
+                                                                         10          Enqueue the command at t + L without cancellation
+is not evidence against the broader DPP method family.
+   Two internal ablations complete the comparison. Uncali-
+                                                                         11      end, evaluate held-out cost and misses without retuning
+brated uses the action ledger with η = 1. No ledger uses the
+selected headroom but substitutes qeL for the action-aware
+projection. The latter isolates projection effects at a com-          additionally checks this property in the executable imple-
+mon headroom parameter, not an independently optimized                mentation.
+alternative policy family. Algorithm 2 separates the offline
+selection of parameters from online command execution. The            Proposition 2 (Conservation and service bounds). For every
+selected parameters remain locked throughout the held-out             slot, all queues remain nonnegative, stage service does not
+evaluation.                                                           exceed available capacity, and the total number of generated
+                                                                      packets equals completed packets plus packets remaining in
+V. Formal Properties and Limits                                       the chain. Completed latency is at least three slots.
+The preceding construction supports exact statements about
+information use, packet conservation and the finite-grid de-          Proof:
+cision. These properties are followed by deadline-capacity            Reservations are limited by available queue contents. Bor-
+bounds that identify what even a better ranking rule cannot           rowing only selects a class with a remaining packet and stops
+repair once the remaining service opportunities are insuffi-          at capacity, proving nonnegativity and the service bound.
+cient.                                                                Summing (1)–(2) cancels each internal transfer, leaving
+                                                                      external arrivals minus final-stage completions. Induction
+Proposition 1 (Causality). For fixed configuration and ini-           from empty queues proves conservation. Reverse stage order
+tialization, every elastic decision at time t is a function           prevents a packet from receiving two stages of service in one
+only of reports delivered by t, commands already issued and           slot, giving the latency bound.
+their known activation times. It is independent of unobserved
+future traffic and base-capacity realizations.                        Proposition 3 (Finite-grid decision optimality). The enu-
+                                                                      merator returns a minimum of (32) on X . If any surrogate-
+Proof:                                                                feasible candidate exists, the result is surrogate-feasible and
+The report selector reads only stored payloads and their              has minimum proxy cost among all such candidates.
+timestamps. The ledger contains previously applied com-
+mands. The pending list contains commands issued at earlier           Proof:
+epochs. Equation (26) uses these actions and holds reported           All sixteen expansion vectors and nineteen share values are
+base capacity and ingress fixed. The demand and ranking               visited. The running incumbent changes only for a strictly
+equations are deterministic functions of that projection.             smaller lexicographic score. After the last candidate it is a
+Induction over decision epochs therefore excludes future              minimum over the complete finite set. The leading score
+exogenous trace entries. A future-suffix perturbation test            component ranks every feasible candidate ahead of every
+                                                                      infeasible candidate, and cost is the first varying component
+
+                                                         Submission manuscript                                                                  10
+                                                                                                              IEEE OPEN JOURNAL OF THE
+                                                                                                              COMMUNICATIONS SOCIETY
+
+
+
+
+within the feasible subset. This establishes the stated result,          feasibility. Unlike a steady-state load condition, it retains
+not global stochastic-control optimality.                                residual deadlines and downstream transit time.
+                                                                            For the constant-delay cases, no command issued at or
+Proposition 4 (Actuation irreversibility). Consider two exe-
+                                                                         after t changes capacity before t + L. Let epend    i   (u) be
+cutions with identical exogenous traces, initial states and all
+                                                                         the expansion obtained by replaying the applied action
+applied actions before slot a. A command that first changes
+                                                                         and commands already issued before t, and let emax    i    be 0
+an action at slot a cannot change the on-time-completion
+                                                                         for stage 1 and 3 otherwise. A control-independent upper
+indicator of any packet whose absolute deadline is strictly
+                                                                         envelope on capacity opportunities is
+earlier than a.
+                                                                                         d−(3−i)
+                                                                                                 "         (                        #
+                                                                                           X                 epend
+                                                                                                              i    (u), u < t + L,
+Proof:                                                                      K i (t, d) =           ci (u) + max                       .
+                                                                                           u=t
+                                                                                                             ei ,       u ≥ t + L.
+The deterministic event contract gives identical packet states                                                                      (47)
+and service decisions through slot a − 1 by induction. Every             Since Ki ≤ K i , substituting K i into (46) gives a lower
+completion opportunity up to the stated packet deadline is               bound valid for every subsequent admissible control se-
+therefore identical. A change beginning at a cannot alter                quence under that fixed-delay assumption. Future base capac-
+whether the packet completed by an earlier slot.                         ities are not observed by the controller, so this is a pathwise
+   In particular, a decision issued at t with activation t + L           analytical bound, not an implemented online certificate. In J,
+cannot rescue a packet with deadline below t + L unless                  later-issued commands can have shorter delays. The fixed-L
+other already-scheduled actions do so. This structural ob-               envelope must not be applied to that case.
+servation is not a novel stability theorem. It explains why                 A necessary condition for all packets in any cohort to
+more accurate accounting of pending actions cannot remove                meet their deadlines is that each stage has enough cumulative
+arbitrarily long actuation latency. Preprovisioning, predictive          service opportunities within the union of their allowable
+information before the burst, or a faster local mechanism is             residence intervals. In particular, if a cohort born in [a, b]
+required to change those earlier opportunities.                          has N packets and maximum deadline Dmax , then
+                                                                                         b+Dmax −1
+A. Deadline limits and computational cost
+                                                                                           X
+                                                                                    N≤               Ci (t)       for every stage i.     (48)
+Age resolution sharpens the aggregate capacity obstruction.                                t=a
+At a pre-service slot t, consider measured-cohort packets                Every such packet must consume one unit at every stage
+currently waiting at stages j ≤ i whose absolute deadlines               within that interval. Violation of (48) therefore precludes
+are no later than d, with t ≤ d < T . Their count is                     universal deadline satisfaction. The condition is loose and
+               i X
+               X                                                         not sufficient because it ignores class deadlines, competing
+BiC (t, d) =             χ(t, a)1{t − a + Ds − 1 ≤ d}Xjsa (t).           packets, stage precedence and service timing.
+               j=1 s,a
+                                                                           For disjoint service windows Ij = [aj , bj + Dmax − 1]
+                                                            (44)
+                                                                         containing cohorts of size Nj , the same argument gives the
+Every such packet still needs stage-i service. Because the
+                                                                         zero-miss necessary cost bound
+remaining 3 − i stages each require a later slot, it must leave                                                      +
+stage i no later than d − (3 − i). Even if all available service                            XX             X
+were assigned to these packets, their on-time completion                               J≥           Nj −       ci (t) .        (49)
+count cannot exceed                                                                           i   j              t∈Ij
+                                 d−(3−i)
+                                     X                                   Disjointness prevents counting the same capacity opportunity
+                   Ki (t, d) =             Ci (u),             (45)      twice. This lower bound omits switching charges, competing
+                                     u=t                                 traffic and precedence, so it is not an achievable optimum. It
+with an empty sum interpreted as zero. Let M C (t, d) denote             applies to zero misses for those cohorts, not to the relaxed
+the eventual number of misses among currently queued                     empirical target in this experiment. No approximation ratio
+cohort packets with deadline at most d. The necessary                    or optimality gap is inferred from it.
+pathwise inequality is                                                      With two P classes and three stages fixed, projection work
+        M C (t, d) ≥      max [BiC (t, d) − Ki (t, d)]+ .      (46)      scales with i (∆i + L). The grid requires 304 candidate
+                         i∈{1,2,3}                                       scores, with reusable stage/share calculations. In the general
+To prove the inequality, each on-time packet in the stage-               m-stage extension with E + 1 expansion levels at each
+i subset must consume one distinct service unit in its                   expandable stage and K shares, exhaustive selection scales
+stated window. At most Ki such units exist, leaving at                   as O(K(E + 1)m−1 mS) for S classes. Thus the small
+least [BiC − Ki ]+ misses. The maximum combines valid                    present grid is not evidence of scalability to many indepen-
+lower bounds without counting the same packet multiple                   dent resource domains. The reference implementation retains
+times. The bound relaxes upstream release times, other traffic           a full applied-action ledger. A production implementation
+and reserved shares, so a zero value does not establish                  could discard entries older than the oldest stored report,
+
+
+                                                            Submission manuscript                                                          11
+                                                                                                     IEEE OPEN JOURNAL OF THE
+                                                                                                     COMMUNICATIONS SOCIETY
+
+
+
+
+subject to its report delivery contract. No wall-clock real-          can select different report stages, so payloads need not be
+time feasibility claim is made.                                       identical. Fixed provisioning has a larger calibration search
+                                                                      budget than each elastic family. Each family has only one
+VI. Experimental Method                                               selected test configuration.
+The experiments test the distinction established by the anal-            The prespecified diagnostic fallback parameters are fixed
+ysis: a causal, surrogate-optimal decision need not meet              (3, 3), headroom 0.25, utilization 0.55 and DPP price 0.1.
+packet deadlines. Nominal runs measure cost under the com-            They are used only when the corresponding family has no
+mon reliability screen, shifted workloads probe the deadline          passing calibration candidate, and that status remains visible.
+limits, and ablations isolate the roles of headroom and action        The earlier 800-run delay-gated study is retained in the
+memory.                                                               archive as development history. Its seeds and results are not
+                                                                      pooled with the current experiment, and its 1% calibration
+A. Workloads and experimental controls                                target is not reused.
+Each run has 3340 slots: 300 warm-up slots, a 3000-slot mea-
+sured birth cohort, and a forty-slot tail. Background traffic         B. Statistical evaluation and verification
+continues during the tail. The class deadlines are (15, 40)           The independent replication unit is a complete seed, not a
+slots. An illustrative mapping of twenty milliseconds per             packet. Results average seed-level miss fractions and costs.
+slot gives 300 and 800 milliseconds, not ultra-reliable low-          Two-sided 95% percentile-bootstrap intervals use 10,000
+latency communication (URLLC) deadlines. No measured                  seed resamples [42]. One-sided upper endpoints use the 95th
+mapping from packet units to physical resource blocks or              percentile of 10,000 bootstrap means. Paired comparisons
+central processing unit (CPU) cycles is used.                         resample within-seed differences. Packet dependence within
+   For M and B, a two-state chain begins in the low state.            a run is therefore not mistaken for thousands of independent
+At each slot its low-to-high probability is 0.005 and its             trials.
+high-to-low probability is 0.02. Poisson arrival means in                For a proposed-versus-reference comparison in setting c,
+each state equal the corresponding nominal and burst means            a qualified cost advantage requires: both families passed
+above. Transport capacity is three in the high state and              calibration, both test upper endpoints satisfy Ucs ≤ ϵ for both
+fluctuating base capacity in the low state. Other stages              classes, the upper endpoint of each paired miss difference is
+retain the exogenous base-capacity draws. In B, the number            at most δ = 10−3 , and the upper endpoint of the paired cost
+of arriving batches is Poisson with mean one third of                 difference is negative. The margin δ is 0.1 percentage point.
+the conditional packet rate, and each batch contains three            This is descriptive noninferiority screening under common
+packets. Thus B preserves conditional means but increases             thresholds, not equality of reliability or a guaranteed safety
+conditional variance. These cases alter both burst timing and         claim. Internal ablations are displayed as diagnostic compar-
+its correlation with transport capacity. They are synthetic           isons, not separately calibrated deployment families.
+distribution shifts, not independent real-network datasets.              These intervals are unadjusted across settings, classes,
+   In J, every command delay is sampled uniformly from                candidates and comparators. No familywise confirmatory
+{1, 5, 10, 25, 50} and announced when that command is is-             significance claim is made. The sequential multiplicity-
+sued. Controllers do not see future delay draws. All methods          adjustment procedure in [43] was used for the archived
+share the same delay sequence within a seed. The mean                 study’s separate sign-test family, not retroactively applied to
+delay is 18.2 slots, so P versus J is not a pure variance             these bootstrap screens. Calibration selection and the small
+comparison at equal mean. Multiple commands can activate              six-seed calibration sample can overfit the screen. Fresh test
+in one slot, in issuance order. Commands with longer delays           seeds mitigate reuse of outcomes but do not remove finite-
+may activate after subsequently issued commands. They are             sample uncertainty or protect against distribution shift.
+not silently canceled or superseded.                                     An all-zero sample gives a zero-width percentile interval.
+   The local protocol, parameter grids and failure rule were          It does not prove zero risk. With zero seeds exhibiting any
+written before these calibration and test executions. It is not       miss among twenty independent, identically distributed test
+an externally registered protocol. Calibration seeds 12000–           seeds, an exact one-sided 95% binomial upper bound for
+12005 are distinct from test seeds 13000–13019. The two               the probability that a whole run exhibits any miss is 1 −
+calibration strata are P and R, each at ten-slot actuation delay.     0.051/20 = 0.1391. This is a run-event bound, not a packet-
+Sixteen fixed profiles plus four candidates for each of the           miss bound. The all-zero bootstrap result is consequently
+three elastic families give (16 + 4 + 4 + 4) × 2 × 6 = 336            treated as a descriptive screen, not a rare-event certificate.
+calibration executions. After selection, seven settings, six             Verification links this statistical protocol back to the math-
+methods and twenty seeds give 840 test executions. All six            ematical model. Independent age-bin reconstruction checks
+methods use the same seed-specific exogenous trace, the               six complete executions and 306 stage/deadline cuts against
+same request-index loss flags and one request every five              frozen outcomes. The release runs 51 unit-test methods,
+slots. Trace hashes, admitted cohort counts and delivered-            historical-regression checks, an independent packet replay
+report counts are checked for equality. Different methods             and complete reconciliation of all 1176 new execution
+
+
+                                                         Submission manuscript                                                       12
+                                                                                                                  IEEE OPEN JOURNAL OF THE
+                                                                                                                  COMMUNICATIONS SOCIETY
+
+
+
+TABLE 3. Fixed parameters and complete held-out matrix. Each setting runs six methods on twenty seeds.
+
+
+          Item                         Specification
+
+          Common model                 Three stages, two classes, h = 5, W = 20, κ = 0.25
+          Base capacity                5 + ξ per stage, ξ sampled from (−1, 0, 0, 1)
+          Periodic bursts              Means (0.9, 2.1) outside and (1.8, 3.8) inside t mod 600 ∈ [180, 290)
+          Capacity stress              Stage 2 capacity 3 during t mod 600 ∈ [170, 310)
+          Initialization               Queue (0, 0), ingress (0.9, 2.1), service (2.5, 2.5), variance (1, 1), capacity 5
+          P                            Periodic bursts, transport stress, (R, p, L) = (3, 0.05, 10)
+          M                            Markov-modulated Poisson traffic and transport stress, (3, 0.05, 10)
+          B                            Markov-modulated batches of three, same conditional means, (3, 0.05, 10)
+          C                            Periodic bursts with stress relocated to stage 3, (3, 0.05, 10)
+          R                            Periodic transport stress with degraded reports, (9, 0.15, 10)
+          L                            Periodic transport stress, long actuation delay, (3, 0.05, 50)
+          J                            Periodic transport stress, (R, p) = (3, 0.05), announced L ∈ {1, 5, 10, 25, 50}
+
+
+
+records. Tests include uncached finite-grid enumeration,                        Figure 5 renders every part of the unchanged comparison
+constant delay regression, variable-delay activation order,                  rule. The paired cost condition passes in all seven settings.
+future-trace exclusion, compound-arrival construction and                    Reliability, not the sign of the cost difference, determines
+independent replay under jitter. Six selected full test runs are             which savings can be qualified. P, R and J pass every
+regenerated and compared exactly to saved records. Math-                     condition. M, B and L fail the proposed absolute-risk screen,
+ematical cost definitions include every applied command                      while C fails because the fixed reference exceeds its class-1
+change, including multiple changes within a slot. Tables                     target. This is why the zero observed misses of the proposed
+and vector plots are built directly from execution records in                policy in C do not produce a qualified comparison under
+JavaScript Object Notation (JSON). The final Portable Doc-                   the declared rule. Table 5 supplies the endpoints behind
+ument Format (PDF) file is compiled to resolved references                   that decision. In P, mean cost is 4159.85 versus 6680.00 for
+and checked separately from its intermediate build passes.                   fixed provisioning. The paired difference is −2520.15, with
+                                                                             a 95% interval approximately [−2593.1, −2447.0]. Qualified
+VII. Results and Mechanistic Interpretation                                  savings are 37.73% in P, 37.10% in R and 35.61% in J.
+The results follow the evaluation protocol in three stages.                  Figure 6 shows why negative cost differences in the other
+Calibration and held-out screening first identify admissi-                   settings must remain unqualified. These comparisons use
+ble cost comparisons. Traffic and delay shifts then expose                   common thresholds, not proof that the policies have identical
+failures. Finally, ablations connect those outcomes to the                   underlying reliability.
+capacity, switching and workload terms in the model.                            Figure 7 separates resource cost from each class’s miss
+   The selected fixed expansion is (x2 , x3 ) = (2, 0), the                  fraction. Under Markov traffic M, proposed mean misses
+selected headroom is η = 0.75, and the selected utilization is               are 0.0915% and 0.8811%. Under compound batches B,
+u = 0.85. No DPP-inspired candidate passes both calibration                  they are 0.3413% and 0.1297%. Their upper endpoints
+strata, so price v = 0.1 remains diagnostic only. Figure 3                   fail the target. Mean-matched burst states therefore do not
+reports all candidates, including failed choices. The three                  preserve the periodic calibration result. Both the duration of
+lower headroom values pass the empirical calibration screen.                 unfavorable service periods and the arrival process seen by
+The η = 1 variant does not. Selection minimizes cost                         each queue matter. For batch size b = 3, conditional arrivals
+among passing grid points, not over an unknown continuous                    are As = bKs with Ks ∼ Poisson(λs /b). Hence
+optimum or a confidence-certified feasible set. Table 4 and                             E[As | λs ] = λs ,          Var(As | λs ) = bλs .    (50)
+Figure 4 isolate the headroom sweep on identical calibration
+seeds. Tightening η contracts the candidate set in (34), which               The compound case changes dispersion without changing
+is consistent with higher observed resource cost. The values                 conditional mean. However, the reported vis measures net
+0.25 and 0.50 purchase substantially more capacity than                      ingress minus service, not arrival variance alone. Reserva-
+0.75 without improving their already-zero empirical miss                     tions and borrowing also change with the resulting queue
+endpoints. Those zeros do not establish equal true risk.                     trajectories. The opposite movements of the two class means
+At η = 1, reduced provisioning is accompanied by failed                      between M and B therefore cannot be summarized as a
+endpoints. The trade-off is therefore substantive, not merely                monotone classwise variance effect.
+a tunable score with no connection to packet outcomes.                          In L, L = 50 exceeds both deadlines, and class-1 mean
+                                                                             misses reach 8.7846% versus 0.0208% for fixed provision-
+
+                                                                Submission manuscript                                                          13
+                                                                                                                                                                                       IEEE OPEN JOURNAL OF THE
+                                                                                                                                                                                       COMMUNICATIONS SOCIETY
+
+
+
+
+                                                                                                                                                           Fixed                HPA-inspired          0.1% screen
+                                                                                                                                                           Proposed             DPP-inspired
+
+                                              102
+    Worst class/stratum upper endpoint (%)
+
+
+
+
+                                              101
+                                                                   eta=1.0
+                                              100
+
+
+                                             10−1
+
+
+                                             10−2
+
+
+                                             10−3
+
+                                                                             eta=0.75                                                                                        eta=0.5                  eta=0.25
+                                             10−4
+
+                                                       0       2500          5000              7500           10000                                          12500             15000         17500        20000
+                                                                                           Mean incremental calibration cost
+
+FIGURE 3. Calibration cost and worst class/stratum upper endpoint. Each marker represents one candidate evaluated on twelve runs. The horizontal
+line is the 0.1% screening target. Points below the display floor represent zero empirical endpoints, not certified zero risk.
+
+
+
+TABLE 4. Headroom sensitivity on calibration seeds. Upper endpoints are percentages.
+
+
+                                                                               η      Mean cost       Upper V0                                       Upper V1     Eligible
+
+                                                                             0.25      18365.44          0.0000                                        0.0000     Yes
+                                                                             0.50      13621.71          0.0000                                        0.0000     Yes
+                                                                             0.75          4226.92       0.0000                                        0.0000     Yes
+                                                                             1.00          2678.08       0.7315                                        1.3879     No
+
+
+
+
+                                                     (a) Provisioning cost                                                                                 (b) Classwise risk screen
+                                                                                                                                                     1.4          Class 0
+                                                                                                                  Worst-stratum upper endpoint (%)
+
+
+
+
+                                             18000
+                                                                                                                                                                  Class 1
+                                             16000                                                                                                   1.2          0.1% target
+    Mean calibration cost
+
+
+
+
+                                             14000                                                                                                   1.0
+
+                                             12000                                                                                                   0.8
+
+                                             10000
+                                                                                                                                                     0.6
+                                              8000
+                                                                                                                                                     0.4
+                                              6000
+                                                                                                                                                     0.2
+                                              4000
+                                                                                                                                                     0.0
+                                              2000
+                                                     0.25       0.50                0.75              1.00                                                 0.25                0.50            0.75           1.00
+                                                                   Headroom η                                                                                                    Headroom η
+
+FIGURE 4. Sensitivity to headroom on the frozen calibration grid. Left: mean incremental cost. Right: worst-stratum classwise upper endpoints. The
+dashed line marks the empirical screening target.
+
+
+
+                                                                                                 Submission manuscript                                                                                               14
+                                                                                                                                                       IEEE OPEN JOURNAL OF THE
+                                                                                                                                                       COMMUNICATIONS SOCIETY
+
+
+
+
+                                        Filled circle: pass       Cross: fail
+
+                          P
+
+
+                       M
+  Held-out setting
+
+
+
+
+                         B
+
+
+                         C
+
+
+                         R
+
+
+                           L
+
+
+                              J
+
+                                              Calibration                Proposed                  Fixed                     Paired                Paired           Complete
+                                              both pass                 absolute risk           absolute risk             miss margin             cost < 0           screen
+
+FIGURE 5. Qualification of proposed versus fixed capacity, decomposed by condition.
+
+
+TABLE 5. Common-target comparison against fixed capacity. Upper endpoints are percentages. Cost intervals are paired, unadjusted 95% intervals.
+
+
+                                                              Setting     Proposed (U0 , U1 )       Fixed (U0 , U1 )            ∆J [95% interval]     Qualified
+
+                                                              P            (0.0000, 0.0000)         (0.0000, 0.0457)     -2520.2 [-2593.1, -2447.0]   Yes
+                                                              M            (0.2485, 1.9804)         (0.0173, 2.4488)     -2180.8 [-2448.9, -1889.4]   No
+                                                              B            (0.6058, 0.2601)         (0.2013, 0.7197)      -1402.7 [-1917.4, -844.9]   No
+                                                              C            (0.0000, 0.0000)         (0.0000, 0.1349)     -2506.4 [-2584.6, -2425.6]   No
+                                                              R            (0.0331, 0.0000)         (0.0000, 0.0789)     -2478.2 [-2577.8, -2378.0]   Yes
+                                                              L            (1.1927, 9.8982)         (0.0000, 0.0623)     -2156.4 [-2227.3, -2082.4]   No
+                                                              J            (0.0000, 0.0062)         (0.0140, 0.0581)     -2378.9 [-2463.9, -2286.0]   Yes
+
+
+
+                                             Paired cost difference with 95% intervals
+                                        P                                   qualified
+
+
+
+                                        M                                                             unqualified
+                     Held-out setting
+
+
+
+
+                                        B                                                                                                         unqualified
+
+
+
+                                        C                                    unqualified
+
+
+
+                                        R                                       qualified
+
+
+
+                                        L                                                    unqualified
+
+
+
+                                         J                                         qualified
+
+                                             −3000                 −2500                    −2000                −1500               −1000                  −500           0
+                                                                           Paired incremental-cost difference (proposed minus fixed)
+
+FIGURE 6. Paired cost differences, proposed minus fixed. Green denotes a comparison satisfying the entire descriptive qualification rule. Gray denotes
+an unqualified comparison, regardless of the direction of its cost difference. Intervals are unadjusted 95% paired-bootstrap intervals.
+
+
+
+                                                                                                      Submission manuscript                                                       15
+                                                                                                                                           IEEE OPEN JOURNAL OF THE
+                                                                                                                                           COMMUNICATIONS SOCIETY
+
+
+
+
+                                                                            Proposed          Fixed             HPA-inspired       DPP-inspired
+
+                                                 (a) Resource cost
+                      20000
+   Incremental cost
+
+
+
+
+                      15000
+
+                      10000
+
+                               5000
+
+                                            0
+
+                                                 (b) Class 0 deadline misses
+                                           10
+                      Class 0 misses (%)
+
+
+
+
+                                            1
+
+
+                                           0.1
+
+
+                                            0
+
+
+                                                 (c) Class 1 deadline misses
+                                           10
+                      Class 1 misses (%)
+
+
+
+
+                                            1
+
+
+                                           0.1
+
+
+                                            0
+                                                       P             M                 B                    C                  R               L             J
+                                                                         Held-out setting (linear below 0.1%, logarithmic above)
+
+FIGURE 7. Held-out costs and deadline-miss percentages with unadjusted 95% seed-bootstrap intervals. P, M, B, C, R, L and J are defined in Table 3.
+The 0.1% dashed line is the common target. The DPP-inspired adaptation is calibration-ineligible and diagnostic only.
+
+
+
+ing. For any packet already present at issue, ωsa ≤ 0 because                                           questions: ledger availability at fixed headroom, and head-
+L > Ds . Its current command therefore cannot change an                                                 room selection with the ledger present. Their effects should
+on-time completion. The irreversibility property explains the                                           not be merged into one causal attribution. To connect these
+timing obstruction: a new command cannot change service                                                 cost differences to the objective, write
+before activation. The horizon mismatch in (40) provides                                                                                          X
+                                                                                                                    J = Jcap + Jsw ,       Jcap =     ei (t),
+an additional reason not to interpret a bounded dispersion
+                                                                                                                                                       t,i
+term as protection against this delay. J instead mixes shorter                                                                 X                                      (51)
+and longer delays, has mean 18.2 slots, and announces each                                                           Jsw = κ          ∥xa − e−
+                                                                                                                                             a ∥1 .
+delay on issue. Its successful screen neither contradicts L                                                                    a∈AT
+
+nor isolates the effect of jitter at equal mean delay.                                                  Figure 9 recomputes these terms from the saved per-run
+   Figure 8 compares the proposed controller with a rate-only                                           counters. The hatched caps in panel (a) show switching,
+projection at the same headroom and with an uncalibrated                                                enlarged separately in panel (b). They are not additional
+ledger variant. In P, the no-ledger cost is 4619.93 versus                                              experiments or newly selected outcomes.
+4159.85 for the proposed policy, approximately a 9.96%                                                    In P, the ledger variant has mean capacity cost 4100.75
+reduction. Both have zero observed misses. The uncalibrated                                             and switching cost 59.10. The no-ledger values are 4551.25
+controller is cheaper at 2737.40, but its class means become                                            and 68.675. The capacity difference is 450.50, accounting
+0.0570% and 0.1447%. The two ablations answer different                                                 for 97.92% of the total mean cost difference. Thus the
+
+
+                                                                                           Submission manuscript                                                        16
+                                                                                                                             IEEE OPEN JOURNAL OF THE
+                                                                                                                             COMMUNICATIONS SOCIETY
+
+
+
+
+                                                                           Proposed           Uncalibrated       No ledger
+
+                                          (a) Resource cost
+
+                        6000
+    Incremental cost
+
+
+
+
+                        4000
+
+
+                        2000
+
+
+                                     0
+
+                                          (b) Class 0 deadline misses
+                                    10
+               Class 0 misses (%)
+
+
+
+
+                                     1
+
+
+                                    0.1
+
+
+                                     0
+
+
+                                          (c) Class 1 deadline misses
+
+                                    10
+               Class 1 misses (%)
+
+
+
+
+                                     1
+
+
+                                    0.1
+
+
+                                     0
+                                               P              M               B                   C              R               L                J
+                                                                  Held-out setting (linear below 0.1%, logarithmic above)
+
+FIGURE 8. Component ablations on identical test seeds. The uncalibrated controller uses η = 1. The no-ledger controller retains selected headroom
+but uses a drift projection. The error bars describe seed-mean uncertainty, not predictive confidence bounds for the controller.
+
+
+
+nominal saving is primarily reduced active capacity, not                                       rion, a prediction-accuracy test, or an event-level correlation
+merely reduced switching charges.                                                              analysis.
+   The ledger is not uniformly beneficial to deadlines. In L,                                     The proposed controller declares 85.67% of decisions
+its class-1 mean miss fraction is 8.7846% compared with                                        feasible in P and 86.09% in M, although the worse class
+3.9807% without the ledger. Neither passes the absolute                                        mean changes from zero to 0.8811%. In L, 82.60% of
+screen, and the ledger uses less capacity. This is a cost–risk                                 decisions remain surrogate-feasible while the worse class
+trade-off, not evidence that the ledger is always preferable.                                  mean reaches 8.7846%.
+The aggregate counters also do not measure forecast error                                         Equations (11)–(13) explain why a positive queue-level
+or explain the timing of every capacity release. Such mech-                                    margin does not reveal recoverable deadline slack. Likewise,
+anisms require per-slot traces.                                                                (39)–(40) show that a nominal ρs ≤ 1 leaves demand-error
+   Define the run-level feasible-decision frequency                                            exposure unbudgeted. The proxy does not encode packet
+                 1    X                                                                        ages, coupled downstream forecasts or an error budget over
+          ϕ=               1{max ρs (xt , αt ) ≤ 1},      (52)                                 the full activation horizon. Consequently, similar values of ϕ
+               Nctrl            s
+                                                   t∈Tctrl
+                                                                                               can coexist with very different deadline outcomes. Smaller
+where Tctrl is the set of control epochs and Nctrl its size.                                   headroom tightens the score, but it does not repair those
+Figure 10 compares the seed-mean ϕ with the worse of                                           omitted state variables.
+the two class seed-mean miss fractions. This exploratory
+diagnostic uses existing counters. It is not a calibration crite-
+
+                                                                                  Submission manuscript                                                     17
+                                                                                                                                                                                     IEEE OPEN JOURNAL OF THE
+                                                                                                                                                                                     COMMUNICATIONS SOCIETY
+
+
+
+
+                                                                                      Ledger, calibrated                No ledger                     Ledger, uncalibrated
+
+
+                                                      (a) Active capacity + switching                                                                              (b) Switching component
+
+
+            Mean incremental cost              6000                                                                                                          120
+
+
+
+
+                                                                                                                                       Mean switching cost
+                                               5000
+                                                                                                                                                             100
+                                               4000
+
+                                                                                                                                                             80
+                                               3000
+
+                                               2000
+                                                                                                                                                             60
+
+                                               1000
+                                                                                                                                                             40
+                                                 0
+                                                          P          M         B           C        R              L               J                                P    M       B    C      R   L     J
+                                                                                   Held-out setting                                                                           Held-out setting
+
+
+FIGURE 9. Post hoc cost decomposition of the frozen ablation runs. Hatched caps denote switching cost.
+
+
+                                                              Ledger, calibrated           No ledger                   Ledger, uncalibrated
+            Worse class mean miss percentage
+
+
+
+
+                                                                                       L
+                                                10
+
+
+                                                                                                                   M
+                                                 1
+
+                                                                                                                   B
+                                                0.1
+
+                                                                                                                        R
+                                               0.01
+
+
+                                                                                                               C
+                                                 0                                             J
+                                                                                                        P
+                                                                80.0               82.5            85.0                     87.5                      90.0                92.5            95.0       97.5
+                                                                              Mean fraction of control epochs declared surrogate-feasible (%)
+
+FIGURE 10. Post hoc proxy–outcome diagnostic. Labels identify proposed-policy settings. The dashed line is 0.1%.
+
+
+
+VIII. Discussion and Deployment Boundary                                                                                      IX. Conclusion
+The supported advantage is conditional. P and R test repeata-                                                                 The action-ledger controller separates measured, requested
+bility within the calibration traffic constructions, while J tests                                                            and activated capacity. With independently calibrated head-
+one announced-delay law. Failures in M, B and L prevent                                                                       room, it yields qualified cost reductions of 35.61–37.73%
+extrapolation to general workload or latency robustness.                                                                      against fixed provisioning in three of seven synthetic settings.
+Integer reservations, headroom and ledger replay explain                                                                      Its nominal ledger ablation saves approximately 9.96%,
+how decisions are formed. Their consistency with aggre-                                                                       primarily through lower active capacity, with zero observed
+gate results does not identify forecast accuracy or establish                                                                 misses for both variants. Shifted traffic and long actua-
+packet-level guarantees.                                                                                                      tion nevertheless expose deadline failures despite frequent
+   Six seeds per calibration stratum, twenty per test set-                                                                    surrogate-feasible decisions. The resulting contribution is
+ting, all-zero samples and unadjusted comparisons limit                                                                       an auditable controller and a reproducible boundary on its
+inference at the 0.1% target. The fixed reference has its                                                                     empirical benefit, not a deadline certificate or demonstrated
+own share policy, and HPA/DPP are adaptations. Neither                                                                        superiority over deployed O-RAN systems.
+competitive-system reproduction nor physical O-RAN val-
+idation is provided. The next validation steps are measured
+service and interface-delay mappings, recorded workloads,
+independently implemented baselines and larger reliability
+experiments. Channel variation, retransmissions and virtual-
+ization interference must enter that model before interpreting
+abstract cost as deployment benefit.
+
+
+
+                                                                                                            Submission manuscript                                                                               18
+                                                                                                              IEEE OPEN JOURNAL OF THE
+                                                                                                              COMMUNICATIONS SOCIETY
+
+
+
+
+Appendix A
+Complete Held-Out Results
+Table 6 reports every method and setting using the same classwise metrics.
+TABLE 6. Complete test results, twenty seeds per row. Miss fractions and one-sided upper endpoints are percentages. DPP-inspired results are
+diagnostic after calibration failure.
+
+                                 Setting   Method         Mean V0    Mean V1       Upper V0     Upper V1   Mean cost
+                                 P         Proposed        0.0000       0.0000         0.0000     0.0000     4159.85
+                                 P         Fixed           0.0000       0.0152         0.0000     0.0457     6680.00
+                                 P         HPA-inspired    0.0000       0.1436         0.0000     0.3977     7400.26
+                                 P         DPP-inspired    6.9240       0.0000         7.7209     0.0000    19805.75
+                                 P         Uncalibrated    0.0570       0.1447         0.1463     0.2973     2737.40
+                                 P         No ledger       0.0000       0.0000         0.0000     0.0000     4619.93
+                                 M         Proposed        0.0915       0.8811         0.2485     1.9804     4499.21
+                                 M         Fixed           0.0058       1.2169         0.0173     2.4488     6680.00
+                                 M         HPA-inspired    1.0388       1.6008         2.9262     3.5819     7932.65
+                                 M         DPP-inspired    6.8437       0.7340         7.8499     1.5975    19779.96
+                                 M         Uncalibrated    0.3303       1.4469         0.6362     2.9848     2671.89
+                                 M         No ledger       0.0942       0.8468         0.2135     1.8537     4992.29
+                                 B         Proposed        0.3413       0.1297         0.6058     0.2601     5277.30
+                                 B         Fixed           0.1084       0.4146         0.2013     0.7197     6680.00
+                                 B         HPA-inspired    0.4319       0.4528         0.8366     0.9144     7729.49
+                                 B         DPP-inspired    5.8678       0.0652         7.5206     0.1349    19738.71
+                                 B         Uncalibrated    0.9710       0.7176         1.5660     1.2352     2329.66
+                                 B         No ledger       0.1766       0.1378         0.3322     0.2777     6044.76
+                                 C         Proposed        0.0000       0.0000         0.0000     0.0000     4173.62
+                                 C         Fixed           0.0000       0.0450         0.0000     0.1349     6680.00
+                                 C         HPA-inspired    0.0000       0.0618         0.0000     0.1853     7388.18
+                                 C         DPP-inspired    6.6611       0.0000         7.3007     0.0000    19790.64
+                                 C         Uncalibrated    0.1099       0.1963         0.2439     0.4068     2715.18
+                                 C         No ledger       0.0000       0.0000         0.0000     0.0000     4653.68
+                                 R         Proposed        0.0110       0.0000         0.0331     0.0000     4201.81
+                                 R         Fixed           0.0000       0.0263         0.0000     0.0789     6680.00
+                                 R         HPA-inspired    0.0000       0.1031         0.0000     0.2656     6814.40
+                                 R         DPP-inspired    6.6940       0.0000         7.7193     0.0000    19766.59
+                                 R         Uncalibrated    0.1412       1.5900         0.2721     2.2523     2569.54
+                                 R         No ledger       0.0414       0.0000         0.1243     0.0000     4609.25
+                                 L         Proposed        0.7593      8.7846          1.1927     9.8982     4523.64
+                                 L         Fixed           0.0000      0.0208          0.0000     0.0623     6680.00
+                                 L         HPA-inspired    1.3767      7.2461          2.0694     8.8912     6731.15
+                                 L         DPP-inspired    5.7789      0.0000          6.6497     0.0000    19461.90
+                                 L         Uncalibrated    1.7900     16.4355          2.4647    17.7445     3226.75
+                                 L         No ledger       1.3369      3.9807          1.8522     4.8110     5314.18
+                                 J         Proposed        0.0000       0.0021         0.0000     0.0062     4301.07
+                                 J         Fixed           0.0047       0.0194         0.0140     0.0581     6680.00
+                                 J         HPA-inspired    0.0000       0.1194         0.0000     0.3582     7312.54
+                                 J         DPP-inspired    6.0246       0.0000         6.8568     0.0000    19819.75
+                                 J         Uncalibrated    0.0302       1.0178         0.0636     1.4476     2776.40
+                                 J         No ledger       0.0000       0.0000         0.0000     0.0000     4716.75
+
+
+
+
+                                                               Submission manuscript                                                      19
+                                                                                                                   IEEE OPEN JOURNAL OF THE
+                                                                                                                   COMMUNICATIONS SOCIETY
+
+
+
+
+Appendix B
+Complete Paired Comparisons
+Table 7 reports cost and miss differences for every comparator.
+TABLE 7. All paired contrasts, proposed minus comparator. Miss differences and upper endpoints are percentage points. No multiplicity-adjusted claim
+is made.
+
+                       Setting   Comparator                  ∆J [95% interval]          Mean (∆V0 , ∆V1 )    Upper (∆V0 , ∆V1 )
+                       P         Fixed               -2520.2 [-2593.1, -2447.0]         (0.0000, -0.0152)     (0.0000, 0.0000)
+                       P         HPA-inspired        -3240.4 [-3351.1, -3130.5]         (0.0000, -0.1436)     (0.0000, 0.0000)
+                       P         DPP-inspired     -15645.9 [-15721.6, -15569.6]         (-6.9240, 0.0000)     (-6.1061, 0.0000)
+                       P         Uncalibrated          1422.5 [1357.5, 1490.1]          (-0.0570, -0.1447)    (0.0000, -0.0284)
+                       P         No ledger               -460.1 [-510.0, -410.2]         (0.0000, 0.0000)     (0.0000, 0.0000)
+                       M         Fixed               -2180.8 [-2448.9, -1889.4]         (0.0857, -0.3358)     (0.2312, -0.1143)
+                       M         HPA-inspired        -3433.4 [-3647.5, -3181.9]         (-0.9473, -0.7197)    (0.0015, 0.0200)
+                       M         DPP-inspired     -15280.8 [-15559.1, -14975.8]         (-6.7522, 0.1471)     (-5.7626, 0.3231)
+                       M         Uncalibrated          1827.3 [1718.1, 1944.4]          (-0.2388, -0.5658)   (-0.0195, -0.0159)
+                       M         No ledger               -493.1 [-586.8, -403.3]        (-0.0028, 0.0344)     (0.0924, 0.1165)
+                       B         Fixed                -1402.7 [-1917.4, -844.9]         (0.2329, -0.2850)     (0.4310, -0.1079)
+                       B         HPA-inspired        -2452.2 [-2614.5, -2295.6]         (-0.0905, -0.3231)    (0.0997, -0.0685)
+                       B         DPP-inspired     -14461.4 [-14977.8, -13899.2]         (-5.5265, 0.0645)     (-4.1229, 0.1515)
+                       B         Uncalibrated          2947.6 [2710.2, 3175.2]          (-0.6297, -0.5879)   (-0.2582, -0.2014)
+                       B         No ledger               -767.5 [-839.8, -690.4]        (0.1647, -0.0081)     (0.3303, 0.0000)
+                       C         Fixed               -2506.4 [-2584.6, -2425.6]         (0.0000, -0.0450)     (0.0000, 0.0000)
+                       C         HPA-inspired        -3214.6 [-3358.2, -3071.5]         (0.0000, -0.0618)     (0.0000, 0.0000)
+                       C         DPP-inspired     -15617.0 [-15710.2, -15526.1]         (-6.6611, 0.0000)     (-5.9980, 0.0000)
+                       C         Uncalibrated          1458.5 [1393.4, 1520.2]          (-0.1099, -0.1963)   (-0.0062, -0.0326)
+                       C         No ledger               -480.1 [-544.8, -417.0]         (0.0000, 0.0000)     (0.0000, 0.0000)
+                       R         Fixed               -2478.2 [-2577.8, -2378.0]         (0.0110, -0.0263)     (0.0331, 0.0000)
+                       R         HPA-inspired        -2612.6 [-2782.0, -2432.3]         (0.0110, -0.1031)     (0.0331, 0.0000)
+                       R         DPP-inspired     -15564.8 [-15669.4, -15463.9]         (-6.6830, 0.0000)     (-5.6565, 0.0000)
+                       R         Uncalibrated          1632.3 [1541.1, 1726.6]          (-0.1302, -1.5900)   (-0.0172, -0.9720)
+                       R         No ledger               -407.4 [-476.0, -341.8]        (-0.0304, 0.0000)     (0.0221, 0.0000)
+                       L         Fixed               -2156.4 [-2227.3, -2082.4]          (0.7593, 8.7638)     (1.1927, 9.8689)
+                       L         HPA-inspired        -2207.5 [-2330.2, -2083.7]         (-0.6174, 1.5385)     (0.0462, 3.0453)
+                       L         DPP-inspired     -14938.3 [-15000.8, -14871.3]         (-5.0197, 8.7846)     (-4.2307, 9.8982)
+                       L         Uncalibrated          1296.9 [1217.8, 1376.6]          (-1.0308, -7.6509)   (-0.5847, -6.6234)
+                       L         No ledger               -790.5 [-874.8, -698.8]        (-0.5776, 4.8039)     (-0.0554, 5.5754)
+                       J         Fixed               -2378.9 [-2463.9, -2286.0]         (-0.0047, -0.0173)    (0.0000, 0.0000)
+                       J         HPA-inspired        -3011.5 [-3146.5, -2883.1]         (0.0000, -0.1173)     (0.0000, 0.0042)
+                       J         DPP-inspired     -15518.7 [-15624.6, -15403.8]         (-6.0246, 0.0021)     (-5.2649, 0.0062)
+                       J         Uncalibrated          1524.7 [1446.8, 1604.0]          (-0.0302, -1.0158)    (0.0000, -0.6151)
+                       J         No ledger               -415.7 [-478.1, -355.4]         (0.0000, 0.0021)     (0.0000, 0.0062)
+
+
+
+
+                                                                Submission manuscript                                                             20
+                                                                                                                    IEEE OPEN JOURNAL OF THE
+                                                                                                                    COMMUNICATIONS SOCIETY
+
+
+
+
+Appendix C                                                                     [10] J. A. Ayala-Romero et al., “vrAIn: A Deep Learning Approach
+Reproduction Contract                                                               Tailoring Computing and Radio Resources in Virtualized RANs,”
+                                                                                    ACM MobiCom, 2019. 10.1145/3300061.3345431.
+Run python reliability_study.py to reproduce                                   [11] G. Garcia-Aviles et al., “Nuberu: Reliable RAN virtualization in shared
+the calibration and held-out matrix. Existing complete                              platforms,” ACM MobiCom, 2021. 10.1145/3447993.3483266.
+checkpoints are reused only if the frozen protocol                             [12] X. Foukas and B. Radunovic, “Concordia: Teaching the 5G vRAN to
+hash matches. Remove or relocate those specific                                     Share Compute,” ACM SIGCOMM, 2021. Author/publisher source.
+checkpoint files to execute all runs anew. Run python                          [13] M. Kalntis, G. Iosifidis, and F. A. Kuipers, “Adaptive Resource
+                                                                                    Allocation for Virtualized Base Stations in O-RAN With Online
+verify_reliability.py to reconcile all metrics                                      Learning,” IEEE Transactions on Communications, vol. 73, no. 3, pp.
+and selected deterministic replays, followed by python                              1787–1800, 2025. 10.1109/TCOMM.2024.3461569.
+build_reliability_paper.py                and    python                        [14] O. Adamuz-Hinojosa, L. Zanzi, V. Sciancalepore, and X. Costa-
+                                                                                    Perez, “MAREA: A Delay-Aware Multi-Time-Scale Radio Resource
+build_release.py. The archive includes the exact                                    Orchestrator for 6G O-RAN,” IEEE Transactions on Communications,
+dependency versions and checksums. The PDF is generated                             vol. 73, no. 9, pp. 7695–7710, 2025. 10.1109/TCOMM.2025.3552296.
+from saved results, not from hand-entered headline                             [15] S. D. A. Shah, M. Hafeez, A. Salama, and S. A. R. Zaidi,
+numbers. Reproduction establishes consistency of this                               “Proactive AI-and-RAN Workload Orchestration in O-RAN Archi-
+                                                                                    tectures for 6G Networks,” author version, arXiv:2507.09124, 2025.
+synthetic experiment, not external validity for a physical                          10.48550/arXiv.2507.09124.
+network.                                                                       [16] F. W. Murti, S. Ali, G. Iosifidis, and M. Latva-aho, “Learning-
+                                                                                    Based Orchestration for Dynamic Functional Split and Resource
+                                                                                    Allocation in vRANs,” EuCNC/6G Summit, 2022. 10.1109/Eu-
+Data and Code Availability                                                          CNC/6GSummit54941.2022.9815815.
+The archive provides code, the frozen protocol, all 1176 exe-                  [17] Q. Wang et al., “Resource Allocation Based on Radio Intelligence
+cution records, verification tests, manuscript sources and vec-                     Controller for Open RAN Toward 6G,” IEEE Access, vol. 11, pp.
+tor figures. Additional diagnostics reuse those records. His-                       97909–97919, 2023. 10.1109/ACCESS.2023.3311888.
+torical studies remain separate. No external dataset is used.                  [18] V. Kasuluru et al., “Cloud-Native Multivariate Probabilistic Forecast-
+                                                                                    ing for Next-Generation Resource Allocation in O-RAN,” IEEE Ac-
+The code, frozen execution records and reproduction in-                             cess, vol. 14, pp. 2904–2923, 2026. 10.1109/ACCESS.2025.3648065.
+structions are available at github.com/YassirALKarawi/oran-                    [19] A. Tuerxun and A. Nakao, “SORA: Energy-Efficient Resource Al-
+telemetry-elasticity.                                                               location in Open Radio Access Network With Online Learning,”
+                                                                                    IEEE Access, vol. 13, pp. 113686–113701, 2025. 10.1109/AC-
+                                                                                    CESS.2025.3584345.
+REFERENCES                                                                     [20] A. E. Giannopoulos et al., “COMIX: Generalized Conflict Man-
+ [1] M. Polese et al., “Understanding O-RAN: Architecture, Interfaces,              agement in O-RAN xApps—Architecture, Workflow, and a Power
+     Algorithms, Security, and Research Challenges,” IEEE Communica-                Control Case,” IEEE Access, vol. 13, pp. 116684–116700, 2025.
+     tions Surveys & Tutorials, vol. 25, no. 2, pp. 1376–1411, 2023.                10.1109/ACCESS.2025.3585774.
+     10.1109/COMST.2023.3239220.                                               [21] M. Iqbal and A. Nakao, “5ERASI: 5G Service-Enabled Resource
+ [2] D. Kreutz et al., “Software-Defined Networking: A Comprehensive                Allocation and Sub-Slice Isolation for Open RAN,” IEEE Access,
+     Survey,” Proceedings of the IEEE, vol. 103, no. 1, pp. 14–76, 2015.            2026. 10.1109/ACCESS.2026.3693783.
+     10.1109/JPROC.2014.2371999.                                               [22] Y. Chen, R. Yao, H. Hassanieh, and R. Mittal, “Channel-Aware 5G
+ [3] A. Garcia-Saavedra and X. Costa-Perez, “O-RAN: Disrupting the                  RAN Slicing with Customizable Schedulers,” USENIX NSDI, pp.
+     Virtualized RAN Ecosystem,” IEEE Communications Standards                      1767–1782, 2023. Author/publisher source.
+     Magazine, vol. 5, no. 4, pp. 96–103, 2021. 10.1109/MCOM-                  [23] W.-H. Ko et al., “EdgeRIC: Empowering Real-time Intelligent Opti-
+     STD.101.2000014.                                                               mization and Control in NextG Cellular Networks,” USENIX NSDI,
+ [4] R. D. Yates et al., “Age of Information: An Introduction and Survey,”          pp. 1315–1330, 2024. Author/publisher source.
+     IEEE Journal on Selected Areas in Communications, vol. 39, no. 5,         [24] M. Polese, L. Bonati, S. D’Oro, S. Basagni, and T. Melodia, “ColO-
+     pp. 1183–1210, 2021. 10.1109/JSAC.2021.3065072.                                RAN: Developing Machine Learning-based xApps for Open RAN
+ [5] J. P. Hespanha, P. Naghshtabrizi, and Y. Xu, “A Survey of Recent               Closed-loop Control on Programmable Experimental Platforms,” IEEE
+     Results in Networked Control Systems,” Proceedings of the IEEE,                Transactions on Mobile Computing, vol. 22, no. 10, pp. 5787–5800,
+     vol. 95, no. 1, pp. 138–162, 2007. 10.1109/JPROC.2006.887288.                  2023. 10.1109/TMC.2022.3188013.
+ [6] D. Q. Mayne, J. B. Rawlings, C. V. Rao, and P. O. M. Scokaert, “Con-      [25] L. Bonati, M. Polese, S. D’Oro, S. Basagni, and T. Melodia, “Open-
+     strained model predictive control: Stability and optimality,” Automat-         RAN Gym: AI/ML Development, Data Collection, and Testing for
+     ica, vol. 36, no. 6, pp. 789–814, 2000. 10.1016/S0005-1098(99)00214-           O-RAN on PAWR Platforms,” Computer Networks, vol. 220, article
+     9.                                                                             109502, 2023. 10.1016/j.comnet.2022.109502.
+ [7] S. D’Oro, L. Bonati, M. Polese, and T. Melodia, “OrchestRAN:              [26] L. Bonati, S. D’Oro, S. Basagni, and T. Melodia, “SCOPE: An Open
+     Network Automation through Orchestrated Intelligence in the Open               and Softwarized Prototyping Platform for NextG Systems,” ACM
+     RAN,” IEEE INFOCOM, 2022, author version arXiv:2201.05632.                     MobiSys, 2021. 10.1145/3458864.3466863.
+     10.48550/arXiv.2201.05632.                                                [27] R. Schmidt, M. Irazabal, and N. Nikaein, “FlexRIC: an SDK for
+ [8] F. Mungari, C. Puligheddu, A. Garcia-Saavedra, and C. F.                       next-generation SD-RANs,” ACM CoNEXT, pp. 411–425, 2021.
+     Chiasserini, “O-RAN Intelligence Orchestration Framework for                   10.1145/3485983.3494870.
+     Quality-Driven xApp Deployment and Sharing,” IEEE Transac-                [28] A. Lacava et al., “ns-O-RAN: Simulating O-RAN 5G Systems in ns-
+     tions on Mobile Computing, vol. 24, no. 6, pp. 4811–4828, 2025.                3,” ACM Workshop on ns-3, 2023. 10.1145/3592149.3592161.
+     10.1109/TMC.2025.3527707.
+                                                                               [29] M. Polese et al., “Colosseum: The Open RAN Digital Twin,” IEEE
+ [9] O. T. Demir, M. Masoudi, E. Bjornson, and C. Cavdar, “Cell-                    Open Journal of the Communications Society, vol. 5, pp. 5452–5466,
+     Free Massive MIMO in O-RAN: Energy-Aware Joint Orchestration                   2024. 10.1109/OJCOMS.2024.3447472.
+     of Cloud, Fronthaul, and Radio Resources,” IEEE Journal on Se-
+                                                                               [30] N. Patriciello, S. Lagen, B. Bojovic, and L. Giupponi, “An E2E
+     lected Areas in Communications, vol. 42, no. 2, pp. 356–372, 2024.
+                                                                                    Simulator for 5G NR Networks,” Simulation Modelling Practice and
+     10.1109/JSAC.2023.3336187.
+                                                                                    Theory, vol. 96, article 101933, 2019. Author/publisher source.
+
+
+
+                                                                  Submission manuscript                                                                 21
+                                                                                        IEEE OPEN JOURNAL OF THE
+                                                                                        COMMUNICATIONS SOCIETY
+
+
+
+
+[31] K. Koutlia, B. Bojovic, Z. Ali, and S. Lagen, “Calibration of the
+     5G-LENA System Level Simulator in 3GPP reference scenarios,”
+     Simulation Modelling Practice and Theory, vol. 119, article 102580,
+     2022. Author/publisher source.
+[32] M. J. Neely, “Stochastic Network Optimization with Application to
+     Communication and Queueing Systems,” Morgan & Claypool, 2010,
+     Springer electronic edition. 10.1007/978-3-031-79995-2.
+[33] J.-Y. Le Boudec and P. Thiran, “Network Calculus: A Theory of
+     Deterministic Queuing Systems for the Internet,” Springer, 2001.
+     10.1007/3-540-45318-0.
+[34] Y. Jiang and Y. Liu, “Stochastic Network Calculus,” Springer, 2008.
+     10.1007/978-1-84800-127-5.
+[35] S. M. Tabatabaee, J.-Y. Le Boudec, and M. Boyer, “Interleaved
+     Weighted Round-Robin: A Network Calculus Analysis,” IEICE Trans-
+     actions on Communications, vol. E104-B, no. 12, pp. 1479–1493,
+     2021. 10.1587/transcom.2021ITI0001.
+[36] S. M. Tabatabaee and J.-Y. Le Boudec, “Deficit Round-Robin:
+     A Second Network Calculus Analysis,” IEEE/ACM Transac-
+     tions on Networking, vol. 30, no. 5, pp. 2216–2230, 2022.
+     10.1109/TNET.2022.3164772.
+[37] E. Mohammadpour, E. Stai, and J.-Y. Le Boudec, “Improved
+     Network-Calculus Nodal Delay-Bounds in Time-Sensitive Networks,”
+     IEEE/ACM Transactions on Networking, vol. 31, no. 6, pp. 2902–
+     2917, 2023. 10.1109/TNET.2023.3275910.
+[38] R. G. Sargent, “Verification and validation of simulation models,”
+     Journal of Simulation, vol. 7, pp. 12–24, 2013. 10.1057/jos.2012.20.
+[39] Kubernetes Authors, “Horizontal Pod Autoscaling,” official documen-
+     tation, accessed October 22, 2026. Author/publisher source.
+[40] M. J. Neely, “Energy-Aware Wireless Scheduling with Near Op-
+     timal Backlog and Convergence Time Tradeoffs,” author version,
+     arXiv:1411.4740, 2014. 10.48550/arXiv.1411.4740.
+[41] J. Wang, B. Liang, M. Dong, G. Boudreau, and H. Abou-
+     zeid, “Delay-Tolerant Constrained OCO with Application to Net-
+     work Resource Allocation,” IEEE INFOCOM, 2021. 10.1109/INFO-
+     COM42981.2021.9488698.
+[42] B. Efron, “Bootstrap Methods: Another Look at the Jack-
+     knife,” The Annals of Statistics, vol. 7, no. 1, pp. 1–26, 1979.
+     10.1214/aos/1176344552.
+[43] S. Holm, “A Simple Sequentially Rejective Multiple Test Proce-
+     dure,” Scandinavian Journal of Statistics, vol. 6, pp. 65–70, 1979.
+     Author/publisher source.
+
+
+
+
+                                                                Submission manuscript                              22
+

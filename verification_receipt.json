@@ -1,0 +1,96 @@
+{
+  "checked_at_utc": "2026-10-24T11:05:25.273649+00:00",
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "baseline.simulate",
+        "experiment",
+        "evaluate_v3",
+        "evaluate_v4",
+        "independent_validation",
+        "verify_extension",
+        "test_pipeline",
+        "test_reliability",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_allocator (baseline.simulate.Tests.test_allocator) ... ok\ntest_delayed_reports (baseline.simulate.Tests.test_delayed_reports) ... ok\ntest_equal_information_budget (baseline.simulate.Tests.test_equal_information_budget) ... ok\ntest_minimum_delay (baseline.simulate.Tests.test_minimum_delay) ... ok\ntest_no_arrivals (baseline.simulate.Tests.test_no_arrivals) ... ok\ntest_reproducibility (baseline.simulate.Tests.test_reproducibility) ... ok\ntest_budget_and_reproducibility (experiment.Checks.test_budget_and_reproducibility) ... ok\ntest_empty_and_minimum_delay (experiment.Checks.test_empty_and_minimum_delay) ... ok\ntest_forecast_uses_service (experiment.Checks.test_forecast_uses_service) ... ok\ntest_unfinished_are_violations (experiment.Checks.test_unfinished_are_violations) ... ok\ntest_work_conservation (experiment.Checks.test_work_conservation) ... ok\ntest_both_classes_in_objective (evaluate_v3.Tests.test_both_classes_in_objective) ... ok\ntest_equal_trace_budget_and_reproducibility (evaluate_v3.Tests.test_equal_trace_budget_and_reproducibility) ... ok\ntest_exact_grid_solution (evaluate_v3.Tests.test_exact_grid_solution) ... ok\ntest_feasibility_is_exposed (evaluate_v3.Tests.test_feasibility_is_exposed) ... ok\ntest_margin_nonnegative_effect (evaluate_v3.Tests.test_margin_nonnegative_effect) ... ok\ntest_v2_numeric_equivalence (evaluate_v3.Tests.test_v2_numeric_equivalence) ... ok\ntest_activation_not_instant (evaluate_v4.Tests.test_activation_not_instant) ... ok\ntest_always_on_charged (evaluate_v4.Tests.test_always_on_charged) ... ok\ntest_finite_infeasible_result (evaluate_v4.Tests.test_finite_infeasible_result) ... ok\ntest_no_scaling_cost_for_fixed (evaluate_v4.Tests.test_no_scaling_cost_for_fixed) ... ok\ntest_reproducibility_and_cap (evaluate_v4.Tests.test_reproducibility_and_cap) ... ok\ntest_resource_bounds (evaluate_v4.Tests.test_resource_bounds) ... ok\ntest_same_exogenous_trace_and_report_budget (evaluate_v4.Tests.test_same_exogenous_trace_and_report_budget) ... ok\ntest_ablation_report_budgets (independent_validation.IndependentTests.test_ablation_report_budgets) ... ok\ntest_bad_delays_rejected (independent_validation.IndependentTests.test_bad_delays_rejected) ... ok\ntest_deadline_boundary (independent_validation.IndependentTests.test_deadline_boundary) ... ok\ntest_minimum_delay (independent_validation.IndependentTests.test_minimum_delay) ... ok\ntest_no_arrivals (independent_validation.IndependentTests.test_no_arrivals) ... ok\ntest_no_future_trace_access (independent_validation.IndependentTests.test_no_future_trace_access) ... ok\ntest_reference_packet_replay (independent_validation.IndependentTests.test_reference_packet_replay) ... ok\ntest_solver_against_independent_enumeration (independent_validation.IndependentTests.test_solver_against_independent_enumeration) ... ok\ntest_zero_capacity (independent_validation.IndependentTests.test_zero_capacity) ... ok\ntest_constant_bootstrap (verify_extension.StatisticalTests.test_constant_bootstrap) ... ok\ntest_sign_all_better (verify_extension.StatisticalTests.test_sign_all_better) ... ok\ntest_sign_all_equal (verify_extension.StatisticalTests.test_sign_all_equal) ... ok\ntest_sign_balanced (verify_extension.StatisticalTests.test_sign_balanced) ... ok\ntest_fluid_conservation (test_pipeline.PipelineTests.test_fluid_conservation) ... ok\ntest_future_command_excluded (test_pipeline.PipelineTests.test_future_command_excluded) ... ok\ntest_gate_pathwise_equivalence (test_pipeline.PipelineTests.test_gate_pathwise_equivalence) ... ok\ntest_gate_short_delay_is_pipeline (test_pipeline.PipelineTests.test_gate_short_delay_is_pipeline) ... ok\ntest_no_future_leakage (test_pipeline.PipelineTests.test_no_future_leakage) ... ok\ntest_projection_uses_pending_actions (test_pipeline.PipelineTests.test_projection_uses_pending_actions) ... ok\ntest_announced_variable_delay_and_command_order (test_reliability.ReliabilityTests.test_announced_variable_delay_and_command_order) ... ok\ntest_bootstrap_bounds_and_zero_caveat (test_reliability.ReliabilityTests.test_bootstrap_bounds_and_zero_caveat) ... ok\ntest_constant_schedule_regression (test_reliability.ReliabilityTests.test_constant_schedule_regression) ... ok\ntest_eta_one_regression (test_reliability.ReliabilityTests.test_eta_one_regression) ... ok\ntest_future_suffix_not_visible (test_reliability.ReliabilityTests.test_future_suffix_not_visible) ... ok\ntest_independent_replay_with_jitter (test_reliability.ReliabilityTests.test_independent_replay_with_jitter) ... ok\ntest_uncached_enumeration (test_reliability.ReliabilityTests.test_uncached_enumeration) ... ok\ntest_workload_and_jitter_contract (test_reliability.ReliabilityTests.test_workload_and_jitter_contract) ... ok\n\n----------------------------------------------------------------------\nRan 51 tests in 5.206s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_frozen.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 660 runs; disjoint seed sets; static selection; event/report budgets; costs; six regression comparisons.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_extension.py"
+      ],
+      "returncode": 0,
+      "stdout": "PASS: 600 runs, locked protocol hash, seed ranges, paired budgets, cohort rates, capacity, cost and 12-test Holm adjustment.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_paper.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"runs_checked\": 800, \"summaries_checked\": 40, \"paired_tests_checked\": 48, \"deterministic_replays\": 6, \"pass_all\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_reliability.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"calibration\": 336, \"heldout\": 840, \"summaries\": 42, \"paired\": 35, \"replays\": [[\"fixed\", \"periodic_r3_p0.05_a10\"], [\"risk\", \"jitter_r3_p0.05_a10\"], [\"hpa\", \"markov_r3_p0.05_a10\"], [\"dpp\", \"compound_r3_p0.05_a10\"], [\"uncalibrated\", \"compute_r3_p0.05_a10\"], [\"no_ledger\", \"periodic_r3_p0.05_a50\"]], \"pass_all\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_manuscript.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"pages\": 22, \"references\": 43, \"external_links\": 50, \"pdf_sha256\": \"470bf770b3c91d7840efcdb56d3a7da38f1ef75faa32c95cdaa1eedbad457976\", \"pass_all\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_substantive.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"records_reconciled\": 420, \"allocation_grid_checks\": 133, \"analytical_random_checks\": 10000, \"algorithm_blocks_unchanged\": true, \"passed\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_advanced_model.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"checks\": [{\"case\": \"periodic_r3_p0.05_a10\", \"method\": \"fixed\", \"slots\": 3340, \"deadline_cuts\": 51, \"passed\": true}, {\"case\": \"periodic_r3_p0.05_a10\", \"method\": \"risk\", \"slots\": 3340, \"deadline_cuts\": 51, \"passed\": true}, {\"case\": \"periodic_r3_p0.05_a50\", \"method\": \"fixed\", \"slots\": 3340, \"deadline_cuts\": 51, \"passed\": true}, {\"case\": \"periodic_r3_p0.05_a50\", \"method\": \"risk\", \"slots\": 3340, \"deadline_cuts\": 51, \"passed\": true}, {\"case\": \"jitter_r3_p0.05_a10\", \"method\": \"fixed\", \"slots\": 3340, \"deadline_cuts\": 51, \"passed\": true}, {\"case\": \"jitter_r3_p0.05_a10\", \"method\": \"risk\", \"slots\": 3340, \"deadline_cuts\": 51, \"passed\": true}], \"source_sha256\": \"dcbb36bd47f0c66f792bb459a22103fd6e1bf78a3af9f2a70c2e845c7033d64a\", \"unchanged_frozen_records\": true, \"age_accounting\": true, \"command_order\": true, \"deadline_cuts\": true, \"structural_slack_bound\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_journal_revision.py"
+      ],
+      "returncode": 0,
+      "stdout": "{\"journal\": \"IEEE OJ-COMS\", \"continuous_results\": true, \"author_order\": [\"FATIMA SUBHI KHALEEL\", \"YASSIR AL-AMEEN\", \"HAMED AL-RAWESHIDY\"], \"top_algorithm_rules\": 2, \"all_visuals_cited\": true, \"no_horizontal_overflow\": true, \"pages\": 22}\n",
+      "stderr": ""
+    }
+  ]
+}

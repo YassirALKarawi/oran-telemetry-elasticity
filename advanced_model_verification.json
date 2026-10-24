@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "fixed",
+      "slots": 3340,
+      "deadline_cuts": 51,
+      "passed": true
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "risk",
+      "slots": 3340,
+      "deadline_cuts": 51,
+      "passed": true
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "fixed",
+      "slots": 3340,
+      "deadline_cuts": 51,
+      "passed": true
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "risk",
+      "slots": 3340,
+      "deadline_cuts": 51,
+      "passed": true
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "fixed",
+      "slots": 3340,
+      "deadline_cuts": 51,
+      "passed": true
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "risk",
+      "slots": 3340,
+      "deadline_cuts": 51,
+      "passed": true
+    }
+  ],
+  "source_sha256": "dcbb36bd47f0c66f792bb459a22103fd6e1bf78a3af9f2a70c2e845c7033d64a",
+  "unchanged_frozen_records": true,
+  "age_accounting": true,
+  "command_order": true,
+  "deadline_cuts": true,
+  "structural_slack_bound": true
+}

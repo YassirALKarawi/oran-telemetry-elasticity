@@ -1,0 +1,1682 @@
+[
+  {
+    "lag": 10,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3775,
+    "activation_switching_units": 204,
+    "abstract_cost": 3826.0,
+    "mean_extra_capacity": 1.1302395209580838,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 75,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 591,
+    "maximum_modeled_normalized_slack": 1.1678906231973767,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      8,
+      31
+    ],
+    "mean_backlog": 18.784666666666666,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 10,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3375,
+    "activation_switching_units": 176,
+    "abstract_cost": 3419.0,
+    "mean_extra_capacity": 1.0104790419161678,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 75,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 593,
+    "maximum_modeled_normalized_slack": 1.1921286528257786,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      32
+    ],
+    "mean_backlog": 20.337333333333333,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 10,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2970,
+    "activation_switching_units": 182,
+    "abstract_cost": 3015.5,
+    "mean_extra_capacity": 0.8892215568862275,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 200,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 608,
+    "maximum_modeled_normalized_slack": 0.9755187545415804,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      9,
+      31
+    ],
+    "mean_backlog": 21.289666666666665,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 10,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2635,
+    "activation_switching_units": 156,
+    "abstract_cost": 2674.0,
+    "mean_extra_capacity": 0.7889221556886228,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 200,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 625,
+    "maximum_modeled_normalized_slack": 1.3046793647069888,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      10,
+      37
+    ],
+    "mean_backlog": 24.39,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 10,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3740,
+    "activation_switching_units": 198,
+    "abstract_cost": 3789.5,
+    "mean_extra_capacity": 1.1197604790419162,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 145,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 586,
+    "maximum_modeled_normalized_slack": 1.0526476214120142,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      29
+    ],
+    "mean_backlog": 18.778,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 10,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3565,
+    "activation_switching_units": 166,
+    "abstract_cost": 3606.5,
+    "mean_extra_capacity": 1.0673652694610778,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 145,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 600,
+    "maximum_modeled_normalized_slack": 1.086299228821876,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      29
+    ],
+    "mean_backlog": 19.206333333333333,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 10,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2965,
+    "activation_switching_units": 186,
+    "abstract_cost": 3011.5,
+    "mean_extra_capacity": 0.8877245508982036,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 195,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 607,
+    "maximum_modeled_normalized_slack": 0.9360024816618504,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      8,
+      30
+    ],
+    "mean_backlog": 20.762333333333334,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 10,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2870,
+    "activation_switching_units": 180,
+    "abstract_cost": 2915.0,
+    "mean_extra_capacity": 0.8592814371257484,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 185,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 619,
+    "maximum_modeled_normalized_slack": 0.9401318317945904,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      10,
+      32
+    ],
+    "mean_backlog": 22.247,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 10,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3405,
+    "activation_switching_units": 200,
+    "abstract_cost": 3455.0,
+    "mean_extra_capacity": 1.0194610778443114,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 160,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 598,
+    "maximum_modeled_normalized_slack": 0.6541215345896103,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      6,
+      21
+    ],
+    "mean_backlog": 15.01,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 10,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3160,
+    "activation_switching_units": 172,
+    "abstract_cost": 3203.0,
+    "mean_extra_capacity": 0.9461077844311377,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 155,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 611,
+    "maximum_modeled_normalized_slack": 0.804229380258332,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      6,
+      24
+    ],
+    "mean_backlog": 16.770666666666667,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 10,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2765,
+    "activation_switching_units": 202,
+    "abstract_cost": 2815.5,
+    "mean_extra_capacity": 0.8278443113772455,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 205,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 621,
+    "maximum_modeled_normalized_slack": 0.7036968213559407,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      27
+    ],
+    "mean_backlog": 17.595333333333333,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 10,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2580,
+    "activation_switching_units": 150,
+    "abstract_cost": 2617.5,
+    "mean_extra_capacity": 0.7724550898203593,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 205,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 626,
+    "maximum_modeled_normalized_slack": 0.6353525308432939,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      8,
+      29
+    ],
+    "mean_backlog": 19.738,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 10,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3910,
+    "activation_switching_units": 226,
+    "abstract_cost": 3966.5,
+    "mean_extra_capacity": 1.1706586826347305,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 40,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 567,
+    "maximum_modeled_normalized_slack": 1.1779044155345026,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      33
+    ],
+    "mean_backlog": 21.221333333333334,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 10,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3555,
+    "activation_switching_units": 190,
+    "abstract_cost": 3602.5,
+    "mean_extra_capacity": 1.06437125748503,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 205,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 590,
+    "maximum_modeled_normalized_slack": 1.36978118777916,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      8,
+      33
+    ],
+    "mean_backlog": 22.458333333333332,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 10,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3195,
+    "activation_switching_units": 173,
+    "abstract_cost": 3238.25,
+    "mean_extra_capacity": 0.9565868263473054,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 205,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 585,
+    "maximum_modeled_normalized_slack": 1.0513333250741113,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      8,
+      33
+    ],
+    "mean_backlog": 23.227333333333334,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 10,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2675,
+    "activation_switching_units": 150,
+    "abstract_cost": 2712.5,
+    "mean_extra_capacity": 0.8008982035928144,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 205,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 616,
+    "maximum_modeled_normalized_slack": 1.1234830570386571,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      9,
+      38
+    ],
+    "mean_backlog": 26.426,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 10,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3635,
+    "activation_switching_units": 188,
+    "abstract_cost": 3682.0,
+    "mean_extra_capacity": 1.0883233532934131,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 30,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 589,
+    "maximum_modeled_normalized_slack": 1.0410062808379048,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      30
+    ],
+    "mean_backlog": 17.968333333333334,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 10,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 3495,
+    "activation_switching_units": 172,
+    "abstract_cost": 3538.0,
+    "mean_extra_capacity": 1.0464071856287425,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 35,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 600,
+    "maximum_modeled_normalized_slack": 1.2759089203876184,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      6,
+      30
+    ],
+    "mean_backlog": 18.702333333333332,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 10,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2730,
+    "activation_switching_units": 168,
+    "abstract_cost": 2772.0,
+    "mean_extra_capacity": 0.8173652694610778,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 35,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 616,
+    "maximum_modeled_normalized_slack": 1.0809167163410471,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      9,
+      29
+    ],
+    "mean_backlog": 20.488666666666667,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 10,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 2540,
+    "activation_switching_units": 156,
+    "abstract_cost": 2579.0,
+    "mean_extra_capacity": 0.7604790419161677,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 200,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 632,
+    "maximum_modeled_normalized_slack": 1.0948431410669581,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      36
+    ],
+    "mean_backlog": 23.569333333333333,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 100,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.0,
+      0.048651654156241314
+    ],
+    "extra_service_unit_slots": 10860,
+    "activation_switching_units": 682,
+    "abstract_cost": 11030.5,
+    "mean_extra_capacity": 3.251497005988024,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 454,
+    "maximum_modeled_normalized_slack": 1.7180036821056022,
+    "late_completed": [
+      0,
+      350
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      51
+    ],
+    "mean_backlog": 27.811,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 100,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.0,
+      0.17000278009452321
+    ],
+    "extra_service_unit_slots": 8475,
+    "activation_switching_units": 516,
+    "abstract_cost": 8604.0,
+    "mean_extra_capacity": 2.537425149700599,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 512,
+    "maximum_modeled_normalized_slack": 0.7142903559197107,
+    "late_completed": [
+      0,
+      1223
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      10,
+      63
+    ],
+    "mean_backlog": 35.94866666666667,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 100,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.014303482587064677,
+      0.2532666110647762
+    ],
+    "extra_service_unit_slots": 4785,
+    "activation_switching_units": 213,
+    "abstract_cost": 4838.25,
+    "mean_extra_capacity": 1.4326347305389222,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 110,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 509,
+    "maximum_modeled_normalized_slack": 2.4292446028714516,
+    "late_completed": [
+      46,
+      1822
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      16,
+      79
+    ],
+    "mean_backlog": 51.086333333333336,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 100,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8000,
+    "arrivals": [
+      3216,
+      7194
+    ],
+    "violation": [
+      0.018345771144278607,
+      0.26174589936057824
+    ],
+    "extra_service_unit_slots": 4095,
+    "activation_switching_units": 155,
+    "abstract_cost": 4133.75,
+    "mean_extra_capacity": 1.2260479041916168,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 290,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 528,
+    "maximum_modeled_normalized_slack": 1.1754684008273664,
+    "late_completed": [
+      59,
+      1883
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      21,
+      83
+    ],
+    "mean_backlog": 52.342,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "b3d7810bce6eaa010c489f2354ea3b9afb83100032cfa0a883ca9fe1ebfe9f9c"
+  },
+  {
+    "lag": 100,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.0
+    ],
+    "extra_service_unit_slots": 11960,
+    "activation_switching_units": 706,
+    "abstract_cost": 12136.5,
+    "mean_extra_capacity": 3.5808383233532934,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 451,
+    "maximum_modeled_normalized_slack": 2.6514994837236197,
+    "late_completed": [
+      0,
+      0
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      38
+    ],
+    "mean_backlog": 22.253333333333334,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 100,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.12211265703093341
+    ],
+    "extra_service_unit_slots": 9155,
+    "activation_switching_units": 549,
+    "abstract_cost": 9292.25,
+    "mean_extra_capacity": 2.7410179640718564,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 505,
+    "maximum_modeled_normalized_slack": 2.925399704988536,
+    "late_completed": [
+      0,
+      904
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      57
+    ],
+    "mean_backlog": 32.16266666666667,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 100,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.02205419029615627,
+      0.23922734026745915
+    ],
+    "extra_service_unit_slots": 4435,
+    "activation_switching_units": 208,
+    "abstract_cost": 4487.0,
+    "mean_extra_capacity": 1.3278443113772456,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 235,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 515,
+    "maximum_modeled_normalized_slack": 2.3332316632279735,
+    "late_completed": [
+      70,
+      1769
+    ],
+    "unfinished": [
+      0,
+      2
+    ],
+    "completed_delay_p99": [
+      20,
+      77
+    ],
+    "mean_backlog": 48.677,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 100,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8001,
+    "arrivals": [
+      3174,
+      7403
+    ],
+    "violation": [
+      0.0,
+      0.24814264487369986
+    ],
+    "extra_service_unit_slots": 4270,
+    "activation_switching_units": 182,
+    "abstract_cost": 4315.5,
+    "mean_extra_capacity": 1.278443113772455,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 275,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 541,
+    "maximum_modeled_normalized_slack": 0.9330438694500789,
+    "late_completed": [
+      0,
+      1824
+    ],
+    "unfinished": [
+      0,
+      13
+    ],
+    "completed_delay_p99": [
+      13,
+      79
+    ],
+    "mean_backlog": 50.21633333333333,
+    "requests": 668,
+    "delivered": 637,
+    "accepted": 637,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "0bd1f8ffbfcfda26d8d2329bf553e8f17be93843d65649f9b53a60e20a7d0254"
+  },
+  {
+    "lag": 100,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.008957312806158153
+    ],
+    "extra_service_unit_slots": 10650,
+    "activation_switching_units": 646,
+    "abstract_cost": 10811.5,
+    "mean_extra_capacity": 3.188622754491018,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 472,
+    "maximum_modeled_normalized_slack": 1.8778274124516017,
+    "late_completed": [
+      0,
+      64
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      5,
+      40
+    ],
+    "mean_backlog": 20.634666666666668,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 100,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.06717984604618614
+    ],
+    "extra_service_unit_slots": 8050,
+    "activation_switching_units": 534,
+    "abstract_cost": 8183.5,
+    "mean_extra_capacity": 2.410179640718563,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 547,
+    "maximum_modeled_normalized_slack": 2.3014286511771997,
+    "late_completed": [
+      0,
+      480
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      6,
+      54
+    ],
+    "mean_backlog": 27.414666666666665,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 100,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.0,
+      0.23526941917424773
+    ],
+    "extra_service_unit_slots": 4250,
+    "activation_switching_units": 188,
+    "abstract_cost": 4297.0,
+    "mean_extra_capacity": 1.2724550898203593,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 215,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 517,
+    "maximum_modeled_normalized_slack": 2.255971890580998,
+    "late_completed": [
+      0,
+      1681
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      12,
+      73
+    ],
+    "mean_backlog": 45.74433333333333,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 100,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8002,
+    "arrivals": [
+      3086,
+      7145
+    ],
+    "violation": [
+      0.011989630589760207,
+      0.24072778166550035
+    ],
+    "extra_service_unit_slots": 3950,
+    "activation_switching_units": 134,
+    "abstract_cost": 3983.5,
+    "mean_extra_capacity": 1.1826347305389222,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 280,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 532,
+    "maximum_modeled_normalized_slack": 0.7505896807973549,
+    "late_completed": [
+      37,
+      1720
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      16,
+      74
+    ],
+    "mean_backlog": 47.56066666666667,
+    "requests": 668,
+    "delivered": 631,
+    "accepted": 631,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "70d48cc78bae0f2d6b4dbf6fde902468219980c0dd414260d1e8ea7919ff054e"
+  },
+  {
+    "lag": 100,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.0,
+      0.1173670610635115
+    ],
+    "extra_service_unit_slots": 11575,
+    "activation_switching_units": 676,
+    "abstract_cost": 11744.0,
+    "mean_extra_capacity": 3.465568862275449,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 440,
+    "maximum_modeled_normalized_slack": 2.235369660720345,
+    "late_completed": [
+      0,
+      863
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      7,
+      62
+    ],
+    "mean_backlog": 32.834666666666664,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 100,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.0,
+      0.1772065823473412
+    ],
+    "extra_service_unit_slots": 8595,
+    "activation_switching_units": 532,
+    "abstract_cost": 8728.0,
+    "mean_extra_capacity": 2.5733532934131738,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 510,
+    "maximum_modeled_normalized_slack": 1.945871553241206,
+    "late_completed": [
+      0,
+      1303
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      10,
+      67
+    ],
+    "mean_backlog": 39.638333333333335,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 100,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.06080655324511657,
+      0.2601659186726506
+    ],
+    "extra_service_unit_slots": 4570,
+    "activation_switching_units": 220,
+    "abstract_cost": 4625.0,
+    "mean_extra_capacity": 1.3682634730538923,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 110,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 512,
+    "maximum_modeled_normalized_slack": 3.2625673317667854,
+    "late_completed": [
+      193,
+      1899
+    ],
+    "unfinished": [
+      0,
+      14
+    ],
+    "completed_delay_p99": [
+      22,
+      76
+    ],
+    "mean_backlog": 53.04266666666667,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 100,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8003,
+    "arrivals": [
+      3174,
+      7353
+    ],
+    "violation": [
+      0.04095778197857593,
+      0.27186182510539914
+    ],
+    "extra_service_unit_slots": 4270,
+    "activation_switching_units": 177,
+    "abstract_cost": 4314.25,
+    "mean_extra_capacity": 1.278443113772455,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 295,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 526,
+    "maximum_modeled_normalized_slack": 1.724296728645264,
+    "late_completed": [
+      130,
+      1971
+    ],
+    "unfinished": [
+      0,
+      28
+    ],
+    "completed_delay_p99": [
+      24,
+      78
+    ],
+    "mean_backlog": 54.372,
+    "requests": 668,
+    "delivered": 627,
+    "accepted": 627,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "8c5e2db5f734d4b248402bff545adc1d0b3516312f97082dd8f8e5dd19d0db83"
+  },
+  {
+    "lag": 100,
+    "mode": null,
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.0,
+      0.060992708917554685
+    ],
+    "extra_service_unit_slots": 10695,
+    "activation_switching_units": 730,
+    "abstract_cost": 10877.5,
+    "mean_extra_capacity": 3.2020958083832336,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 475,
+    "maximum_modeled_normalized_slack": 3.3637547492548023,
+    "late_completed": [
+      0,
+      435
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      9,
+      52
+    ],
+    "mean_backlog": 25.050333333333334,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 100,
+    "mode": "ledger_only",
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.0,
+      0.14077397644419518
+    ],
+    "extra_service_unit_slots": 8270,
+    "activation_switching_units": 521,
+    "abstract_cost": 8400.25,
+    "mean_extra_capacity": 2.4760479041916166,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 100,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 516,
+    "maximum_modeled_normalized_slack": 3.129920521079619,
+    "late_completed": [
+      0,
+      1004
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      10,
+      57
+    ],
+    "mean_backlog": 32.838,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 100,
+    "mode": "margin_only",
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.05067350865939705,
+      0.2410263600673023
+    ],
+    "extra_service_unit_slots": 4315,
+    "activation_switching_units": 169,
+    "abstract_cost": 4357.25,
+    "mean_extra_capacity": 1.2919161676646707,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 120,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 515,
+    "maximum_modeled_normalized_slack": 2.3721359975690706,
+    "late_completed": [
+      158,
+      1719
+    ],
+    "unfinished": [
+      0,
+      0
+    ],
+    "completed_delay_p99": [
+      19,
+      78
+    ],
+    "mean_backlog": 48.46966666666667,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  },
+  {
+    "lag": 100,
+    "mode": "full",
+    "config": "elastic_cap3",
+    "seed": 8004,
+    "arrivals": [
+      3118,
+      7132
+    ],
+    "violation": [
+      0.028543938422065426,
+      0.24747616376892878
+    ],
+    "extra_service_unit_slots": 4185,
+    "activation_switching_units": 155,
+    "abstract_cost": 4223.75,
+    "mean_extra_capacity": 1.2529940119760479,
+    "maximum_active_extra": 6,
+    "first_nonzero_extra_slot": 290,
+    "modeled_feasibility_checks": 668,
+    "modeled_feasible_checks": 540,
+    "maximum_modeled_normalized_slack": 0.9209654817850894,
+    "late_completed": [
+      89,
+      1756
+    ],
+    "unfinished": [
+      0,
+      9
+    ],
+    "completed_delay_p99": [
+      17,
+      82
+    ],
+    "mean_backlog": 49.678333333333335,
+    "requests": 668,
+    "delivered": 633,
+    "accepted": 633,
+    "discarded_out_of_order": 0,
+    "pending_reports": 0,
+    "trace_hash": "13da165ca819b0be9e4efceef69f7cfc8e054128e33e4c0a4abe5fff6c131b87"
+  }
+]

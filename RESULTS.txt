@@ -1,0 +1,53 @@
+SYNTHETIC PILOT V2: EXPLORATORY RESULTS
+
+Runs: 640; seeds per setting/configuration: 20
+Units: violation rates in percent; backlog in packets.
+Not a validated O-RAN implementation or a publication-ready result.
+
+nominal_delay3_loss0.05                    legacy_periodic    class0= 30.796% class1=  0.200% backlog=45.622
+nominal_delay3_loss0.05                    legacy_oldest      class0= 28.780% class1=  0.035% backlog=43.924
+nominal_delay3_loss0.05                    legacy_impact      class0= 27.120% class1=  1.732% backlog=47.521
+nominal_delay3_loss0.05                    scheduler_only     class0=  0.000% class1=  0.000% backlog=6.417
+nominal_delay3_loss0.05                    predictor_only     class0= 38.787% class1=  7.069% backlog=65.130
+nominal_delay3_loss0.05                    modern_periodic    class0=  0.000% class1=  0.000% backlog=6.417
+nominal_delay3_loss0.05                    modern_oldest      class0=  0.000% class1=  0.000% backlog=6.417
+nominal_delay3_loss0.05                    modern_risk        class0=  0.000% class1=  0.000% backlog=6.417
+bursty_transport_delay3_loss0.05           legacy_periodic    class0= 67.603% class1= 41.371% backlog=131.121
+bursty_transport_delay3_loss0.05           legacy_oldest      class0= 67.284% class1= 40.715% backlog=129.434
+bursty_transport_delay3_loss0.05           legacy_impact      class0= 67.496% class1= 52.219% backlog=156.118
+bursty_transport_delay3_loss0.05           scheduler_only     class0= 46.609% class1= 29.774% backlog=79.809
+bursty_transport_delay3_loss0.05           predictor_only     class0= 70.451% class1= 54.697% backlog=155.830
+bursty_transport_delay3_loss0.05           modern_periodic    class0= 38.206% class1= 33.316% backlog=79.809
+bursty_transport_delay3_loss0.05           modern_oldest      class0= 38.417% class1= 33.266% backlog=79.809
+bursty_transport_delay3_loss0.05           modern_risk        class0= 35.949% class1= 33.913% backlog=79.809
+bursty_compute_delay3_loss0.05             legacy_periodic    class0= 65.916% class1= 41.543% backlog=129.390
+bursty_compute_delay3_loss0.05             legacy_oldest      class0= 65.118% class1= 40.572% backlog=126.780
+bursty_compute_delay3_loss0.05             legacy_impact      class0= 65.274% class1= 45.930% backlog=137.383
+bursty_compute_delay3_loss0.05             scheduler_only     class0= 45.695% class1= 29.497% backlog=78.062
+bursty_compute_delay3_loss0.05             predictor_only     class0= 68.978% class1= 52.809% backlog=152.145
+bursty_compute_delay3_loss0.05             modern_periodic    class0= 37.051% class1= 32.642% backlog=78.062
+bursty_compute_delay3_loss0.05             modern_oldest      class0= 37.047% class1= 32.750% backlog=78.062
+bursty_compute_delay3_loss0.05             modern_risk        class0= 34.600% class1= 33.461% backlog=78.062
+bursty_transport_delay9_loss0.15           legacy_periodic    class0= 85.024% class1= 55.300% backlog=172.737
+bursty_transport_delay9_loss0.15           legacy_oldest      class0= 85.443% class1= 56.907% backlog=183.533
+bursty_transport_delay9_loss0.15           legacy_impact      class0= 87.668% class1= 83.277% backlog=254.780
+bursty_transport_delay9_loss0.15           scheduler_only     class0= 47.848% class1= 28.154% backlog=79.809
+bursty_transport_delay9_loss0.15           predictor_only     class0= 88.477% class1= 76.095% backlog=206.959
+bursty_transport_delay9_loss0.15           modern_periodic    class0= 38.430% class1= 32.990% backlog=79.809
+bursty_transport_delay9_loss0.15           modern_oldest      class0= 38.229% class1= 32.482% backlog=79.809
+bursty_transport_delay9_loss0.15           modern_risk        class0= 37.271% class1= 33.956% backlog=79.809
+
+Paired modern_risk minus comparator: class0 percentage points
+Exploratory 95% paired-bootstrap intervals; no multiplicity correction.
+nominal_delay3_loss0.05                    modern_risk minus legacy_periodic    difference=-30.796 CI=[-32.540, -28.965]
+nominal_delay3_loss0.05                    modern_risk minus modern_periodic    difference=0.000 CI=[0.000, 0.000]
+nominal_delay3_loss0.05                    modern_risk minus modern_oldest      difference=0.000 CI=[0.000, 0.000]
+bursty_transport_delay3_loss0.05           modern_risk minus legacy_periodic    difference=-31.654 CI=[-33.425, -29.987]
+bursty_transport_delay3_loss0.05           modern_risk minus modern_periodic    difference=-2.257 CI=[-2.909, -1.638]
+bursty_transport_delay3_loss0.05           modern_risk minus modern_oldest      difference=-2.468 CI=[-3.292, -1.652]
+bursty_compute_delay3_loss0.05             modern_risk minus legacy_periodic    difference=-31.316 CI=[-33.279, -29.339]
+bursty_compute_delay3_loss0.05             modern_risk minus modern_periodic    difference=-2.451 CI=[-3.075, -1.831]
+bursty_compute_delay3_loss0.05             modern_risk minus modern_oldest      difference=-2.447 CI=[-3.416, -1.572]
+bursty_transport_delay9_loss0.15           modern_risk minus legacy_periodic    difference=-47.753 CI=[-49.386, -46.154]
+bursty_transport_delay9_loss0.15           modern_risk minus modern_periodic    difference=-1.159 CI=[-2.192, -0.251]
+bursty_transport_delay9_loss0.15           modern_risk minus modern_oldest      difference=-0.958 CI=[-2.287, 0.250]

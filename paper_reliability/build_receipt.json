@@ -1,0 +1,19 @@
+{
+  "pdf": "/workspace/scratch/d193691b86de/revision_work/oran_study/paper_reliability/Manuscript.pdf",
+  "references": 43,
+  "calibration_runs": 336,
+  "test_runs": 840,
+  "qualified_fixed_settings": [
+    "P",
+    "R",
+    "J"
+  ],
+  "qualified_savings": [
+    37.726796407185624,
+    37.09861526946108,
+    35.61264970059881
+  ],
+  "unresolved_references": false,
+  "pages": 22,
+  "sha256": "470bf770b3c91d7840efcdb56d3a7da38f1ef75faa32c95cdaa1eedbad457976"
+}

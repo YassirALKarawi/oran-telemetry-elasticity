@@ -1,0 +1,2297 @@
+{
+  "hpa": {
+    "status": "non-Crossref source",
+    "url": "https://kubernetes.io/docs/concepts/workloads/autoscaling/horizontal-pod-autoscale/"
+  },
+  "dppenergy": {
+    "status": "non-Crossref source",
+    "url": "10.48550/arXiv.1411.4740"
+  },
+  "dtc": {
+    "DOI": "10.1109/infocom42981.2021.9488698",
+    "title": [
+      "Delay-Tolerant Constrained OCO with Application to Network Resource Allocation"
+    ],
+    "container-title": [
+      "IEEE INFOCOM 2021 - IEEE Conference on Computer Communications"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "1-10",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          10
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Juncheng",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ben",
+        "family": "Liang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Min",
+        "family": "Dong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Gary",
+        "family": "Boudreau",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Hatem",
+        "family": "Abou-zeid",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ]
+  },
+  "polese": {
+    "DOI": "10.1109/comst.2023.3239220",
+    "title": [
+      "Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges"
+    ],
+    "container-title": [
+      "IEEE Communications Surveys &amp; Tutorials"
+    ],
+    "volume": "25",
+    "issue": "2",
+    "page": "1376-1411",
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9740-134X",
+        "authenticated-orcid": false,
+        "given": "Michele",
+        "family": "Polese",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1511-1833",
+        "authenticated-orcid": false,
+        "given": "Leonardo",
+        "family": "Bonati",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7690-0449",
+        "authenticated-orcid": false,
+        "given": "Salvatore",
+        "family": "D\u2019Oro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2667-1008",
+        "authenticated-orcid": false,
+        "given": "Stefano",
+        "family": "Basagni",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tommaso",
+        "family": "Melodia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "sdn": {
+    "DOI": "10.1109/jproc.2014.2371999",
+    "title": [
+      "Software-Defined Networking: A Comprehensive Survey"
+    ],
+    "container-title": [
+      "Proceedings of the IEEE"
+    ],
+    "volume": "103",
+    "issue": "1",
+    "page": "14-76",
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          1
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Diego",
+        "family": "Kreutz",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fernando M. V.",
+        "family": "Ramos",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paulo",
+        "family": "Esteves Verissimo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christian",
+        "family": "Esteve Rothenberg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Siamak",
+        "family": "Azodolmolky",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Steve",
+        "family": "Uhlig",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "ecosystem": {
+    "DOI": "10.1109/mcomstd.101.2000014",
+    "title": [
+      "O-RAN: Disrupting the Virtualized RAN Ecosystem"
+    ],
+    "container-title": [
+      "IEEE Communications Standards Magazine"
+    ],
+    "volume": "5",
+    "issue": "4",
+    "page": "96-103",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          12
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Andres",
+        "family": "Garcia-Saavedra",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xavier",
+        "family": "Costa-Perez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "age": {
+    "DOI": "10.1109/jsac.2021.3065072",
+    "title": [
+      "Age of Information: An Introduction and Survey"
+    ],
+    "container-title": [
+      "IEEE Journal on Selected Areas in Communications"
+    ],
+    "volume": "39",
+    "issue": "5",
+    "page": "1183-1210",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Roy D.",
+        "family": "Yates",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yin",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "D. Richard",
+        "family": "Brown",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sanjit K.",
+        "family": "Kaul",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eytan",
+        "family": "Modiano",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sennur",
+        "family": "Ulukus",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "networked": {
+    "DOI": "10.1109/jproc.2006.887288",
+    "title": [
+      "A Survey of Recent Results in Networked Control Systems"
+    ],
+    "container-title": [
+      "Proceedings of the IEEE"
+    ],
+    "volume": "95",
+    "issue": "1",
+    "page": "138-162",
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          1
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Joo P.",
+        "family": "Hespanha",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Payam",
+        "family": "Naghshtabrizi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yonggang",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "mpc": {
+    "DOI": "10.1016/s0005-1098(99)00214-9",
+    "title": [
+      "Constrained model predictive control: Stability and optimality"
+    ],
+    "container-title": [
+      "Automatica"
+    ],
+    "volume": "36",
+    "issue": "6",
+    "page": "789-814",
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          6
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "D.Q.",
+        "family": "Mayne",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "J.B.",
+        "family": "Rawlings",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "C.V.",
+        "family": "Rao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P.O.M.",
+        "family": "Scokaert",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "orchestr": {
+    "status": "non-Crossref source",
+    "url": "10.48550/arXiv.2201.05632"
+  },
+  "oreo": {
+    "DOI": "10.1109/tmc.2025.3527707",
+    "title": [
+      "O-RAN Intelligence Orchestration Framework for Quality-Driven xApp Deployment and Sharing"
+    ],
+    "container-title": [
+      "IEEE Transactions on Mobile Computing"
+    ],
+    "volume": "24",
+    "issue": "6",
+    "page": "4811-4828",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          6
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9277-6556",
+        "authenticated-orcid": false,
+        "given": "Federico",
+        "family": "Mungari",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Politecnico di Torino, Torino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9961-0412",
+        "authenticated-orcid": false,
+        "given": "Corrado",
+        "family": "Puligheddu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Politecnico di Torino, Torino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2005-2222",
+        "authenticated-orcid": false,
+        "given": "Andres",
+        "family": "Garcia-Saavedra",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Laboratory Europe, Barcelona, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1410-660X",
+        "authenticated-orcid": false,
+        "given": "Carla Fabiana",
+        "family": "Chiasserini",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Politecnico di Torino, Torino, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "demir": {
+    "DOI": "10.1109/jsac.2023.3336187",
+    "title": [
+      "Cell-Free Massive MIMO in O-RAN: Energy-Aware Joint Orchestration of Cloud, Fronthaul, and Radio Resources"
+    ],
+    "container-title": [
+      "IEEE Journal on Selected Areas in Communications"
+    ],
+    "volume": "42",
+    "issue": "2",
+    "page": "356-372",
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "\u00d6zlem Tu\u011ffe",
+        "family": "Demir",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Electrical and Electronics Engineering, TOBB University of Economics and Technology, Ankara, Turkey"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4006-5848",
+        "authenticated-orcid": false,
+        "given": "Meysam",
+        "family": "Masoudi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Global AI Accelerator, Ericsson, Stockholm, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-5954-434X",
+        "authenticated-orcid": false,
+        "given": "Emil",
+        "family": "Bj\u00f6rnson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, KTH Royal Institute of Technology, Stockholm, Kista, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0525-4491",
+        "authenticated-orcid": false,
+        "given": "Cicek",
+        "family": "Cavdar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, KTH Royal Institute of Technology, Stockholm, Kista, Sweden"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "vrain": {
+    "DOI": "10.1145/3300061.3345431",
+    "title": [
+      "vrAIn"
+    ],
+    "container-title": [
+      "The 25th Annual International Conference on Mobile Computing and Networking"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "1-16",
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          11
+        ]
+      ]
+    }
+  },
+  "nuberu": {
+    "DOI": "10.1145/3447993.3483266",
+    "title": [
+      "Nuberu"
+    ],
+    "container-title": [
+      "Proceedings of the 27th Annual International Conference on Mobile Computing and Networking"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "749-761",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          10,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Gines",
+        "family": "Garcia-Aviles",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "i2CAT Foundation"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andres",
+        "family": "Garcia-Saavedra",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Laboratories Europe"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marco",
+        "family": "Gramaglia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universidad Carlos III de Madrid"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xavier",
+        "family": "Costa-Perez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Laboratories Europe"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pablo",
+        "family": "Serrano",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universidad Carlos III de Madrid"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Albert",
+        "family": "Banchs",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Universidad Carlos III de Madrid"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "concordia": {
+    "status": "non-Crossref source",
+    "url": "https://www.microsoft.com/en-us/research/publication/concordia-teaching-the-5g-vran-to-share-compute/"
+  },
+  "kalntis": {
+    "DOI": "10.1109/tcomm.2024.3461569",
+    "title": [
+      "Adaptive Resource Allocation for Virtualized Base Stations in O-RAN With Online Learning"
+    ],
+    "container-title": [
+      "IEEE Transactions on Communications"
+    ],
+    "volume": "73",
+    "issue": "3",
+    "page": "1787-1800",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          3
+        ]
+      ]
+    }
+  },
+  "marea": {
+    "DOI": "10.1109/tcomm.2025.3552296",
+    "title": [
+      "MAREA: A Delay-Aware Multi-Time-Scale Radio Resource Orchestrator for 6G O-RAN"
+    ],
+    "container-title": [
+      "IEEE Transactions on Communications"
+    ],
+    "volume": "73",
+    "issue": "9",
+    "page": "7695-7710",
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          9
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7797-1150",
+        "authenticated-orcid": false,
+        "given": "Oscar",
+        "family": "Adamuz-Hinojosa",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Signal Theory, Telematics and Communications, University of Granada, Granada, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2714-0519",
+        "authenticated-orcid": false,
+        "given": "Lanfranco",
+        "family": "Zanzi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Laboratories Europe, Heidelberg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0680-7150",
+        "authenticated-orcid": false,
+        "given": "Vincenzo",
+        "family": "Sciancalepore",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Laboratories Europe, Heidelberg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9654-6109",
+        "authenticated-orcid": false,
+        "given": "Xavier",
+        "family": "Costa-P\u00e9rez",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "NEC Laboratories Europe, Heidelberg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "caora": {
+    "status": "non-Crossref source",
+    "url": "10.48550/arXiv.2507.09124"
+  },
+  "murti": {
+    "DOI": "10.1109/eucnc/6gsummit54941.2022.9815815",
+    "title": [
+      "Learning-Based Orchestration for Dynamic Functional Split and Resource Allocation in vRANs"
+    ],
+    "container-title": [
+      "2022 Joint European Conference on Networks and Communications &amp; 6G Summit (EuCNC/6G Summit)"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "243-248",
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          6,
+          7
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Fahri Wisnu",
+        "family": "Murti",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Centre for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Samad",
+        "family": "Ali",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Centre for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "George",
+        "family": "Iosifidis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Delft University of Technology,Netherlands"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Matti",
+        "family": "Latva-Aho",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Oulu,Centre for Wireless Communications,Finland"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ]
+  },
+  "wang": {
+    "DOI": "10.1109/access.2023.3311888",
+    "title": [
+      "Resource Allocation Based on Radio Intelligence Controller for Open RAN Toward 6G"
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "volume": "11",
+    "issue": null,
+    "page": "97909-97919",
+    "published": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-0153-9166",
+        "authenticated-orcid": false,
+        "given": "Qingtian",
+        "family": "Wang",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "China Telecom Research Institute, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yang",
+        "family": "Liu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "China Telecom Research Institute, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yanchao",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Computer Science and Engineering, Nanyang Technological University, Jurong West, Singapore"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Xiong",
+        "family": "Xiong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "China Telecom Research Institute, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jiaying",
+        "family": "Zong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "China Telecom Research Institute, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jianxiu",
+        "family": "Wang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "China Telecom Research Institute, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peng",
+        "family": "Chen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "China Telecom Research Institute, Beijing, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "kasuluru": {
+    "DOI": "10.1109/access.2025.3648065",
+    "title": [
+      "Cloud-Native Multivariate Probabilistic Forecasting for Next-Generation Resource Allocation in O-RAN"
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "volume": "14",
+    "issue": null,
+    "page": "2904-2923",
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0007-9262-496X",
+        "authenticated-orcid": false,
+        "given": "Vaishnavi",
+        "family": "Kasuluru",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Centre Tecnol&#x00F2;gic de Telecomunicacions de Catalunya (CTTC/CERCA), Castelldefels, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Luis",
+        "family": "Blanco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre Tecnol&#x00F2;gic de Telecomunicacions de Catalunya (CTTC/CERCA), Castelldefels, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9713-2784",
+        "authenticated-orcid": false,
+        "given": "Cristian J.",
+        "family": "Vaca-Rubio",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre Tecnol&#x00F2;gic de Telecomunicacions de Catalunya (CTTC/CERCA), Castelldefels, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3329-0588",
+        "authenticated-orcid": false,
+        "given": "Engin",
+        "family": "Zeydan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre Tecnol&#x00F2;gic de Telecomunicacions de Catalunya (CTTC/CERCA), Castelldefels, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3546-1080",
+        "authenticated-orcid": false,
+        "given": "Angelos",
+        "family": "Antonopoulos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Nearby Computing S.L., Barcelona, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Albert",
+        "family": "Bel",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre Tecnol&#x00F2;gic de Telecomunicacions de Catalunya (CTTC/CERCA), Castelldefels, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "sora": {
+    "DOI": "10.1109/access.2025.3584345",
+    "title": [
+      "SORA: Energy-Efficient Resource Allocation in Open Radio Access Network With Online Learning"
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "volume": "13",
+    "issue": null,
+    "page": "113686-113701",
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    }
+  },
+  "comix": {
+    "DOI": "10.1109/access.2025.3585774",
+    "title": [
+      "COMIX: Generalized Conflict Management in O-RAN xApps\u2014Architecture, Workflow, and a Power Control Case"
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "volume": "13",
+    "issue": null,
+    "page": "116684-116700",
+    "published": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    }
+  },
+  "5erasi": {
+    "DOI": "10.1109/access.2026.3693783",
+    "title": [
+      "5ERASI: 5G Service-Enabled Resource Allocation and Sub-Slice Isolation for Open RAN"
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "1-1",
+    "published": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-5257-5613",
+        "authenticated-orcid": false,
+        "given": "Muhammad",
+        "family": "Iqbal",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Graduate School of Engineering, The University of Tokyo, Tokyo, Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Akihiro",
+        "family": "Nakao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graduate School of Engineering, The University of Tokyo, Tokyo, Japan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "radiosaber": {
+    "status": "non-Crossref source",
+    "url": "https://www.usenix.org/conference/nsdi23/presentation/chen-yongzhou"
+  },
+  "edgeric": {
+    "status": "non-Crossref source",
+    "url": "10.48550/arXiv.2304.11199"
+  },
+  "coloran": {
+    "DOI": "10.1109/tmc.2022.3188013",
+    "title": [
+      "ColO-RAN: Developing Machine Learning-Based xApps for Open RAN Closed-Loop Control on Programmable Experimental Platforms"
+    ],
+    "container-title": [
+      "IEEE Transactions on Mobile Computing"
+    ],
+    "volume": "22",
+    "issue": "10",
+    "page": "5787-5800",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          1
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-9740-134X",
+        "authenticated-orcid": false,
+        "given": "Michele",
+        "family": "Polese",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1511-1833",
+        "authenticated-orcid": false,
+        "given": "Leonardo",
+        "family": "Bonati",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7690-0449",
+        "authenticated-orcid": false,
+        "given": "Salvatore",
+        "family": "D'Oro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2667-1008",
+        "authenticated-orcid": false,
+        "given": "Stefano",
+        "family": "Basagni",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2719-1789",
+        "authenticated-orcid": false,
+        "given": "Tommaso",
+        "family": "Melodia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for the Wireless Internet of Things, Northeastern University, Boston, MA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "gym": {
+    "DOI": "10.1016/j.comnet.2022.109502",
+    "title": [
+      "OpenRAN Gym: AI/ML development, data collection, and testing for O-RAN on PAWR platforms"
+    ],
+    "container-title": [
+      "Computer Networks"
+    ],
+    "volume": "220",
+    "issue": null,
+    "page": "109502",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          1
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1511-1833",
+        "authenticated-orcid": false,
+        "given": "Leonardo",
+        "family": "Bonati",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michele",
+        "family": "Polese",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Salvatore",
+        "family": "D\u2019Oro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefano",
+        "family": "Basagni",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tommaso",
+        "family": "Melodia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "scope": {
+    "DOI": "10.1145/3458864.3466863",
+    "title": [
+      "SCOPE"
+    ],
+    "container-title": [
+      "Proceedings of the 19th Annual International Conference on Mobile Systems, Applications, and Services"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "415-426",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          6,
+          24
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Leonardo",
+        "family": "Bonati",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Northeastern University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Salvatore",
+        "family": "D'Oro",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northeastern University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefano",
+        "family": "Basagni",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northeastern University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tommaso",
+        "family": "Melodia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northeastern University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "flexric": {
+    "DOI": "10.1145/3485983.3494870",
+    "title": [
+      "FlexRIC"
+    ],
+    "container-title": [
+      "Proceedings of the 17th International Conference on emerging Networking EXperiments and Technologies"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "411-425",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Robert",
+        "family": "Schmidt",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "EURECOM, Sophia-Antipolis, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mikel",
+        "family": "Irazabal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "EURECOM, Sophia-Antipolis, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Navid",
+        "family": "Nikaein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "EURECOM, Sophia-Antipolis, France"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "nsoran": {
+    "DOI": "10.1145/3592149.3592161",
+    "title": [
+      "ns-O-RAN: Simulating O-RAN 5G Systems in ns-3"
+    ],
+    "container-title": [
+      "Proceedings of the 2023 Workshop on ns-3"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": "35-44",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          28
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-9217-5956",
+        "authenticated-orcid": false,
+        "given": "Andrea",
+        "family": "Lacava",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Northeastern University, USA and Sapienza, University of Rome, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9023-0528",
+        "authenticated-orcid": false,
+        "given": "Matteo",
+        "family": "Bordin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northeastern University, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9740-134X",
+        "authenticated-orcid": false,
+        "given": "Michele",
+        "family": "Polese",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northeastern University, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5047-8449",
+        "authenticated-orcid": false,
+        "given": "Rajarajan",
+        "family": "Sivaraj",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Mavenir Inc., USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1276-5054",
+        "authenticated-orcid": false,
+        "given": "Tommaso",
+        "family": "Zugno",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Padova, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9122-7993",
+        "authenticated-orcid": false,
+        "given": "Francesca",
+        "family": "Cuomo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Sapienza, University of Rome, Italy"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2719-1789",
+        "authenticated-orcid": false,
+        "given": "Tommaso",
+        "family": "Melodia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Northeastern University, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "colosseum": {
+    "DOI": "10.1109/ojcoms.2024.3447472",
+    "title": [
+      "Colosseum: The Open RAN Digital Twin"
+    ],
+    "container-title": [
+      "IEEE Open Journal of the Communications Society"
+    ],
+    "volume": "5",
+    "issue": null,
+    "page": "5452-5466",
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    }
+  },
+  "lena": {
+    "status": "non-Crossref source",
+    "url": "https://5g-lena.cttc.es/papers/"
+  },
+  "calibration": {
+    "status": "non-Crossref source",
+    "url": "https://5g-lena.cttc.es/features/calibration/"
+  },
+  "neely": {
+    "DOI": "10.1007/978-3-031-79995-2",
+    "title": [
+      "Stochastic Network Optimization with Application to Communication and Queueing Systems"
+    ],
+    "container-title": [
+      "Synthesis Lectures on Learning, Networks, and Algorithms"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "published": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Michael J.",
+        "family": "Neely",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "netcalc": {
+    "DOI": "10.1007/3-540-45318-0",
+    "title": [
+      "Network Calculus"
+    ],
+    "container-title": [
+      "Lecture Notes in Computer Science"
+    ],
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "published": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "author": null
+  },
+  "stochcalc": {
+    "DOI": "10.1007/978-1-84800-127-5",
+    "title": [
+      "Stochastic Network Calculus"
+    ],
+    "container-title": [],
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "published": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    }
+  },
+  "iwrr": {
+    "DOI": "10.1587/transcom.2021iti0001",
+    "title": [
+      "Interleaved Weighted Round-Robin: A Network Calculus Analysis"
+    ],
+    "container-title": [
+      "IEICE Transactions on Communications"
+    ],
+    "volume": "E104.B",
+    "issue": "12",
+    "page": "1479-1493",
+    "published": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          1
+        ]
+      ]
+    }
+  },
+  "drr": {
+    "DOI": "10.1109/tnet.2022.3164772",
+    "title": [
+      "Deficit Round-Robin: A Second Network Calculus Analysis"
+    ],
+    "container-title": [
+      "IEEE/ACM Transactions on Networking"
+    ],
+    "volume": "30",
+    "issue": "5",
+    "page": "2216-2230",
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6031-0519",
+        "authenticated-orcid": false,
+        "given": "Seyed Mohammadhossein",
+        "family": "Tabatabaee",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Communication Sciences, &#x00C9;cole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne (EPFL), Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2357-8078",
+        "authenticated-orcid": false,
+        "given": "Jean-Yves",
+        "family": "Le Boudec",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Communication Sciences, &#x00C9;cole Polytechnique F&#x00E9;d&#x00E9;rale de Lausanne (EPFL), Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "packetbounds": {
+    "DOI": "10.1109/tnet.2023.3275910",
+    "title": [
+      "Improved Network-Calculus Nodal Delay-Bounds in Time-Sensitive Networks"
+    ],
+    "container-title": [
+      "IEEE/ACM Transactions on Networking"
+    ],
+    "volume": "31",
+    "issue": "6",
+    "page": "2902-2917",
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          12
+        ]
+      ]
+    },
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-8224-5965",
+        "authenticated-orcid": false,
+        "given": "Ehsan",
+        "family": "Mohammadpour",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Communication Sciences, EPFL, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2283-3479",
+        "authenticated-orcid": false,
+        "given": "Eleni",
+        "family": "Stai",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Information Technology and Electrical Engineering, ETHZ, Z&#x00FC;rich, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-2357-8078",
+        "authenticated-orcid": false,
+        "given": "Jean-Yves",
+        "family": "Le Boudec",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer and Communication Sciences, EPFL, Lausanne, Switzerland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "sargent": {
+    "DOI": "10.1057/jos.2012.20",
+    "title": [
+      "Verification and validation of simulation models"
+    ],
+    "container-title": [
+      "Journal of Simulation"
+    ],
+    "volume": "7",
+    "issue": "1",
+    "page": "12-24",
+    "published": {
+      "date-parts": [
+        [
+          2013,
+          2
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "R G",
+        "family": "Sargent",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Syracuse University Syracuse USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "efron": {
+    "DOI": "10.1214/aos/1176344552",
+    "title": [
+      "Bootstrap Methods: Another Look at the Jackknife"
+    ],
+    "container-title": [
+      "The Annals of Statistics"
+    ],
+    "volume": "7",
+    "issue": "1",
+    "page": "1-26",
+    "published": {
+      "date-parts": [
+        [
+          1979,
+          1,
+          1
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "B.",
+        "family": "Efron",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ]
+  },
+  "holm": {
+    "status": "non-Crossref source",
+    "url": "https://www.jstor.org/stable/4615733"
+  }
+}

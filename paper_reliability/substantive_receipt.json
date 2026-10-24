@@ -1,0 +1,238 @@
+{
+  "algorithm_sha256": [
+    "6f70b10d38dfc63d0fb34553f6f44ef58959aad9df028f17039c87326248b304",
+    "8917447f3b30c99396e0141fd77f3e320f2572a0e5d700f7e10a1e95f8e33505"
+  ],
+  "diagnostics": [
+    {
+      "setting": "P",
+      "method": "risk",
+      "capacity_cost": 4100.75,
+      "switching_cost": 59.1,
+      "feasible_percent": 85.67365269461078,
+      "worst_class_mean_percent": 0.0
+    },
+    {
+      "setting": "P",
+      "method": "no_ledger",
+      "capacity_cost": 4551.25,
+      "switching_cost": 68.675,
+      "feasible_percent": 82.312874251497,
+      "worst_class_mean_percent": 0.0
+    },
+    {
+      "setting": "P",
+      "method": "uncalibrated",
+      "capacity_cost": 2698.75,
+      "switching_cost": 38.65,
+      "feasible_percent": 92.20808383233535,
+      "worst_class_mean_percent": 0.14474112160391844
+    },
+    {
+      "setting": "M",
+      "method": "risk",
+      "capacity_cost": 4424.0,
+      "switching_cost": 75.2125,
+      "feasible_percent": 86.09281437125749,
+      "worst_class_mean_percent": 0.8811083970916009
+    },
+    {
+      "setting": "M",
+      "method": "no_ledger",
+      "capacity_cost": 4909.0,
+      "switching_cost": 83.2875,
+      "feasible_percent": 81.56437125748504,
+      "worst_class_mean_percent": 0.8467506630583883
+    },
+    {
+      "setting": "M",
+      "method": "uncalibrated",
+      "capacity_cost": 2623.25,
+      "switching_cost": 48.6375,
+      "feasible_percent": 92.6497005988024,
+      "worst_class_mean_percent": 1.446867327332638
+    },
+    {
+      "setting": "B",
+      "method": "risk",
+      "capacity_cost": 5170.75,
+      "switching_cost": 106.55,
+      "feasible_percent": 86.01047904191617,
+      "worst_class_mean_percent": 0.34131801463173544
+    },
+    {
+      "setting": "B",
+      "method": "no_ledger",
+      "capacity_cost": 5917.5,
+      "switching_cost": 127.2625,
+      "feasible_percent": 81.938622754491,
+      "worst_class_mean_percent": 0.17657519178222852
+    },
+    {
+      "setting": "B",
+      "method": "uncalibrated",
+      "capacity_cost": 2275.25,
+      "switching_cost": 54.4125,
+      "feasible_percent": 93.937125748503,
+      "worst_class_mean_percent": 0.9710203655008498
+    },
+    {
+      "setting": "C",
+      "method": "risk",
+      "capacity_cost": 4117.0,
+      "switching_cost": 56.625,
+      "feasible_percent": 85.74101796407186,
+      "worst_class_mean_percent": 0.0
+    },
+    {
+      "setting": "C",
+      "method": "no_ledger",
+      "capacity_cost": 4585.5,
+      "switching_cost": 68.175,
+      "feasible_percent": 81.87874251497004,
+      "worst_class_mean_percent": 0.0
+    },
+    {
+      "setting": "C",
+      "method": "uncalibrated",
+      "capacity_cost": 2676.0,
+      "switching_cost": 39.175,
+      "feasible_percent": 92.33532934131738,
+      "worst_class_mean_percent": 0.19633183629960727
+    },
+    {
+      "setting": "R",
+      "method": "risk",
+      "capacity_cost": 4145.25,
+      "switching_cost": 56.5625,
+      "feasible_percent": 86.55688622754492,
+      "worst_class_mean_percent": 0.011030570438071225
+    },
+    {
+      "setting": "R",
+      "method": "no_ledger",
+      "capacity_cost": 4542.0,
+      "switching_cost": 67.25,
+      "feasible_percent": 83.63772455089821,
+      "worst_class_mean_percent": 0.041427660930529
+    },
+    {
+      "setting": "R",
+      "method": "uncalibrated",
+      "capacity_cost": 2528.0,
+      "switching_cost": 41.5375,
+      "feasible_percent": 95.3817365269461,
+      "worst_class_mean_percent": 1.5900374086203353
+    },
+    {
+      "setting": "L",
+      "method": "risk",
+      "capacity_cost": 4467.75,
+      "switching_cost": 55.8875,
+      "feasible_percent": 82.59730538922156,
+      "worst_class_mean_percent": 8.784589234910095
+    },
+    {
+      "setting": "L",
+      "method": "no_ledger",
+      "capacity_cost": 5224.5,
+      "switching_cost": 89.675,
+      "feasible_percent": 80.25449101796409,
+      "worst_class_mean_percent": 3.9806587556677724
+    },
+    {
+      "setting": "L",
+      "method": "uncalibrated",
+      "capacity_cost": 3177.25,
+      "switching_cost": 49.5,
+      "feasible_percent": 91.53443113772455,
+      "worst_class_mean_percent": 16.435498294501443
+    },
+    {
+      "setting": "J",
+      "method": "risk",
+      "capacity_cost": 4191.7,
+      "switching_cost": 109.375,
+      "feasible_percent": 84.7005988023952,
+      "worst_class_mean_percent": 0.002075262866629773
+    },
+    {
+      "setting": "J",
+      "method": "no_ledger",
+      "capacity_cost": 4590.65,
+      "switching_cost": 126.1,
+      "feasible_percent": 81.96107784431138,
+      "worst_class_mean_percent": 0.0
+    },
+    {
+      "setting": "J",
+      "method": "uncalibrated",
+      "capacity_cost": 2694.4,
+      "switching_cost": 82.0,
+      "feasible_percent": 92.32784431137725,
+      "worst_class_mean_percent": 1.0178498534245568
+    }
+  ],
+  "screen_matrix": [
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      false,
+      true,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      false,
+      true,
+      false,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  ],
+  "nominal_capacity_saving_share_percent": 97.91881758408955,
+  "source": "reliability_results.json",
+  "source_sha256": "dcbb36bd47f0c66f792bb459a22103fd6e1bf78a3af9f2a70c2e845c7033d64a",
+  "analysis_status": "Post hoc diagnostics. No retuning and no new executions."
+}

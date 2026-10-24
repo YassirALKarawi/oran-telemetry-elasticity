@@ -1,0 +1,87 @@
+V3 SURROGATE-CONSTRAINED ALLOCATION: EXPLORATORY RESULTS
+
+Runs: 480; seeds per case/config: 20
+Measured violations are percentages; paired differences are percentage points.
+No actual QoS guarantee follows from modeled feasibility.
+
+nominal_delay3_loss0.05                  modern_oldest            class0=  0.00% class1=  0.00% weighted=  0.00% modeled_feasible=not evaluated
+nominal_delay3_loss0.05                  modern_risk              class0=  0.00% class1=  0.00% weighted=  0.00% modeled_feasible=not evaluated
+nominal_delay3_loss0.05                  constrained_periodic     class0=  0.00% class1=  0.00% weighted=  0.00% modeled_feasible=98.01%
+nominal_delay3_loss0.05                  constrained_oldest       class0=  0.00% class1=  0.00% weighted=  0.00% modeled_feasible=98.41%
+nominal_delay3_loss0.05                  constrained_risk         class0=  0.00% class1=  0.00% weighted=  0.00% modeled_feasible=99.30%
+nominal_delay3_loss0.05                  constrained_no_margin    class0=  0.00% class1=  0.00% weighted=  0.00% modeled_feasible=99.99%
+bursty_transport_delay3_loss0.05         modern_oldest            class0= 38.88% class1= 33.21% weighted= 34.95% modeled_feasible=not evaluated
+bursty_transport_delay3_loss0.05         modern_risk              class0= 36.01% class1= 33.85% weighted= 34.52% modeled_feasible=not evaluated
+bursty_transport_delay3_loss0.05         constrained_periodic     class0= 24.56% class1= 35.37% weighted= 32.04% modeled_feasible=57.42%
+bursty_transport_delay3_loss0.05         constrained_oldest       class0= 24.83% class1= 35.40% weighted= 32.14% modeled_feasible=57.36%
+bursty_transport_delay3_loss0.05         constrained_risk         class0= 23.91% class1= 35.43% weighted= 31.88% modeled_feasible=57.87%
+bursty_transport_delay3_loss0.05         constrained_no_margin    class0= 25.94% class1= 35.22% weighted= 32.36% modeled_feasible=61.62%
+bursty_compute_delay3_loss0.05           modern_oldest            class0= 37.37% class1= 32.71% weighted= 34.14% modeled_feasible=not evaluated
+bursty_compute_delay3_loss0.05           modern_risk              class0= 34.70% class1= 33.28% weighted= 33.72% modeled_feasible=not evaluated
+bursty_compute_delay3_loss0.05           constrained_periodic     class0= 24.16% class1= 34.77% weighted= 31.51% modeled_feasible=58.77%
+bursty_compute_delay3_loss0.05           constrained_oldest       class0= 24.42% class1= 34.71% weighted= 31.55% modeled_feasible=58.70%
+bursty_compute_delay3_loss0.05           constrained_risk         class0= 22.95% class1= 34.82% weighted= 31.17% modeled_feasible=58.93%
+bursty_compute_delay3_loss0.05           constrained_no_margin    class0= 24.80% class1= 34.66% weighted= 31.63% modeled_feasible=63.12%
+bursty_transport_delay9_loss0.15         modern_oldest            class0= 39.23% class1= 32.29% weighted= 34.42% modeled_feasible=not evaluated
+bursty_transport_delay9_loss0.15         modern_risk              class0= 38.34% class1= 33.70% weighted= 35.13% modeled_feasible=not evaluated
+bursty_transport_delay9_loss0.15         constrained_periodic     class0= 24.01% class1= 35.37% weighted= 31.87% modeled_feasible=55.67%
+bursty_transport_delay9_loss0.15         constrained_oldest       class0= 23.04% class1= 35.61% weighted= 31.74% modeled_feasible=53.91%
+bursty_transport_delay9_loss0.15         constrained_risk         class0= 22.22% class1= 35.68% weighted= 31.54% modeled_feasible=55.82%
+bursty_transport_delay9_loss0.15         constrained_no_margin    class0= 25.13% class1= 35.36% weighted= 32.21% modeled_feasible=63.07%
+
+Paired constrained_risk minus comparator: negative favors constrained_risk.
+Exploratory paired-bootstrap 95% intervals, without multiplicity correction.
+nominal_delay3_loss0.05                  vs modern_oldest            class0    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs modern_oldest            class1    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs modern_oldest            weighted  +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs modern_risk              class0    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs modern_risk              class1    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs modern_risk              weighted  +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs constrained_periodic     class0    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs constrained_periodic     class1    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs constrained_periodic     weighted  +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs constrained_no_margin    class0    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs constrained_no_margin    class1    +0.000 CI=[ +0.000, +0.000]
+nominal_delay3_loss0.05                  vs constrained_no_margin    weighted  +0.000 CI=[ +0.000, +0.000]
+bursty_transport_delay3_loss0.05         vs modern_oldest            class0   -14.969 CI=[-15.871,-14.095]
+bursty_transport_delay3_loss0.05         vs modern_oldest            class1    +2.225 CI=[ +2.012, +2.430]
+bursty_transport_delay3_loss0.05         vs modern_oldest            weighted  -3.067 CI=[ -3.357, -2.799]
+bursty_transport_delay3_loss0.05         vs modern_risk              class0   -12.104 CI=[-12.742,-11.509]
+bursty_transport_delay3_loss0.05         vs modern_risk              class1    +1.576 CI=[ +1.357, +1.848]
+bursty_transport_delay3_loss0.05         vs modern_risk              weighted  -2.634 CI=[ -2.857, -2.423]
+bursty_transport_delay3_loss0.05         vs constrained_periodic     class0    -0.656 CI=[ -1.314, -0.008]
+bursty_transport_delay3_loss0.05         vs constrained_periodic     class1    +0.059 CI=[ -0.099, +0.207]
+bursty_transport_delay3_loss0.05         vs constrained_periodic     weighted  -0.159 CI=[ -0.321, -0.004]
+bursty_transport_delay3_loss0.05         vs constrained_no_margin    class0    -2.038 CI=[ -2.455, -1.591]
+bursty_transport_delay3_loss0.05         vs constrained_no_margin    class1    +0.212 CI=[ +0.137, +0.280]
+bursty_transport_delay3_loss0.05         vs constrained_no_margin    weighted  -0.480 CI=[ -0.584, -0.379]
+bursty_compute_delay3_loss0.05           vs modern_oldest            class0   -14.420 CI=[-15.016,-13.880]
+bursty_compute_delay3_loss0.05           vs modern_oldest            class1    +2.105 CI=[ +1.868, +2.345]
+bursty_compute_delay3_loss0.05           vs modern_oldest            weighted  -2.978 CI=[ -3.183, -2.776]
+bursty_compute_delay3_loss0.05           vs modern_risk              class0   -11.754 CI=[-12.350,-11.135]
+bursty_compute_delay3_loss0.05           vs modern_risk              class1    +1.537 CI=[ +1.311, +1.762]
+bursty_compute_delay3_loss0.05           vs modern_risk              weighted  -2.554 CI=[ -2.761, -2.324]
+bursty_compute_delay3_loss0.05           vs constrained_periodic     class0    -1.215 CI=[ -1.984, -0.440]
+bursty_compute_delay3_loss0.05           vs constrained_periodic     class1    +0.042 CI=[ -0.123, +0.202]
+bursty_compute_delay3_loss0.05           vs constrained_periodic     weighted  -0.342 CI=[ -0.524, -0.166]
+bursty_compute_delay3_loss0.05           vs constrained_no_margin    class0    -1.854 CI=[ -2.320, -1.417]
+bursty_compute_delay3_loss0.05           vs constrained_no_margin    class1    +0.152 CI=[ +0.056, +0.255]
+bursty_compute_delay3_loss0.05           vs constrained_no_margin    weighted  -0.465 CI=[ -0.553, -0.375]
+bursty_transport_delay9_loss0.15         vs modern_oldest            class0   -17.009 CI=[-18.197,-15.873]
+bursty_transport_delay9_loss0.15         vs modern_oldest            class1    +3.387 CI=[ +2.948, +3.841]
+bursty_transport_delay9_loss0.15         vs modern_oldest            weighted  -2.886 CI=[ -3.179, -2.584]
+bursty_transport_delay9_loss0.15         vs modern_risk              class0   -16.114 CI=[-17.135,-15.256]
+bursty_transport_delay9_loss0.15         vs modern_risk              class1    +1.971 CI=[ +1.657, +2.309]
+bursty_transport_delay9_loss0.15         vs modern_risk              weighted  -3.594 CI=[ -3.903, -3.313]
+bursty_transport_delay9_loss0.15         vs constrained_periodic     class0    -1.786 CI=[ -2.863, -0.813]
+bursty_transport_delay9_loss0.15         vs constrained_periodic     class1    +0.309 CI=[ +0.142, +0.474]
+bursty_transport_delay9_loss0.15         vs constrained_periodic     weighted  -0.334 CI=[ -0.610, -0.091]
+bursty_transport_delay9_loss0.15         vs constrained_no_margin    class0    -2.901 CI=[ -3.684, -2.160]
+bursty_transport_delay9_loss0.15         vs constrained_no_margin    class1    +0.318 CI=[ +0.212, +0.427]
+bursty_transport_delay9_loss0.15         vs constrained_no_margin    weighted  -0.671 CI=[ -0.876, -0.488]
+
+Classwise tradeoff audit against modern_oldest:
+bursty_compute_delay3_loss0.05: class0 -14.420 pp; class1 +2.105 pp; at least one class has a higher sample mean: joint protection not established
+bursty_transport_delay3_loss0.05: class0 -14.969 pp; class1 +2.225 pp; at least one class has a higher sample mean: joint protection not established
+bursty_transport_delay9_loss0.15: class0 -17.009 pp; class1 +3.387 pp; at least one class has a higher sample mean: joint protection not established
+nominal_delay3_loss0.05: class0 +0.000 pp; class1 +0.000 pp; neither class has a higher sample mean

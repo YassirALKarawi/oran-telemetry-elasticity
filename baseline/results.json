@@ -1,0 +1,7636 @@
+{
+  "status": "abstract_pilot_not_manuscript_results",
+  "seeds": 20,
+  "steps": 3000,
+  "slot_ms": 20,
+  "report_delay_slots": 3,
+  "report_loss_probability": 0.05,
+  "report_interval_slots": 5,
+  "summaries": [
+    {
+      "scenario": "nominal",
+      "policy": "periodic",
+      "sensitive_violation_mean": 0.3085739950832762,
+      "ci95_half_width": 0.02291298341090104,
+      "mean_backlog": 45.93011666666667
+    },
+    {
+      "scenario": "nominal",
+      "policy": "oldest",
+      "sensitive_violation_mean": 0.2806044163462235,
+      "ci95_half_width": 0.01782796535439964,
+      "mean_backlog": 43.30676666666667
+    },
+    {
+      "scenario": "nominal",
+      "policy": "impact",
+      "sensitive_violation_mean": 0.2658551130164254,
+      "ci95_half_width": 0.024479928991830827,
+      "mean_backlog": 46.07491666666667
+    },
+    {
+      "scenario": "bursty_transport",
+      "policy": "periodic",
+      "sensitive_violation_mean": 0.6826941769109864,
+      "ci95_half_width": 0.010454755136680802,
+      "mean_backlog": 132.1438
+    },
+    {
+      "scenario": "bursty_transport",
+      "policy": "oldest",
+      "sensitive_violation_mean": 0.6730723689632936,
+      "ci95_half_width": 0.012164610576587888,
+      "mean_backlog": 130.6913
+    },
+    {
+      "scenario": "bursty_transport",
+      "policy": "impact",
+      "sensitive_violation_mean": 0.6763711158142469,
+      "ci95_half_width": 0.01626158467005751,
+      "mean_backlog": 155.3221
+    },
+    {
+      "scenario": "bursty_compute",
+      "policy": "periodic",
+      "sensitive_violation_mean": 0.6580335832793389,
+      "ci95_half_width": 0.013673442181798346,
+      "mean_backlog": 129.30406666666667
+    },
+    {
+      "scenario": "bursty_compute",
+      "policy": "oldest",
+      "sensitive_violation_mean": 0.651973912571226,
+      "ci95_half_width": 0.013326449952603448,
+      "mean_backlog": 127.39246666666668
+    },
+    {
+      "scenario": "bursty_compute",
+      "policy": "impact",
+      "sensitive_violation_mean": 0.6465113265940545,
+      "ci95_half_width": 0.014882458559082377,
+      "mean_backlog": 135.36638333333332
+    }
+  ],
+  "runs": [
+    {
+      "scenario": "nominal",
+      "seed": 0,
+      "policy": "periodic",
+      "generated": [
+        2643,
+        6313
+      ],
+      "completed": [
+        2617,
+        6294
+      ],
+      "late_completed": [
+        727,
+        10
+      ],
+      "overdue_unfinished": [
+        10,
+        0
+      ],
+      "unfinished": [
+        26,
+        19
+      ],
+      "observed_violation_rate": [
+        0.27884979190314035,
+        0.001584032947885316
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        40,
+        32
+      ],
+      "mean_backlog_packets": 43.96333333333333,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "9ece705b09466f2a8e394cce27a54bca71a246882a635eed5dd0358776b8c010"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 0,
+      "policy": "oldest",
+      "generated": [
+        2643,
+        6313
+      ],
+      "completed": [
+        2643,
+        6300
+      ],
+      "late_completed": [
+        678,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        13
+      ],
+      "observed_violation_rate": [
+        0.2565266742338252,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        26,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        32,
+        32
+      ],
+      "mean_backlog_packets": 40.98133333333333,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "9ece705b09466f2a8e394cce27a54bca71a246882a635eed5dd0358776b8c010"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 0,
+      "policy": "impact",
+      "generated": [
+        2643,
+        6313
+      ],
+      "completed": [
+        2640,
+        6293
+      ],
+      "late_completed": [
+        500,
+        5
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        20
+      ],
+      "observed_violation_rate": [
+        0.18917896329928113,
+        0.000792016473942658
+      ],
+      "completed_delay_p95_slots": [
+        26,
+        31
+      ],
+      "completed_delay_p99_slots": [
+        35,
+        36
+      ],
+      "mean_backlog_packets": 41.575,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "9ece705b09466f2a8e394cce27a54bca71a246882a635eed5dd0358776b8c010"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 1,
+      "policy": "periodic",
+      "generated": [
+        2644,
+        6333
+      ],
+      "completed": [
+        2642,
+        6304
+      ],
+      "late_completed": [
+        796,
+        61
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        29
+      ],
+      "observed_violation_rate": [
+        0.3010590015128593,
+        0.009632085899257856
+      ],
+      "completed_delay_p95_slots": [
+        38,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        50,
+        40
+      ],
+      "mean_backlog_packets": 46.37866666666667,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "3c369919eba5b2b4e2d1aeb1ab97bd3f27566ae791e6d73915ff39427c2cf125"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 1,
+      "policy": "oldest",
+      "generated": [
+        2644,
+        6333
+      ],
+      "completed": [
+        2642,
+        6292
+      ],
+      "late_completed": [
+        778,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        41
+      ],
+      "observed_violation_rate": [
+        0.29425113464447805,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        34
+      ],
+      "mean_backlog_packets": 44.325,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "3c369919eba5b2b4e2d1aeb1ab97bd3f27566ae791e6d73915ff39427c2cf125"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 1,
+      "policy": "impact",
+      "generated": [
+        2644,
+        6333
+      ],
+      "completed": [
+        2640,
+        6282
+      ],
+      "late_completed": [
+        742,
+        125
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        51
+      ],
+      "observed_violation_rate": [
+        0.2806354009077156,
+        0.019737880941102164
+      ],
+      "completed_delay_p95_slots": [
+        34,
+        34
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        43
+      ],
+      "mean_backlog_packets": 47.68366666666667,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "3c369919eba5b2b4e2d1aeb1ab97bd3f27566ae791e6d73915ff39427c2cf125"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 2,
+      "policy": "periodic",
+      "generated": [
+        2729,
+        6333
+      ],
+      "completed": [
+        2681,
+        6315
+      ],
+      "late_completed": [
+        831,
+        42
+      ],
+      "overdue_unfinished": [
+        31,
+        0
+      ],
+      "unfinished": [
+        48,
+        18
+      ],
+      "observed_violation_rate": [
+        0.31586661780872116,
+        0.006631927996210327
+      ],
+      "completed_delay_p95_slots": [
+        38,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        55,
+        39
+      ],
+      "mean_backlog_packets": 47.147,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "fd8e918b06089b9d7a779031c6eab0799e7ba88da6559241169999cc05a99802"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 2,
+      "policy": "oldest",
+      "generated": [
+        2729,
+        6333
+      ],
+      "completed": [
+        2714,
+        6317
+      ],
+      "late_completed": [
+        649,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        15,
+        16
+      ],
+      "observed_violation_rate": [
+        0.23781604983510443,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        31
+      ],
+      "mean_backlog_packets": 41.026,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "fd8e918b06089b9d7a779031c6eab0799e7ba88da6559241169999cc05a99802"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 2,
+      "policy": "impact",
+      "generated": [
+        2729,
+        6333
+      ],
+      "completed": [
+        2714,
+        6303
+      ],
+      "late_completed": [
+        740,
+        132
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        15,
+        30
+      ],
+      "observed_violation_rate": [
+        0.2711615976548186,
+        0.020843202273803884
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        36
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        42
+      ],
+      "mean_backlog_packets": 47.805,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "fd8e918b06089b9d7a779031c6eab0799e7ba88da6559241169999cc05a99802"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 3,
+      "policy": "periodic",
+      "generated": [
+        2720,
+        6345
+      ],
+      "completed": [
+        2707,
+        6284
+      ],
+      "late_completed": [
+        835,
+        6
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        13,
+        61
+      ],
+      "observed_violation_rate": [
+        0.3069852941176471,
+        0.0009456264775413711
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        36
+      ],
+      "mean_backlog_packets": 46.583,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "462fb718c70469185956902034f6849ce0d4c8f395d6696167a4cf4e09be3133"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 3,
+      "policy": "oldest",
+      "generated": [
+        2720,
+        6345
+      ],
+      "completed": [
+        2705,
+        6307
+      ],
+      "late_completed": [
+        739,
+        10
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        15,
+        38
+      ],
+      "observed_violation_rate": [
+        0.2716911764705882,
+        0.0015760441292356187
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        42,
+        35
+      ],
+      "mean_backlog_packets": 44.44233333333333,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "462fb718c70469185956902034f6849ce0d4c8f395d6696167a4cf4e09be3133"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 3,
+      "policy": "impact",
+      "generated": [
+        2720,
+        6345
+      ],
+      "completed": [
+        2707,
+        6283
+      ],
+      "late_completed": [
+        613,
+        32
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        13,
+        62
+      ],
+      "observed_violation_rate": [
+        0.22536764705882353,
+        0.00504334121355398
+      ],
+      "completed_delay_p95_slots": [
+        27,
+        33
+      ],
+      "completed_delay_p99_slots": [
+        36,
+        38
+      ],
+      "mean_backlog_packets": 44.132333333333335,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "462fb718c70469185956902034f6849ce0d4c8f395d6696167a4cf4e09be3133"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 4,
+      "policy": "periodic",
+      "generated": [
+        2763,
+        6308
+      ],
+      "completed": [
+        2748,
+        6290
+      ],
+      "late_completed": [
+        1106,
+        0
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        15,
+        18
+      ],
+      "observed_violation_rate": [
+        0.40137531668476295,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        34,
+        31
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        36
+      ],
+      "mean_backlog_packets": 49.38433333333333,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "5a9d2689734ed4c9a1123c35ad65ab8099b7345ba4e56055a091bdfc70285ff5"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 4,
+      "policy": "oldest",
+      "generated": [
+        2763,
+        6308
+      ],
+      "completed": [
+        2759,
+        6289
+      ],
+      "late_completed": [
+        746,
+        16
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        19
+      ],
+      "observed_violation_rate": [
+        0.2699963807455664,
+        0.0025364616360177552
+      ],
+      "completed_delay_p95_slots": [
+        27,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        39,
+        35
+      ],
+      "mean_backlog_packets": 43.626,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "5a9d2689734ed4c9a1123c35ad65ab8099b7345ba4e56055a091bdfc70285ff5"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 4,
+      "policy": "impact",
+      "generated": [
+        2763,
+        6308
+      ],
+      "completed": [
+        2741,
+        6270
+      ],
+      "late_completed": [
+        664,
+        73
+      ],
+      "overdue_unfinished": [
+        10,
+        0
+      ],
+      "unfinished": [
+        22,
+        38
+      ],
+      "observed_violation_rate": [
+        0.2439377488237423,
+        0.011572606214331009
+      ],
+      "completed_delay_p95_slots": [
+        29,
+        33
+      ],
+      "completed_delay_p99_slots": [
+        40,
+        41
+      ],
+      "mean_backlog_packets": 44.694,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "5a9d2689734ed4c9a1123c35ad65ab8099b7345ba4e56055a091bdfc70285ff5"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 5,
+      "policy": "periodic",
+      "generated": [
+        2715,
+        6292
+      ],
+      "completed": [
+        2694,
+        6272
+      ],
+      "late_completed": [
+        966,
+        4
+      ],
+      "overdue_unfinished": [
+        5,
+        0
+      ],
+      "unfinished": [
+        21,
+        20
+      ],
+      "observed_violation_rate": [
+        0.3576427255985267,
+        0.0006357279084551812
+      ],
+      "completed_delay_p95_slots": [
+        38,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        51,
+        36
+      ],
+      "mean_backlog_packets": 49.150666666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "e801739efb22543311fa8434f1a9bf7e6bf20d281f23eef7749bee906f9044b8"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 5,
+      "policy": "oldest",
+      "generated": [
+        2715,
+        6292
+      ],
+      "completed": [
+        2693,
+        6253
+      ],
+      "late_completed": [
+        830,
+        0
+      ],
+      "overdue_unfinished": [
+        6,
+        0
+      ],
+      "unfinished": [
+        22,
+        39
+      ],
+      "observed_violation_rate": [
+        0.30791896869244934,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        47,
+        34
+      ],
+      "mean_backlog_packets": 45.147666666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "e801739efb22543311fa8434f1a9bf7e6bf20d281f23eef7749bee906f9044b8"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 5,
+      "policy": "impact",
+      "generated": [
+        2715,
+        6292
+      ],
+      "completed": [
+        2710,
+        6290
+      ],
+      "late_completed": [
+        828,
+        101
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        2
+      ],
+      "observed_violation_rate": [
+        0.30497237569060776,
+        0.016052129688493323
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        36
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        42
+      ],
+      "mean_backlog_packets": 48.906,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "e801739efb22543311fa8434f1a9bf7e6bf20d281f23eef7749bee906f9044b8"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 6,
+      "policy": "periodic",
+      "generated": [
+        2756,
+        6353
+      ],
+      "completed": [
+        2730,
+        6320
+      ],
+      "late_completed": [
+        1075,
+        2
+      ],
+      "overdue_unfinished": [
+        9,
+        0
+      ],
+      "unfinished": [
+        26,
+        33
+      ],
+      "observed_violation_rate": [
+        0.39332365747460085,
+        0.00031481189988981584
+      ],
+      "completed_delay_p95_slots": [
+        35,
+        31
+      ],
+      "completed_delay_p99_slots": [
+        46,
+        35
+      ],
+      "mean_backlog_packets": 50.395,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "0357cc1b4ba94efc72613faf2822ff00ad53fcd7dee5f8a33889d8369ca9794d"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 6,
+      "policy": "oldest",
+      "generated": [
+        2756,
+        6353
+      ],
+      "completed": [
+        2751,
+        6318
+      ],
+      "late_completed": [
+        931,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        35
+      ],
+      "observed_violation_rate": [
+        0.33780841799709727,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        42,
+        33
+      ],
+      "mean_backlog_packets": 46.225,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "0357cc1b4ba94efc72613faf2822ff00ad53fcd7dee5f8a33889d8369ca9794d"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 6,
+      "policy": "impact",
+      "generated": [
+        2756,
+        6353
+      ],
+      "completed": [
+        2752,
+        6307
+      ],
+      "late_completed": [
+        1107,
+        143
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        46
+      ],
+      "observed_violation_rate": [
+        0.4016690856313498,
+        0.022509050842121833
+      ],
+      "completed_delay_p95_slots": [
+        34,
+        37
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        44
+      ],
+      "mean_backlog_packets": 55.690333333333335,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "0357cc1b4ba94efc72613faf2822ff00ad53fcd7dee5f8a33889d8369ca9794d"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 7,
+      "policy": "periodic",
+      "generated": [
+        2631,
+        6273
+      ],
+      "completed": [
+        2610,
+        6254
+      ],
+      "late_completed": [
+        950,
+        141
+      ],
+      "overdue_unfinished": [
+        11,
+        0
+      ],
+      "unfinished": [
+        21,
+        19
+      ],
+      "observed_violation_rate": [
+        0.3652603572786013,
+        0.022477283596365374
+      ],
+      "completed_delay_p95_slots": [
+        36,
+        36
+      ],
+      "completed_delay_p99_slots": [
+        51,
+        44
+      ],
+      "mean_backlog_packets": 50.55,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "ba4431464571de7972cb9466d32c0a03dabd0c5fce26391b840ec6627d2e4254"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 7,
+      "policy": "oldest",
+      "generated": [
+        2631,
+        6273
+      ],
+      "completed": [
+        2606,
+        6265
+      ],
+      "late_completed": [
+        735,
+        0
+      ],
+      "overdue_unfinished": [
+        15,
+        0
+      ],
+      "unfinished": [
+        25,
+        8
+      ],
+      "observed_violation_rate": [
+        0.28506271379703535,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        38,
+        33
+      ],
+      "mean_backlog_packets": 42.915333333333336,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "ba4431464571de7972cb9466d32c0a03dabd0c5fce26391b840ec6627d2e4254"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 7,
+      "policy": "impact",
+      "generated": [
+        2631,
+        6273
+      ],
+      "completed": [
+        2604,
+        6265
+      ],
+      "late_completed": [
+        739,
+        102
+      ],
+      "overdue_unfinished": [
+        17,
+        0
+      ],
+      "unfinished": [
+        27,
+        8
+      ],
+      "observed_violation_rate": [
+        0.28734321550741165,
+        0.016260162601626018
+      ],
+      "completed_delay_p95_slots": [
+        29,
+        35
+      ],
+      "completed_delay_p99_slots": [
+        34,
+        45
+      ],
+      "mean_backlog_packets": 43.928666666666665,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "ba4431464571de7972cb9466d32c0a03dabd0c5fce26391b840ec6627d2e4254"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 8,
+      "policy": "periodic",
+      "generated": [
+        2726,
+        6333
+      ],
+      "completed": [
+        2719,
+        6304
+      ],
+      "late_completed": [
+        812,
+        107
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        29
+      ],
+      "observed_violation_rate": [
+        0.2978723404255319,
+        0.01689562608558345
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        31
+      ],
+      "completed_delay_p99_slots": [
+        46,
+        45
+      ],
+      "mean_backlog_packets": 46.885666666666665,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "224df3574ad0edc5073c2a17be8d80e7b8e1d1d8c937b53a81469707c4cf2cd9"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 8,
+      "policy": "oldest",
+      "generated": [
+        2726,
+        6333
+      ],
+      "completed": [
+        2719,
+        6304
+      ],
+      "late_completed": [
+        802,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        29
+      ],
+      "observed_violation_rate": [
+        0.2942039618488628,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        32,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        31
+      ],
+      "mean_backlog_packets": 43.36233333333333,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "224df3574ad0edc5073c2a17be8d80e7b8e1d1d8c937b53a81469707c4cf2cd9"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 8,
+      "policy": "impact",
+      "generated": [
+        2726,
+        6333
+      ],
+      "completed": [
+        2719,
+        6330
+      ],
+      "late_completed": [
+        631,
+        129
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        3
+      ],
+      "observed_violation_rate": [
+        0.231474688187821,
+        0.02036949313121743
+      ],
+      "completed_delay_p95_slots": [
+        26,
+        35
+      ],
+      "completed_delay_p99_slots": [
+        33,
+        44
+      ],
+      "mean_backlog_packets": 45.849666666666664,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "224df3574ad0edc5073c2a17be8d80e7b8e1d1d8c937b53a81469707c4cf2cd9"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 9,
+      "policy": "periodic",
+      "generated": [
+        2682,
+        6345
+      ],
+      "completed": [
+        2639,
+        6328
+      ],
+      "late_completed": [
+        835,
+        0
+      ],
+      "overdue_unfinished": [
+        35,
+        0
+      ],
+      "unfinished": [
+        43,
+        17
+      ],
+      "observed_violation_rate": [
+        0.3243847874720358,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        36,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        49,
+        33
+      ],
+      "mean_backlog_packets": 46.779333333333334,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "5ec4f3a9725f3fd3fdb9e4d53f48d00ce7a3cc0e287e77560d3e03988f860ed6"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 9,
+      "policy": "oldest",
+      "generated": [
+        2682,
+        6345
+      ],
+      "completed": [
+        2662,
+        6322
+      ],
+      "late_completed": [
+        897,
+        0
+      ],
+      "overdue_unfinished": [
+        12,
+        0
+      ],
+      "unfinished": [
+        20,
+        23
+      ],
+      "observed_violation_rate": [
+        0.3389261744966443,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        48,
+        34
+      ],
+      "mean_backlog_packets": 47.06733333333333,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "5ec4f3a9725f3fd3fdb9e4d53f48d00ce7a3cc0e287e77560d3e03988f860ed6"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 9,
+      "policy": "impact",
+      "generated": [
+        2682,
+        6345
+      ],
+      "completed": [
+        2681,
+        6326
+      ],
+      "late_completed": [
+        670,
+        106
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        19
+      ],
+      "observed_violation_rate": [
+        0.24981357196122297,
+        0.016706067769897557
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        34
+      ],
+      "completed_delay_p99_slots": [
+        40,
+        45
+      ],
+      "mean_backlog_packets": 45.532333333333334,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "5ec4f3a9725f3fd3fdb9e4d53f48d00ce7a3cc0e287e77560d3e03988f860ed6"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 10,
+      "policy": "periodic",
+      "generated": [
+        2645,
+        6255
+      ],
+      "completed": [
+        2621,
+        6236
+      ],
+      "late_completed": [
+        591,
+        5
+      ],
+      "overdue_unfinished": [
+        7,
+        0
+      ],
+      "unfinished": [
+        24,
+        19
+      ],
+      "observed_violation_rate": [
+        0.22608695652173913,
+        0.0007993605115907274
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        27
+      ],
+      "completed_delay_p99_slots": [
+        38,
+        30
+      ],
+      "mean_backlog_packets": 41.472,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "eac0b9b2b335f2828539023be3454c61d801cabe083ac35a5a598647c6ecee5a"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 10,
+      "policy": "oldest",
+      "generated": [
+        2645,
+        6255
+      ],
+      "completed": [
+        2639,
+        6212
+      ],
+      "late_completed": [
+        684,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        43
+      ],
+      "observed_violation_rate": [
+        0.25860113421550096,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        32
+      ],
+      "mean_backlog_packets": 42.11666666666667,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "eac0b9b2b335f2828539023be3454c61d801cabe083ac35a5a598647c6ecee5a"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 10,
+      "policy": "impact",
+      "generated": [
+        2645,
+        6255
+      ],
+      "completed": [
+        2639,
+        6219
+      ],
+      "late_completed": [
+        570,
+        42
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        36
+      ],
+      "observed_violation_rate": [
+        0.21550094517958412,
+        0.00671462829736211
+      ],
+      "completed_delay_p95_slots": [
+        29,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        38
+      ],
+      "mean_backlog_packets": 42.404666666666664,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "eac0b9b2b335f2828539023be3454c61d801cabe083ac35a5a598647c6ecee5a"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 11,
+      "policy": "periodic",
+      "generated": [
+        2704,
+        6270
+      ],
+      "completed": [
+        2685,
+        6251
+      ],
+      "late_completed": [
+        795,
+        0
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        19,
+        19
+      ],
+      "observed_violation_rate": [
+        0.29511834319526625,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        40,
+        33
+      ],
+      "mean_backlog_packets": 43.10366666666667,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "47aaf0ee19ca0db5afb6e41594beeb07f74243742b0fb5adb23f48211a91281d"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 11,
+      "policy": "oldest",
+      "generated": [
+        2704,
+        6270
+      ],
+      "completed": [
+        2694,
+        6218
+      ],
+      "late_completed": [
+        670,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        52
+      ],
+      "observed_violation_rate": [
+        0.24778106508875739,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        29,
+        27
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        30
+      ],
+      "mean_backlog_packets": 40.37433333333333,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "47aaf0ee19ca0db5afb6e41594beeb07f74243742b0fb5adb23f48211a91281d"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 11,
+      "policy": "impact",
+      "generated": [
+        2704,
+        6270
+      ],
+      "completed": [
+        2658,
+        6209
+      ],
+      "late_completed": [
+        640,
+        92
+      ],
+      "overdue_unfinished": [
+        30,
+        0
+      ],
+      "unfinished": [
+        46,
+        61
+      ],
+      "observed_violation_rate": [
+        0.24778106508875739,
+        0.01467304625199362
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        34
+      ],
+      "completed_delay_p99_slots": [
+        39,
+        42
+      ],
+      "mean_backlog_packets": 44.989666666666665,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "47aaf0ee19ca0db5afb6e41594beeb07f74243742b0fb5adb23f48211a91281d"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 12,
+      "policy": "periodic",
+      "generated": [
+        2660,
+        6389
+      ],
+      "completed": [
+        2655,
+        6355
+      ],
+      "late_completed": [
+        836,
+        22
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        34
+      ],
+      "observed_violation_rate": [
+        0.3142857142857143,
+        0.003443418375332603
+      ],
+      "completed_delay_p95_slots": [
+        36,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        46,
+        37
+      ],
+      "mean_backlog_packets": 47.222,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "d345a91bf6e51a1388ae398e34ae42e32060753050031cb8e6d54b0e5d9a522c"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 12,
+      "policy": "oldest",
+      "generated": [
+        2660,
+        6389
+      ],
+      "completed": [
+        2644,
+        6339
+      ],
+      "late_completed": [
+        956,
+        2
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        16,
+        50
+      ],
+      "observed_violation_rate": [
+        0.3593984962406015,
+        0.0003130380341211457
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        34
+      ],
+      "mean_backlog_packets": 46.525666666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "d345a91bf6e51a1388ae398e34ae42e32060753050031cb8e6d54b0e5d9a522c"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 12,
+      "policy": "impact",
+      "generated": [
+        2660,
+        6389
+      ],
+      "completed": [
+        2646,
+        6320
+      ],
+      "late_completed": [
+        954,
+        159
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        14,
+        69
+      ],
+      "observed_violation_rate": [
+        0.3586466165413534,
+        0.024886523712631083
+      ],
+      "completed_delay_p95_slots": [
+        32,
+        37
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        47
+      ],
+      "mean_backlog_packets": 53.065333333333335,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "d345a91bf6e51a1388ae398e34ae42e32060753050031cb8e6d54b0e5d9a522c"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 13,
+      "policy": "periodic",
+      "generated": [
+        2632,
+        6263
+      ],
+      "completed": [
+        2620,
+        6249
+      ],
+      "late_completed": [
+        906,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        14
+      ],
+      "observed_violation_rate": [
+        0.34422492401215804,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        40,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        60,
+        35
+      ],
+      "mean_backlog_packets": 46.349666666666664,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "37cffd80d7ff6802514e48fd6c0c17db440cb5ec9653a28e33dca7852fc5daa2"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 13,
+      "policy": "oldest",
+      "generated": [
+        2632,
+        6263
+      ],
+      "completed": [
+        2620,
+        6212
+      ],
+      "late_completed": [
+        807,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        51
+      ],
+      "observed_violation_rate": [
+        0.3066109422492401,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        40,
+        30
+      ],
+      "mean_backlog_packets": 43.754333333333335,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "37cffd80d7ff6802514e48fd6c0c17db440cb5ec9653a28e33dca7852fc5daa2"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 13,
+      "policy": "impact",
+      "generated": [
+        2632,
+        6263
+      ],
+      "completed": [
+        2627,
+        6251
+      ],
+      "late_completed": [
+        699,
+        17
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        12
+      ],
+      "observed_violation_rate": [
+        0.2655775075987842,
+        0.002714354143381766
+      ],
+      "completed_delay_p95_slots": [
+        27,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        37,
+        37
+      ],
+      "mean_backlog_packets": 45.16766666666667,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "37cffd80d7ff6802514e48fd6c0c17db440cb5ec9653a28e33dca7852fc5daa2"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 14,
+      "policy": "periodic",
+      "generated": [
+        2750,
+        6264
+      ],
+      "completed": [
+        2749,
+        6219
+      ],
+      "late_completed": [
+        814,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        45
+      ],
+      "observed_violation_rate": [
+        0.296,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        37,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        51,
+        34
+      ],
+      "mean_backlog_packets": 44.20733333333333,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "f2301d8ebcf3ee3b00939487d1dc942b8e38d9d323aaa9191317cbd68588ceb4"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 14,
+      "policy": "oldest",
+      "generated": [
+        2750,
+        6264
+      ],
+      "completed": [
+        2747,
+        6226
+      ],
+      "late_completed": [
+        725,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        38
+      ],
+      "observed_violation_rate": [
+        0.2636363636363636,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        28,
+        27
+      ],
+      "completed_delay_p99_slots": [
+        36,
+        33
+      ],
+      "mean_backlog_packets": 41.907333333333334,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "f2301d8ebcf3ee3b00939487d1dc942b8e38d9d323aaa9191317cbd68588ceb4"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 14,
+      "policy": "impact",
+      "generated": [
+        2750,
+        6264
+      ],
+      "completed": [
+        2744,
+        6242
+      ],
+      "late_completed": [
+        664,
+        73
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        22
+      ],
+      "observed_violation_rate": [
+        0.24145454545454545,
+        0.01165389527458493
+      ],
+      "completed_delay_p95_slots": [
+        27,
+        34
+      ],
+      "completed_delay_p99_slots": [
+        37,
+        42
+      ],
+      "mean_backlog_packets": 44.336,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "f2301d8ebcf3ee3b00939487d1dc942b8e38d9d323aaa9191317cbd68588ceb4"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 15,
+      "policy": "periodic",
+      "generated": [
+        2594,
+        6184
+      ],
+      "completed": [
+        2591,
+        6140
+      ],
+      "late_completed": [
+        792,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        44
+      ],
+      "observed_violation_rate": [
+        0.3053199691595991,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        34,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        33
+      ],
+      "mean_backlog_packets": 44.659333333333336,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "ca06d684c3920d7ef6d3511722f7a828f48360e16252aff1f1187f803efeb6bc"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 15,
+      "policy": "oldest",
+      "generated": [
+        2594,
+        6184
+      ],
+      "completed": [
+        2578,
+        6144
+      ],
+      "late_completed": [
+        577,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        16,
+        40
+      ],
+      "observed_violation_rate": [
+        0.22243639167309176,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        28,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        33
+      ],
+      "mean_backlog_packets": 41.040333333333336,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "ca06d684c3920d7ef6d3511722f7a828f48360e16252aff1f1187f803efeb6bc"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 15,
+      "policy": "impact",
+      "generated": [
+        2594,
+        6184
+      ],
+      "completed": [
+        2585,
+        6170
+      ],
+      "late_completed": [
+        663,
+        58
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        9,
+        14
+      ],
+      "observed_violation_rate": [
+        0.2555898226676947,
+        0.009379042690815007
+      ],
+      "completed_delay_p95_slots": [
+        31,
+        34
+      ],
+      "completed_delay_p99_slots": [
+        46,
+        40
+      ],
+      "mean_backlog_packets": 44.96966666666667,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "ca06d684c3920d7ef6d3511722f7a828f48360e16252aff1f1187f803efeb6bc"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 16,
+      "policy": "periodic",
+      "generated": [
+        2746,
+        6050
+      ],
+      "completed": [
+        2734,
+        6040
+      ],
+      "late_completed": [
+        500,
+        3
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        10
+      ],
+      "observed_violation_rate": [
+        0.1820830298616169,
+        0.0004958677685950413
+      ],
+      "completed_delay_p95_slots": [
+        24,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        36,
+        35
+      ],
+      "mean_backlog_packets": 41.047333333333334,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "ced25848a5bfe5404fba6759e01af4a27a9f0177a4ca64a1897d719d50a0eb05"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 16,
+      "policy": "oldest",
+      "generated": [
+        2746,
+        6050
+      ],
+      "completed": [
+        2723,
+        6040
+      ],
+      "late_completed": [
+        522,
+        0
+      ],
+      "overdue_unfinished": [
+        7,
+        0
+      ],
+      "unfinished": [
+        23,
+        10
+      ],
+      "observed_violation_rate": [
+        0.19264384559359068,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        23,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        33,
+        33
+      ],
+      "mean_backlog_packets": 41.306666666666665,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "ced25848a5bfe5404fba6759e01af4a27a9f0177a4ca64a1897d719d50a0eb05"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 16,
+      "policy": "impact",
+      "generated": [
+        2746,
+        6050
+      ],
+      "completed": [
+        2744,
+        6032
+      ],
+      "late_completed": [
+        423,
+        0
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        18
+      ],
+      "observed_violation_rate": [
+        0.1540422432629279,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        23,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        30,
+        36
+      ],
+      "mean_backlog_packets": 39.18333333333333,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "ced25848a5bfe5404fba6759e01af4a27a9f0177a4ca64a1897d719d50a0eb05"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 17,
+      "policy": "periodic",
+      "generated": [
+        2629,
+        6346
+      ],
+      "completed": [
+        2624,
+        6282
+      ],
+      "late_completed": [
+        824,
+        1
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        64
+      ],
+      "observed_violation_rate": [
+        0.3134271586154431,
+        0.0001575795776867318
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        35
+      ],
+      "mean_backlog_packets": 45.79633333333334,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "c133ff2761dc498262239dda6100563df7e8dd06b6d0a2588546a43989cede15"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 17,
+      "policy": "oldest",
+      "generated": [
+        2629,
+        6346
+      ],
+      "completed": [
+        2616,
+        6327
+      ],
+      "late_completed": [
+        807,
+        0
+      ],
+      "overdue_unfinished": [
+        2,
+        0
+      ],
+      "unfinished": [
+        13,
+        19
+      ],
+      "observed_violation_rate": [
+        0.3077215671357931,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        33,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        33
+      ],
+      "mean_backlog_packets": 44.301,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "c133ff2761dc498262239dda6100563df7e8dd06b6d0a2588546a43989cede15"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 17,
+      "policy": "impact",
+      "generated": [
+        2629,
+        6346
+      ],
+      "completed": [
+        2625,
+        6312
+      ],
+      "late_completed": [
+        749,
+        81
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        34
+      ],
+      "observed_violation_rate": [
+        0.28489920121719287,
+        0.012763945792625275
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        35
+      ],
+      "completed_delay_p99_slots": [
+        38,
+        41
+      ],
+      "mean_backlog_packets": 45.92133333333334,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "c133ff2761dc498262239dda6100563df7e8dd06b6d0a2588546a43989cede15"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 18,
+      "policy": "periodic",
+      "generated": [
+        2651,
+        6308
+      ],
+      "completed": [
+        2636,
+        6283
+      ],
+      "late_completed": [
+        636,
+        26
+      ],
+      "overdue_unfinished": [
+        1,
+        0
+      ],
+      "unfinished": [
+        15,
+        25
+      ],
+      "observed_violation_rate": [
+        0.24028668427008676,
+        0.004121750158528852
+      ],
+      "completed_delay_p95_slots": [
+        25,
+        29
+      ],
+      "completed_delay_p99_slots": [
+        39,
+        36
+      ],
+      "mean_backlog_packets": 41.746,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "e663e32b81663c70347f548e5b20b954662fd92f7b1f7837bb9cda36c7c3bd24"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 18,
+      "policy": "oldest",
+      "generated": [
+        2651,
+        6308
+      ],
+      "completed": [
+        2636,
+        6283
+      ],
+      "late_completed": [
+        701,
+        0
+      ],
+      "overdue_unfinished": [
+        1,
+        0
+      ],
+      "unfinished": [
+        15,
+        25
+      ],
+      "observed_violation_rate": [
+        0.2648057336854017,
+        0.0
+      ],
+      "completed_delay_p95_slots": [
+        28,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        36,
+        33
+      ],
+      "mean_backlog_packets": 42.916666666666664,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "e663e32b81663c70347f548e5b20b954662fd92f7b1f7837bb9cda36c7c3bd24"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 18,
+      "policy": "impact",
+      "generated": [
+        2651,
+        6308
+      ],
+      "completed": [
+        2648,
+        6272
+      ],
+      "late_completed": [
+        871,
+        140
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        36
+      ],
+      "observed_violation_rate": [
+        0.3285552621652207,
+        0.02219403931515536
+      ],
+      "completed_delay_p95_slots": [
+        32,
+        37
+      ],
+      "completed_delay_p99_slots": [
+        43,
+        44
+      ],
+      "mean_backlog_packets": 50.85933333333333,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "e663e32b81663c70347f548e5b20b954662fd92f7b1f7837bb9cda36c7c3bd24"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 19,
+      "policy": "periodic",
+      "generated": [
+        2644,
+        6347
+      ],
+      "completed": [
+        2622,
+        6341
+      ],
+      "late_completed": [
+        820,
+        25
+      ],
+      "overdue_unfinished": [
+        5,
+        0
+      ],
+      "unfinished": [
+        22,
+        6
+      ],
+      "observed_violation_rate": [
+        0.3120272314674735,
+        0.00393886875689302
+      ],
+      "completed_delay_p95_slots": [
+        35,
+        30
+      ],
+      "completed_delay_p99_slots": [
+        44,
+        34
+      ],
+      "mean_backlog_packets": 45.781666666666666,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "eb93e094cd6bbb432a7ad5451183dd856a2c53d9dc591263aa2100fe634c07e9"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 19,
+      "policy": "oldest",
+      "generated": [
+        2644,
+        6347
+      ],
+      "completed": [
+        2603,
+        6329
+      ],
+      "late_completed": [
+        754,
+        25
+      ],
+      "overdue_unfinished": [
+        24,
+        0
+      ],
+      "unfinished": [
+        41,
+        18
+      ],
+      "observed_violation_rate": [
+        0.29425113464447805,
+        0.00393886875689302
+      ],
+      "completed_delay_p95_slots": [
+        30,
+        28
+      ],
+      "completed_delay_p99_slots": [
+        39,
+        32
+      ],
+      "mean_backlog_packets": 42.774,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "eb93e094cd6bbb432a7ad5451183dd856a2c53d9dc591263aa2100fe634c07e9"
+    },
+    {
+      "scenario": "nominal",
+      "seed": 19,
+      "policy": "impact",
+      "generated": [
+        2644,
+        6347
+      ],
+      "completed": [
+        2632,
+        6343
+      ],
+      "late_completed": [
+        739,
+        4
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        4
+      ],
+      "observed_violation_rate": [
+        0.27950075642965205,
+        0.0006302190011028833
+      ],
+      "completed_delay_p95_slots": [
+        32,
+        32
+      ],
+      "completed_delay_p99_slots": [
+        41,
+        37
+      ],
+      "mean_backlog_packets": 44.80433333333333,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "eb93e094cd6bbb432a7ad5451183dd856a2c53d9dc591263aa2100fe634c07e9"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 0,
+      "policy": "periodic",
+      "generated": [
+        3190,
+        7292
+      ],
+      "completed": [
+        3180,
+        7236
+      ],
+      "late_completed": [
+        2265,
+        3239
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        56
+      ],
+      "observed_violation_rate": [
+        0.7100313479623824,
+        0.4441854086670324
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        106
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        112
+      ],
+      "mean_backlog_packets": 142.41133333333335,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "5d6f087c681a80255aeb0924a7df7f571b33b6292cef13d5c7b94926fdd647ea"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 0,
+      "policy": "oldest",
+      "generated": [
+        3190,
+        7292
+      ],
+      "completed": [
+        3180,
+        7237
+      ],
+      "late_completed": [
+        2122,
+        3027
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        55
+      ],
+      "observed_violation_rate": [
+        0.6652037617554859,
+        0.4151124520021942
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        87,
+        99
+      ],
+      "mean_backlog_packets": 132.69666666666666,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "5d6f087c681a80255aeb0924a7df7f571b33b6292cef13d5c7b94926fdd647ea"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 0,
+      "policy": "impact",
+      "generated": [
+        3190,
+        7292
+      ],
+      "completed": [
+        3180,
+        7210
+      ],
+      "late_completed": [
+        2267,
+        3812
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        82
+      ],
+      "observed_violation_rate": [
+        0.7106583072100313,
+        0.5227646736149204
+      ],
+      "completed_delay_p95_slots": [
+        75,
+        117
+      ],
+      "completed_delay_p99_slots": [
+        91,
+        130
+      ],
+      "mean_backlog_packets": 162.69733333333335,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "5d6f087c681a80255aeb0924a7df7f571b33b6292cef13d5c7b94926fdd647ea"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 1,
+      "policy": "periodic",
+      "generated": [
+        3112,
+        7209
+      ],
+      "completed": [
+        3111,
+        7173
+      ],
+      "late_completed": [
+        2091,
+        2618
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        36
+      ],
+      "observed_violation_rate": [
+        0.6719151670951157,
+        0.363157164655292
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        98
+      ],
+      "completed_delay_p99_slots": [
+        83,
+        108
+      ],
+      "mean_backlog_packets": 126.5,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "e7ce6f6bf9d6456fdcefa7a3eef0d1f078632860332451d15d2bf9802c1fae62"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 1,
+      "policy": "oldest",
+      "generated": [
+        3112,
+        7209
+      ],
+      "completed": [
+        3111,
+        7182
+      ],
+      "late_completed": [
+        2131,
+        2798
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        27
+      ],
+      "observed_violation_rate": [
+        0.6847686375321337,
+        0.3881259536690248
+      ],
+      "completed_delay_p95_slots": [
+        64,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        106
+      ],
+      "mean_backlog_packets": 127.91033333333333,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "e7ce6f6bf9d6456fdcefa7a3eef0d1f078632860332451d15d2bf9802c1fae62"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 1,
+      "policy": "impact",
+      "generated": [
+        3112,
+        7209
+      ],
+      "completed": [
+        3111,
+        7180
+      ],
+      "late_completed": [
+        1874,
+        3375
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        29
+      ],
+      "observed_violation_rate": [
+        0.6021850899742931,
+        0.4681647940074906
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        108
+      ],
+      "completed_delay_p99_slots": [
+        88,
+        118
+      ],
+      "mean_backlog_packets": 142.825,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "e7ce6f6bf9d6456fdcefa7a3eef0d1f078632860332451d15d2bf9802c1fae62"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 2,
+      "policy": "periodic",
+      "generated": [
+        3214,
+        7234
+      ],
+      "completed": [
+        3207,
+        7170
+      ],
+      "late_completed": [
+        2198,
+        3056
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        64
+      ],
+      "observed_violation_rate": [
+        0.6838830118232732,
+        0.422449543820846
+      ],
+      "completed_delay_p95_slots": [
+        63,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        75,
+        97
+      ],
+      "mean_backlog_packets": 130.70433333333332,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "3d6d1ea0dd6b74d69b3bd4f546e7213ddf184d41f27180e1e21af50ce7cfbd5f"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 2,
+      "policy": "oldest",
+      "generated": [
+        3214,
+        7234
+      ],
+      "completed": [
+        3199,
+        7208
+      ],
+      "late_completed": [
+        2161,
+        3026
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        15,
+        26
+      ],
+      "observed_violation_rate": [
+        0.6733042937149969,
+        0.4183024606027094
+      ],
+      "completed_delay_p95_slots": [
+        63,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        75,
+        96
+      ],
+      "mean_backlog_packets": 128.749,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "3d6d1ea0dd6b74d69b3bd4f546e7213ddf184d41f27180e1e21af50ce7cfbd5f"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 2,
+      "policy": "impact",
+      "generated": [
+        3214,
+        7234
+      ],
+      "completed": [
+        3203,
+        7179
+      ],
+      "late_completed": [
+        2236,
+        3972
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        11,
+        55
+      ],
+      "observed_violation_rate": [
+        0.6957062850031114,
+        0.5490738180812829
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        118
+      ],
+      "completed_delay_p99_slots": [
+        90,
+        122
+      ],
+      "mean_backlog_packets": 162.92866666666666,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "3d6d1ea0dd6b74d69b3bd4f546e7213ddf184d41f27180e1e21af50ce7cfbd5f"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 3,
+      "policy": "periodic",
+      "generated": [
+        3228,
+        7233
+      ],
+      "completed": [
+        3225,
+        7194
+      ],
+      "late_completed": [
+        2205,
+        3101
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6830855018587361,
+        0.42872943453615375
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        97
+      ],
+      "mean_backlog_packets": 132.036,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "079344a2223757149d74a98ae4341831c80ccea9d6cefed47ca0b3042b7d1e5b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 3,
+      "policy": "oldest",
+      "generated": [
+        3228,
+        7233
+      ],
+      "completed": [
+        3220,
+        7183
+      ],
+      "late_completed": [
+        2133,
+        3076
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        8,
+        50
+      ],
+      "observed_violation_rate": [
+        0.6607806691449815,
+        0.4252730540577907
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        100
+      ],
+      "mean_backlog_packets": 129.122,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "079344a2223757149d74a98ae4341831c80ccea9d6cefed47ca0b3042b7d1e5b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 3,
+      "policy": "impact",
+      "generated": [
+        3228,
+        7233
+      ],
+      "completed": [
+        3223,
+        7178
+      ],
+      "late_completed": [
+        2127,
+        3851
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        55
+      ],
+      "observed_violation_rate": [
+        0.6589219330855018,
+        0.5324208488870454
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        120
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        133
+      ],
+      "mean_backlog_packets": 160.79366666666667,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "079344a2223757149d74a98ae4341831c80ccea9d6cefed47ca0b3042b7d1e5b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 4,
+      "policy": "periodic",
+      "generated": [
+        3252,
+        7191
+      ],
+      "completed": [
+        3211,
+        7171
+      ],
+      "late_completed": [
+        2246,
+        2837
+      ],
+      "overdue_unfinished": [
+        34,
+        0
+      ],
+      "unfinished": [
+        41,
+        20
+      ],
+      "observed_violation_rate": [
+        0.7011070110701108,
+        0.39452092893895147
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        83,
+        98
+      ],
+      "mean_backlog_packets": 129.23966666666666,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "df685e799e66a860fc0e871ff2c4b028cbe5a7b88f3f775660f920afb79fbb74"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 4,
+      "policy": "oldest",
+      "generated": [
+        3252,
+        7191
+      ],
+      "completed": [
+        3245,
+        7148
+      ],
+      "late_completed": [
+        2225,
+        2975
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        43
+      ],
+      "observed_violation_rate": [
+        0.6841943419434194,
+        0.41371158392434987
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        97
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        107
+      ],
+      "mean_backlog_packets": 134.09733333333332,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "df685e799e66a860fc0e871ff2c4b028cbe5a7b88f3f775660f920afb79fbb74"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 4,
+      "policy": "impact",
+      "generated": [
+        3252,
+        7191
+      ],
+      "completed": [
+        3251,
+        7134
+      ],
+      "late_completed": [
+        2227,
+        3477
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        57
+      ],
+      "observed_violation_rate": [
+        0.6848093480934809,
+        0.4835210680016688
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        112
+      ],
+      "completed_delay_p99_slots": [
+        83,
+        118
+      ],
+      "mean_backlog_packets": 154.43333333333334,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "df685e799e66a860fc0e871ff2c4b028cbe5a7b88f3f775660f920afb79fbb74"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 5,
+      "policy": "periodic",
+      "generated": [
+        3203,
+        7299
+      ],
+      "completed": [
+        3199,
+        7240
+      ],
+      "late_completed": [
+        2226,
+        3067
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        59
+      ],
+      "observed_violation_rate": [
+        0.6949734623790197,
+        0.42019454719824634
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        95
+      ],
+      "completed_delay_p99_slots": [
+        94,
+        109
+      ],
+      "mean_backlog_packets": 135.895,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "d564248842d962ff3f96170a4761cc9a6a627941c4db4941528bfcc61b849eb5"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 5,
+      "policy": "oldest",
+      "generated": [
+        3203,
+        7299
+      ],
+      "completed": [
+        3199,
+        7271
+      ],
+      "late_completed": [
+        2231,
+        2963
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        28
+      ],
+      "observed_violation_rate": [
+        0.6965344989072745,
+        0.4059460200027401
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        89,
+        96
+      ],
+      "mean_backlog_packets": 135.70366666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "d564248842d962ff3f96170a4761cc9a6a627941c4db4941528bfcc61b849eb5"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 5,
+      "policy": "impact",
+      "generated": [
+        3203,
+        7299
+      ],
+      "completed": [
+        3199,
+        7203
+      ],
+      "late_completed": [
+        2241,
+        3732
+      ],
+      "overdue_unfinished": [
+        0,
+        11
+      ],
+      "unfinished": [
+        4,
+        96
+      ],
+      "observed_violation_rate": [
+        0.699656571963784,
+        0.5128099739690368
+      ],
+      "completed_delay_p95_slots": [
+        74,
+        107
+      ],
+      "completed_delay_p99_slots": [
+        103,
+        113
+      ],
+      "mean_backlog_packets": 159.16066666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "d564248842d962ff3f96170a4761cc9a6a627941c4db4941528bfcc61b849eb5"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 6,
+      "policy": "periodic",
+      "generated": [
+        3254,
+        7288
+      ],
+      "completed": [
+        3252,
+        7255
+      ],
+      "late_completed": [
+        2325,
+        3316
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        33
+      ],
+      "observed_violation_rate": [
+        0.7145052243392748,
+        0.45499451152579584
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        96
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        111
+      ],
+      "mean_backlog_packets": 143.19266666666667,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "22501b78c2e4b4b7ef988811864ecf1376f3bdfc46feaea857233b0289e305f6"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 6,
+      "policy": "oldest",
+      "generated": [
+        3254,
+        7288
+      ],
+      "completed": [
+        3246,
+        7243
+      ],
+      "late_completed": [
+        2327,
+        2972
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        8,
+        45
+      ],
+      "observed_violation_rate": [
+        0.715119852489244,
+        0.40779363336992314
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        90
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        95
+      ],
+      "mean_backlog_packets": 132.70833333333334,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "22501b78c2e4b4b7ef988811864ecf1376f3bdfc46feaea857233b0289e305f6"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 6,
+      "policy": "impact",
+      "generated": [
+        3254,
+        7288
+      ],
+      "completed": [
+        3252,
+        7267
+      ],
+      "late_completed": [
+        2254,
+        3762
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        21
+      ],
+      "observed_violation_rate": [
+        0.6926859250153657,
+        0.5161909989023051
+      ],
+      "completed_delay_p95_slots": [
+        86,
+        112
+      ],
+      "completed_delay_p99_slots": [
+        112,
+        125
+      ],
+      "mean_backlog_packets": 165.43233333333333,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "22501b78c2e4b4b7ef988811864ecf1376f3bdfc46feaea857233b0289e305f6"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 7,
+      "policy": "periodic",
+      "generated": [
+        3151,
+        7147
+      ],
+      "completed": [
+        3144,
+        7093
+      ],
+      "late_completed": [
+        2211,
+        2724
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        54
+      ],
+      "observed_violation_rate": [
+        0.7016820057124722,
+        0.3811389394151392
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        86
+      ],
+      "completed_delay_p99_slots": [
+        88,
+        96
+      ],
+      "mean_backlog_packets": 126.52266666666667,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "f862dc952d295cb51767044c3ba1721b59c2726fbe57a73e1dd7ae4f48b6a24b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 7,
+      "policy": "oldest",
+      "generated": [
+        3151,
+        7147
+      ],
+      "completed": [
+        3141,
+        7104
+      ],
+      "late_completed": [
+        2209,
+        3046
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        43
+      ],
+      "observed_violation_rate": [
+        0.7010472865756903,
+        0.42619280817126065
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        81,
+        101
+      ],
+      "mean_backlog_packets": 132.371,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "f862dc952d295cb51767044c3ba1721b59c2726fbe57a73e1dd7ae4f48b6a24b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 7,
+      "policy": "impact",
+      "generated": [
+        3151,
+        7147
+      ],
+      "completed": [
+        3151,
+        7104
+      ],
+      "late_completed": [
+        2186,
+        3517
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        43
+      ],
+      "observed_violation_rate": [
+        0.6937480165026976,
+        0.49209458514061843
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        102
+      ],
+      "completed_delay_p99_slots": [
+        96,
+        107
+      ],
+      "mean_backlog_packets": 149.86033333333333,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "f862dc952d295cb51767044c3ba1721b59c2726fbe57a73e1dd7ae4f48b6a24b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 8,
+      "policy": "periodic",
+      "generated": [
+        3207,
+        7225
+      ],
+      "completed": [
+        3205,
+        7179
+      ],
+      "late_completed": [
+        2173,
+        3107
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        46
+      ],
+      "observed_violation_rate": [
+        0.6775802931088244,
+        0.4300346020761246
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        79,
+        96
+      ],
+      "mean_backlog_packets": 133.964,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "bd0f4eff6c0e05dff9e446c80f0bf5f3040f3b41e095b44e4deb9027ff4ddae9"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 8,
+      "policy": "oldest",
+      "generated": [
+        3207,
+        7225
+      ],
+      "completed": [
+        3205,
+        7178
+      ],
+      "late_completed": [
+        2195,
+        2993
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        47
+      ],
+      "observed_violation_rate": [
+        0.6844402868724665,
+        0.4142560553633218
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        97
+      ],
+      "mean_backlog_packets": 127.00633333333333,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "bd0f4eff6c0e05dff9e446c80f0bf5f3040f3b41e095b44e4deb9027ff4ddae9"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 8,
+      "policy": "impact",
+      "generated": [
+        3207,
+        7225
+      ],
+      "completed": [
+        3205,
+        7204
+      ],
+      "late_completed": [
+        2360,
+        3791
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        21
+      ],
+      "observed_violation_rate": [
+        0.7358902400997818,
+        0.5247058823529411
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        110
+      ],
+      "completed_delay_p99_slots": [
+        87,
+        113
+      ],
+      "mean_backlog_packets": 155.692,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "bd0f4eff6c0e05dff9e446c80f0bf5f3040f3b41e095b44e4deb9027ff4ddae9"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 9,
+      "policy": "periodic",
+      "generated": [
+        3217,
+        7242
+      ],
+      "completed": [
+        3214,
+        7205
+      ],
+      "late_completed": [
+        2079,
+        2703
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        37
+      ],
+      "observed_violation_rate": [
+        0.6462542741684799,
+        0.3732394366197183
+      ],
+      "completed_delay_p95_slots": [
+        61,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        74,
+        99
+      ],
+      "mean_backlog_packets": 122.59666666666666,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "5a8b7aeeee083802023f3ccdcfe60c2f53f6059be6cb05625c569b32d2908d30"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 9,
+      "policy": "oldest",
+      "generated": [
+        3217,
+        7242
+      ],
+      "completed": [
+        3209,
+        7233
+      ],
+      "late_completed": [
+        2070,
+        2740
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        8,
+        9
+      ],
+      "observed_violation_rate": [
+        0.643456636617967,
+        0.3783485225075946
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        87,
+        102
+      ],
+      "mean_backlog_packets": 123.85233333333333,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "5a8b7aeeee083802023f3ccdcfe60c2f53f6059be6cb05625c569b32d2908d30"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 9,
+      "policy": "impact",
+      "generated": [
+        3217,
+        7242
+      ],
+      "completed": [
+        3214,
+        7228
+      ],
+      "late_completed": [
+        2095,
+        3411
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        14
+      ],
+      "observed_violation_rate": [
+        0.6512278520360585,
+        0.47100248550124274
+      ],
+      "completed_delay_p95_slots": [
+        77,
+        110
+      ],
+      "completed_delay_p99_slots": [
+        96,
+        120
+      ],
+      "mean_backlog_packets": 149.92166666666665,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "5a8b7aeeee083802023f3ccdcfe60c2f53f6059be6cb05625c569b32d2908d30"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 10,
+      "policy": "periodic",
+      "generated": [
+        3155,
+        7247
+      ],
+      "completed": [
+        3149,
+        7233
+      ],
+      "late_completed": [
+        2090,
+        2987
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        14
+      ],
+      "observed_violation_rate": [
+        0.6624405705229794,
+        0.4121705533324134
+      ],
+      "completed_delay_p95_slots": [
+        63,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        97
+      ],
+      "mean_backlog_packets": 128.57233333333335,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "da9774d15dd3509f21e71ccb6843dd4b681b84933c9cc449ee28c75d19b0ef66"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 10,
+      "policy": "oldest",
+      "generated": [
+        3155,
+        7247
+      ],
+      "completed": [
+        3155,
+        7231
+      ],
+      "late_completed": [
+        1993,
+        3029
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        16
+      ],
+      "observed_violation_rate": [
+        0.6316957210776545,
+        0.41796605491927696
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        81,
+        95
+      ],
+      "mean_backlog_packets": 129.94766666666666,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "da9774d15dd3509f21e71ccb6843dd4b681b84933c9cc449ee28c75d19b0ef66"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 10,
+      "policy": "impact",
+      "generated": [
+        3155,
+        7247
+      ],
+      "completed": [
+        3143,
+        7217
+      ],
+      "late_completed": [
+        2162,
+        3461
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        30
+      ],
+      "observed_violation_rate": [
+        0.6852614896988907,
+        0.47757692838415894
+      ],
+      "completed_delay_p95_slots": [
+        81,
+        98
+      ],
+      "completed_delay_p99_slots": [
+        93,
+        103
+      ],
+      "mean_backlog_packets": 147.22466666666668,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "da9774d15dd3509f21e71ccb6843dd4b681b84933c9cc449ee28c75d19b0ef66"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 11,
+      "policy": "periodic",
+      "generated": [
+        3191,
+        7233
+      ],
+      "completed": [
+        3170,
+        7218
+      ],
+      "late_completed": [
+        2114,
+        3029
+      ],
+      "overdue_unfinished": [
+        7,
+        0
+      ],
+      "unfinished": [
+        21,
+        15
+      ],
+      "observed_violation_rate": [
+        0.664681917894077,
+        0.41877505875846815
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        95
+      ],
+      "mean_backlog_packets": 131.45933333333332,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "5805490d29e5e0d49670cb4edc205c339c8305e348be34e02045899688d3562d"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 11,
+      "policy": "oldest",
+      "generated": [
+        3191,
+        7233
+      ],
+      "completed": [
+        3178,
+        7215
+      ],
+      "late_completed": [
+        2073,
+        2850
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        13,
+        18
+      ],
+      "observed_violation_rate": [
+        0.6496396114070824,
+        0.39402737453338865
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        98
+      ],
+      "mean_backlog_packets": 129.34633333333332,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "5805490d29e5e0d49670cb4edc205c339c8305e348be34e02045899688d3562d"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 11,
+      "policy": "impact",
+      "generated": [
+        3191,
+        7233
+      ],
+      "completed": [
+        3180,
+        7196
+      ],
+      "late_completed": [
+        2062,
+        3535
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        11,
+        37
+      ],
+      "observed_violation_rate": [
+        0.6461924161704795,
+        0.48873219964053644
+      ],
+      "completed_delay_p95_slots": [
+        75,
+        108
+      ],
+      "completed_delay_p99_slots": [
+        98,
+        113
+      ],
+      "mean_backlog_packets": 152.87266666666667,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "5805490d29e5e0d49670cb4edc205c339c8305e348be34e02045899688d3562d"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 12,
+      "policy": "periodic",
+      "generated": [
+        3179,
+        7319
+      ],
+      "completed": [
+        3177,
+        7288
+      ],
+      "late_completed": [
+        2213,
+        3061
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        31
+      ],
+      "observed_violation_rate": [
+        0.6961308587606165,
+        0.4182265336794644
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        100
+      ],
+      "completed_delay_p99_slots": [
+        88,
+        105
+      ],
+      "mean_backlog_packets": 137.142,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "7312eda7c0526b0729e68613865ec3f5bf00c534209a6cd4a2dd65f558638162"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 12,
+      "policy": "oldest",
+      "generated": [
+        3179,
+        7319
+      ],
+      "completed": [
+        3174,
+        7271
+      ],
+      "late_completed": [
+        2279,
+        3027
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        48
+      ],
+      "observed_violation_rate": [
+        0.716892104435357,
+        0.41358109031288426
+      ],
+      "completed_delay_p95_slots": [
+        64,
+        100
+      ],
+      "completed_delay_p99_slots": [
+        86,
+        106
+      ],
+      "mean_backlog_packets": 136.46,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "7312eda7c0526b0729e68613865ec3f5bf00c534209a6cd4a2dd65f558638162"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 12,
+      "policy": "impact",
+      "generated": [
+        3179,
+        7319
+      ],
+      "completed": [
+        3169,
+        7278
+      ],
+      "late_completed": [
+        2262,
+        3978
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        41
+      ],
+      "observed_violation_rate": [
+        0.7115445108524693,
+        0.5435168738898757
+      ],
+      "completed_delay_p95_slots": [
+        75,
+        120
+      ],
+      "completed_delay_p99_slots": [
+        93,
+        125
+      ],
+      "mean_backlog_packets": 166.652,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "7312eda7c0526b0729e68613865ec3f5bf00c534209a6cd4a2dd65f558638162"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 13,
+      "policy": "periodic",
+      "generated": [
+        3199,
+        7185
+      ],
+      "completed": [
+        3155,
+        7134
+      ],
+      "late_completed": [
+        2219,
+        2963
+      ],
+      "overdue_unfinished": [
+        37,
+        0
+      ],
+      "unfinished": [
+        44,
+        51
+      ],
+      "observed_violation_rate": [
+        0.7052203813691779,
+        0.41238691718858733
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        86,
+        98
+      ],
+      "mean_backlog_packets": 132.88733333333334,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "8b29539a5609a13d7452b9d20aa0d285a9951dc4316cb9e16239c142d6262e6a"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 13,
+      "policy": "oldest",
+      "generated": [
+        3199,
+        7185
+      ],
+      "completed": [
+        3193,
+        7141
+      ],
+      "late_completed": [
+        2257,
+        2819
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        44
+      ],
+      "observed_violation_rate": [
+        0.705532979055955,
+        0.39234516353514265
+      ],
+      "completed_delay_p95_slots": [
+        64,
+        98
+      ],
+      "completed_delay_p99_slots": [
+        75,
+        102
+      ],
+      "mean_backlog_packets": 130.799,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "8b29539a5609a13d7452b9d20aa0d285a9951dc4316cb9e16239c142d6262e6a"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 13,
+      "policy": "impact",
+      "generated": [
+        3199,
+        7185
+      ],
+      "completed": [
+        3185,
+        7158
+      ],
+      "late_completed": [
+        2233,
+        3575
+      ],
+      "overdue_unfinished": [
+        7,
+        0
+      ],
+      "unfinished": [
+        14,
+        27
+      ],
+      "observed_violation_rate": [
+        0.700218818380744,
+        0.4975643702157272
+      ],
+      "completed_delay_p95_slots": [
+        73,
+        108
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        112
+      ],
+      "mean_backlog_packets": 152.84166666666667,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "8b29539a5609a13d7452b9d20aa0d285a9951dc4316cb9e16239c142d6262e6a"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 14,
+      "policy": "periodic",
+      "generated": [
+        3239,
+        7236
+      ],
+      "completed": [
+        3228,
+        7150
+      ],
+      "late_completed": [
+        2166,
+        2993
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        11,
+        86
+      ],
+      "observed_violation_rate": [
+        0.6687249150972523,
+        0.4136263128800442
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        105
+      ],
+      "mean_backlog_packets": 130.36833333333334,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "65e913e58f153f372d9c58b9997c6e6638f52106accbed53f688ac242ee6b41b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 14,
+      "policy": "oldest",
+      "generated": [
+        3239,
+        7236
+      ],
+      "completed": [
+        3228,
+        7156
+      ],
+      "late_completed": [
+        2160,
+        3001
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        11,
+        80
+      ],
+      "observed_violation_rate": [
+        0.6668724915097253,
+        0.4147318960751797
+      ],
+      "completed_delay_p95_slots": [
+        62,
+        90
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        112
+      ],
+      "mean_backlog_packets": 131.07266666666666,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "65e913e58f153f372d9c58b9997c6e6638f52106accbed53f688ac242ee6b41b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 14,
+      "policy": "impact",
+      "generated": [
+        3239,
+        7236
+      ],
+      "completed": [
+        3216,
+        7209
+      ],
+      "late_completed": [
+        2241,
+        3659
+      ],
+      "overdue_unfinished": [
+        8,
+        0
+      ],
+      "unfinished": [
+        23,
+        27
+      ],
+      "observed_violation_rate": [
+        0.6943501080580426,
+        0.5056661138750691
+      ],
+      "completed_delay_p95_slots": [
+        77,
+        108
+      ],
+      "completed_delay_p99_slots": [
+        103,
+        124
+      ],
+      "mean_backlog_packets": 154.41333333333333,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "65e913e58f153f372d9c58b9997c6e6638f52106accbed53f688ac242ee6b41b"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 15,
+      "policy": "periodic",
+      "generated": [
+        3143,
+        7125
+      ],
+      "completed": [
+        3121,
+        7083
+      ],
+      "late_completed": [
+        2035,
+        2971
+      ],
+      "overdue_unfinished": [
+        2,
+        0
+      ],
+      "unfinished": [
+        22,
+        42
+      ],
+      "observed_violation_rate": [
+        0.6481069042316259,
+        0.4169824561403509
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        96
+      ],
+      "mean_backlog_packets": 124.23833333333333,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "f631a2274b3bd41bbf2647a76b7e61e4abdeb43ebab1e7b1a29647a515dbd062"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 15,
+      "policy": "oldest",
+      "generated": [
+        3143,
+        7125
+      ],
+      "completed": [
+        3139,
+        7083
+      ],
+      "late_completed": [
+        2114,
+        2868
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        42
+      ],
+      "observed_violation_rate": [
+        0.6726057906458798,
+        0.4025263157894737
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        79,
+        98
+      ],
+      "mean_backlog_packets": 126.201,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "f631a2274b3bd41bbf2647a76b7e61e4abdeb43ebab1e7b1a29647a515dbd062"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 15,
+      "policy": "impact",
+      "generated": [
+        3143,
+        7125
+      ],
+      "completed": [
+        3137,
+        7076
+      ],
+      "late_completed": [
+        1949,
+        3205
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        49
+      ],
+      "observed_violation_rate": [
+        0.6201081769010499,
+        0.4498245614035088
+      ],
+      "completed_delay_p95_slots": [
+        80,
+        99
+      ],
+      "completed_delay_p99_slots": [
+        99,
+        111
+      ],
+      "mean_backlog_packets": 141.541,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "f631a2274b3bd41bbf2647a76b7e61e4abdeb43ebab1e7b1a29647a515dbd062"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 16,
+      "policy": "periodic",
+      "generated": [
+        3275,
+        6975
+      ],
+      "completed": [
+        3272,
+        6945
+      ],
+      "late_completed": [
+        2124,
+        2872
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        30
+      ],
+      "observed_violation_rate": [
+        0.6485496183206106,
+        0.4117562724014337
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        79,
+        100
+      ],
+      "mean_backlog_packets": 127.437,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "52c8700051388b540176015d763b35c928e5f1e82c485a732dc6c05ebee92e91"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 16,
+      "policy": "oldest",
+      "generated": [
+        3275,
+        6975
+      ],
+      "completed": [
+        3274,
+        6944
+      ],
+      "late_completed": [
+        2013,
+        2705
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        31
+      ],
+      "observed_violation_rate": [
+        0.6146564885496183,
+        0.3878136200716846
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        74,
+        98
+      ],
+      "mean_backlog_packets": 123.13233333333334,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "52c8700051388b540176015d763b35c928e5f1e82c485a732dc6c05ebee92e91"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 16,
+      "policy": "impact",
+      "generated": [
+        3275,
+        6975
+      ],
+      "completed": [
+        3263,
+        6948
+      ],
+      "late_completed": [
+        1952,
+        3024
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        27
+      ],
+      "observed_violation_rate": [
+        0.5960305343511451,
+        0.4335483870967742
+      ],
+      "completed_delay_p95_slots": [
+        73,
+        99
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        102
+      ],
+      "mean_backlog_packets": 133.567,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "52c8700051388b540176015d763b35c928e5f1e82c485a732dc6c05ebee92e91"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 17,
+      "policy": "periodic",
+      "generated": [
+        3097,
+        7314
+      ],
+      "completed": [
+        3095,
+        7288
+      ],
+      "late_completed": [
+        2170,
+        2809
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        26
+      ],
+      "observed_violation_rate": [
+        0.7006780755569907,
+        0.38405797101449274
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        90
+      ],
+      "completed_delay_p99_slots": [
+        78,
+        94
+      ],
+      "mean_backlog_packets": 127.63,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "d40fd153638a5bc0ac144b36ea419231d40a4ab7fcc178df89532ece5d498d88"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 17,
+      "policy": "oldest",
+      "generated": [
+        3097,
+        7314
+      ],
+      "completed": [
+        3080,
+        7304
+      ],
+      "late_completed": [
+        2035,
+        2896
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        17,
+        10
+      ],
+      "observed_violation_rate": [
+        0.6580561834032935,
+        0.39595296691277004
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        78,
+        95
+      ],
+      "mean_backlog_packets": 127.64733333333334,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "d40fd153638a5bc0ac144b36ea419231d40a4ab7fcc178df89532ece5d498d88"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 17,
+      "policy": "impact",
+      "generated": [
+        3097,
+        7314
+      ],
+      "completed": [
+        3081,
+        7178
+      ],
+      "late_completed": [
+        2160,
+        3847
+      ],
+      "overdue_unfinished": [
+        2,
+        65
+      ],
+      "unfinished": [
+        16,
+        136
+      ],
+      "observed_violation_rate": [
+        0.6980949305779787,
+        0.534864643150123
+      ],
+      "completed_delay_p95_slots": [
+        81,
+        114
+      ],
+      "completed_delay_p99_slots": [
+        101,
+        119
+      ],
+      "mean_backlog_packets": 163.94866666666667,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "d40fd153638a5bc0ac144b36ea419231d40a4ab7fcc178df89532ece5d498d88"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 18,
+      "policy": "periodic",
+      "generated": [
+        3227,
+        7244
+      ],
+      "completed": [
+        3202,
+        7205
+      ],
+      "late_completed": [
+        2100,
+        3120
+      ],
+      "overdue_unfinished": [
+        6,
+        0
+      ],
+      "unfinished": [
+        25,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6526185311434769,
+        0.43070127001656544
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        96
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        100
+      ],
+      "mean_backlog_packets": 134.44466666666668,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "d2d2ea0cb9acf415af4964c4d32026faf99b0fbbc8650038748fd3ef1c146b22"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 18,
+      "policy": "oldest",
+      "generated": [
+        3227,
+        7244
+      ],
+      "completed": [
+        3202,
+        7205
+      ],
+      "late_completed": [
+        2075,
+        3152
+      ],
+      "overdue_unfinished": [
+        6,
+        0
+      ],
+      "unfinished": [
+        25,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6448713975828944,
+        0.43511871893981224
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        95
+      ],
+      "completed_delay_p99_slots": [
+        83,
+        97
+      ],
+      "mean_backlog_packets": 133.608,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "d2d2ea0cb9acf415af4964c4d32026faf99b0fbbc8650038748fd3ef1c146b22"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 18,
+      "policy": "impact",
+      "generated": [
+        3227,
+        7244
+      ],
+      "completed": [
+        3199,
+        7157
+      ],
+      "late_completed": [
+        2204,
+        3973
+      ],
+      "overdue_unfinished": [
+        9,
+        0
+      ],
+      "unfinished": [
+        28,
+        87
+      ],
+      "observed_violation_rate": [
+        0.6857762627827704,
+        0.5484538928768636
+      ],
+      "completed_delay_p95_slots": [
+        75,
+        113
+      ],
+      "completed_delay_p99_slots": [
+        91,
+        117
+      ],
+      "mean_backlog_packets": 165.633,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "d2d2ea0cb9acf415af4964c4d32026faf99b0fbbc8650038748fd3ef1c146b22"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 19,
+      "policy": "periodic",
+      "generated": [
+        3173,
+        7386
+      ],
+      "completed": [
+        3153,
+        7377
+      ],
+      "late_completed": [
+        2287,
+        3240
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        20,
+        9
+      ],
+      "observed_violation_rate": [
+        0.7217144658052317,
+        0.4386677497969131
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        101
+      ],
+      "completed_delay_p99_slots": [
+        88,
+        107
+      ],
+      "mean_backlog_packets": 145.63433333333333,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "7702e78e6be5243c81b82acca8420cc1c7911c44438e221c1bea36ae8fd2aec7"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 19,
+      "policy": "oldest",
+      "generated": [
+        3173,
+        7386
+      ],
+      "completed": [
+        3153,
+        7377
+      ],
+      "late_completed": [
+        2192,
+        3208
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        20,
+        9
+      ],
+      "observed_violation_rate": [
+        0.6917743460447526,
+        0.4343352288112646
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        100
+      ],
+      "completed_delay_p99_slots": [
+        81,
+        106
+      ],
+      "mean_backlog_packets": 141.39466666666667,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "7702e78e6be5243c81b82acca8420cc1c7911c44438e221c1bea36ae8fd2aec7"
+    },
+    {
+      "scenario": "bursty_transport",
+      "seed": 19,
+      "policy": "impact",
+      "generated": [
+        3173,
+        7386
+      ],
+      "completed": [
+        3167,
+        7351
+      ],
+      "late_completed": [
+        2108,
+        3752
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        35
+      ],
+      "observed_violation_rate": [
+        0.6643554995272613,
+        0.5079880855672895
+      ],
+      "completed_delay_p95_slots": [
+        79,
+        117
+      ],
+      "completed_delay_p99_slots": [
+        93,
+        134
+      ],
+      "mean_backlog_packets": 164.003,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "7702e78e6be5243c81b82acca8420cc1c7911c44438e221c1bea36ae8fd2aec7"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 0,
+      "policy": "periodic",
+      "generated": [
+        3190,
+        7292
+      ],
+      "completed": [
+        3180,
+        7236
+      ],
+      "late_completed": [
+        2153,
+        3050
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        56
+      ],
+      "observed_violation_rate": [
+        0.6749216300940439,
+        0.41826659352715306
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        96
+      ],
+      "mean_backlog_packets": 133.867,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "8f94a49e2901c56b227dc4b86b83e77b07d0cf73830240ef98685953571d7585"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 0,
+      "policy": "oldest",
+      "generated": [
+        3190,
+        7292
+      ],
+      "completed": [
+        3180,
+        7235
+      ],
+      "late_completed": [
+        2082,
+        3186
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        57
+      ],
+      "observed_violation_rate": [
+        0.6526645768025079,
+        0.4369171695008228
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        96
+      ],
+      "mean_backlog_packets": 134.29633333333334,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "8f94a49e2901c56b227dc4b86b83e77b07d0cf73830240ef98685953571d7585"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 0,
+      "policy": "impact",
+      "generated": [
+        3190,
+        7292
+      ],
+      "completed": [
+        3177,
+        7238
+      ],
+      "late_completed": [
+        1999,
+        3195
+      ],
+      "overdue_unfinished": [
+        2,
+        0
+      ],
+      "unfinished": [
+        13,
+        54
+      ],
+      "observed_violation_rate": [
+        0.6272727272727273,
+        0.43815139879319803
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        86,
+        99
+      ],
+      "mean_backlog_packets": 134.50266666666667,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "8f94a49e2901c56b227dc4b86b83e77b07d0cf73830240ef98685953571d7585"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 1,
+      "policy": "periodic",
+      "generated": [
+        3112,
+        7209
+      ],
+      "completed": [
+        3111,
+        7173
+      ],
+      "late_completed": [
+        1952,
+        2524
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        36
+      ],
+      "observed_violation_rate": [
+        0.6272493573264781,
+        0.3501179081703426
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        89
+      ],
+      "completed_delay_p99_slots": [
+        86,
+        104
+      ],
+      "mean_backlog_packets": 118.548,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "0e0ba307fe15acf8281e1ade3ae8eecfaaf2e1a32c5035f2d6e290582f7f1fda"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 1,
+      "policy": "oldest",
+      "generated": [
+        3112,
+        7209
+      ],
+      "completed": [
+        3111,
+        7182
+      ],
+      "late_completed": [
+        2046,
+        2859
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        27
+      ],
+      "observed_violation_rate": [
+        0.6574550128534704,
+        0.39658759883478983
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        111
+      ],
+      "mean_backlog_packets": 127.80733333333333,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "0e0ba307fe15acf8281e1ade3ae8eecfaaf2e1a32c5035f2d6e290582f7f1fda"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 1,
+      "policy": "impact",
+      "generated": [
+        3112,
+        7209
+      ],
+      "completed": [
+        3111,
+        7179
+      ],
+      "late_completed": [
+        2099,
+        3395
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        30
+      ],
+      "observed_violation_rate": [
+        0.6744858611825193,
+        0.4709391038979054
+      ],
+      "completed_delay_p95_slots": [
+        71,
+        107
+      ],
+      "completed_delay_p99_slots": [
+        95,
+        111
+      ],
+      "mean_backlog_packets": 140.00166666666667,
+      "requests": 600,
+      "delivered": 573,
+      "pending_reports": 0,
+      "trace_sha256": "0e0ba307fe15acf8281e1ade3ae8eecfaaf2e1a32c5035f2d6e290582f7f1fda"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 2,
+      "policy": "periodic",
+      "generated": [
+        3214,
+        7234
+      ],
+      "completed": [
+        3207,
+        7170
+      ],
+      "late_completed": [
+        2084,
+        3090
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        64
+      ],
+      "observed_violation_rate": [
+        0.6484131922837586,
+        0.4271495714680675
+      ],
+      "completed_delay_p95_slots": [
+        63,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        67,
+        93
+      ],
+      "mean_backlog_packets": 129.647,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "9087415228acebb91e63bb470737a4bbfbe4d54726bf725ecaea1ebdd0426f98"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 2,
+      "policy": "oldest",
+      "generated": [
+        3214,
+        7234
+      ],
+      "completed": [
+        3199,
+        7208
+      ],
+      "late_completed": [
+        2072,
+        2802
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        15,
+        26
+      ],
+      "observed_violation_rate": [
+        0.6456129433727442,
+        0.3873375725739563
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        87
+      ],
+      "completed_delay_p99_slots": [
+        72,
+        90
+      ],
+      "mean_backlog_packets": 122.60333333333334,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "9087415228acebb91e63bb470737a4bbfbe4d54726bf725ecaea1ebdd0426f98"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 2,
+      "policy": "impact",
+      "generated": [
+        3214,
+        7234
+      ],
+      "completed": [
+        3214,
+        7209
+      ],
+      "late_completed": [
+        1994,
+        3162
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        25
+      ],
+      "observed_violation_rate": [
+        0.6204107031736155,
+        0.43710257119159523
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        90
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        94
+      ],
+      "mean_backlog_packets": 131.05266666666665,
+      "requests": 600,
+      "delivered": 576,
+      "pending_reports": 0,
+      "trace_sha256": "9087415228acebb91e63bb470737a4bbfbe4d54726bf725ecaea1ebdd0426f98"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 3,
+      "policy": "periodic",
+      "generated": [
+        3228,
+        7233
+      ],
+      "completed": [
+        3225,
+        7194
+      ],
+      "late_completed": [
+        2090,
+        2959
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6474597273853779,
+        0.4090971934190516
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        86
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        96
+      ],
+      "mean_backlog_packets": 125.89133333333334,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "27123fe7ae8e872eb27d3ec5d86a602fb55e18f923ed48b4804db6d139184ed4"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 3,
+      "policy": "oldest",
+      "generated": [
+        3228,
+        7233
+      ],
+      "completed": [
+        3220,
+        7183
+      ],
+      "late_completed": [
+        2088,
+        3015
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        8,
+        50
+      ],
+      "observed_violation_rate": [
+        0.6468401486988847,
+        0.4168394856905848
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        78,
+        93
+      ],
+      "mean_backlog_packets": 124.36933333333333,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "27123fe7ae8e872eb27d3ec5d86a602fb55e18f923ed48b4804db6d139184ed4"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 3,
+      "policy": "impact",
+      "generated": [
+        3228,
+        7233
+      ],
+      "completed": [
+        3226,
+        7200
+      ],
+      "late_completed": [
+        1922,
+        3077
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        33
+      ],
+      "observed_violation_rate": [
+        0.5954151177199505,
+        0.4254113092769252
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        89
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        100
+      ],
+      "mean_backlog_packets": 126.46666666666667,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "27123fe7ae8e872eb27d3ec5d86a602fb55e18f923ed48b4804db6d139184ed4"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 4,
+      "policy": "periodic",
+      "generated": [
+        3252,
+        7191
+      ],
+      "completed": [
+        3211,
+        7171
+      ],
+      "late_completed": [
+        2205,
+        2765
+      ],
+      "overdue_unfinished": [
+        34,
+        0
+      ],
+      "unfinished": [
+        41,
+        20
+      ],
+      "observed_violation_rate": [
+        0.6884993849938499,
+        0.3845084132943958
+      ],
+      "completed_delay_p95_slots": [
+        64,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        73,
+        97
+      ],
+      "mean_backlog_packets": 128.53566666666666,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "b9f2edddfc7a6e626699b48cf026f3cae3b6e5f1c72d175a59c9597a966f0512"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 4,
+      "policy": "oldest",
+      "generated": [
+        3252,
+        7191
+      ],
+      "completed": [
+        3245,
+        7148
+      ],
+      "late_completed": [
+        2098,
+        2888
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        43
+      ],
+      "observed_violation_rate": [
+        0.6451414514145142,
+        0.40161312752051176
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        98
+      ],
+      "mean_backlog_packets": 127.498,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "b9f2edddfc7a6e626699b48cf026f3cae3b6e5f1c72d175a59c9597a966f0512"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 4,
+      "policy": "impact",
+      "generated": [
+        3252,
+        7191
+      ],
+      "completed": [
+        3244,
+        7127
+      ],
+      "late_completed": [
+        1925,
+        2975
+      ],
+      "overdue_unfinished": [
+        1,
+        0
+      ],
+      "unfinished": [
+        8,
+        64
+      ],
+      "observed_violation_rate": [
+        0.5922509225092251,
+        0.41371158392434987
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        95
+      ],
+      "completed_delay_p99_slots": [
+        81,
+        108
+      ],
+      "mean_backlog_packets": 127.87466666666667,
+      "requests": 600,
+      "delivered": 564,
+      "pending_reports": 0,
+      "trace_sha256": "b9f2edddfc7a6e626699b48cf026f3cae3b6e5f1c72d175a59c9597a966f0512"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 5,
+      "policy": "periodic",
+      "generated": [
+        3203,
+        7299
+      ],
+      "completed": [
+        3199,
+        7240
+      ],
+      "late_completed": [
+        2143,
+        3162
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        59
+      ],
+      "observed_violation_rate": [
+        0.6690602560099906,
+        0.4332100287710645
+      ],
+      "completed_delay_p95_slots": [
+        71,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        90,
+        97
+      ],
+      "mean_backlog_packets": 135.376,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "979ab6dc2621b4ac9274344a792d9927385baf59c8e4c488e141dc03caabb499"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 5,
+      "policy": "oldest",
+      "generated": [
+        3203,
+        7299
+      ],
+      "completed": [
+        3197,
+        7260
+      ],
+      "late_completed": [
+        2137,
+        3012
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6671870121760849,
+        0.41265926839293054
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        90,
+        93
+      ],
+      "mean_backlog_packets": 132.77866666666668,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "979ab6dc2621b4ac9274344a792d9927385baf59c8e4c488e141dc03caabb499"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 5,
+      "policy": "impact",
+      "generated": [
+        3203,
+        7299
+      ],
+      "completed": [
+        3199,
+        7235
+      ],
+      "late_completed": [
+        2113,
+        3185
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        64
+      ],
+      "observed_violation_rate": [
+        0.659694036840462,
+        0.4363611453623784
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        97
+      ],
+      "mean_backlog_packets": 136.062,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "979ab6dc2621b4ac9274344a792d9927385baf59c8e4c488e141dc03caabb499"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 6,
+      "policy": "periodic",
+      "generated": [
+        3254,
+        7288
+      ],
+      "completed": [
+        3252,
+        7255
+      ],
+      "late_completed": [
+        2378,
+        3162
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        33
+      ],
+      "observed_violation_rate": [
+        0.7307928703134604,
+        0.43386388583973656
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        70,
+        95
+      ],
+      "mean_backlog_packets": 136.78666666666666,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "503194718755eaaa20c66b9b80d56ec59c969391e609ca1bb8d7b72ce077dbf2"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 6,
+      "policy": "oldest",
+      "generated": [
+        3254,
+        7288
+      ],
+      "completed": [
+        3246,
+        7243
+      ],
+      "late_completed": [
+        2318,
+        2836
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        8,
+        45
+      ],
+      "observed_violation_rate": [
+        0.7123540258143823,
+        0.38913282107574093
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        86
+      ],
+      "completed_delay_p99_slots": [
+        83,
+        92
+      ],
+      "mean_backlog_packets": 126.72633333333333,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "503194718755eaaa20c66b9b80d56ec59c969391e609ca1bb8d7b72ce077dbf2"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 6,
+      "policy": "impact",
+      "generated": [
+        3254,
+        7288
+      ],
+      "completed": [
+        3252,
+        7264
+      ],
+      "late_completed": [
+        2191,
+        3509
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        24
+      ],
+      "observed_violation_rate": [
+        0.6733251382913338,
+        0.4814763995609221
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        95
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        101
+      ],
+      "mean_backlog_packets": 139.09266666666667,
+      "requests": 600,
+      "delivered": 575,
+      "pending_reports": 0,
+      "trace_sha256": "503194718755eaaa20c66b9b80d56ec59c969391e609ca1bb8d7b72ce077dbf2"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 7,
+      "policy": "periodic",
+      "generated": [
+        3151,
+        7147
+      ],
+      "completed": [
+        3144,
+        7093
+      ],
+      "late_completed": [
+        2143,
+        3217
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        54
+      ],
+      "observed_violation_rate": [
+        0.6801015550618851,
+        0.4501189310200084
+      ],
+      "completed_delay_p95_slots": [
+        73,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        89,
+        105
+      ],
+      "mean_backlog_packets": 135.34366666666668,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "10d40cb93653de430ac39865bce9324c4581ae4ac6a1d0bc622fdf9bb2c45367"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 7,
+      "policy": "oldest",
+      "generated": [
+        3151,
+        7147
+      ],
+      "completed": [
+        3141,
+        7104
+      ],
+      "late_completed": [
+        2064,
+        2780
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        10,
+        43
+      ],
+      "observed_violation_rate": [
+        0.6550301491589972,
+        0.38897439485098645
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        95
+      ],
+      "mean_backlog_packets": 123.58766666666666,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "10d40cb93653de430ac39865bce9324c4581ae4ac6a1d0bc622fdf9bb2c45367"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 7,
+      "policy": "impact",
+      "generated": [
+        3151,
+        7147
+      ],
+      "completed": [
+        3139,
+        7096
+      ],
+      "late_completed": [
+        2048,
+        3145
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        51
+      ],
+      "observed_violation_rate": [
+        0.6499523960647413,
+        0.44004477403106196
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        96
+      ],
+      "mean_backlog_packets": 134.13666666666666,
+      "requests": 600,
+      "delivered": 555,
+      "pending_reports": 0,
+      "trace_sha256": "10d40cb93653de430ac39865bce9324c4581ae4ac6a1d0bc622fdf9bb2c45367"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 8,
+      "policy": "periodic",
+      "generated": [
+        3207,
+        7225
+      ],
+      "completed": [
+        3205,
+        7178
+      ],
+      "late_completed": [
+        2077,
+        2822
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        47
+      ],
+      "observed_violation_rate": [
+        0.6476457748674774,
+        0.3905882352941176
+      ],
+      "completed_delay_p95_slots": [
+        69,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        93
+      ],
+      "mean_backlog_packets": 125.661,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "4eb27751b0bad0ec25608473e3e71d62046e0197895dafe041ae3357344cb919"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 8,
+      "policy": "oldest",
+      "generated": [
+        3207,
+        7225
+      ],
+      "completed": [
+        3205,
+        7178
+      ],
+      "late_completed": [
+        2085,
+        2845
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        47
+      ],
+      "observed_violation_rate": [
+        0.6501403180542563,
+        0.39377162629757784
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        86
+      ],
+      "completed_delay_p99_slots": [
+        72,
+        95
+      ],
+      "mean_backlog_packets": 123.566,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "4eb27751b0bad0ec25608473e3e71d62046e0197895dafe041ae3357344cb919"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 8,
+      "policy": "impact",
+      "generated": [
+        3207,
+        7225
+      ],
+      "completed": [
+        3205,
+        7188
+      ],
+      "late_completed": [
+        2060,
+        2971
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        37
+      ],
+      "observed_violation_rate": [
+        0.6423448705955722,
+        0.41121107266435986
+      ],
+      "completed_delay_p95_slots": [
+        63,
+        85
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        88
+      ],
+      "mean_backlog_packets": 125.41133333333333,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "4eb27751b0bad0ec25608473e3e71d62046e0197895dafe041ae3357344cb919"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 9,
+      "policy": "periodic",
+      "generated": [
+        3217,
+        7242
+      ],
+      "completed": [
+        3214,
+        7205
+      ],
+      "late_completed": [
+        2002,
+        2933
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        37
+      ],
+      "observed_violation_rate": [
+        0.6223189306807585,
+        0.40499861916597624
+      ],
+      "completed_delay_p95_slots": [
+        64,
+        96
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        100
+      ],
+      "mean_backlog_packets": 126.37333333333333,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "29855b3a5b2ba11b0b9c91335b8477b80cef91c8ac91c5a04106cf49dc1b2e14"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 9,
+      "policy": "oldest",
+      "generated": [
+        3217,
+        7242
+      ],
+      "completed": [
+        3209,
+        7233
+      ],
+      "late_completed": [
+        1921,
+        2663
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        8,
+        9
+      ],
+      "observed_violation_rate": [
+        0.5971401927261424,
+        0.3677161005247169
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        86
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        97
+      ],
+      "mean_backlog_packets": 118.73466666666667,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "29855b3a5b2ba11b0b9c91335b8477b80cef91c8ac91c5a04106cf49dc1b2e14"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 9,
+      "policy": "impact",
+      "generated": [
+        3217,
+        7242
+      ],
+      "completed": [
+        3214,
+        7235
+      ],
+      "late_completed": [
+        2308,
+        3806
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        7
+      ],
+      "observed_violation_rate": [
+        0.7174386073981971,
+        0.5255454294393814
+      ],
+      "completed_delay_p95_slots": [
+        82,
+        117
+      ],
+      "completed_delay_p99_slots": [
+        104,
+        128
+      ],
+      "mean_backlog_packets": 154.29233333333335,
+      "requests": 600,
+      "delivered": 569,
+      "pending_reports": 0,
+      "trace_sha256": "29855b3a5b2ba11b0b9c91335b8477b80cef91c8ac91c5a04106cf49dc1b2e14"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 10,
+      "policy": "periodic",
+      "generated": [
+        3155,
+        7247
+      ],
+      "completed": [
+        3143,
+        7233
+      ],
+      "late_completed": [
+        1982,
+        3016
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        12,
+        14
+      ],
+      "observed_violation_rate": [
+        0.6282091917591125,
+        0.41617220919000963
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        89
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        95
+      ],
+      "mean_backlog_packets": 126.245,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "aaf1fa67b93ec9fb8094d6a7e4040dfc95a7c9af7209e20c5f7538b449d6fd3f"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 10,
+      "policy": "oldest",
+      "generated": [
+        3155,
+        7247
+      ],
+      "completed": [
+        3155,
+        7231
+      ],
+      "late_completed": [
+        1951,
+        3092
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        16
+      ],
+      "observed_violation_rate": [
+        0.6183835182250397,
+        0.42665930729957224
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        89
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        91
+      ],
+      "mean_backlog_packets": 129.33366666666666,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "aaf1fa67b93ec9fb8094d6a7e4040dfc95a7c9af7209e20c5f7538b449d6fd3f"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 10,
+      "policy": "impact",
+      "generated": [
+        3155,
+        7247
+      ],
+      "completed": [
+        3155,
+        7221
+      ],
+      "late_completed": [
+        2079,
+        3514
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        26
+      ],
+      "observed_violation_rate": [
+        0.6589540412044373,
+        0.48489029943424866
+      ],
+      "completed_delay_p95_slots": [
+        74,
+        95
+      ],
+      "completed_delay_p99_slots": [
+        87,
+        104
+      ],
+      "mean_backlog_packets": 141.19033333333334,
+      "requests": 600,
+      "delivered": 574,
+      "pending_reports": 0,
+      "trace_sha256": "aaf1fa67b93ec9fb8094d6a7e4040dfc95a7c9af7209e20c5f7538b449d6fd3f"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 11,
+      "policy": "periodic",
+      "generated": [
+        3191,
+        7233
+      ],
+      "completed": [
+        3170,
+        7218
+      ],
+      "late_completed": [
+        2001,
+        2853
+      ],
+      "overdue_unfinished": [
+        7,
+        0
+      ],
+      "unfinished": [
+        21,
+        15
+      ],
+      "observed_violation_rate": [
+        0.6292698213726104,
+        0.3944421401907922
+      ],
+      "completed_delay_p95_slots": [
+        71,
+        87
+      ],
+      "completed_delay_p99_slots": [
+        90,
+        89
+      ],
+      "mean_backlog_packets": 125.80933333333333,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "d24ef1793fbb9e40300025e0d6c9da8a87a92f1fe0136d89a36c741540c94925"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 11,
+      "policy": "oldest",
+      "generated": [
+        3191,
+        7233
+      ],
+      "completed": [
+        3178,
+        7211
+      ],
+      "late_completed": [
+        2027,
+        2898
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        13,
+        22
+      ],
+      "observed_violation_rate": [
+        0.6352240676903792,
+        0.4006636250518457
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        81,
+        94
+      ],
+      "mean_backlog_packets": 127.88066666666667,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "d24ef1793fbb9e40300025e0d6c9da8a87a92f1fe0136d89a36c741540c94925"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 11,
+      "policy": "impact",
+      "generated": [
+        3191,
+        7233
+      ],
+      "completed": [
+        3184,
+        7197
+      ],
+      "late_completed": [
+        1988,
+        3397
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        7,
+        36
+      ],
+      "observed_violation_rate": [
+        0.623002193669696,
+        0.46965297939997236
+      ],
+      "completed_delay_p95_slots": [
+        76,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        89,
+        102
+      ],
+      "mean_backlog_packets": 136.84733333333332,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "d24ef1793fbb9e40300025e0d6c9da8a87a92f1fe0136d89a36c741540c94925"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 12,
+      "policy": "periodic",
+      "generated": [
+        3179,
+        7319
+      ],
+      "completed": [
+        3177,
+        7288
+      ],
+      "late_completed": [
+        2166,
+        3238
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        31
+      ],
+      "observed_violation_rate": [
+        0.6813463353255741,
+        0.4424101653231316
+      ],
+      "completed_delay_p95_slots": [
+        75,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        86,
+        102
+      ],
+      "mean_backlog_packets": 136.62066666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "3bc21754704f5b56da617d85b0914b4eeaadadad10f57597d5dcae23759908b3"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 12,
+      "policy": "oldest",
+      "generated": [
+        3179,
+        7319
+      ],
+      "completed": [
+        3174,
+        7271
+      ],
+      "late_completed": [
+        2137,
+        3118
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        5,
+        48
+      ],
+      "observed_violation_rate": [
+        0.6722239698018245,
+        0.42601448285284876
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        87,
+        108
+      ],
+      "mean_backlog_packets": 133.88733333333334,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "3bc21754704f5b56da617d85b0914b4eeaadadad10f57597d5dcae23759908b3"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 12,
+      "policy": "impact",
+      "generated": [
+        3179,
+        7319
+      ],
+      "completed": [
+        3177,
+        7287
+      ],
+      "late_completed": [
+        2127,
+        3381
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        32
+      ],
+      "observed_violation_rate": [
+        0.6690783265177729,
+        0.46194835360021863
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        96
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        100
+      ],
+      "mean_backlog_packets": 136.24733333333333,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "3bc21754704f5b56da617d85b0914b4eeaadadad10f57597d5dcae23759908b3"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 13,
+      "policy": "periodic",
+      "generated": [
+        3199,
+        7185
+      ],
+      "completed": [
+        3155,
+        7134
+      ],
+      "late_completed": [
+        2104,
+        2757
+      ],
+      "overdue_unfinished": [
+        37,
+        0
+      ],
+      "unfinished": [
+        44,
+        51
+      ],
+      "observed_violation_rate": [
+        0.6692716473898093,
+        0.3837160751565762
+      ],
+      "completed_delay_p95_slots": [
+        79,
+        89
+      ],
+      "completed_delay_p99_slots": [
+        94,
+        95
+      ],
+      "mean_backlog_packets": 125.89666666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "7c6d784bf51a75913254dffadf135c7d4f402f4aae08720def04f8ff639ff426"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 13,
+      "policy": "oldest",
+      "generated": [
+        3199,
+        7185
+      ],
+      "completed": [
+        3193,
+        7140
+      ],
+      "late_completed": [
+        2224,
+        2773
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        6,
+        45
+      ],
+      "observed_violation_rate": [
+        0.69521725539231,
+        0.3859429366736256
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        72,
+        98
+      ],
+      "mean_backlog_packets": 128.988,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "7c6d784bf51a75913254dffadf135c7d4f402f4aae08720def04f8ff639ff426"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 13,
+      "policy": "impact",
+      "generated": [
+        3199,
+        7185
+      ],
+      "completed": [
+        3191,
+        7157
+      ],
+      "late_completed": [
+        2175,
+        3416
+      ],
+      "overdue_unfinished": [
+        1,
+        0
+      ],
+      "unfinished": [
+        8,
+        28
+      ],
+      "observed_violation_rate": [
+        0.6802125664270084,
+        0.4754349338900487
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        101
+      ],
+      "completed_delay_p99_slots": [
+        79,
+        117
+      ],
+      "mean_backlog_packets": 137.95366666666666,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "7c6d784bf51a75913254dffadf135c7d4f402f4aae08720def04f8ff639ff426"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 14,
+      "policy": "periodic",
+      "generated": [
+        3239,
+        7236
+      ],
+      "completed": [
+        3228,
+        7150
+      ],
+      "late_completed": [
+        2101,
+        3096
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        11,
+        86
+      ],
+      "observed_violation_rate": [
+        0.6486569928990429,
+        0.42786069651741293
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        87
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        99
+      ],
+      "mean_backlog_packets": 130.37366666666668,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "cd64c020dd450c49d3e7ea1dc78cf306c9831c4cee6ebff98e304716d85d1491"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 14,
+      "policy": "oldest",
+      "generated": [
+        3239,
+        7236
+      ],
+      "completed": [
+        3223,
+        7165
+      ],
+      "late_completed": [
+        2083,
+        2948
+      ],
+      "overdue_unfinished": [
+        1,
+        0
+      ],
+      "unfinished": [
+        16,
+        71
+      ],
+      "observed_violation_rate": [
+        0.6434084594010497,
+        0.4074074074074074
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        86
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        100
+      ],
+      "mean_backlog_packets": 128.763,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "cd64c020dd450c49d3e7ea1dc78cf306c9831c4cee6ebff98e304716d85d1491"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 14,
+      "policy": "impact",
+      "generated": [
+        3239,
+        7236
+      ],
+      "completed": [
+        3216,
+        7231
+      ],
+      "late_completed": [
+        2073,
+        3354
+      ],
+      "overdue_unfinished": [
+        8,
+        0
+      ],
+      "unfinished": [
+        23,
+        5
+      ],
+      "observed_violation_rate": [
+        0.6424822476072862,
+        0.4635157545605307
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        88,
+        95
+      ],
+      "mean_backlog_packets": 134.875,
+      "requests": 600,
+      "delivered": 570,
+      "pending_reports": 0,
+      "trace_sha256": "cd64c020dd450c49d3e7ea1dc78cf306c9831c4cee6ebff98e304716d85d1491"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 15,
+      "policy": "periodic",
+      "generated": [
+        3143,
+        7125
+      ],
+      "completed": [
+        3121,
+        7083
+      ],
+      "late_completed": [
+        1978,
+        3053
+      ],
+      "overdue_unfinished": [
+        2,
+        0
+      ],
+      "unfinished": [
+        22,
+        42
+      ],
+      "observed_violation_rate": [
+        0.6299713649379574,
+        0.4284912280701754
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        87,
+        102
+      ],
+      "mean_backlog_packets": 125.512,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "36ffb6ab495a9be38a2138ebecc36d526159b1ace09ae2b463d8f2f9f54fa558"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 15,
+      "policy": "oldest",
+      "generated": [
+        3143,
+        7125
+      ],
+      "completed": [
+        3139,
+        7083
+      ],
+      "late_completed": [
+        2073,
+        2857
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        42
+      ],
+      "observed_violation_rate": [
+        0.6595609290486796,
+        0.4009824561403509
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        90
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        94
+      ],
+      "mean_backlog_packets": 125.29133333333333,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "36ffb6ab495a9be38a2138ebecc36d526159b1ace09ae2b463d8f2f9f54fa558"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 15,
+      "policy": "impact",
+      "generated": [
+        3143,
+        7125
+      ],
+      "completed": [
+        3139,
+        7076
+      ],
+      "late_completed": [
+        1965,
+        3345
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        49
+      ],
+      "observed_violation_rate": [
+        0.6251988545975183,
+        0.4694736842105263
+      ],
+      "completed_delay_p95_slots": [
+        71,
+        96
+      ],
+      "completed_delay_p99_slots": [
+        86,
+        101
+      ],
+      "mean_backlog_packets": 134.793,
+      "requests": 600,
+      "delivered": 566,
+      "pending_reports": 0,
+      "trace_sha256": "36ffb6ab495a9be38a2138ebecc36d526159b1ace09ae2b463d8f2f9f54fa558"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 16,
+      "policy": "periodic",
+      "generated": [
+        3275,
+        6975
+      ],
+      "completed": [
+        3272,
+        6945
+      ],
+      "late_completed": [
+        1986,
+        2710
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        3,
+        30
+      ],
+      "observed_violation_rate": [
+        0.6064122137404581,
+        0.38853046594982077
+      ],
+      "completed_delay_p95_slots": [
+        74,
+        87
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        91
+      ],
+      "mean_backlog_packets": 119.82566666666666,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "f2db315b73a89cc5d46b4dbaa8db16c66dcc2c3299753533cd86910d5a641d6e"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 16,
+      "policy": "oldest",
+      "generated": [
+        3275,
+        6975
+      ],
+      "completed": [
+        3274,
+        6944
+      ],
+      "late_completed": [
+        1934,
+        2612
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        1,
+        31
+      ],
+      "observed_violation_rate": [
+        0.5905343511450382,
+        0.37448028673835126
+      ],
+      "completed_delay_p95_slots": [
+        65,
+        87
+      ],
+      "completed_delay_p99_slots": [
+        74,
+        90
+      ],
+      "mean_backlog_packets": 117.144,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "f2db315b73a89cc5d46b4dbaa8db16c66dcc2c3299753533cd86910d5a641d6e"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 16,
+      "policy": "impact",
+      "generated": [
+        3275,
+        6975
+      ],
+      "completed": [
+        3271,
+        6907
+      ],
+      "late_completed": [
+        1953,
+        2807
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        4,
+        68
+      ],
+      "observed_violation_rate": [
+        0.5963358778625955,
+        0.4024372759856631
+      ],
+      "completed_delay_p95_slots": [
+        72,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        98
+      ],
+      "mean_backlog_packets": 123.89866666666667,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "f2db315b73a89cc5d46b4dbaa8db16c66dcc2c3299753533cd86910d5a641d6e"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 17,
+      "policy": "periodic",
+      "generated": [
+        3097,
+        7314
+      ],
+      "completed": [
+        3095,
+        7288
+      ],
+      "late_completed": [
+        2070,
+        2668
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        26
+      ],
+      "observed_violation_rate": [
+        0.6683887633193413,
+        0.36477987421383645
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        88
+      ],
+      "completed_delay_p99_slots": [
+        77,
+        91
+      ],
+      "mean_backlog_packets": 125.13933333333334,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "2aaa9c85eeeb48e9ac5b7e72963a190ce086663cebbb61f728a64785035529a8"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 17,
+      "policy": "oldest",
+      "generated": [
+        3097,
+        7314
+      ],
+      "completed": [
+        3080,
+        7304
+      ],
+      "late_completed": [
+        2050,
+        2750
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        17,
+        10
+      ],
+      "observed_violation_rate": [
+        0.6628995802389409,
+        0.37599124965818975
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        85
+      ],
+      "completed_delay_p99_slots": [
+        76,
+        89
+      ],
+      "mean_backlog_packets": 120.94166666666666,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "2aaa9c85eeeb48e9ac5b7e72963a190ce086663cebbb61f728a64785035529a8"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 17,
+      "policy": "impact",
+      "generated": [
+        3097,
+        7314
+      ],
+      "completed": [
+        3095,
+        7308
+      ],
+      "late_completed": [
+        1959,
+        3179
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        2,
+        6
+      ],
+      "observed_violation_rate": [
+        0.6325476267355505,
+        0.43464588460486736
+      ],
+      "completed_delay_p95_slots": [
+        66,
+        91
+      ],
+      "completed_delay_p99_slots": [
+        82,
+        108
+      ],
+      "mean_backlog_packets": 128.988,
+      "requests": 600,
+      "delivered": 562,
+      "pending_reports": 0,
+      "trace_sha256": "2aaa9c85eeeb48e9ac5b7e72963a190ce086663cebbb61f728a64785035529a8"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 18,
+      "policy": "periodic",
+      "generated": [
+        3227,
+        7244
+      ],
+      "completed": [
+        3202,
+        7205
+      ],
+      "late_completed": [
+        2098,
+        3083
+      ],
+      "overdue_unfinished": [
+        6,
+        0
+      ],
+      "unfinished": [
+        25,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6519987604586303,
+        0.4255935946990613
+      ],
+      "completed_delay_p95_slots": [
+        67,
+        93
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        99
+      ],
+      "mean_backlog_packets": 132.53733333333332,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "853cd92adb6e300666cb979b37ca60b406bfcda448936a2a3ec331713c066d0b"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 18,
+      "policy": "oldest",
+      "generated": [
+        3227,
+        7244
+      ],
+      "completed": [
+        3202,
+        7205
+      ],
+      "late_completed": [
+        2032,
+        3033
+      ],
+      "overdue_unfinished": [
+        6,
+        0
+      ],
+      "unfinished": [
+        25,
+        39
+      ],
+      "observed_violation_rate": [
+        0.6315463278586922,
+        0.4186913307564881
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        92
+      ],
+      "completed_delay_p99_slots": [
+        80,
+        95
+      ],
+      "mean_backlog_packets": 128.76733333333334,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "853cd92adb6e300666cb979b37ca60b406bfcda448936a2a3ec331713c066d0b"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 18,
+      "policy": "impact",
+      "generated": [
+        3227,
+        7244
+      ],
+      "completed": [
+        3178,
+        7195
+      ],
+      "late_completed": [
+        2062,
+        3287
+      ],
+      "overdue_unfinished": [
+        30,
+        0
+      ],
+      "unfinished": [
+        49,
+        49
+      ],
+      "observed_violation_rate": [
+        0.6482801363495506,
+        0.4537548315847598
+      ],
+      "completed_delay_p95_slots": [
+        68,
+        101
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        113
+      ],
+      "mean_backlog_packets": 135.55566666666667,
+      "requests": 600,
+      "delivered": 582,
+      "pending_reports": 0,
+      "trace_sha256": "853cd92adb6e300666cb979b37ca60b406bfcda448936a2a3ec331713c066d0b"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 19,
+      "policy": "periodic",
+      "generated": [
+        3173,
+        7386
+      ],
+      "completed": [
+        3147,
+        7376
+      ],
+      "late_completed": [
+        2246,
+        3248
+      ],
+      "overdue_unfinished": [
+        9,
+        0
+      ],
+      "unfinished": [
+        26,
+        10
+      ],
+      "observed_violation_rate": [
+        0.7106838953671604,
+        0.4397508800433252
+      ],
+      "completed_delay_p95_slots": [
+        78,
+        95
+      ],
+      "completed_delay_p99_slots": [
+        85,
+        102
+      ],
+      "mean_backlog_packets": 142.092,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "a0c1a1661be0c716ff7aa30a688f47ace76a062b4cd0d11fd9cebdbf2b40acc7"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 19,
+      "policy": "oldest",
+      "generated": [
+        3173,
+        7386
+      ],
+      "completed": [
+        3153,
+        7377
+      ],
+      "late_completed": [
+        2221,
+        3399
+      ],
+      "overdue_unfinished": [
+        3,
+        0
+      ],
+      "unfinished": [
+        20,
+        9
+      ],
+      "observed_violation_rate": [
+        0.700913961550583,
+        0.4601949634443542
+      ],
+      "completed_delay_p95_slots": [
+        70,
+        96
+      ],
+      "completed_delay_p99_slots": [
+        79,
+        102
+      ],
+      "mean_backlog_packets": 144.88466666666667,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "a0c1a1661be0c716ff7aa30a688f47ace76a062b4cd0d11fd9cebdbf2b40acc7"
+    },
+    {
+      "scenario": "bursty_compute",
+      "seed": 19,
+      "policy": "impact",
+      "generated": [
+        3173,
+        7386
+      ],
+      "completed": [
+        3156,
+        7305
+      ],
+      "late_completed": [
+        2226,
+        3566
+      ],
+      "overdue_unfinished": [
+        0,
+        0
+      ],
+      "unfinished": [
+        17,
+        81
+      ],
+      "observed_violation_rate": [
+        0.70154427986133,
+        0.4828053073382074
+      ],
+      "completed_delay_p95_slots": [
+        76,
+        94
+      ],
+      "completed_delay_p99_slots": [
+        84,
+        97
+      ],
+      "mean_backlog_packets": 148.08533333333332,
+      "requests": 600,
+      "delivered": 571,
+      "pending_reports": 0,
+      "trace_sha256": "a0c1a1661be0c716ff7aa30a688f47ace76a062b4cd0d11fd9cebdbf2b40acc7"
+    }
+  ]
+}

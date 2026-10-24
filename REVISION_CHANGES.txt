@@ -1,0 +1,74 @@
+EQUIPMENT-INSPIRED FIGURES — 23 OCTOBER 2026
+
+Figures 1 and 2 redrawn with original vector radio, handset, switch, server,
+controller, telemetry and ledger icons. Unified dark-blue/teal/orange palette.
+Both retain exact model semantics and distinguish illustration from deployment.
+Source: realistic_schematics.py. The manuscript remains 24 pages.
+
+COHERENCE AND VISUAL REVISION — 23 OCTOBER 2026
+
+28 subsections consolidated into 13. Added transitions between model,
+controller, analytical properties, experimental protocol and results.
+Improved all eight vector result plots, two schematics and algorithm typography.
+Preserved algorithm instructions and vertical scope connectors.
+Removed author-name prose in favor of numeric citation wording.
+Bibliography author fields and all frozen results remain intact.
+Source: editorial_polish.py. Earlier page references below are historical.
+
+MATHEMATICAL EXTENSION — 23 OCTOBER 2026
+
+Current PDF: 24 pages. The previous revision's page references below are historical.
+Pages 4–5: Exact age-bin dynamics, FIFO/capacity constraints and deadline counts.
+Pages 5–6: Command activation ordering and exact switching-cost geometry.
+Page 7: Augmented state, causal policy class and partial observation.
+Page 12: Residual-deadline capacity cuts, proof and fixed-delay envelope.
+Six full-run independent age-bin replays and 306 deadline cuts pass.
+Frozen experimental results and both algorithm display blocks are unchanged.
+Sources: advanced_model.py; verification: advanced_model_verification.json.
+
+PREVIOUS SUBSTANTIVE REVISION — 23 OCTOBER 2026
+
+Comparison base: the previously delivered Manuscript.pdf, Library version 3.
+Current authoritative deliverable: paper_reliability/Manuscript.pdf.
+
+WHERE TO SEE THE DIFFERENCE
+
+Pages 1–2: Introduction rewritten around the observation/action timing problem,
+the reliability-first comparison rule, and three explicit research questions.
+
+Pages 2–3: Related work and its comparison table replaced. The new comparison
+distinguishes decision objects, physical evidence, adaptations and guarantees.
+
+Pages 7–8: New integer allocation and discrete marginal analysis. A finite
+perturbation bound links queue, arrival and variance errors to the actual score.
+The numerical tie behavior of the executed allocator is disclosed explicitly.
+
+Pages 12–17: Results section replaced and reorganized around five questions.
+Figure 5 decomposes the qualification rule. Figure 9 decomposes active-capacity
+and switching cost. Figure 10 compares proxy-feasibility frequency with actual
+deadline outcomes. These are analyses of existing runs, not new experiments.
+
+Page 17: Discussion and conclusion rewritten without the former mostly empty
+conclusion page. The conclusion remains a separate numbered section.
+
+WHAT DID NOT CHANGE
+
+Both algorithm display blocks, including their style, connectors and text.
+All 336 calibration and 840 held-out execution records.
+Calibration selections, qualified settings P/R/J, and the original risk screen.
+Negative results, comparator limitations and the synthetic-model boundary.
+
+CHECKS
+
+51 existing unit-test methods and the original reconciliation gates.
+420 ablation execution records reconciled for the new decomposition.
+133 capacity/share grid cases checked against the exact executed allocator.
+10,000 numerical checks of the finite perturbation and marginal relations.
+Fixed pre-revision SHA-256 values enforce algorithm display preservation.
+
+REMAINING LIMITS
+
+No physical O-RAN validation, reproduced native competitive systems, rare-event
+reliability certificate, or guarantee of Q1 acceptance is asserted. The retained
+43 references include journal articles, conference papers, foundational books
+and author versions. No funding/conflict declaration or author order is invented.

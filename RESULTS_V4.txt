@@ -1,0 +1,67 @@
+V4: BOUNDED CAPACITY ELASTICITY PILOT
+
+Runs: 320
+Violations in percent. Cost in synthetic units, not currency.
+No calibrated delay bound or true QoS guarantee.
+
+nominal_delay3_loss0.05                  fixed          class0=  0.00% class1=  0.00% weighted=  0.00% extra=0.000 cost=0.00
+nominal_delay3_loss0.05                  always_on      class0=  0.00% class1=  0.00% weighted=  0.00% extra=6.000 cost=20040.00
+nominal_delay3_loss0.05                  elastic_cap1   class0=  0.00% class1=  0.00% weighted=  0.00% extra=0.048 cost=170.71
+nominal_delay3_loss0.05                  elastic_cap3   class0=  0.00% class1=  0.00% weighted=  0.00% extra=0.049 cost=176.04
+bursty_transport_delay3_loss0.05         fixed          class0= 24.41% class1= 34.80% weighted= 31.63% extra=0.000 cost=0.00
+bursty_transport_delay3_loss0.05         always_on      class0=  0.00% class1=  0.00% weighted=  0.00% extra=6.000 cost=20040.00
+bursty_transport_delay3_loss0.05         elastic_cap1   class0=  2.84% class1= 19.66% weighted= 14.54% extra=0.528 cost=1790.36
+bursty_transport_delay3_loss0.05         elastic_cap3   class0=  0.00% class1=  0.00% weighted=  0.00% extra=1.116 cost=3778.32
+bursty_compute_delay3_loss0.05           fixed          class0= 23.35% class1= 34.18% weighted= 30.88% extra=0.000 cost=0.00
+bursty_compute_delay3_loss0.05           always_on      class0=  0.00% class1=  0.00% weighted=  0.00% extra=6.000 cost=20040.00
+bursty_compute_delay3_loss0.05           elastic_cap1   class0=  2.55% class1= 19.07% weighted= 14.04% extra=0.505 cost=1711.25
+bursty_compute_delay3_loss0.05           elastic_cap3   class0=  0.00% class1=  0.00% weighted=  0.00% extra=1.137 cost=3847.94
+bursty_transport_delay9_loss0.15         fixed          class0= 21.95% class1= 35.09% weighted= 31.09% extra=0.000 cost=0.00
+bursty_transport_delay9_loss0.15         always_on      class0=  0.00% class1=  0.00% weighted=  0.00% extra=6.000 cost=20040.00
+bursty_transport_delay9_loss0.15         elastic_cap1   class0=  2.96% class1= 20.91% weighted= 15.44% extra=0.560 cost=1902.12
+bursty_transport_delay9_loss0.15         elastic_cap3   class0=  0.00% class1=  0.12% weighted=  0.08% extra=1.184 cost=4011.36
+
+elastic_cap3 minus comparator: violations in percentage points, cost in cost units.
+Exploratory paired-bootstrap 95% intervals; no multiplicity correction.
+nominal_delay3_loss0.05                  vs fixed          class0  delta=+0.000 CI=[+0.000,+0.000]
+nominal_delay3_loss0.05                  vs fixed          class1  delta=+0.000 CI=[+0.000,+0.000]
+nominal_delay3_loss0.05                  vs fixed          cost    delta=+176.037 CI=[+157.438,+194.812]
+nominal_delay3_loss0.05                  vs always_on      class0  delta=+0.000 CI=[+0.000,+0.000]
+nominal_delay3_loss0.05                  vs always_on      class1  delta=+0.000 CI=[+0.000,+0.000]
+nominal_delay3_loss0.05                  vs always_on      cost    delta=-19863.963 CI=[-19882.562,-19845.188]
+nominal_delay3_loss0.05                  vs elastic_cap1   class0  delta=+0.000 CI=[+0.000,+0.000]
+nominal_delay3_loss0.05                  vs elastic_cap1   class1  delta=+0.000 CI=[+0.000,+0.000]
+nominal_delay3_loss0.05                  vs elastic_cap1   cost    delta=+5.325 CI=[+1.625,+10.350]
+bursty_transport_delay3_loss0.05         vs fixed          class0  delta=-24.408 CI=[-25.067,-23.712]
+bursty_transport_delay3_loss0.05         vs fixed          class1  delta=-34.796 CI=[-35.294,-34.313]
+bursty_transport_delay3_loss0.05         vs fixed          cost    delta=+3778.325 CI=[+3712.625,+3844.700]
+bursty_transport_delay3_loss0.05         vs always_on      class0  delta=+0.000 CI=[+0.000,+0.000]
+bursty_transport_delay3_loss0.05         vs always_on      class1  delta=+0.000 CI=[+0.000,+0.000]
+bursty_transport_delay3_loss0.05         vs always_on      cost    delta=-16261.675 CI=[-16327.375,-16195.300]
+bursty_transport_delay3_loss0.05         vs elastic_cap1   class0  delta=-2.838 CI=[-3.603,-2.155]
+bursty_transport_delay3_loss0.05         vs elastic_cap1   class1  delta=-19.665 CI=[-20.335,-19.039]
+bursty_transport_delay3_loss0.05         vs elastic_cap1   cost    delta=+1987.963 CI=[+1921.787,+2060.188]
+bursty_compute_delay3_loss0.05           vs fixed          class0  delta=-23.352 CI=[-24.007,-22.654]
+bursty_compute_delay3_loss0.05           vs fixed          class1  delta=-34.179 CI=[-34.728,-33.619]
+bursty_compute_delay3_loss0.05           vs fixed          cost    delta=+3847.938 CI=[+3775.325,+3918.750]
+bursty_compute_delay3_loss0.05           vs always_on      class0  delta=+0.000 CI=[+0.000,+0.000]
+bursty_compute_delay3_loss0.05           vs always_on      class1  delta=+0.000 CI=[+0.000,+0.000]
+bursty_compute_delay3_loss0.05           vs always_on      cost    delta=-16192.062 CI=[-16264.675,-16121.250]
+bursty_compute_delay3_loss0.05           vs elastic_cap1   class0  delta=-2.554 CI=[-3.295,-1.902]
+bursty_compute_delay3_loss0.05           vs elastic_cap1   class1  delta=-19.070 CI=[-19.623,-18.470]
+bursty_compute_delay3_loss0.05           vs elastic_cap1   cost    delta=+2136.688 CI=[+2071.200,+2201.713]
+bursty_transport_delay9_loss0.15         vs fixed          class0  delta=-21.950 CI=[-22.766,-21.237]
+bursty_transport_delay9_loss0.15         vs fixed          class1  delta=-34.975 CI=[-35.461,-34.486]
+bursty_transport_delay9_loss0.15         vs fixed          cost    delta=+4011.363 CI=[+3902.050,+4102.837]
+bursty_transport_delay9_loss0.15         vs always_on      class0  delta=+0.000 CI=[+0.000,+0.000]
+bursty_transport_delay9_loss0.15         vs always_on      class1  delta=+0.118 CI=[+0.000,+0.322]
+bursty_transport_delay9_loss0.15         vs always_on      cost    delta=-16028.638 CI=[-16137.950,-15937.163]
+bursty_transport_delay9_loss0.15         vs elastic_cap1   class0  delta=-2.958 CI=[-3.725,-2.242]
+bursty_transport_delay9_loss0.15         vs elastic_cap1   class1  delta=-20.788 CI=[-21.441,-20.159]
+bursty_transport_delay9_loss0.15         vs elastic_cap1   cost    delta=+2109.238 CI=[+2011.900,+2194.550]
+
+No-harm sample-mean audit versus fixed:
+bursty_compute_delay3_loss0.05: changes [-23.351795819034777, -34.17910573594447]; cost saving vs always-on 80.80%; both sample means non-increasing=True
+bursty_transport_delay3_loss0.05: changes [-24.40783882905265, -34.796253459424264]; cost saving vs always-on 81.15%; both sample means non-increasing=True
+bursty_transport_delay9_loss0.15: changes [-21.950178345107012, -34.975060473815354]; cost saving vs always-on 79.98%; both sample means non-increasing=True
+nominal_delay3_loss0.05: changes [0.0, 0.0]; cost saving vs always-on 99.12%; both sample means non-increasing=True
