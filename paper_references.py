@@ -44,3 +44,8 @@ REFS = {
 'efron': ('B. Efron', 'Bootstrap Methods: Another Look at the Jackknife', 'The Annals of Statistics, vol. 7, no. 1, pp. 1--26, 1979', '10.1214/aos/1176344552'),
 'holm': ('S. Holm', 'A Simple Sequentially Rejective Multiple Test Procedure', 'Scandinavian Journal of Statistics, vol. 6, pp. 65--70, 1979', 'https://www.jstor.org/stable/4615733'),
 }
+
+REFS.update({
+'alkarawi2024': ('Y. Al-Karawi, H. Al-Raweshidy, and R. Nilavalan', 'Optimizing the Energy Efficiency Using Quantum Based Load Balancing in Open Radio Access Networks', 'IEEE Access, vol. 12, pp. 37903--37918, 2024', '10.1109/ACCESS.2024.3375530'),
+'alkarawi2025': ('Y. Al-Karawi, R. S. Alhumaima, and H. Al-Raweshidy', 'Energy-Aware Optimisation for Off-Grid ORAN With RIS and Edge Computing', 'IET Networks, vol. 14, no. 1, article e70012, 2025', '10.1049/ntw2.70012')
+})

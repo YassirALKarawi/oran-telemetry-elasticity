@@ -18,7 +18,7 @@ for forbidden in [r'\bTODO\b',r'\bTBD\b',r'\bplaceholder\b',r'\breviewer\b',
 assert not re.search(r'\bwe\b|\boracle\b',visible,re.I)
 citations=[k for group in re.findall(r'\\cite\{([^}]+)\}',tex) for k in group.split(',')]
 assert max(Counter(citations).values())<=3
-assert len(set(citations))==43
+assert len(set(citations))==45
 assert r'\sigma(x,\alpha)' not in tex
 assert r'\boldsymbol{\gamma}(x,\alpha)' in tex
 assert r'\sigma_{isa}' in tex

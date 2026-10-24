@@ -228,8 +228,10 @@ T=replace_schematics(T)
 T=journal_revision(T,OUT,ROOT)
 from final_editorial_audit import audit_editorial
 T=audit_editorial(T)
+from relevant_prior_work import integrate
+T=integrate(T)
 keys=list(dict.fromkeys(k for match in re.findall(r'\\cite\{([^}]+)\}',T) for k in match.split(',')))
-assert set(keys)==set(REFS) and len(keys)==43
+assert set(keys)==set(REFS) and len(keys)==45
 assert '@@' not in T
 assert 'out-of-order actuation or supersession' not in T
 assert 'Calibration uses a 1\\%' not in T

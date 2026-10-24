@@ -114,7 +114,7 @@ opportunity. Between those instants, earlier commands can already have altered
 capacity. Open Radio Access Network (O-RAN) exposes programmable control across
 disaggregated components \cite{polese}. Software-defined networking (SDN)
 separates control from forwarding \cite{sdn}, and virtualization makes resource
-provisioning an explicit orchestration decision \cite{ecosystem}. These features
+provisioning an explicit orchestration decision \cite{ecosystem}. Energy-efficient server selection and load balancing have also been studied in virtualized O-RAN \cite{alkarawi2024}. These features
 motivate accounting for the gap between observing, requesting and activating
 resources. They do not make those three events simultaneous.
 
@@ -177,7 +177,7 @@ OrchestRAN chooses intelligence algorithms and their execution locations
 applications (xApps) across network services \cite{oreo}. Their decision objects
 are not the packet-stage capacities used here. Joint cloud, fronthaul and radio
 orchestration already treats cross-domain resource coupling \cite{demir}.
-The present study focuses on replaying already issued commands when projecting stale queue measurements, and evaluates this mechanism through a matched ablation.
+Energy-aware off-grid O-RAN optimization jointly adapts transmitter energy, processor speed and reconfigurable intelligent surface (RIS) phases under latency and energy constraints \cite{alkarawi2025}. Its resource decisions couple communication and computing, whereas the present model isolates delayed capacity activation and class-wise packet deadlines. The present study focuses on replaying already issued commands when projecting stale queue measurements, and evaluates this mechanism through a matched ablation.
 
 Implemented virtualized radio access network (vRAN) systems provide a stronger
 physical basis than homogeneous queues. vrAIn learns radio/computing allocation
@@ -601,7 +601,7 @@ is the activated expansion, and $e_a^-$ is expansion immediately before that
 activation. Every activation is charged, even when several occur in one slot.
 The objective includes warm-up and tail capacity, charges actual changes, and
 excludes base-resource costs. Initial provisioning incurs no switching charge.
-Units are abstract resource cost units, not money, energy or measured power.
+Units are abstract resource cost units, not money, energy or measured power. Power-based O-RAN optimization requires an explicit physical consumption model, as in server-load balancing \cite{alkarawi2024} and joint radio/edge resource control \cite{alkarawi2025}. Accordingly, reductions in $J$ quantify provisioning-cost differences within the present service-chain model and do not establish energy savings.
 
 For the measured birth cohort $\mathcal C_s$, let $N_s=|\mathcal C_s|$ and let
 $\ell_p$ be completion latency. The miss fraction is
@@ -1627,12 +1627,14 @@ verification tests, manuscript sources and vector figures. All reported diagnost
 \bibitem{polese} M. Polese et al., ``Understanding O-RAN: Architecture, Interfaces, Algorithms, Security, and Research Challenges,'' IEEE Communications Surveys \& Tutorials, vol. 25, no. 2, pp. 1376--1411, 2023. \href{https://doi.org/10.1109/COMST.2023.3239220}{10.1109/COMST.2023.3239220}.
 \bibitem{sdn} D. Kreutz et al., ``Software-Defined Networking: A Comprehensive Survey,'' Proceedings of the IEEE, vol. 103, no. 1, pp. 14--76, 2015. \href{https://doi.org/10.1109/JPROC.2014.2371999}{10.1109/JPROC.2014.2371999}.
 \bibitem{ecosystem} A. Garcia-Saavedra and X. Costa-Perez, ``O-RAN: Disrupting the Virtualized RAN Ecosystem,'' IEEE Communications Standards Magazine, vol. 5, no. 4, pp. 96--103, 2021. \href{https://doi.org/10.1109/MCOMSTD.101.2000014}{10.1109/MCOMSTD.101.2000014}.
+\bibitem{alkarawi2024} Y. Al-Karawi, H. Al-Raweshidy, and R. Nilavalan, ``Optimizing the Energy Efficiency Using Quantum Based Load Balancing in Open Radio Access Networks,'' IEEE Access, vol. 12, pp. 37903--37918, 2024. \href{https://doi.org/10.1109/ACCESS.2024.3375530}{10.1109/ACCESS.2024.3375530}.
 \bibitem{age} R. D. Yates et al., ``Age of Information: An Introduction and Survey,'' IEEE Journal on Selected Areas in Communications, vol. 39, no. 5, pp. 1183--1210, 2021. \href{https://doi.org/10.1109/JSAC.2021.3065072}{10.1109/JSAC.2021.3065072}.
 \bibitem{networked} J. P. Hespanha, P. Naghshtabrizi, and Y. Xu, ``A Survey of Recent Results in Networked Control Systems,'' Proceedings of the IEEE, vol. 95, no. 1, pp. 138--162, 2007. \href{https://doi.org/10.1109/JPROC.2006.887288}{10.1109/JPROC.2006.887288}.
 \bibitem{mpc} D. Q. Mayne, J. B. Rawlings, C. V. Rao, and P. O. M. Scokaert, ``Constrained model predictive control: Stability and optimality,'' Automatica, vol. 36, no. 6, pp. 789--814, 2000. \href{https://doi.org/10.1016/S0005-1098(99)00214-9}{10.1016/S0005-1098(99)00214-9}.
 \bibitem{orchestr} S. D'Oro, L. Bonati, M. Polese, and T. Melodia, ``OrchestRAN: Network Automation through Orchestrated Intelligence in the Open RAN,'' IEEE INFOCOM, 2022, author version arXiv:2201.05632. \href{https://doi.org/10.48550/arXiv.2201.05632}{10.48550/arXiv.2201.05632}.
 \bibitem{oreo} F. Mungari, C. Puligheddu, A. Garcia-Saavedra, and C. F. Chiasserini, ``O-RAN Intelligence Orchestration Framework for Quality-Driven xApp Deployment and Sharing,'' IEEE Transactions on Mobile Computing, vol. 24, no. 6, pp. 4811--4828, 2025. \href{https://doi.org/10.1109/TMC.2025.3527707}{10.1109/TMC.2025.3527707}.
 \bibitem{demir} O. T. Demir, M. Masoudi, E. Bjornson, and C. Cavdar, ``Cell-Free Massive MIMO in O-RAN: Energy-Aware Joint Orchestration of Cloud, Fronthaul, and Radio Resources,'' IEEE Journal on Selected Areas in Communications, vol. 42, no. 2, pp. 356--372, 2024. \href{https://doi.org/10.1109/JSAC.2023.3336187}{10.1109/JSAC.2023.3336187}.
+\bibitem{alkarawi2025} Y. Al-Karawi, R. S. Alhumaima, and H. Al-Raweshidy, ``Energy-Aware Optimisation for Off-Grid ORAN With RIS and Edge Computing,'' IET Networks, vol. 14, no. 1, article e70012, 2025. \href{https://doi.org/10.1049/ntw2.70012}{10.1049/ntw2.70012}.
 \bibitem{vrain} J. A. Ayala-Romero et al., ``vrAIn: A Deep Learning Approach Tailoring Computing and Radio Resources in Virtualized RANs,'' ACM MobiCom, 2019. \href{https://doi.org/10.1145/3300061.3345431}{10.1145/3300061.3345431}.
 \bibitem{nuberu} G. Garcia-Aviles et al., ``Nuberu: Reliable RAN virtualization in shared platforms,'' ACM MobiCom, 2021. \href{https://doi.org/10.1145/3447993.3483266}{10.1145/3447993.3483266}.
 \bibitem{concordia} X. Foukas and B. Radunovic, ``Concordia: Teaching the 5G vRAN to Share Compute,'' ACM SIGCOMM, 2021. \href{https://www.microsoft.com/en-us/research/publication/concordia-teaching-the-5g-vran-to-share-compute/}{Author/publisher source}.

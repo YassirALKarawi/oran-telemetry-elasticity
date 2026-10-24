@@ -2293,5 +2293,1064 @@
   "holm": {
     "status": "non-Crossref source",
     "url": "https://www.jstor.org/stable/4615733"
+  },
+  "alkarawi2024": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          3
+        ]
+      ],
+      "date-time": "2026-08-03T07:18:02Z",
+      "timestamp": 1785741482119,
+      "version": "3.56.0"
+    },
+    "reference-count": 70,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2024,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2024-01-01T00:00:00Z",
+          "timestamp": 1704067200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/legalcode"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100007914",
+        "name": "Department of Electronic and Electrical Engineering, Brunel University London, U.K.",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100007914",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Access"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "DOI": "10.1109/access.2024.3375530",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          11
+        ]
+      ],
+      "date-time": "2024-03-11T18:13:55Z",
+      "timestamp": 1710180835000
+    },
+    "page": "37903-37918",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "title": [
+      "Optimizing the Energy Efficiency Using Quantum Based Load Balancing in Open Radio Access Networks"
+    ],
+    "prefix": "10.1109",
+    "volume": "12",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2959-3893",
+        "authenticated-orcid": false,
+        "given": "Yassir",
+        "family": "Al-Karawi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Electronic and Electrical Engineering, Brunel University London, London, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3702-8192",
+        "authenticated-orcid": false,
+        "given": "Hamed",
+        "family": "Al-Raweshidy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic and Electrical Engineering, Brunel University London, London, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8168-2039",
+        "authenticated-orcid": false,
+        "given": "Rajagopal",
+        "family": "Nilavalan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic and Electrical Engineering, Brunel University London, London, U.K."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.003.2200711"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/OJCOMS.2020.3010270"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.003.2200879"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WCNCW48565.2020.9124820"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2022.3166160"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MNET.108.2100659"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cose.2022.102890"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2021.3123500"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/OJCOMS.2021.3071496"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/jsac.2023.3336183"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.comnet.2021.107809"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGCN.2018.2859407"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/electronics9101669"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s42254-020-0193-5"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.81.5932"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTQE.2003.820918"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1117/12.2585996"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/e23070868"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ISWCS49558.2021.9562228"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.94.150501"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.91.027901"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JSTQE.2019.2960937"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC45041.2023.10278993"
+      },
+      {
+        "key": "ref24",
+        "article-title": "Open RAN: Evolution of architecture, deployment aspects, and future directions",
+        "author": "Thiruvasagam",
+        "year": "2023",
+        "journal-title": "arXiv:2301.06713"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10922-022-09694-0"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2023.3260239"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICTC55196.2022.9952635"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2016.2548658"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2022.3183989"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.phycom.2021.101459"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LCN53696.2022.9843310"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PIMRC56721.2023.10293795"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICMLA52953.2021.00154"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/3556548.3559627"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/FMEC.2018.8364051"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dcan.2019.10.003"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.segan.2020.100427"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/5GWF52925.2021.00025"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2015.2481183"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1049/iet-com.2016.1396"
+      },
+      {
+        "key": "ref41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MWC.2011.6056691"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/LCOMM.2013.091213.131042"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/INFOCOM.2014.6848035"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CMC.2011.62"
+      },
+      {
+        "key": "ref45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SACI.2011.5873044"
+      },
+      {
+        "key": "ref46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2021.3136782"
+      },
+      {
+        "key": "ref47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41566-022-01117-5"
+      },
+      {
+        "key": "ref48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.physrep.2020.07.003"
+      },
+      {
+        "key": "ref49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.128.233602"
+      },
+      {
+        "key": "ref50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.47992/IJCSBE.2581.6942.0304"
+      },
+      {
+        "key": "ref51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/PIMRC50174.2021.9569339"
+      },
+      {
+        "key": "ref52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/SPAWC51304.2022.9833942"
+      },
+      {
+        "key": "ref53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/fi14030073"
+      },
+      {
+        "key": "ref54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/OJVT.2022.3202876"
+      },
+      {
+        "key": "ref55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1049/iet-net.2019.0230"
+      },
+      {
+        "key": "ref56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MS.2015.83"
+      },
+      {
+        "key": "ref57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/WCNC.2019.8885459"
+      },
+      {
+        "key": "ref58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1367-2630/6/1/036"
+      },
+      {
+        "key": "ref59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/c2018-0-02617-1"
+      },
+      {
+        "key": "ref60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/1742-6596/1634/1/012172"
+      },
+      {
+        "key": "ref61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1364/OE.16.012460"
+      },
+      {
+        "key": "ref62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41534-021-00462-7"
+      },
+      {
+        "key": "ref63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/sciadv.abb6298"
+      },
+      {
+        "key": "ref64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.99.120501"
+      },
+      {
+        "key": "ref65",
+        "volume-title": "200 mw\u2013500 mw 405 nm Violet Diode Laser System",
+        "author": "Lasers",
+        "year": "2023"
+      },
+      {
+        "key": "ref66",
+        "volume-title": "1.7 Watt (1700 mw) Diode Violet 405 nm Laser Module",
+        "year": "2023"
+      },
+      {
+        "key": "ref67",
+        "volume-title": "448 nm Violet Laser Diode, 3500 mw to-Can Package",
+        "year": "2023"
+      },
+      {
+        "key": "ref68",
+        "volume-title": "Single Photon Counting Module",
+        "year": "2023"
+      },
+      {
+        "key": "ref69",
+        "volume-title": "Single Photon Counting Module",
+        "year": "2023"
+      },
+      {
+        "key": "ref70",
+        "volume-title": "How Much Power Do Servers Consume?",
+        "year": "2023"
+      }
+    ],
+    "container-title": [
+      "IEEE Access"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx7/6287639/10380310/10464276.pdf?arnumber=10464276",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          12
+        ]
+      ],
+      "date-time": "2024-04-12T05:17:58Z",
+      "timestamp": 1712899078000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/10464276/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "references-count": 70,
+    "URL": "https://doi.org/10.1109/access.2024.3375530",
+    "relation": {},
+    "ISSN": [
+      "2169-3536"
+    ],
+    "issn-type": [
+      {
+        "value": "2169-3536",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    }
+  },
+  "alkarawi2025": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          2
+        ]
+      ],
+      "date-time": "2026-06-02T08:09:13Z",
+      "timestamp": 1780387753453,
+      "version": "3.54.1"
+    },
+    "reference-count": 42,
+    "publisher": "Institution of Engineering and Technology (IET)",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              4
+            ]
+          ],
+          "date-time": "2025-08-04T00:00:00Z",
+          "timestamp": 1754265600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 215,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              1
+            ]
+          ],
+          "date-time": "2025-01-01T00:00:00Z",
+          "timestamp": 1735689600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100007914",
+        "name": "Brunel University London",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100007914",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "ietresearch.onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "IET Networks"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>ABSTRACT</jats:title>\n                  <jats:p>This paper proposes a strategy for designing Open Radio Access Networks (ORAN) to maximise their energy efficiency using solar power, supplemented by Reconfigurable Intelligent Surfaces (RIS) and Mobile Edge Computing (MEC). Because grid power is not always available where these ORAN systems are built, our approach manages the difficulties created by dynamic energy and timing issues found in isolated environments. The approach concentrates on allocating energy to all transmitters, CPU speed and RIS phases in real time, subject to strict rules on power use, latency issues and heat. The primal\u2010dual algorithm we propose reacts to queue and energy changes to update the dual variables and control policies without access to every channel parameter. Our combined (composite) cost function measures energy use, delays encountered by users, reliability of the SINR and fairness. Results from the simulation indicate that using the proposed method lowers energy usage by 25% and average delay by 18%, outperforming baseline models under varying solar and traffic patterns. Robustness is further validated through sensitivity and ablation analyses. This work demonstrates the feasibility of deploying sustainable, intelligent ORAN infrastructures in remote 6G scenarios where conventional power and connectivity are unavailable.</jats:p>",
+    "DOI": "10.1049/ntw2.70012",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          4
+        ]
+      ],
+      "date-time": "2025-08-04T17:30:35Z",
+      "timestamp": 1754328635000
+    },
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Energy\u2010Aware Optimisation for Off\u2010Grid ORAN With RIS and Edge Computing"
+    ],
+    "prefix": "10.1049",
+    "volume": "14",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-2959-3893",
+        "authenticated-orcid": false,
+        "given": "Yassir",
+        "family": "AL\u2010Karawi",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Communications Engineering University of Diyala  Baqubah Iraq"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0009-0006-1139-7164",
+        "authenticated-orcid": false,
+        "given": "Raad S.",
+        "family": "Alhumaima",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Communications Engineering University of Diyala  Baqubah Iraq"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hamed",
+        "family": "Al\u2010Raweshidy",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Electronic and Computer Engineering Brunel University of London  Uxbridge UK"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "265",
+    "published-online": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          4
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_10_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.001.1900411"
+      },
+      {
+        "key": "e_1_2_10_3_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/access.2024.3523327"
+      },
+      {
+        "key": "e_1_2_10_4_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICCE59016.2024.10444418"
+      },
+      {
+        "key": "e_1_2_10_5_1",
+        "unstructured": "3GPP \u201cNG\u2010RAN; F1 Application Protocol (F1AP) \u201d (3rd Generation Partnership Project Technical Specification (TS) 38.473 Version 16.4.0 September 16 2022)."
+      },
+      {
+        "key": "e_1_2_10_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2024.3423460"
+      },
+      {
+        "key": "e_1_2_10_7_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MSP.2021.3130549"
+      },
+      {
+        "key": "e_1_2_10_8_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2017.2705720"
+      },
+      {
+        "key": "e_1_2_10_9_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCE.2024.3357125"
+      },
+      {
+        "key": "e_1_2_10_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2024.3447097"
+      },
+      {
+        "key": "e_1_2_10_11_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2022.3170656"
+      },
+      {
+        "key": "e_1_2_10_12_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TGCN.2020.3048703"
+      },
+      {
+        "key": "e_1_2_10_13_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MNET.010.2100509"
+      },
+      {
+        "key": "e_1_2_10_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/app14188558"
+      },
+      {
+        "key": "e_1_2_10_15_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/6GSUMMIT49458.2020.9083794"
+      },
+      {
+        "key": "e_1_2_10_16_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.dcan.2022.10.004"
+      },
+      {
+        "key": "e_1_2_10_17_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2024.3375530"
+      },
+      {
+        "key": "e_1_2_10_18_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2020.3011181"
+      },
+      {
+        "key": "e_1_2_10_19_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2024.3389471"
+      },
+      {
+        "key": "e_1_2_10_20_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2023.3260481"
+      },
+      {
+        "key": "e_1_2_10_21_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TMC.2022.3187243"
+      },
+      {
+        "key": "e_1_2_10_22_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/en15092996"
+      },
+      {
+        "key": "e_1_2_10_23_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2019.2943563"
+      },
+      {
+        "key": "e_1_2_10_24_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2019.2918951"
+      },
+      {
+        "key": "e_1_2_10_25_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TII.2022.3155162"
+      },
+      {
+        "key": "e_1_2_10_26_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ICC40277.2020.9148977"
+      },
+      {
+        "key": "e_1_2_10_27_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2020.2991213"
+      },
+      {
+        "key": "e_1_2_10_28_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2020.3021492"
+      },
+      {
+        "key": "e_1_2_10_29_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jpowsour.2005.01.006"
+      },
+      {
+        "key": "e_1_2_10_30_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.energy.2021.121411"
+      },
+      {
+        "key": "e_1_2_10_31_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCOMM.2021.3051897"
+      },
+      {
+        "key": "e_1_2_10_32_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-79995-2"
+      },
+      {
+        "key": "e_1_2_10_33_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2016.2633523"
+      },
+      {
+        "key": "e_1_2_10_34_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3390/electronics12102294"
+      },
+      {
+        "key": "e_1_2_10_35_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JIOT.2022.3151105"
+      },
+      {
+        "key": "e_1_2_10_36_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2009.4907405"
+      },
+      {
+        "key": "e_1_2_10_37_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/JPROC.2018.2867029"
+      },
+      {
+        "key": "e_1_2_10_38_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TWC.2016.2633522"
+      },
+      {
+        "key": "e_1_2_10_39_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.2015.7081084"
+      },
+      {
+        "key": "e_1_2_10_40_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/MCOM.001.2000388"
+      },
+      {
+        "key": "e_1_2_10_41_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/COMST.2017.2745201"
+      },
+      {
+        "key": "e_1_2_10_42_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/ACCESS.2020.2977406"
+      },
+      {
+        "key": "e_1_2_10_43_1",
+        "unstructured": "O\u2010RAN Alliance \u201cE2 Application Protocol Specification \u201d (Technical Specification 2021): [Online] https://www.o\u2010ran.org/specifications."
+      }
+    ],
+    "container-title": [
+      "IET Networks"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/ntw2.70012",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://ietresearch.onlinelibrary.wiley.com/doi/full-xml/10.1049/ntw2.70012",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/ntw2.70012",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          2
+        ]
+      ],
+      "date-time": "2026-06-02T07:45:27Z",
+      "timestamp": 1780386327000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ntw2.70012"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "references-count": 42,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1049/ntw2.70012"
+    ],
+    "URL": "https://doi.org/10.1049/ntw2.70012",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "2047-4954",
+      "2047-4962"
+    ],
+    "issn-type": [
+      {
+        "value": "2047-4954",
+        "type": "print"
+      },
+      {
+        "value": "2047-4962",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          1
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2025-05-30",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-07-21",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2025-08-04",
+        "order": 3,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ],
+    "article-number": "e70012"
   }
 }

@@ -56,7 +56,7 @@ Read `paper_reliability/Manuscript.pdf` and `PAPER_README.md` first.
 The current paper adds separate headroom calibration, a common reliability
 screen, transparent HPA/DPP-inspired adaptations, workload shift and variable
 command-delay tests. It includes 336 calibration and 840 held-out executions,
-43 references, two algorithms, ten vector figures and 35 paired contrasts.
+45 references, two algorithms, ten vector figures and 35 paired contrasts.
 Verification passes 51 unit-test methods and all result verifiers.
 Qualified cost reductions of 35.61–37.73% occur in three fixed-reference
 comparisons. Important distribution-shift and long-delay failures remain.

@@ -24,7 +24,7 @@ journal sources, revision scope and remaining scientific limitations.
 - 51 unit-test methods plus historical and current record-level verifiers.
 - Independent packet replay, uncached optimizer checks, variable-delay ordering
   checks and six exact full-run replays of current saved results.
-- 43 references cited in first-use order, two vector schematics, two unboxed
+- 45 references cited in first-use order, two vector schematics, two unboxed
   algorithms, eight vector result plots, complete seed records and paired tables.
 
 The common reliability target is 0.1% seed-mean misses for each class. Parameter
@@ -84,7 +84,7 @@ separate backup location. Do not merge old and newly rerun records.
 | reliability_sections.py | Authored new manuscript sections |
 | build_reliability_paper.py | Result-driven tables, plots, manuscript assembly and PDF checks |
 | paper_template.tex | Retained historical template, supplying shared model/positioning sections |
-| paper_references.py | Shared bibliography with 43 primary-source entries |
+| paper_references.py | Shared bibliography with 45 primary-source entries |
 | paper_reliability/build_receipt.json | PDF checks, reference count and qualified-result digest |
 
 ## Scientific status
