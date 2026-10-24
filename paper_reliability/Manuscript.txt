@@ -7,7 +7,8 @@
                  Reliability-Screened Capacity
             Elasticity under Delayed Telemetry and
             Actuation: An O-RAN-Motivated Study
-                  FATIMA SUBHI KHALEEL1 , YASSIR AL-AMEEN1 , AND HAMED AL-RAWESHIDY2
+                                                       1                                    1                                             2
+            FATIMA SUBHI KHALEEL                           , YASSIR AL-AMEEN                    , AND HAMED AL-RAWESHIDY
                      1
                          Department of Communications Engineering, College of Engineering, University of Diyala, Baqubah, Iraq (e-mail:
                                                              fatima.subhi_eng@uodiyala.edu.iq).

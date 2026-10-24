@@ -83,7 +83,8 @@ def journal_revision(t,out,root):
     t=t.replace(r'\usepackage{amsmath',r'\let\labelindent\relax'+'\n'+r'\usepackage{amsmath')
     t=t.replace(r'\setlength{\parskip}{3pt}',r'\setlength{\parskip}{0pt}')
     t=t.replace(r'\renewcommand{\topfraction}{0.94}',r'\renewcommand{\topfraction}{0.94}\renewcommand{\dbltopfraction}{0.95}\renewcommand{\dblfloatpagefraction}{0.8}\setcounter{dbltopnumber}{3}')
-    t=t.replace(r'\author{}',r'''\author{FATIMA SUBHI KHALEEL\textsuperscript{1}, YASSIR AL-AMEEN\textsuperscript{1}, AND HAMED AL-RAWESHIDY\textsuperscript{2}}
+    t=t.replace(r'\author{}',r'''\usepackage{orcidlink}
+\author{FATIMA SUBHI KHALEEL\,\orcidlink{0009-0002-9459-2029}\textsuperscript{1}, YASSIR AL-AMEEN\,\orcidlink{0000-0003-2959-3893}\textsuperscript{1}, AND HAMED AL-RAWESHIDY\,\orcidlink{0000-0002-3702-8192}\textsuperscript{2}}
 \affil{Department of Communications Engineering, College of Engineering, University of Diyala, Baqubah, Iraq (e-mail: fatima.subhi\_eng@uodiyala.edu.iq).}
 \affil{College of Engineering, Design and Physical Sciences, Brunel University of London, Uxbridge, U.K.}
 \corresp{CORRESPONDING AUTHOR: HAMED AL-RAWESHIDY (e-mail: hamed.al-raweshidy@brunel.ac.uk).}
