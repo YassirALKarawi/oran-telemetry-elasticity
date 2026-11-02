@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "independently_checked_schedules": 255,
+  "checks": [
+    "state volume",
+    "stage CPU",
+    "shared migration bandwidth",
+    "temporary compute",
+    "destination live plus migration bandwidth",
+    "lifetime cost"
+  ]
+}
