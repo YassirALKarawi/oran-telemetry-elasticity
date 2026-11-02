@@ -15,3 +15,19 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 baseline_prorl/.venv/bin/python prorl_reprod
 ```
 
 Never run both commands concurrently on the same checkpoint/output. The local CPU snapshot includes PyTorch optimizer/replay state rather than a weights-only warm restart. The final .pt stores the validation-selected model. JSON stores the effective configuration and original metrics. Full-budget completion, repeated independent training seeds, paper-level parameter matching, TIM data evaluation and a novel SDN-aware contribution remain unestablished. No submission-ready manuscript is claimed.
+
+## Episode-boundary recovery and local guard (2 November 2026)
+
+The first full-run resume exposed a missing module-global TimeStep factory registry entry at the next episode reset. The short 160-step test had not crossed that boundary. `restore()` now registers the saved environment clock itself, without resetting its time. The recovered run passed episode boundaries and validation iteration 10 and wrote CHECKPOINT 12000. This is operational evidence, not a new full-run equivalence claim.
+
+Source verification before recovery: upstream HEAD matched the pinned commit, the compatibility patch passed reverse-apply checking, both resume modules matched their published Git blob IDs before the clock fix, and all packages in environment.txt matched installed versions. Additional installed packages were cloudpickle 3.1.1 and dill 0.3.9.
+
+A single locked local guard can monitor an existing flock-protected training process and resume if it exits:
+
+```sh
+baseline_prorl/.venv/bin/python prorl_reproduction/keep_training.py
+```
+
+The guard checks source/configuration hashes and installed package versions before each restart, never starts from scratch, prevents duplicate guards and training processes sharing these locks, and stops after three failed retries or if output files already exist. Output presence only hands control back to final validation; it is not a completion certificate. The guard depends on this host remaining alive; it cannot survive host termination.
+
+A durable recovery snapshot at step 11000 is available as [PRORL_Recovery_11000.zip](https://chatgpt.com/library?file_id=libfile_917606a4906c8191a4b251a792f95fab&account_id=personal). It contains the trusted checkpoint, source wrappers, compatibility patch, dependency versions and SHA-256 manifest. It is an incomplete training snapshot, not final results.
