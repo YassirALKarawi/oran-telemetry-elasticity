@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "causal_comparison_runs": 240,
+  "static_frontier_runs": 180,
+  "offline_bounds": 80,
+  "unit_tests": 8,
+  "randomized_causal_execution_cases": 50,
+  "independent_exhaustive_reference_cases": 60,
+  "all_result_identities_valid": true,
+  "source_sha256": "4aab6290c8bf7764a2ce875733a0ef18bae554599490f9d8a17a9cda6c2fed62"
+}
