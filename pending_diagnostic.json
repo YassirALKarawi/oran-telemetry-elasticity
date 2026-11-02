@@ -1,0 +1,6301 @@
+{
+  "description": "Post-selection diagnostic with unchanged eta=.75 and original held-out seeds",
+  "runs": [
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3100,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4170,
+      "activation_switching_units": 220,
+      "abstract_cost": 4225.0,
+      "mean_extra_capacity": 1.248502994011976,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 80,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 570,
+      "maximum_modeled_normalized_slack": 1.3977268293097187,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        29
+      ],
+      "mean_backlog": 21.138333333333332,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "27aca0129add70a0715e04b0dfa53fa58f0bb85f67df1312a5dfc622ac8caf92"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3224,
+        7202
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4335,
+      "activation_switching_units": 238,
+      "abstract_cost": 4394.5,
+      "mean_extra_capacity": 1.2979041916167664,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 30,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 557,
+      "maximum_modeled_normalized_slack": 2.306502691846207,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        32
+      ],
+      "mean_backlog": 21.51,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "357611c4624e0c4cfbf2c8961b3f42fcd8b8b2188fe37ed0ca8ff5a733b55431"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3206,
+        7136
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4045,
+      "activation_switching_units": 223,
+      "abstract_cost": 4100.75,
+      "mean_extra_capacity": 1.2110778443113772,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 571,
+      "maximum_modeled_normalized_slack": 1.720306991328171,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        30
+      ],
+      "mean_backlog": 19.035,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "dff8058b6d71a34df15478224eb1fba01272249b393a454aad5053e1f02bbe02"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3295,
+        7228
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4260,
+      "activation_switching_units": 282,
+      "abstract_cost": 4330.5,
+      "mean_extra_capacity": 1.2754491017964071,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 562,
+      "maximum_modeled_normalized_slack": 2.0447118988076003,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        37
+      ],
+      "mean_backlog": 20.16,
+      "requests": 668,
+      "delivered": 627,
+      "accepted": 627,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "331c7490b635ff492c3749e82c84bcf2cead566fc83df713d916c313d5b09749"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        3223,
+        7179
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4135,
+      "activation_switching_units": 263,
+      "abstract_cost": 4200.75,
+      "mean_extra_capacity": 1.2380239520958083,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 577,
+      "maximum_modeled_normalized_slack": 1.984581892485033,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        30
+      ],
+      "mean_backlog": 21.006,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a7082211d5c04bc9842bc6cd3a4544626060b192e913999ddfdc97e1522d7025"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3184,
+        7314
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4205,
+      "activation_switching_units": 257,
+      "abstract_cost": 4269.25,
+      "mean_extra_capacity": 1.2589820359281436,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 570,
+      "maximum_modeled_normalized_slack": 2.0050237490094296,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        26
+      ],
+      "mean_backlog": 18.159,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "34609ed330879ebc8b796df60a7dd586502f80ce36975a42bf6a2582df997d50"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3155,
+        7244
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4265,
+      "activation_switching_units": 236,
+      "abstract_cost": 4324.0,
+      "mean_extra_capacity": 1.276946107784431,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 40,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 561,
+      "maximum_modeled_normalized_slack": 1.8895024440090893,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        30
+      ],
+      "mean_backlog": 20.132666666666665,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "d93fbb955873916e8dbffa2ecbb22ee2ce39d86dae8b27278ac1c7e457e578ee"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3260,
+        7253
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4395,
+      "activation_switching_units": 244,
+      "abstract_cost": 4456.0,
+      "mean_extra_capacity": 1.3158682634730539,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 45,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 568,
+      "maximum_modeled_normalized_slack": 1.886358105118898,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        31
+      ],
+      "mean_backlog": 19.155333333333335,
+      "requests": 668,
+      "delivered": 642,
+      "accepted": 642,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e5524b8f68bd534a3416de3bab8fab6be5e7960fe165beb9ea9f7cdad0e561ab"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3289,
+        7287
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4255,
+      "activation_switching_units": 248,
+      "abstract_cost": 4317.0,
+      "mean_extra_capacity": 1.2739520958083832,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 80,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 569,
+      "maximum_modeled_normalized_slack": 1.6103840421693527,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        29
+      ],
+      "mean_backlog": 21.777,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "f0ea30f67548ce37c23daa172b6b2fb93666a0b1cd58b514fbf828fde5150d9d"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3201,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3890,
+      "activation_switching_units": 228,
+      "abstract_cost": 3947.0,
+      "mean_extra_capacity": 1.1646706586826348,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 165,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 575,
+      "maximum_modeled_normalized_slack": 1.446371119161598,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        28
+      ],
+      "mean_backlog": 19.185333333333332,
+      "requests": 668,
+      "delivered": 637,
+      "accepted": 637,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "43c768ff8972b7fb9c506ddbaccbbc4782052d4e8e4ad1df1e0df2197a11afca"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3212,
+        7469
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4475,
+      "activation_switching_units": 248,
+      "abstract_cost": 4537.0,
+      "mean_extra_capacity": 1.339820359281437,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 55,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 554,
+      "maximum_modeled_normalized_slack": 1.5854634208992255,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        31
+      ],
+      "mean_backlog": 21.264333333333333,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5e37dd8f7232259dac598ad9d99bf7b72d48379d41d4b5bb85e2b5c9f8538e43"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3142,
+        7312
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3890,
+      "activation_switching_units": 253,
+      "abstract_cost": 3953.25,
+      "mean_extra_capacity": 1.1646706586826348,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 185,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 572,
+      "maximum_modeled_normalized_slack": 1.707173001346154,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        25
+      ],
+      "mean_backlog": 18.536666666666665,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "fe45cbd5bc36785e749abc9b524c6f894f41066604b4609fa927028561dfd02d"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3138,
+        7297
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4040,
+      "activation_switching_units": 227,
+      "abstract_cost": 4096.75,
+      "mean_extra_capacity": 1.2095808383233533,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 580,
+      "maximum_modeled_normalized_slack": 1.8140716018125551,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        31
+      ],
+      "mean_backlog": 19.426,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "2562a5ff1a9d151728f257e96693567a8bfeb1263435baaefca660cdbe67cec0"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3155,
+        7151
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4070,
+      "activation_switching_units": 231,
+      "abstract_cost": 4127.75,
+      "mean_extra_capacity": 1.218562874251497,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 20,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 570,
+      "maximum_modeled_normalized_slack": 1.8328217983120685,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        24
+      ],
+      "mean_backlog": 19.205333333333332,
+      "requests": 668,
+      "delivered": 626,
+      "accepted": 626,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5411cfdde4d4af0645862959f67b9f0850b55a893cb3433f7f505db5c695360c"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3134,
+        7281
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4010,
+      "activation_switching_units": 256,
+      "abstract_cost": 4074.0,
+      "mean_extra_capacity": 1.2005988023952097,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 572,
+      "maximum_modeled_normalized_slack": 2.0188689509229123,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        35
+      ],
+      "mean_backlog": 18.177666666666667,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "84198c7b5aaa29119e8d53c7c3bc390e71c1b5fc7c37824e43600881c07ee849"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3187,
+        7195
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4210,
+      "activation_switching_units": 227,
+      "abstract_cost": 4266.75,
+      "mean_extra_capacity": 1.2604790419161678,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 170,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 576,
+      "maximum_modeled_normalized_slack": 1.2200602018912203,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        20
+      ],
+      "mean_backlog": 15.964,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "9d7f00f95f6129fbe5271ee676b7835aa840d33893153c5f841cd9822459ad7e"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3144,
+        7212
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3985,
+      "activation_switching_units": 242,
+      "abstract_cost": 4045.5,
+      "mean_extra_capacity": 1.1931137724550898,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 185,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 569,
+      "maximum_modeled_normalized_slack": 1.831526301059454,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        29
+      ],
+      "mean_backlog": 18.851333333333333,
+      "requests": 668,
+      "delivered": 643,
+      "accepted": 643,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5371d34ccda9ee013df297e97b8de11ab586534f3e7b10f7f68ec449ae4b99f4"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        3173,
+        7189
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3865,
+      "activation_switching_units": 224,
+      "abstract_cost": 3921.0,
+      "mean_extra_capacity": 1.157185628742515,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 70,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 580,
+      "maximum_modeled_normalized_slack": 1.419143575368305,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        22
+      ],
+      "mean_backlog": 17.589666666666666,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "38d997fe719014ff102bcea9036a3a9ec2eef397f0129c2b4986f76bccba2d06"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3129,
+        7270
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3945,
+      "activation_switching_units": 230,
+      "abstract_cost": 4002.5,
+      "mean_extra_capacity": 1.1811377245508983,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 180,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 576,
+      "maximum_modeled_normalized_slack": 1.7383188515870551,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        28
+      ],
+      "mean_backlog": 21.338333333333335,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "0ab1760be6d8895531a658fe3e20668f44f4709b661416afbf5a5a880708924b"
+    },
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3215,
+        7256
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4145,
+      "activation_switching_units": 214,
+      "abstract_cost": 4198.5,
+      "mean_extra_capacity": 1.2410179640718564,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 160,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 565,
+      "maximum_modeled_normalized_slack": 1.4723683011092752,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        24
+      ],
+      "mean_backlog": 18.224,
+      "requests": 668,
+      "delivered": 631,
+      "accepted": 631,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a812f4ad533d5b26c74111353d21a3af3ed768c0164eabe835f4e5a713a7a283"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3466,
+        7638
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4970,
+      "activation_switching_units": 283,
+      "abstract_cost": 5040.75,
+      "mean_extra_capacity": 1.4880239520958083,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 160,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 542,
+      "maximum_modeled_normalized_slack": 2.251381677693747,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        37
+      ],
+      "mean_backlog": 25.926666666666666,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "b33fbde1636ed583fa3f9a1662106cd271e183950f98f37c836477f7d6be44ab"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3395,
+        7512
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4575,
+      "activation_switching_units": 296,
+      "abstract_cost": 4649.0,
+      "mean_extra_capacity": 1.3697604790419162,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 20,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 562,
+      "maximum_modeled_normalized_slack": 1.5916766900915937,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        30
+      ],
+      "mean_backlog": 22.004,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "903d9cfa8ecb15fc50eae7fdd42b3972b8202ee3086f4ccd028c98b23364b4de"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3357,
+        7716
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 5015,
+      "activation_switching_units": 332,
+      "abstract_cost": 5098.0,
+      "mean_extra_capacity": 1.501497005988024,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 140,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 555,
+      "maximum_modeled_normalized_slack": 1.9835704085899932,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        29
+      ],
+      "mean_backlog": 25.289666666666665,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "80d6d50815c5672a707c7ff24bfcdae4b04a052eee80e5a92880227229c0fc06"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3341,
+        7267
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4100,
+      "activation_switching_units": 317,
+      "abstract_cost": 4179.25,
+      "mean_extra_capacity": 1.2275449101796407,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 60,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 595,
+      "maximum_modeled_normalized_slack": 1.6422852563695325,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        30
+      ],
+      "mean_backlog": 20.031333333333333,
+      "requests": 668,
+      "delivered": 627,
+      "accepted": 627,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "dc2474f14623ba4dbef3d8cd36337d58e61b79878171070d900fdf8cebb6b268"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        3462,
+        7831
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 5410,
+      "activation_switching_units": 330,
+      "abstract_cost": 5492.5,
+      "mean_extra_capacity": 1.6197604790419162,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 45,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 544,
+      "maximum_modeled_normalized_slack": 1.9100476844440077,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        30
+      ],
+      "mean_backlog": 27.892,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "9d651cd2e1f1da76cc72ffc2fdecd7dc1b4534d670b542569ba3a6e55253f039"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3216,
+        7360
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4480,
+      "activation_switching_units": 264,
+      "abstract_cost": 4546.0,
+      "mean_extra_capacity": 1.341317365269461,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 564,
+      "maximum_modeled_normalized_slack": 1.5472006991838816,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        27
+      ],
+      "mean_backlog": 18.844333333333335,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "848fb6faf7527ef041b2bbe7f6ac5ecf40f97cce1d43510e53dde79bb48da97f"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3296,
+        7462
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4605,
+      "activation_switching_units": 279,
+      "abstract_cost": 4674.75,
+      "mean_extra_capacity": 1.3787425149700598,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 40,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 577,
+      "maximum_modeled_normalized_slack": 1.7096043840071515,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        26
+      ],
+      "mean_backlog": 21.367333333333335,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "418fd0cc1348465025e69450680da5b6af2eb7df1cede7f04600d87a7458ed56"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3184,
+        7374
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3780,
+      "activation_switching_units": 266,
+      "abstract_cost": 3846.5,
+      "mean_extra_capacity": 1.1317365269461077,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 85,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 584,
+      "maximum_modeled_normalized_slack": 1.4235826508811282,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        27
+      ],
+      "mean_backlog": 18.951333333333334,
+      "requests": 668,
+      "delivered": 642,
+      "accepted": 642,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "9e6c5c2c4cca17819bd13c4e82af3b2adec5783b9557c16386a4075bdcf66675"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3063,
+        7027
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3500,
+      "activation_switching_units": 265,
+      "abstract_cost": 3566.25,
+      "mean_extra_capacity": 1.0479041916167664,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 55,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 608,
+      "maximum_modeled_normalized_slack": 1.1430697578744908,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        22
+      ],
+      "mean_backlog": 14.859333333333334,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "ca43787fe577af80cdec0cffc66ce4a00cc4ac65d7dce6d22b07677c339b74cf"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3465,
+        7826
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 5965,
+      "activation_switching_units": 354,
+      "abstract_cost": 6053.5,
+      "mean_extra_capacity": 1.785928143712575,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 531,
+      "maximum_modeled_normalized_slack": 2.087763722246607,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        35
+      ],
+      "mean_backlog": 28.773666666666667,
+      "requests": 668,
+      "delivered": 637,
+      "accepted": 637,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "822b350b4728ce3f65f9ed1c5dbe69205860ad0a80fb4efb52069bf7bbf5136c"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3304,
+        7407
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4395,
+      "activation_switching_units": 340,
+      "abstract_cost": 4480.0,
+      "mean_extra_capacity": 1.3158682634730539,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 40,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 587,
+      "maximum_modeled_normalized_slack": 0.9368703572999164,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        25
+      ],
+      "mean_backlog": 19.744,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "ad46f646cfa58930b7c17b816d9537088e2a54ac3f316097ebea4613cb20655d"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3393,
+        7391
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4055,
+      "activation_switching_units": 324,
+      "abstract_cost": 4136.0,
+      "mean_extra_capacity": 1.214071856287425,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 240,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 1.308993797357945,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        11,
+        23
+      ],
+      "mean_backlog": 19.128,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "730b4488a8d0689589298f1806d98725e8bba40c2ef0d1b857df8fea86b98f8e"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3470,
+        7565
+      ],
+      "violation": [
+        0.01585014409221902,
+        0.09808327825512228
+      ],
+      "extra_service_unit_slots": 4955,
+      "activation_switching_units": 334,
+      "abstract_cost": 5038.5,
+      "mean_extra_capacity": 1.4835329341317365,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 25,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 543,
+      "maximum_modeled_normalized_slack": 2.8817332082333698,
+      "late_completed": [
+        55,
+        742
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        17,
+        57
+      ],
+      "mean_backlog": 34.257333333333335,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "797a5552c43f7f65937faada22c3ad6820c5d437f53f983c301c8d3fc967489c"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3269,
+        7304
+      ],
+      "violation": [
+        0.0,
+        0.0702354874041621
+      ],
+      "extra_service_unit_slots": 4305,
+      "activation_switching_units": 287,
+      "abstract_cost": 4376.75,
+      "mean_extra_capacity": 1.2889221556886228,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 40,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 558,
+      "maximum_modeled_normalized_slack": 3.479834122022054,
+      "late_completed": [
+        0,
+        513
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        13,
+        60
+      ],
+      "mean_backlog": 32.011,
+      "requests": 668,
+      "delivered": 626,
+      "accepted": 626,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "65cc6581cb7b146ef635577b31be740d37b5d57097a4e3879cee7cdb62a8effa"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3302,
+        7935
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4765,
+      "activation_switching_units": 406,
+      "abstract_cost": 4866.5,
+      "mean_extra_capacity": 1.4266467065868262,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 45,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 565,
+      "maximum_modeled_normalized_slack": 1.6033836674497346,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        31
+      ],
+      "mean_backlog": 26.933666666666667,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "f5c87eb87f2a9889105bbae25697b4d5d82809b407e237d89db00edf1941fdd2"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3258,
+        7329
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3595,
+      "activation_switching_units": 305,
+      "abstract_cost": 3671.25,
+      "mean_extra_capacity": 1.0763473053892216,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 60,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 591,
+      "maximum_modeled_normalized_slack": 1.4795698895045932,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        26
+      ],
+      "mean_backlog": 17.456333333333333,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "ca7c813b310278872125b13de273f9b57fac86ec34d0f069a798b6f07c1990cc"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3249,
+        7226
+      ],
+      "violation": [
+        0.0,
+        0.0009687240520343206
+      ],
+      "extra_service_unit_slots": 4060,
+      "activation_switching_units": 272,
+      "abstract_cost": 4128.0,
+      "mean_extra_capacity": 1.215568862275449,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 130,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 571,
+      "maximum_modeled_normalized_slack": 2.04370360612392,
+      "late_completed": [
+        0,
+        7
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        38
+      ],
+      "mean_backlog": 21.449,
+      "requests": 668,
+      "delivered": 643,
+      "accepted": 643,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e0f69c409338c14aae2c021fb4b5bff1c32d666ce4f89b9a08e2656aa5f5e279"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        3277,
+        7410
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4060,
+      "activation_switching_units": 305,
+      "abstract_cost": 4136.25,
+      "mean_extra_capacity": 1.215568862275449,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 230,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 603,
+      "maximum_modeled_normalized_slack": 1.7212106402407708,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        37
+      ],
+      "mean_backlog": 20.69333333333333,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "1e44d0bb2100bb2cbdd912218ece83f95d8a21bd0abd19c908ac22060817cbca"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3237,
+        7367
+      ],
+      "violation": [
+        0.0,
+        0.0017646260350210397
+      ],
+      "extra_service_unit_slots": 4080,
+      "activation_switching_units": 327,
+      "abstract_cost": 4161.75,
+      "mean_extra_capacity": 1.221556886227545,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 105,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 593,
+      "maximum_modeled_normalized_slack": 1.9998488760013764,
+      "late_completed": [
+        0,
+        13
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        39
+      ],
+      "mean_backlog": 22.906,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e51965bcf6d9c438e387efda430a5db8b3263350dd1a2fa5f41015edbdef9acb"
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3331,
+        7582
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4465,
+      "activation_switching_units": 286,
+      "abstract_cost": 4536.5,
+      "mean_extra_capacity": 1.3368263473053892,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 25,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 579,
+      "maximum_modeled_normalized_slack": 1.6939825877275214,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        27
+      ],
+      "mean_backlog": 20.546,
+      "requests": 668,
+      "delivered": 631,
+      "accepted": 631,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "d2a6eef41d72ac12b6df80e6718c6600712b0a61cd84de105df4fb3e15d7ddf3"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3318,
+        7485
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 6380,
+      "activation_switching_units": 506,
+      "abstract_cost": 6506.5,
+      "mean_extra_capacity": 1.910179640718563,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 140,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 567,
+      "maximum_modeled_normalized_slack": 1.6716063841436366,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        33
+      ],
+      "mean_backlog": 19.309333333333335,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "8f893d4b7d55ed075d930c716dd7950851f5b0080faf05728258a858dc2e9059"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3093,
+        7170
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 5035,
+      "activation_switching_units": 412,
+      "abstract_cost": 5138.0,
+      "mean_extra_capacity": 1.5074850299401197,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 110,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 587,
+      "maximum_modeled_normalized_slack": 1.4509495625673559,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        28
+      ],
+      "mean_backlog": 16.75,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "381b7aeed03379b8f176499e61fc06a9db1862ac67b01fa1b88342d7643428ab"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3087,
+        7434
+      ],
+      "violation": [
+        0.0009718172983479105,
+        0.0
+      ],
+      "extra_service_unit_slots": 4990,
+      "activation_switching_units": 393,
+      "abstract_cost": 5088.25,
+      "mean_extra_capacity": 1.4940119760479043,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 140,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 584,
+      "maximum_modeled_normalized_slack": 2.592541963802872,
+      "late_completed": [
+        3,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        32
+      ],
+      "mean_backlog": 19.421666666666667,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "7e58b96a88338499463eeac764c4d7e4dcd971a9fa6b0839175ba7fdf98a7282"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3177,
+        7137
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4850,
+      "activation_switching_units": 402,
+      "abstract_cost": 4950.5,
+      "mean_extra_capacity": 1.4520958083832336,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 45,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 575,
+      "maximum_modeled_normalized_slack": 2.209793102462602,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        36
+      ],
+      "mean_backlog": 19.694333333333333,
+      "requests": 668,
+      "delivered": 627,
+      "accepted": 627,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "b54ace881f783e9e19b40273e5b715918ab7e8883e6297094f77156770ca6e38"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        2916,
+        6612
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3805,
+      "activation_switching_units": 322,
+      "abstract_cost": 3885.5,
+      "mean_extra_capacity": 1.1392215568862276,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 624,
+      "maximum_modeled_normalized_slack": 1.8454016624495075,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        22
+      ],
+      "mean_backlog": 12.994333333333334,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "0c3d0c2d8bee651c30a24680e512720545845ea54ca4f770675cf694e29da652"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3054,
+        7419
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 5890,
+      "activation_switching_units": 458,
+      "abstract_cost": 6004.5,
+      "mean_extra_capacity": 1.7634730538922156,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 80,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 547,
+      "maximum_modeled_normalized_slack": 2.3343135521552556,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        11,
+        34
+      ],
+      "mean_backlog": 19.751666666666665,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "c1ce4054c210faf700e05ee4b09143f33312259f53ee4461606b157bfcb2d9a0"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3645,
+        8061
+      ],
+      "violation": [
+        0.006310013717421125,
+        0.014762436422280114
+      ],
+      "extra_service_unit_slots": 7875,
+      "activation_switching_units": 509,
+      "abstract_cost": 8002.25,
+      "mean_extra_capacity": 2.3577844311377247,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 95,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 488,
+      "maximum_modeled_normalized_slack": 2.9396430896650614,
+      "late_completed": [
+        23,
+        119
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        41
+      ],
+      "mean_backlog": 33.74633333333333,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e87a65a5b507ad1b51fb9f09d7b47f1022771662d413e54c261ce68db4ae12aa"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3126,
+        7080
+      ],
+      "violation": [
+        0.008637236084452975,
+        0.0
+      ],
+      "extra_service_unit_slots": 4695,
+      "activation_switching_units": 492,
+      "abstract_cost": 4818.0,
+      "mean_extra_capacity": 1.405688622754491,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 65,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 602,
+      "maximum_modeled_normalized_slack": 1.4821106683030423,
+      "late_completed": [
+        27,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        15,
+        23
+      ],
+      "mean_backlog": 16.473666666666666,
+      "requests": 668,
+      "delivered": 642,
+      "accepted": 642,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "61061dc8430242425df9df4908165f7fc1e2e4d26e13bec6b53d9629d6026e6d"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3132,
+        6747
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4115,
+      "activation_switching_units": 378,
+      "abstract_cost": 4209.5,
+      "mean_extra_capacity": 1.2320359281437125,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 20,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 603,
+      "maximum_modeled_normalized_slack": 1.7690613047748287,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        27
+      ],
+      "mean_backlog": 15.430333333333333,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "37090a0c457c5a291ce56ce1106867845fe2eda773c2d1db331b94ea9cac49f0"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3192,
+        7395
+      ],
+      "violation": [
+        0.006892230576441102,
+        0.0
+      ],
+      "extra_service_unit_slots": 5855,
+      "activation_switching_units": 453,
+      "abstract_cost": 5968.25,
+      "mean_extra_capacity": 1.7529940119760479,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 30,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 559,
+      "maximum_modeled_normalized_slack": 1.6351618514186081,
+      "late_completed": [
+        22,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        32
+      ],
+      "mean_backlog": 17.415666666666667,
+      "requests": 668,
+      "delivered": 637,
+      "accepted": 637,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "b45f0a1702f487263b3e1f169e06d422c45e24df9be33122fe4e441947dc0eb2"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3180,
+        6873
+      ],
+      "violation": [
+        0.0006289308176100629,
+        0.0
+      ],
+      "extra_service_unit_slots": 4595,
+      "activation_switching_units": 427,
+      "abstract_cost": 4701.75,
+      "mean_extra_capacity": 1.375748502994012,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 25,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 601,
+      "maximum_modeled_normalized_slack": 1.833214296138915,
+      "late_completed": [
+        2,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        34
+      ],
+      "mean_backlog": 17.784,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "113c1017d7e25af57ff7e9ebcf93d91a5f592754b3835669e8532c0643d1ce6f"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3432,
+        7929
+      ],
+      "violation": [
+        0.0002913752913752914,
+        0.0
+      ],
+      "extra_service_unit_slots": 7310,
+      "activation_switching_units": 582,
+      "abstract_cost": 7455.5,
+      "mean_extra_capacity": 2.188622754491018,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 35,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 507,
+      "maximum_modeled_normalized_slack": 2.1725799212330505,
+      "late_completed": [
+        1,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        38
+      ],
+      "mean_backlog": 26.646,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "002bbab9b9e7fa5cc72cef9196794f3a936b408b393db1aa8470f08afba7f284"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3243,
+        7227
+      ],
+      "violation": [
+        0.003083564600678384,
+        0.0005534800055348
+      ],
+      "extra_service_unit_slots": 5225,
+      "activation_switching_units": 379,
+      "abstract_cost": 5319.75,
+      "mean_extra_capacity": 1.56437125748503,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 25,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 546,
+      "maximum_modeled_normalized_slack": 2.4059642740910783,
+      "late_completed": [
+        10,
+        4
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        39
+      ],
+      "mean_backlog": 22.180666666666667,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "8351626ad140d9ade2ef189bb27fd44de06a65c7ecc468f9904133e192acb63c"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3312,
+        7152
+      ],
+      "violation": [
+        0.006340579710144928,
+        0.0
+      ],
+      "extra_service_unit_slots": 5850,
+      "activation_switching_units": 414,
+      "abstract_cost": 5953.5,
+      "mean_extra_capacity": 1.751497005988024,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 20,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 549,
+      "maximum_modeled_normalized_slack": 2.345005341953419,
+      "late_completed": [
+        21,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        15,
+        35
+      ],
+      "mean_backlog": 25.770333333333333,
+      "requests": 668,
+      "delivered": 626,
+      "accepted": 626,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "11ce20cf7050603de1a4c5d776dbf8ba8614bb6bf0afe41ccea39fd6cfd2bf82"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3009,
+        6978
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3760,
+      "activation_switching_units": 422,
+      "abstract_cost": 3865.5,
+      "mean_extra_capacity": 1.125748502994012,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 628,
+      "maximum_modeled_normalized_slack": 1.9656821093500243,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        27
+      ],
+      "mean_backlog": 12.842333333333332,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "6c082056d2e1b55c3e338142b28ad7b542192952813212640960540d4746c0d4"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3285,
+        7377
+      ],
+      "violation": [
+        0.0009132420091324201,
+        0.0
+      ],
+      "extra_service_unit_slots": 6045,
+      "activation_switching_units": 424,
+      "abstract_cost": 6151.0,
+      "mean_extra_capacity": 1.8098802395209581,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 60,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 558,
+      "maximum_modeled_normalized_slack": 1.7788408556486823,
+      "late_completed": [
+        3,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        27
+      ],
+      "mean_backlog": 19.55666666666667,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a1236eba5dfe970a58354193fc9d5b36bf24cb859f1cdca7ed51ed42a12a724d"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3051,
+        6822
+      ],
+      "violation": [
+        0.0019665683382497543,
+        0.0
+      ],
+      "extra_service_unit_slots": 4010,
+      "activation_switching_units": 360,
+      "abstract_cost": 4100.0,
+      "mean_extra_capacity": 1.2005988023952097,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 587,
+      "maximum_modeled_normalized_slack": 2.7951940472097356,
+      "late_completed": [
+        6,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        13,
+        35
+      ],
+      "mean_backlog": 20.265666666666668,
+      "requests": 668,
+      "delivered": 643,
+      "accepted": 643,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "ee27e56b30e4284f3dd17eacb8c94a390ede9f399569ab619da978a387e17ee6"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        2754,
+        6807
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3395,
+      "activation_switching_units": 342,
+      "abstract_cost": 3480.5,
+      "mean_extra_capacity": 1.0164670658682635,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 611,
+      "maximum_modeled_normalized_slack": 1.4242565858702942,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        28
+      ],
+      "mean_backlog": 16.077333333333332,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "94a1231a140c2c3edfdce918b339c74f0de68949a0bca2816de5b7e5a5dfc012"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3396,
+        7644
+      ],
+      "violation": [
+        0.027974087161366314,
+        0.012558869701726845
+      ],
+      "extra_service_unit_slots": 6335,
+      "activation_switching_units": 486,
+      "abstract_cost": 6456.5,
+      "mean_extra_capacity": 1.8967065868263473,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 85,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 508,
+      "maximum_modeled_normalized_slack": 2.6055216081460024,
+      "late_completed": [
+        95,
+        96
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        17,
+        41
+      ],
+      "mean_backlog": 31.949666666666666,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "9482b446de3e318ed25c36c66f2bec3bd376cbb39e57e0bedeeccc59be946fa8"
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3051,
+        6936
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4195,
+      "activation_switching_units": 421,
+      "abstract_cost": 4300.25,
+      "mean_extra_capacity": 1.2559880239520957,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 35,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 626,
+      "maximum_modeled_normalized_slack": 1.1966010018964344,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        11,
+        24
+      ],
+      "mean_backlog": 14.406,
+      "requests": 668,
+      "delivered": 631,
+      "accepted": 631,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "576ee5aeac0bed61c85bf9888acdfbd71c6de3b1dd8541e8110f54743586f2c7"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3100,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3890,
+      "activation_switching_units": 218,
+      "abstract_cost": 3944.5,
+      "mean_extra_capacity": 1.1646706586826348,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 80,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 571,
+      "maximum_modeled_normalized_slack": 1.424897795777949,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        28
+      ],
+      "mean_backlog": 20.564,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "71c3dbcc655415da6b15ec34929c944c0c4f7ae09650ab108f517fe5eda73c60"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3224,
+        7202
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4100,
+      "activation_switching_units": 247,
+      "abstract_cost": 4161.75,
+      "mean_extra_capacity": 1.2275449101796407,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 30,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 572,
+      "maximum_modeled_normalized_slack": 2.247389731485401,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        33
+      ],
+      "mean_backlog": 21.217666666666666,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "745a188115e5b233aa6ae24363e243c77e796482a8f1fa7436b8592c6376f053"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3206,
+        7136
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4130,
+      "activation_switching_units": 220,
+      "abstract_cost": 4185.0,
+      "mean_extra_capacity": 1.2365269461077844,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 185,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 569,
+      "maximum_modeled_normalized_slack": 1.5313829594350108,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        31
+      ],
+      "mean_backlog": 18.469333333333335,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "ced8e83b1f0f233909045363d1b5e040abd78810b54b626f24b38db6ae449feb"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3295,
+        7228
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4315,
+      "activation_switching_units": 277,
+      "abstract_cost": 4384.25,
+      "mean_extra_capacity": 1.2919161676646707,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 568,
+      "maximum_modeled_normalized_slack": 2.1069633775431713,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        37
+      ],
+      "mean_backlog": 19.779666666666667,
+      "requests": 668,
+      "delivered": 627,
+      "accepted": 627,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5909975aa22aee39d0dc25aa5b6a54a81488f74ccd8ae9ed953db370290b1559"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        3223,
+        7179
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4145,
+      "activation_switching_units": 245,
+      "abstract_cost": 4206.25,
+      "mean_extra_capacity": 1.2410179640718564,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 50,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 1.920185161954112,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        30
+      ],
+      "mean_backlog": 20.115,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "05c6fd82df10a871df23777b801d93f179511183d6669f2178ee22ec7c01bffe"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3184,
+        7314
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4250,
+      "activation_switching_units": 264,
+      "abstract_cost": 4316.0,
+      "mean_extra_capacity": 1.2724550898203593,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 576,
+      "maximum_modeled_normalized_slack": 1.782774397626751,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        25
+      ],
+      "mean_backlog": 17.513,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "de8502cc98ce773b912a19ab3456e679e51937907ac8fc1fc49fa75a3759f180"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3155,
+        7244
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4540,
+      "activation_switching_units": 241,
+      "abstract_cost": 4600.25,
+      "mean_extra_capacity": 1.3592814371257484,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 40,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 542,
+      "maximum_modeled_normalized_slack": 1.6871684303716084,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        30
+      ],
+      "mean_backlog": 19.445333333333334,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "0110340a7ee3400367b6a673f055e296aa22562ca13f4452a904e05ca6a9d2b0"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3260,
+        7253
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4340,
+      "activation_switching_units": 240,
+      "abstract_cost": 4400.0,
+      "mean_extra_capacity": 1.2994011976047903,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 45,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 560,
+      "maximum_modeled_normalized_slack": 2.1866740043694075,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        31
+      ],
+      "mean_backlog": 18.553333333333335,
+      "requests": 668,
+      "delivered": 642,
+      "accepted": 642,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "0903556e5a4f61ca9577ab7482b5e38f25cbe4b713a704d87efaddff15dcb034"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3289,
+        7287
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4310,
+      "activation_switching_units": 226,
+      "abstract_cost": 4366.5,
+      "mean_extra_capacity": 1.2904191616766467,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 80,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 556,
+      "maximum_modeled_normalized_slack": 1.8070394229459112,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        29
+      ],
+      "mean_backlog": 22.054333333333332,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "999d85c2d9d2b046c4d46c99ba5b5eefb7d5b01a0d5e0fe78dc916c9d005065d"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3201,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3965,
+      "activation_switching_units": 221,
+      "abstract_cost": 4020.25,
+      "mean_extra_capacity": 1.187125748502994,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 165,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 1.4689506510504282,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        27
+      ],
+      "mean_backlog": 18.612666666666666,
+      "requests": 668,
+      "delivered": 637,
+      "accepted": 637,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "fbac0f2d8f2bc805530ca9d036cccc36f9e9af8d3227c6a04e7240706e429683"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3212,
+        7469
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4360,
+      "activation_switching_units": 212,
+      "abstract_cost": 4413.0,
+      "mean_extra_capacity": 1.3053892215568863,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 55,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 555,
+      "maximum_modeled_normalized_slack": 1.645966604147783,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        31
+      ],
+      "mean_backlog": 20.86,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "c37e98481110b59d1593f44e0b6c87e085dd9da159d7356c6f6f2b3081e2f1a3"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3142,
+        7312
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3960,
+      "activation_switching_units": 241,
+      "abstract_cost": 4020.25,
+      "mean_extra_capacity": 1.18562874251497,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 190,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 1.5551593988897983,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        25
+      ],
+      "mean_backlog": 18.512666666666668,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "8af6debd346270da9227491095b7bb11077fc91fbde2d33ec9fef61574ee03bb"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3138,
+        7297
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3990,
+      "activation_switching_units": 232,
+      "abstract_cost": 4048.0,
+      "mean_extra_capacity": 1.1946107784431137,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 583,
+      "maximum_modeled_normalized_slack": 1.6700490113017286,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        28
+      ],
+      "mean_backlog": 18.437333333333335,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "791396289bc47e4927f59b15d0d91b0e79db87cc619d013c5a8ed62ffedfb821"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3155,
+        7151
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4145,
+      "activation_switching_units": 218,
+      "abstract_cost": 4199.5,
+      "mean_extra_capacity": 1.2410179640718564,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 20,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 572,
+      "maximum_modeled_normalized_slack": 1.9121718386481592,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        24
+      ],
+      "mean_backlog": 18.160333333333334,
+      "requests": 668,
+      "delivered": 626,
+      "accepted": 626,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "8969fa5f3159b0a9fd09c880404e7054ced97ffcf9e37226db04a6268fd38441"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3134,
+        7281
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4165,
+      "activation_switching_units": 222,
+      "abstract_cost": 4220.5,
+      "mean_extra_capacity": 1.2470059880239521,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 566,
+      "maximum_modeled_normalized_slack": 1.9757237503640308,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        35
+      ],
+      "mean_backlog": 18.257,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "4020c2ecd6fb533de173a299a695dcfe02a57d7e609a608cba94736f496aaab6"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3187,
+        7195
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4150,
+      "activation_switching_units": 231,
+      "abstract_cost": 4207.75,
+      "mean_extra_capacity": 1.2425149700598803,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 170,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 580,
+      "maximum_modeled_normalized_slack": 1.1970342044591025,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        21
+      ],
+      "mean_backlog": 16.1,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e5a817481a1ab9ec4878902a5f2939e97a5da9bfd7a5270e52fa0d8f7ba9cf67"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3144,
+        7212
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4285,
+      "activation_switching_units": 222,
+      "abstract_cost": 4340.5,
+      "mean_extra_capacity": 1.282934131736527,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 205,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 557,
+      "maximum_modeled_normalized_slack": 1.9523254452456031,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        29
+      ],
+      "mean_backlog": 18.924333333333333,
+      "requests": 668,
+      "delivered": 643,
+      "accepted": 643,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "cc71afabebc63b32e459473e7de3999c1928285917c014c830a57129aa109b50"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        3173,
+        7189
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3830,
+      "activation_switching_units": 227,
+      "abstract_cost": 3886.75,
+      "mean_extra_capacity": 1.1467065868263473,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 70,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 584,
+      "maximum_modeled_normalized_slack": 1.382156546616494,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        22
+      ],
+      "mean_backlog": 17.057666666666666,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "eff2a718135eae062ffc67ff8a030a24a6dec32f8bd333a54eaeb9f0bc854836"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3129,
+        7270
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3815,
+      "activation_switching_units": 233,
+      "abstract_cost": 3873.25,
+      "mean_extra_capacity": 1.1422155688622755,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 180,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 1.6534857496005815,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        28
+      ],
+      "mean_backlog": 20.524,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5866a12a021f0fc1b681fe0344813a0b320af6403fff0c83bf3266a39390038d"
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3215,
+        7256
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3970,
+      "activation_switching_units": 197,
+      "abstract_cost": 4019.25,
+      "mean_extra_capacity": 1.188622754491018,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 160,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 568,
+      "maximum_modeled_normalized_slack": 1.461374275648018,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        23
+      ],
+      "mean_backlog": 17.917333333333332,
+      "requests": 668,
+      "delivered": 631,
+      "accepted": 631,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "7999acdfb361c115f1ee1c89b6f9495acb01a99faaa40bbda175a5f6205abc22"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3100,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4130,
+      "activation_switching_units": 216,
+      "abstract_cost": 4184.0,
+      "mean_extra_capacity": 1.2365269461077844,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 170,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 580,
+      "maximum_modeled_normalized_slack": 1.396351807083513,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        32
+      ],
+      "mean_backlog": 22.872,
+      "requests": 668,
+      "delivered": 549,
+      "accepted": 549,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "27aca0129add70a0715e04b0dfa53fa58f0bb85f67df1312a5dfc622ac8caf92"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3224,
+        7202
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4215,
+      "activation_switching_units": 201,
+      "abstract_cost": 4265.25,
+      "mean_extra_capacity": 1.2619760479041917,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 205,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 577,
+      "maximum_modeled_normalized_slack": 2.4294481079816235,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        33
+      ],
+      "mean_backlog": 22.60033333333333,
+      "requests": 668,
+      "delivered": 559,
+      "accepted": 559,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "357611c4624e0c4cfbf2c8961b3f42fcd8b8b2188fe37ed0ca8ff5a733b55431"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3206,
+        7136
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4060,
+      "activation_switching_units": 218,
+      "abstract_cost": 4114.5,
+      "mean_extra_capacity": 1.215568862275449,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 95,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 584,
+      "maximum_modeled_normalized_slack": 1.9315304024428768,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        31
+      ],
+      "mean_backlog": 21.42866666666667,
+      "requests": 668,
+      "delivered": 554,
+      "accepted": 554,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "dff8058b6d71a34df15478224eb1fba01272249b393a454aad5053e1f02bbe02"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3295,
+        7228
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4220,
+      "activation_switching_units": 236,
+      "abstract_cost": 4279.0,
+      "mean_extra_capacity": 1.2634730538922156,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 130,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 562,
+      "maximum_modeled_normalized_slack": 2.133729202048129,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        10,
+        36
+      ],
+      "mean_backlog": 22.042666666666666,
+      "requests": 668,
+      "delivered": 545,
+      "accepted": 545,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "331c7490b635ff492c3749e82c84bcf2cead566fc83df713d916c313d5b09749"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        3223,
+        7179
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4385,
+      "activation_switching_units": 240,
+      "abstract_cost": 4445.0,
+      "mean_extra_capacity": 1.312874251497006,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 220,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 554,
+      "maximum_modeled_normalized_slack": 2.115533467573606,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        36
+      ],
+      "mean_backlog": 24.115333333333332,
+      "requests": 668,
+      "delivered": 561,
+      "accepted": 561,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "a7082211d5c04bc9842bc6cd3a4544626060b192e913999ddfdc97e1522d7025"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3184,
+        7314
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4350,
+      "activation_switching_units": 236,
+      "abstract_cost": 4409.0,
+      "mean_extra_capacity": 1.3023952095808384,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 566,
+      "maximum_modeled_normalized_slack": 2.111650797650189,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        26
+      ],
+      "mean_backlog": 18.895,
+      "requests": 668,
+      "delivered": 566,
+      "accepted": 566,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "34609ed330879ebc8b796df60a7dd586502f80ce36975a42bf6a2582df997d50"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3155,
+        7244
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4630,
+      "activation_switching_units": 270,
+      "abstract_cost": 4697.5,
+      "mean_extra_capacity": 1.3862275449101797,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 55,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 559,
+      "maximum_modeled_normalized_slack": 1.8615520587651258,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        33
+      ],
+      "mean_backlog": 22.245333333333335,
+      "requests": 668,
+      "delivered": 577,
+      "accepted": 577,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "d93fbb955873916e8dbffa2ecbb22ee2ce39d86dae8b27278ac1c7e457e578ee"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3260,
+        7253
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4245,
+      "activation_switching_units": 232,
+      "abstract_cost": 4303.0,
+      "mean_extra_capacity": 1.2709580838323353,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 55,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 2.4311284579371684,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        31
+      ],
+      "mean_backlog": 20.621333333333332,
+      "requests": 668,
+      "delivered": 584,
+      "accepted": 584,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "e5524b8f68bd534a3416de3bab8fab6be5e7960fe165beb9ea9f7cdad0e561ab"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3289,
+        7287
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4260,
+      "activation_switching_units": 285,
+      "abstract_cost": 4331.25,
+      "mean_extra_capacity": 1.2754491017964071,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 568,
+      "maximum_modeled_normalized_slack": 1.8227886551824253,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        29
+      ],
+      "mean_backlog": 23.352333333333334,
+      "requests": 668,
+      "delivered": 573,
+      "accepted": 573,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "f0ea30f67548ce37c23daa172b6b2fb93666a0b1cd58b514fbf828fde5150d9d"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3201,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4260,
+      "activation_switching_units": 184,
+      "abstract_cost": 4306.0,
+      "mean_extra_capacity": 1.2754491017964071,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 190,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 562,
+      "maximum_modeled_normalized_slack": 1.7348575832950308,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        27
+      ],
+      "mean_backlog": 19.558666666666667,
+      "requests": 668,
+      "delivered": 573,
+      "accepted": 573,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "43c768ff8972b7fb9c506ddbaccbbc4782052d4e8e4ad1df1e0df2197a11afca"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3212,
+        7469
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4005,
+      "activation_switching_units": 262,
+      "abstract_cost": 4070.5,
+      "mean_extra_capacity": 1.1991017964071857,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 105,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 584,
+      "maximum_modeled_normalized_slack": 2.1011943557587123,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        32
+      ],
+      "mean_backlog": 23.918333333333333,
+      "requests": 668,
+      "delivered": 582,
+      "accepted": 582,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "5e37dd8f7232259dac598ad9d99bf7b72d48379d41d4b5bb85e2b5c9f8538e43"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3142,
+        7312
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4220,
+      "activation_switching_units": 228,
+      "abstract_cost": 4277.0,
+      "mean_extra_capacity": 1.2634730538922156,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 205,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 570,
+      "maximum_modeled_normalized_slack": 1.5615136217583343,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        29
+      ],
+      "mean_backlog": 20.868,
+      "requests": 668,
+      "delivered": 564,
+      "accepted": 564,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "fe45cbd5bc36785e749abc9b524c6f894f41066604b4609fa927028561dfd02d"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3138,
+        7297
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4040,
+      "activation_switching_units": 226,
+      "abstract_cost": 4096.5,
+      "mean_extra_capacity": 1.2095808383233533,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 125,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 578,
+      "maximum_modeled_normalized_slack": 1.774213083404434,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        13,
+        30
+      ],
+      "mean_backlog": 21.232,
+      "requests": 668,
+      "delivered": 573,
+      "accepted": 573,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "2562a5ff1a9d151728f257e96693567a8bfeb1263435baaefca660cdbe67cec0"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3155,
+        7151
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4155,
+      "activation_switching_units": 210,
+      "abstract_cost": 4207.5,
+      "mean_extra_capacity": 1.2440119760479043,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 25,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 567,
+      "maximum_modeled_normalized_slack": 2.178825280131089,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        27
+      ],
+      "mean_backlog": 20.743,
+      "requests": 668,
+      "delivered": 566,
+      "accepted": 566,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "5411cfdde4d4af0645862959f67b9f0850b55a893cb3433f7f505db5c695360c"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3134,
+        7281
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3775,
+      "activation_switching_units": 204,
+      "abstract_cost": 3826.0,
+      "mean_extra_capacity": 1.1302395209580838,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 200,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 593,
+      "maximum_modeled_normalized_slack": 2.1679011002346638,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        35
+      ],
+      "mean_backlog": 20.86,
+      "requests": 668,
+      "delivered": 585,
+      "accepted": 585,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "84198c7b5aaa29119e8d53c7c3bc390e71c1b5fc7c37824e43600881c07ee849"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3187,
+        7195
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4070,
+      "activation_switching_units": 201,
+      "abstract_cost": 4120.25,
+      "mean_extra_capacity": 1.218562874251497,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 95,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 594,
+      "maximum_modeled_normalized_slack": 1.4643523694527487,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        5,
+        22
+      ],
+      "mean_backlog": 17.551,
+      "requests": 668,
+      "delivered": 573,
+      "accepted": 573,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "9d7f00f95f6129fbe5271ee676b7835aa840d33893153c5f841cd9822459ad7e"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3144,
+        7212
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4125,
+      "activation_switching_units": 235,
+      "abstract_cost": 4183.75,
+      "mean_extra_capacity": 1.2350299401197604,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 200,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 2.4573153871609157,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        30
+      ],
+      "mean_backlog": 20.956,
+      "requests": 668,
+      "delivered": 580,
+      "accepted": 580,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "5371d34ccda9ee013df297e97b8de11ab586534f3e7b10f7f68ec449ae4b99f4"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        3173,
+        7189
+      ],
+      "violation": [
+        0.002206114087614245,
+        0.0
+      ],
+      "extra_service_unit_slots": 4385,
+      "activation_switching_units": 244,
+      "abstract_cost": 4446.0,
+      "mean_extra_capacity": 1.312874251497006,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 75,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 571,
+      "maximum_modeled_normalized_slack": 1.9174718890409514,
+      "late_completed": [
+        7,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        24
+      ],
+      "mean_backlog": 18.168666666666667,
+      "requests": 668,
+      "delivered": 568,
+      "accepted": 568,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "38d997fe719014ff102bcea9036a3a9ec2eef397f0129c2b4986f76bccba2d06"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3129,
+        7270
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3895,
+      "activation_switching_units": 211,
+      "abstract_cost": 3947.75,
+      "mean_extra_capacity": 1.1661676646706587,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 175,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 581,
+      "maximum_modeled_normalized_slack": 1.741934380636447,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        33
+      ],
+      "mean_backlog": 24.029666666666667,
+      "requests": 668,
+      "delivered": 561,
+      "accepted": 561,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "0ab1760be6d8895531a658fe3e20668f44f4709b661416afbf5a5a880708924b"
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3215,
+        7256
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3995,
+      "activation_switching_units": 209,
+      "abstract_cost": 4047.25,
+      "mean_extra_capacity": 1.1961077844311376,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 60,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 594,
+      "maximum_modeled_normalized_slack": 1.253173828414409,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        27
+      ],
+      "mean_backlog": 18.76033333333333,
+      "requests": 668,
+      "delivered": 560,
+      "accepted": 560,
+      "discarded_out_of_order": 0,
+      "pending_reports": 1,
+      "trace_hash": "a812f4ad533d5b26c74111353d21a3af3ed768c0164eabe835f4e5a713a7a283"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3100,
+        7305
+      ],
+      "violation": [
+        0.04645161290322581,
+        0.06392881587953457
+      ],
+      "extra_service_unit_slots": 4530,
+      "activation_switching_units": 199,
+      "abstract_cost": 4579.75,
+      "mean_extra_capacity": 1.3562874251497006,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 541,
+      "maximum_modeled_normalized_slack": 2.24699962278011,
+      "late_completed": [
+        144,
+        467
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        22,
+        45
+      ],
+      "mean_backlog": 32.53,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "27aca0129add70a0715e04b0dfa53fa58f0bb85f67df1312a5dfc622ac8caf92"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3224,
+        7202
+      ],
+      "violation": [
+        0.003101736972704715,
+        0.13093585115245765
+      ],
+      "extra_service_unit_slots": 4535,
+      "activation_switching_units": 206,
+      "abstract_cost": 4586.5,
+      "mean_extra_capacity": 1.3577844311377245,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 70,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 547,
+      "maximum_modeled_normalized_slack": 3.674638148281452,
+      "late_completed": [
+        10,
+        943
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        15,
+        50
+      ],
+      "mean_backlog": 35.616,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "357611c4624e0c4cfbf2c8961b3f42fcd8b8b2188fe37ed0ca8ff5a733b55431"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3206,
+        7136
+      ],
+      "violation": [
+        0.023393636930754833,
+        0.05731502242152466
+      ],
+      "extra_service_unit_slots": 4510,
+      "activation_switching_units": 238,
+      "abstract_cost": 4569.5,
+      "mean_extra_capacity": 1.3502994011976048,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 235,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 559,
+      "maximum_modeled_normalized_slack": 3.079575723514955,
+      "late_completed": [
+        75,
+        409
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        20,
+        49
+      ],
+      "mean_backlog": 31.604666666666667,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "dff8058b6d71a34df15478224eb1fba01272249b393a454aad5053e1f02bbe02"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3295,
+        7228
+      ],
+      "violation": [
+        0.026403641881638847,
+        0.08688433868289984
+      ],
+      "extra_service_unit_slots": 4630,
+      "activation_switching_units": 231,
+      "abstract_cost": 4687.75,
+      "mean_extra_capacity": 1.3862275449101797,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 160,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 539,
+      "maximum_modeled_normalized_slack": 2.3474133918117053,
+      "late_completed": [
+        87,
+        628
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        17,
+        51
+      ],
+      "mean_backlog": 33.528333333333336,
+      "requests": 668,
+      "delivered": 627,
+      "accepted": 627,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "331c7490b635ff492c3749e82c84bcf2cead566fc83df713d916c313d5b09749"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        3223,
+        7179
+      ],
+      "violation": [
+        0.02202916537387527,
+        0.0774481125504945
+      ],
+      "extra_service_unit_slots": 4525,
+      "activation_switching_units": 249,
+      "abstract_cost": 4587.25,
+      "mean_extra_capacity": 1.3547904191616766,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 90,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 547,
+      "maximum_modeled_normalized_slack": 4.571946740242421,
+      "late_completed": [
+        71,
+        556
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        22,
+        50
+      ],
+      "mean_backlog": 33.48566666666667,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a7082211d5c04bc9842bc6cd3a4544626060b192e913999ddfdc97e1522d7025"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3184,
+        7314
+      ],
+      "violation": [
+        0.017587939698492462,
+        0.017363959529669126
+      ],
+      "extra_service_unit_slots": 4465,
+      "activation_switching_units": 262,
+      "abstract_cost": 4530.5,
+      "mean_extra_capacity": 1.3368263473053892,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 235,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 550,
+      "maximum_modeled_normalized_slack": 3.33041742643342,
+      "late_completed": [
+        56,
+        127
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        19,
+        44
+      ],
+      "mean_backlog": 30.55,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "34609ed330879ebc8b796df60a7dd586502f80ce36975a42bf6a2582df997d50"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3155,
+        7244
+      ],
+      "violation": [
+        0.003169572107765452,
+        0.06902263942573164
+      ],
+      "extra_service_unit_slots": 4705,
+      "activation_switching_units": 239,
+      "abstract_cost": 4764.75,
+      "mean_extra_capacity": 1.408682634730539,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 80,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 533,
+      "maximum_modeled_normalized_slack": 3.163377214060887,
+      "late_completed": [
+        10,
+        500
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        45
+      ],
+      "mean_backlog": 32.514,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "d93fbb955873916e8dbffa2ecbb22ee2ce39d86dae8b27278ac1c7e457e578ee"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3260,
+        7253
+      ],
+      "violation": [
+        0.009202453987730062,
+        0.06921273955604577
+      ],
+      "extra_service_unit_slots": 4655,
+      "activation_switching_units": 235,
+      "abstract_cost": 4713.75,
+      "mean_extra_capacity": 1.3937125748502994,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 85,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 538,
+      "maximum_modeled_normalized_slack": 2.8674626800447633,
+      "late_completed": [
+        30,
+        502
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        15,
+        47
+      ],
+      "mean_backlog": 31.490666666666666,
+      "requests": 668,
+      "delivered": 642,
+      "accepted": 642,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e5524b8f68bd534a3416de3bab8fab6be5e7960fe165beb9ea9f7cdad0e561ab"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3289,
+        7287
+      ],
+      "violation": [
+        0.07570690179385832,
+        0.07286949361877315
+      ],
+      "extra_service_unit_slots": 4440,
+      "activation_switching_units": 259,
+      "abstract_cost": 4504.75,
+      "mean_extra_capacity": 1.3293413173652695,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 555,
+      "maximum_modeled_normalized_slack": 4.20005631341152,
+      "late_completed": [
+        249,
+        531
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        24,
+        50
+      ],
+      "mean_backlog": 36.58233333333333,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "f0ea30f67548ce37c23daa172b6b2fb93666a0b1cd58b514fbf828fde5150d9d"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3201,
+        7305
+      ],
+      "violation": [
+        0.01218369259606373,
+        0.05078713210130048
+      ],
+      "extra_service_unit_slots": 4595,
+      "activation_switching_units": 249,
+      "abstract_cost": 4657.25,
+      "mean_extra_capacity": 1.375748502994012,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 205,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 551,
+      "maximum_modeled_normalized_slack": 2.6498544091646776,
+      "late_completed": [
+        39,
+        371
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        16,
+        43
+      ],
+      "mean_backlog": 31.42,
+      "requests": 668,
+      "delivered": 637,
+      "accepted": 637,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "43c768ff8972b7fb9c506ddbaccbbc4782052d4e8e4ad1df1e0df2197a11afca"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3212,
+        7469
+      ],
+      "violation": [
+        0.009651307596513076,
+        0.06868389342616146
+      ],
+      "extra_service_unit_slots": 4645,
+      "activation_switching_units": 230,
+      "abstract_cost": 4702.5,
+      "mean_extra_capacity": 1.3907185628742516,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 95,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 535,
+      "maximum_modeled_normalized_slack": 2.2319691181017096,
+      "late_completed": [
+        31,
+        513
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        15,
+        46
+      ],
+      "mean_backlog": 34.54233333333333,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5e37dd8f7232259dac598ad9d99bf7b72d48379d41d4b5bb85e2b5c9f8538e43"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3142,
+        7312
+      ],
+      "violation": [
+        0.02991725015913431,
+        0.07316739606126915
+      ],
+      "extra_service_unit_slots": 4280,
+      "activation_switching_units": 266,
+      "abstract_cost": 4346.5,
+      "mean_extra_capacity": 1.281437125748503,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 225,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 548,
+      "maximum_modeled_normalized_slack": 2.5820703246414802,
+      "late_completed": [
+        94,
+        535
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        21,
+        47
+      ],
+      "mean_backlog": 32.73766666666667,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "fe45cbd5bc36785e749abc9b524c6f894f41066604b4609fa927028561dfd02d"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3138,
+        7297
+      ],
+      "violation": [
+        0.03409815168897387,
+        0.08071810333013567
+      ],
+      "extra_service_unit_slots": 4475,
+      "activation_switching_units": 242,
+      "abstract_cost": 4535.5,
+      "mean_extra_capacity": 1.339820359281437,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 160,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 546,
+      "maximum_modeled_normalized_slack": 3.616849987293338,
+      "late_completed": [
+        107,
+        589
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        20,
+        49
+      ],
+      "mean_backlog": 32.376333333333335,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "2562a5ff1a9d151728f257e96693567a8bfeb1263435baaefca660cdbe67cec0"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3155,
+        7151
+      ],
+      "violation": [
+        0.016164817749603804,
+        0.08544259544119703
+      ],
+      "extra_service_unit_slots": 4610,
+      "activation_switching_units": 224,
+      "abstract_cost": 4666.0,
+      "mean_extra_capacity": 1.3802395209580838,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 60,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 540,
+      "maximum_modeled_normalized_slack": 4.813920555295468,
+      "late_completed": [
+        51,
+        611
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        20,
+        48
+      ],
+      "mean_backlog": 33.364666666666665,
+      "requests": 668,
+      "delivered": 626,
+      "accepted": 626,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5411cfdde4d4af0645862959f67b9f0850b55a893cb3433f7f505db5c695360c"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3134,
+        7281
+      ],
+      "violation": [
+        0.0,
+        0.080758137618459
+      ],
+      "extra_service_unit_slots": 4450,
+      "activation_switching_units": 192,
+      "abstract_cost": 4498.0,
+      "mean_extra_capacity": 1.3323353293413174,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 235,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 548,
+      "maximum_modeled_normalized_slack": 2.7663051513001515,
+      "late_completed": [
+        0,
+        588
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        44
+      ],
+      "mean_backlog": 30.272333333333332,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "84198c7b5aaa29119e8d53c7c3bc390e71c1b5fc7c37824e43600881c07ee849"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3187,
+        7195
+      ],
+      "violation": [
+        0.022905553812362724,
+        0.011118832522585128
+      ],
+      "extra_service_unit_slots": 4760,
+      "activation_switching_units": 240,
+      "abstract_cost": 4820.0,
+      "mean_extra_capacity": 1.4251497005988023,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 210,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 541,
+      "maximum_modeled_normalized_slack": 2.0841719993284196,
+      "late_completed": [
+        73,
+        80
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        19,
+        41
+      ],
+      "mean_backlog": 28.316666666666666,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "9d7f00f95f6129fbe5271ee676b7835aa840d33893153c5f841cd9822459ad7e"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3144,
+        7212
+      ],
+      "violation": [
+        0.0015903307888040711,
+        0.0550471436494731
+      ],
+      "extra_service_unit_slots": 4255,
+      "activation_switching_units": 244,
+      "abstract_cost": 4316.0,
+      "mean_extra_capacity": 1.2739520958083832,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 225,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 548,
+      "maximum_modeled_normalized_slack": 3.557917866675086,
+      "late_completed": [
+        5,
+        397
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        12,
+        44
+      ],
+      "mean_backlog": 31.739333333333335,
+      "requests": 668,
+      "delivered": 643,
+      "accepted": 643,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5371d34ccda9ee013df297e97b8de11ab586534f3e7b10f7f68ec449ae4b99f4"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        3173,
+        7189
+      ],
+      "violation": [
+        0.02269145918688938,
+        0.02058700792878008
+      ],
+      "extra_service_unit_slots": 4495,
+      "activation_switching_units": 228,
+      "abstract_cost": 4552.0,
+      "mean_extra_capacity": 1.345808383233533,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 110,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 555,
+      "maximum_modeled_normalized_slack": 2.1535388528533943,
+      "late_completed": [
+        72,
+        148
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        20,
+        41
+      ],
+      "mean_backlog": 29.431333333333335,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "38d997fe719014ff102bcea9036a3a9ec2eef397f0129c2b4986f76bccba2d06"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3129,
+        7270
+      ],
+      "violation": [
+        0.014062000639181848,
+        0.09504814305364512
+      ],
+      "extra_service_unit_slots": 4290,
+      "activation_switching_units": 251,
+      "abstract_cost": 4352.75,
+      "mean_extra_capacity": 1.284431137724551,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 220,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 550,
+      "maximum_modeled_normalized_slack": 1.7106880592380325,
+      "late_completed": [
+        44,
+        691
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        17,
+        51
+      ],
+      "mean_backlog": 34.86266666666667,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "0ab1760be6d8895531a658fe3e20668f44f4709b661416afbf5a5a880708924b"
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3215,
+        7256
+      ],
+      "violation": [
+        0.006842923794712286,
+        0.09440463065049615
+      ],
+      "extra_service_unit_slots": 4345,
+      "activation_switching_units": 215,
+      "abstract_cost": 4398.75,
+      "mean_extra_capacity": 1.3008982035928143,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 200,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 535,
+      "maximum_modeled_normalized_slack": 2.161422819597464,
+      "late_completed": [
+        22,
+        685
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        14,
+        47
+      ],
+      "mean_backlog": 32.30233333333333,
+      "requests": 668,
+      "delivered": 631,
+      "accepted": 631,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a812f4ad533d5b26c74111353d21a3af3ed768c0164eabe835f4e5a713a7a283"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13000,
+      "arrivals": [
+        3100,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3998,
+      "activation_switching_units": 397,
+      "abstract_cost": 4097.25,
+      "mean_extra_capacity": 1.197005988023952,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 75,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 570,
+      "maximum_modeled_normalized_slack": 2.0719068438934114,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        28
+      ],
+      "mean_backlog": 21.052333333333333,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "27aca0129add70a0715e04b0dfa53fa58f0bb85f67df1312a5dfc622ac8caf92"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13001,
+      "arrivals": [
+        3224,
+        7202
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4172,
+      "activation_switching_units": 510,
+      "abstract_cost": 4299.5,
+      "mean_extra_capacity": 1.2491017964071855,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 21,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 557,
+      "maximum_modeled_normalized_slack": 2.8450772992767464,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        33
+      ],
+      "mean_backlog": 23.12,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "357611c4624e0c4cfbf2c8961b3f42fcd8b8b2188fe37ed0ca8ff5a733b55431"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13002,
+      "arrivals": [
+        3206,
+        7136
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3938,
+      "activation_switching_units": 412,
+      "abstract_cost": 4041.0,
+      "mean_extra_capacity": 1.1790419161676646,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 195,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 569,
+      "maximum_modeled_normalized_slack": 1.8372696558051222,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        32
+      ],
+      "mean_backlog": 20.508,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "dff8058b6d71a34df15478224eb1fba01272249b393a454aad5053e1f02bbe02"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13003,
+      "arrivals": [
+        3295,
+        7228
+      ],
+      "violation": [
+        0.0,
+        0.00041505257332595465
+      ],
+      "extra_service_unit_slots": 4277,
+      "activation_switching_units": 455,
+      "abstract_cost": 4390.75,
+      "mean_extra_capacity": 1.2805389221556887,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 185,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 557,
+      "maximum_modeled_normalized_slack": 2.984714041194038,
+      "late_completed": [
+        0,
+        3
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        37
+      ],
+      "mean_backlog": 21.800333333333334,
+      "requests": 668,
+      "delivered": 627,
+      "accepted": 627,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "331c7490b635ff492c3749e82c84bcf2cead566fc83df713d916c313d5b09749"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13004,
+      "arrivals": [
+        3223,
+        7179
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4258,
+      "activation_switching_units": 492,
+      "abstract_cost": 4381.0,
+      "mean_extra_capacity": 1.2748502994011977,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 90,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 577,
+      "maximum_modeled_normalized_slack": 3.3105464040532944,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        31
+      ],
+      "mean_backlog": 21.695333333333334,
+      "requests": 668,
+      "delivered": 638,
+      "accepted": 638,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a7082211d5c04bc9842bc6cd3a4544626060b192e913999ddfdc97e1522d7025"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13005,
+      "arrivals": [
+        3184,
+        7314
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4277,
+      "activation_switching_units": 503,
+      "abstract_cost": 4402.75,
+      "mean_extra_capacity": 1.2805389221556887,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 186,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 578,
+      "maximum_modeled_normalized_slack": 2.197999183201113,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        26
+      ],
+      "mean_backlog": 18.71,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "34609ed330879ebc8b796df60a7dd586502f80ce36975a42bf6a2582df997d50"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13006,
+      "arrivals": [
+        3155,
+        7244
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4502,
+      "activation_switching_units": 429,
+      "abstract_cost": 4609.25,
+      "mean_extra_capacity": 1.3479041916167664,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 45,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 557,
+      "maximum_modeled_normalized_slack": 2.698388383611274,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        30
+      ],
+      "mean_backlog": 20.579333333333334,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "d93fbb955873916e8dbffa2ecbb22ee2ce39d86dae8b27278ac1c7e457e578ee"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13007,
+      "arrivals": [
+        3260,
+        7253
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4188,
+      "activation_switching_units": 446,
+      "abstract_cost": 4299.5,
+      "mean_extra_capacity": 1.2538922155688623,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 36,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 572,
+      "maximum_modeled_normalized_slack": 3.260262382921357,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        31
+      ],
+      "mean_backlog": 19.541,
+      "requests": 668,
+      "delivered": 642,
+      "accepted": 642,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "e5524b8f68bd534a3416de3bab8fab6be5e7960fe165beb9ea9f7cdad0e561ab"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13008,
+      "arrivals": [
+        3289,
+        7287
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4263,
+      "activation_switching_units": 459,
+      "abstract_cost": 4377.75,
+      "mean_extra_capacity": 1.2763473053892216,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 71,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 556,
+      "maximum_modeled_normalized_slack": 2.5584135505501444,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        9,
+        29
+      ],
+      "mean_backlog": 22.231333333333332,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "f0ea30f67548ce37c23daa172b6b2fb93666a0b1cd58b514fbf828fde5150d9d"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13009,
+      "arrivals": [
+        3201,
+        7305
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3886,
+      "activation_switching_units": 448,
+      "abstract_cost": 3998.0,
+      "mean_extra_capacity": 1.1634730538922156,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 185,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 577,
+      "maximum_modeled_normalized_slack": 2.2011507653036775,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        27
+      ],
+      "mean_backlog": 19.188333333333333,
+      "requests": 668,
+      "delivered": 637,
+      "accepted": 637,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "43c768ff8972b7fb9c506ddbaccbbc4782052d4e8e4ad1df1e0df2197a11afca"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13010,
+      "arrivals": [
+        3212,
+        7469
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4738,
+      "activation_switching_units": 401,
+      "abstract_cost": 4838.25,
+      "mean_extra_capacity": 1.418562874251497,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 185,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 551,
+      "maximum_modeled_normalized_slack": 2.2752898622468463,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        30
+      ],
+      "mean_backlog": 21.889666666666667,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5e37dd8f7232259dac598ad9d99bf7b72d48379d41d4b5bb85e2b5c9f8538e43"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13011,
+      "arrivals": [
+        3142,
+        7312
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4183,
+      "activation_switching_units": 460,
+      "abstract_cost": 4298.0,
+      "mean_extra_capacity": 1.2523952095808384,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 190,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 558,
+      "maximum_modeled_normalized_slack": 1.6484498351204304,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        29
+      ],
+      "mean_backlog": 20.538666666666668,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "fe45cbd5bc36785e749abc9b524c6f894f41066604b4609fa927028561dfd02d"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13012,
+      "arrivals": [
+        3138,
+        7297
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3965,
+      "activation_switching_units": 513,
+      "abstract_cost": 4093.25,
+      "mean_extra_capacity": 1.187125748502994,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 120,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 572,
+      "maximum_modeled_normalized_slack": 2.891105938671431,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        28
+      ],
+      "mean_backlog": 20.226333333333333,
+      "requests": 668,
+      "delivered": 639,
+      "accepted": 639,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "2562a5ff1a9d151728f257e96693567a8bfeb1263435baaefca660cdbe67cec0"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13013,
+      "arrivals": [
+        3155,
+        7151
+      ],
+      "violation": [
+        0.001584786053882726,
+        0.0
+      ],
+      "extra_service_unit_slots": 4224,
+      "activation_switching_units": 432,
+      "abstract_cost": 4332.0,
+      "mean_extra_capacity": 1.2646706586826348,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 20,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 557,
+      "maximum_modeled_normalized_slack": 3.431850790628901,
+      "late_completed": [
+        5,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        13,
+        26
+      ],
+      "mean_backlog": 20.32133333333333,
+      "requests": 668,
+      "delivered": 626,
+      "accepted": 626,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5411cfdde4d4af0645862959f67b9f0850b55a893cb3433f7f505db5c695360c"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13014,
+      "arrivals": [
+        3134,
+        7281
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4146,
+      "activation_switching_units": 388,
+      "abstract_cost": 4243.0,
+      "mean_extra_capacity": 1.2413173652694611,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 200,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 577,
+      "maximum_modeled_normalized_slack": 3.4887622598624564,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        35
+      ],
+      "mean_backlog": 18.862666666666666,
+      "requests": 668,
+      "delivered": 640,
+      "accepted": 640,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "84198c7b5aaa29119e8d53c7c3bc390e71c1b5fc7c37824e43600881c07ee849"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13015,
+      "arrivals": [
+        3187,
+        7195
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4221,
+      "activation_switching_units": 460,
+      "abstract_cost": 4336.0,
+      "mean_extra_capacity": 1.2637724550898204,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 165,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 563,
+      "maximum_modeled_normalized_slack": 1.5377914249086766,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        27
+      ],
+      "mean_backlog": 18.492,
+      "requests": 668,
+      "delivered": 634,
+      "accepted": 634,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "9d7f00f95f6129fbe5271ee676b7835aa840d33893153c5f841cd9822459ad7e"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13016,
+      "arrivals": [
+        3144,
+        7212
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4269,
+      "activation_switching_units": 464,
+      "abstract_cost": 4385.0,
+      "mean_extra_capacity": 1.2781437125748503,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 180,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 563,
+      "maximum_modeled_normalized_slack": 2.782333888390167,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        7,
+        29
+      ],
+      "mean_backlog": 19.849333333333334,
+      "requests": 668,
+      "delivered": 643,
+      "accepted": 643,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "5371d34ccda9ee013df297e97b8de11ab586534f3e7b10f7f68ec449ae4b99f4"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13017,
+      "arrivals": [
+        3173,
+        7189
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 3909,
+      "activation_switching_units": 360,
+      "abstract_cost": 3999.0,
+      "mean_extra_capacity": 1.1703592814371258,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 66,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 569,
+      "maximum_modeled_normalized_slack": 2.0737238519762347,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        24
+      ],
+      "mean_backlog": 17.262333333333334,
+      "requests": 668,
+      "delivered": 629,
+      "accepted": 629,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "38d997fe719014ff102bcea9036a3a9ec2eef397f0129c2b4986f76bccba2d06"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13018,
+      "arrivals": [
+        3129,
+        7270
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4004,
+      "activation_switching_units": 438,
+      "abstract_cost": 4113.5,
+      "mean_extra_capacity": 1.1988023952095808,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 180,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 562,
+      "maximum_modeled_normalized_slack": 1.614532677497437,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        6,
+        30
+      ],
+      "mean_backlog": 22.338333333333335,
+      "requests": 668,
+      "delivered": 635,
+      "accepted": 635,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "0ab1760be6d8895531a658fe3e20668f44f4709b661416afbf5a5a880708924b"
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "method": "applied_only",
+      "config": "elastic_cap3",
+      "seed": 13019,
+      "arrivals": [
+        3215,
+        7256
+      ],
+      "violation": [
+        0.0,
+        0.0
+      ],
+      "extra_service_unit_slots": 4029,
+      "activation_switching_units": 399,
+      "abstract_cost": 4128.75,
+      "mean_extra_capacity": 1.2062874251497007,
+      "maximum_active_extra": 6,
+      "first_nonzero_extra_slot": 155,
+      "modeled_feasibility_checks": 668,
+      "modeled_feasible_checks": 561,
+      "maximum_modeled_normalized_slack": 2.461936941441815,
+      "late_completed": [
+        0,
+        0
+      ],
+      "unfinished": [
+        0,
+        0
+      ],
+      "completed_delay_p99": [
+        8,
+        28
+      ],
+      "mean_backlog": 20.269333333333332,
+      "requests": 668,
+      "delivered": 631,
+      "accepted": 631,
+      "discarded_out_of_order": 0,
+      "pending_reports": 0,
+      "trace_hash": "a812f4ad533d5b26c74111353d21a3af3ed768c0164eabe835f4e5a713a7a283"
+    }
+  ],
+  "summaries": [
+    {
+      "case": "periodic_r3_p0.05_a10",
+      "applied_only": {
+        "n": 20,
+        "cost": 4189.3875,
+        "cost_ci": [
+          4115.6615625,
+          4263.7403125
+        ],
+        "violation": [
+          0.0,
+          0.0
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "upper95": [
+          0.0,
+          0.0
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 4159.85,
+        "cost_ci": [
+          4086.9493749999997,
+          4232.975
+        ],
+        "violation": [
+          0.0,
+          0.0
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "upper95": [
+          0.0,
+          0.0
+        ]
+      },
+      "full_minus_applied_ci": [
+        -58.2125,
+        6.343749999999909
+      ]
+    },
+    {
+      "case": "markov_r3_p0.05_a10",
+      "applied_only": {
+        "n": 20,
+        "cost": 4533.9,
+        "cost_ci": [
+          4277.209375,
+          4811.67625
+        ],
+        "violation": [
+          0.000792507204610951,
+          0.008552605787316987
+        ],
+        "ci": [
+          [
+            0.0,
+            0.002377521613832853
+          ],
+          [
+            4.8436202601716025e-05,
+            0.021784476681286268
+          ]
+        ],
+        "upper95": [
+          0.002377521613832853,
+          0.018953683203718586
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 4499.2125,
+        "cost_ci": [
+          4231.1334375,
+          4790.6365625
+        ],
+        "violation": [
+          0.0009147067576801008,
+          0.00881108397091601
+        ],
+        "ci": [
+          [
+            0.0,
+            0.00260678754805832
+          ],
+          [
+            4.8436202601716025e-05,
+            0.022347698745774462
+          ]
+        ],
+        "upper95": [
+          0.00248458799498917,
+          0.019803951369981483
+        ]
+      },
+      "full_minus_applied_ci": [
+        -88.315,
+        20.275937499999984
+      ]
+    },
+    {
+      "case": "compound_r3_p0.05_a10",
+      "applied_only": {
+        "n": 20,
+        "cost": 5317.775,
+        "cost_ci": [
+          4814.3603125,
+          5862.839062499999
+        ],
+        "violation": [
+          0.0032004822802610133,
+          0.0013937393064770878
+        ],
+        "ci": [
+          [
+            0.0010014626236158402,
+            0.0064055874686650026
+          ],
+          [
+            0.0,
+            0.003470252433514702
+          ]
+        ],
+        "upper95": [
+          0.005800611882773646,
+          0.002925330949258579
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 5277.3,
+        "cost_ci": [
+          4762.60875,
+          5835.1328125
+        ],
+        "violation": [
+          0.0034131801463173545,
+          0.0012966434234815663
+        ],
+        "ci": [
+          [
+            0.0011733193145953495,
+            0.006626810579809063
+          ],
+          [
+            0.0,
+            0.0031651277843897673
+          ]
+        ],
+        "upper95": [
+          0.006057734171085571,
+          0.002600959894138546
+        ]
+      },
+      "full_minus_applied_ci": [
+        -85.5003125,
+        2.587812499999995
+      ]
+    },
+    {
+      "case": "compute_r3_p0.05_a10",
+      "applied_only": {
+        "n": 20,
+        "cost": 4190.675,
+        "cost_ci": [
+          4105.9115625,
+          4275.4625
+        ],
+        "violation": [
+          0.0,
+          0.0
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "upper95": [
+          0.0,
+          0.0
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 4173.625,
+        "cost_ci": [
+          4095.3612500000004,
+          4254.4134375
+        ],
+        "violation": [
+          0.0,
+          0.0
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "upper95": [
+          0.0,
+          0.0
+        ]
+      },
+      "full_minus_applied_ci": [
+        -37.175,
+        2.288749999999982
+      ]
+    },
+    {
+      "case": "periodic_r9_p0.15_a10",
+      "applied_only": {
+        "n": 20,
+        "cost": 4227.85,
+        "cost_ci": [
+          4146.8615625,
+          4310.3384375
+        ],
+        "violation": [
+          0.00011030570438071225,
+          0.0
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0003309171131421368
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "upper95": [
+          0.0003309171131421368,
+          0.0
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 4201.8125,
+        "cost_ci": [
+          4102.24875,
+          4302.014375
+        ],
+        "violation": [
+          0.00011030570438071225,
+          0.0
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0003309171131421368
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "upper95": [
+          0.0003309171131421368,
+          0.0
+        ]
+      },
+      "full_minus_applied_ci": [
+        -61.3884375,
+        11.4875
+      ]
+    },
+    {
+      "case": "periodic_r3_p0.05_a50",
+      "applied_only": {
+        "n": 20,
+        "cost": 4568.4875,
+        "cost_ci": [
+          4508.3625,
+          4626.689375
+        ],
+        "violation": [
+          0.019857707483114242,
+          0.06803719943003167
+        ],
+        "ci": [
+          [
+            0.01316198600717663,
+            0.02814055986589215
+          ],
+          [
+            0.05591308630844874,
+            0.07975992744691915
+          ]
+        ],
+        "upper95": [
+          0.026517101143634723,
+          0.07808900464859247
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 4523.6375,
+        "cost_ci": [
+          4452.749375,
+          4597.5503125000005
+        ],
+        "violation": [
+          0.0075926648735304735,
+          0.08784589234910095
+        ],
+        "ci": [
+          [
+            0.003020858753260778,
+            0.012909141577483605
+          ],
+          [
+            0.07383001518978669,
+            0.10080584138422803
+          ]
+        ],
+        "upper95": [
+          0.011926605342078322,
+          0.09898234119970917
+        ]
+      },
+      "full_minus_applied_ci": [
+        -92.8884375,
+        1.150624999999991
+      ]
+    },
+    {
+      "case": "jitter_r3_p0.05_a10",
+      "applied_only": {
+        "n": 20,
+        "cost": 4283.175,
+        "cost_ci": [
+          4197.6743750000005,
+          4375.56625
+        ],
+        "violation": [
+          7.92393026941363e-05,
+          2.075262866629773e-05
+        ],
+        "ci": [
+          [
+            0.0,
+            0.00023771790808240888
+          ],
+          [
+            0.0,
+            6.22578859988932e-05
+          ]
+        ],
+        "upper95": [
+          0.00023771790808240888,
+          6.22578859988932e-05
+        ]
+      },
+      "full": {
+        "n": 20,
+        "cost": 4301.075,
+        "cost_ci": [
+          4216.098437500001,
+          4393.976875
+        ],
+        "violation": [
+          0.0,
+          2.075262866629773e-05
+        ],
+        "ci": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            6.22578859988932e-05
+          ]
+        ],
+        "upper95": [
+          0.0,
+          6.22578859988932e-05
+        ]
+      },
+      "full_minus_applied_ci": [
+        -5.4878124999999995,
+        42.17749999999996
+      ]
+    }
+  ],
+  "seconds": 69.94205832481384
+}

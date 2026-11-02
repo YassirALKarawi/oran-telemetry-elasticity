@@ -230,6 +230,8 @@ from final_editorial_audit import audit_editorial
 T=audit_editorial(T)
 from relevant_prior_work import integrate
 T=integrate(T)
+from submission_revision import revise_submission
+T=revise_submission(T)
 keys=list(dict.fromkeys(k for match in re.findall(r'\\cite\{([^}]+)\}',T) for k in match.split(',')))
 assert set(keys)==set(REFS) and len(keys)==45
 assert '@@' not in T

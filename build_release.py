@@ -22,6 +22,7 @@ commands=[
     [sys.executable,'verify_advanced_model.py'],
     [sys.executable,'verify_journal_revision.py'],
     [sys.executable,'verify_repository_alignment.py'],
+    [sys.executable,'verify_pending_diagnostic.py'],
 ]
 receipts=[]
 for command in commands:

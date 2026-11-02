@@ -28,3 +28,7 @@ The journal's current policies state that IEEE Open Journal of the Communication
 ## Relevant prior publications
 
 Added two verified publications by Y. Al-Karawi: IEEE Access (2024), DOI 10.1109/ACCESS.2024.3375530, and IET Networks (2025), DOI 10.1049/ntw2.70012. Their metadata were checked against Crossref and the university/publisher records. Each is cited twice, distributed across the introduction, related work and cost-model discussion. The bibliography now contains 45 entries in first-appearance order. These are contextual references, not executed comparative baselines.
+
+## Submission revision, 2 November 2026
+
+Added 140 post-selection matched applied-only runs, seven paired summaries and one table. The manuscript is now 23 pages with 45 references, ten figures, eight tables and two algorithms. No statistically resolved incremental cost benefit was found from pending-command information alone. Existing qualifications and physical-validation limitations are retained. Author declarations and originality/consent must be confirmed by the corresponding author in the submission portal.

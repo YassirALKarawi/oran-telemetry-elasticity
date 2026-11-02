@@ -21,7 +21,7 @@ assert tex.count('\\bibitem{')==45
 abstract=tex.split('\\begin{abstract}')[1].split('\\end{abstract}')[0]
 assert len(abstract.split())<=200
 visual_labels=re.findall(r'\\label\{((?:fig|tab):[^}]+)\}',tex)
-assert len(visual_labels)==17
+assert len(visual_labels)==18
 assert all('\\ref{'+label+'}' in tex for label in visual_labels)
 assert '\\begin{longtable}' not in tex
 assert '\\section{Conclusion}' in tex

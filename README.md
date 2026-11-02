@@ -215,3 +215,7 @@ fixed-size-report/equal-budget comparison remains an experimental control, not
 a realistic transport-cost model.
 
 </details>
+
+### Pending-command diagnostic (2 November 2026)
+
+The manuscript additionally reports 140 matched applied-only executions at the locked headroom. Run `python pending_diagnostic.py` to reproduce and `python verify_pending_diagnostic.py` to reconcile them. All seven cost-difference intervals include zero. This narrows the mechanism claim and is not a new calibration or a reproduced external baseline. The primary 1176 records remain unchanged.

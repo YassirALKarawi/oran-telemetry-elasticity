@@ -1306,8 +1306,8 @@ anisms require per-slot traces.                                                 
                                                                                           can coexist with very different deadline outcomes. Smaller
 where Tctrl is the set of control epochs and Nctrl its size.                              headroom tightens the score, but it does not repair those
 Figure 10 compares the seed-mean ϕ with the worse of                                      omitted state variables.
-the two class seed-mean miss fractions. This exploratory
-diagnostic uses existing counters. It is not a calibration crite-
+the two class seed-mean miss fractions. This exploratory                                     An additional matched diagnostic separates applied-action
+diagnostic uses existing counters. It is not a calibration crite-                         history from pending-command information. The applied-
 
                                                                                                                                                        17
                                                                                                                                                                                   IEEE OPEN JOURNAL OF THE
@@ -1378,20 +1378,58 @@ FIGURE 10. Post hoc proxy–outcome diagnostic. Labels identify proposed-policy 
 
 
 
-VIII. Discussion and Deployment Boundary                                                                                   IX. Conclusion
-The supported advantage is conditional. P and R test repeata-                                                              The action-ledger controller separates measured, requested
-bility within the calibration traffic constructions, while J tests                                                         and activated capacity. With independently calibrated head-
-one announced-delay law. Failures in M, B and L prevent                                                                    room, it yields qualified cost reductions of 35.61–37.73%
-extrapolation to general workload or latency robustness.                                                                   against fixed provisioning in three of seven synthetic settings.
-Integer reservations, headroom and ledger replay explain                                                                   Its nominal ledger ablation saves approximately 9.96%,
-how decisions are formed. Their consistency with aggre-                                                                    primarily through lower active capacity, with zero observed
-gate results does not identify forecast accuracy or establish                                                              misses for both variants. Shifted traffic and long actua-
-packet-level guarantees.                                                                                                   tion nevertheless expose deadline failures despite frequent
-   Six seeds per calibration stratum, twenty per test set-                                                                 surrogate-feasible decisions. The study provides an auditable
-ting, all-zero samples and unadjusted comparisons limit                                                                    controller and identifies the conditions under which known-
-inference at the 0.1% target. The fixed reference has its                                                                  action replay reduces provisioning cost while satisfying the
-own share policy, and HPA/DPP are adaptations. Neither                                                                     empirical comparison screen. Physical deployment and rare-
-competitive-system reproduction nor physical O-RAN val-                                                                    event reliability validation remain future work.
+only variant retains the complete applied ledger L but                                                                     do not establish an incremental cost advantage from pending-
+removes P from Algorithm 1, holding the currently active                                                                   command information alone. In L, the worst-class mean miss
+command throughout the future projection interval. Its pro-                                                                fraction increases from 6.804% to 8.785% with full replay,
+                            −
+jected state is therefore qbis (t + L) = Projectis (Rt , L, ∅, L).                                                         so pending-command awareness does not remove the long-
+The full controller uses the same projection with P , where ∅                                                              delay failure. This isolates a narrower information effect
+denotes an empty pending-command list. Both variants use                                                                   than the original no-ledger comparison. Pending commands
+the locked headroom η = 0.75, identical reports, command                                                                   change the service used to extrapolate qbis (t + L), which
+delays, action grids and seed-indexed exogenous traces.                                                                    changes the normalized demand ratios ρs and the selected
+This post-selection diagnostic adds 140 executions on the                                                                  integer expansion. The net effect depends on whether sched-
+original twenty seeds in each setting, without selecting new                                                               uled commands add or remove capacity before activation,
+parameters or changing the original reliability screen. It is                                                              and therefore need not improve cost and deadline misses
+distinct from the no-ledger ablation, which removes applied-                                                               simultaneously. The full and applied-only columns must be
+action replay as well.                                                                                                     interpreted jointly rather than treating a lower J alone as a
+   Table 6 reports the applied-only cost and the paired                                                                    better controller.
+difference Jfull − Japplied . The violation columns report
+the larger of the two classwise seed-mean miss fractions.                                                                  VIII. Discussion and Deployment Boundary
+The intervals quantify seed-to-seed variation in the cost                                                                  The supported advantage is conditional. P and R test repeata-
+difference and do not certify reliability or adjust for multiple                                                           bility within the calibration traffic constructions, while J tests
+comparisons. In P, retaining pending commands changes                                                                      one announced-delay law. Failures in M, B and L prevent
+mean cost by -29.5 units (-0.71% relative to applied-only).                                                                extrapolation to general workload or latency robustness.
+All seven paired cost intervals include zero. Thus, these runs                                                             Integer reservations, headroom and ledger replay explain
+
+                                                                                                                                                                                                             18
+                                                                                                                IEEE OPEN JOURNAL OF THE
+                                                                                                                COMMUNICATIONS SOCIETY
+
+
+
+TABLE 6. Matched pending-command diagnostic. Cost differences are full minus applied-only, with paired 95% intervals. Miss fractions are percentages.
+
+
+                        Setting    Applied-only cost   Cost difference    95% interval    Applied-only misses    Full misses
+
+                        P                    4189.4              -29.5     [-58.2, 6.3]                 0.000         0.000
+                        M                    4533.9              -34.7    [-88.3, 20.3]                 0.855         0.881
+                        B                    5317.8              -40.5     [-85.5, 2.6]                 0.320         0.341
+                        C                    4190.7              -17.1     [-37.2, 2.3]                 0.000         0.000
+                        R                    4227.9              -26.0    [-61.4, 11.5]                 0.011         0.011
+                        L                    4568.5              -44.9     [-92.9, 1.2]                 6.804         8.785
+                        J                    4283.2               17.9     [-5.5, 42.2]                 0.008         0.002
+
+
+
+how decisions are formed. Their consistency with aggre-
+gate results does not identify forecast accuracy or establish
+packet-level guarantees.
+   Six seeds per calibration stratum, twenty per test set-
+ting, all-zero samples and unadjusted comparisons limit
+inference at the 0.1% target. The fixed reference has its
+own share policy, and HPA/DPP are adaptations. Neither
+competitive-system reproduction nor physical O-RAN val-
 idation is provided. The next validation steps are measured
 service and interface-delay mappings, recorded workloads,
 independently implemented baselines and larger reliability
@@ -1399,9 +1437,28 @@ experiments. Channel variation, retransmissions and virtual-
 ization interference must enter that model before interpreting
 abstract cost as deployment benefit.
 
+IX. Conclusion
+The action-ledger controller separates measured, requested
+and activated capacity. With independently calibrated head-
+room, it yields qualified cost reductions of 35.61–37.73%
+against fixed provisioning in three of seven synthetic settings.
+Its nominal ledger ablation saves approximately 9.96%,
+primarily through lower active capacity, with zero observed
+misses for both variants. Shifted traffic and long actua-
+tion nevertheless expose deadline failures despite frequent
+surrogate-feasible decisions. The study provides an auditable
+controller and identifies the conditions under which known-
+action replay reduces provisioning cost while satisfying the
+empirical comparison screen. A separate matched diagnostic
+finds no resolved incremental cost benefit from pending-
+command information alone, narrowing attribution of the
+observed ledger effect. Physical deployment and rare-event
+reliability validation remain future work.
 
 
-                                                                                                                                                                                                             18
+
+
+                                                                                                                                                   19
                                                                                                          IEEE OPEN JOURNAL OF THE
                                                                                                          COMMUNICATIONS SOCIETY
 
@@ -1410,8 +1467,8 @@ abstract cost as deployment benefit.
 
 Appendix A
 Complete Held-Out Results
-Table 6 reports every method and setting using the same classwise metrics.
-TABLE 6. Complete test results, twenty seeds per row. Miss fractions and one-sided upper endpoints are percentages. DPP-inspired results are
+Table 7 reports every method and setting using the same classwise metrics.
+TABLE 7. Complete test results, twenty seeds per row. Miss fractions and one-sided upper endpoints are percentages. DPP-inspired results are
 diagnostic after calibration failure.
 
                                  Setting   Method         Mean V0   Mean V1   Upper V0   Upper V1    Mean cost
@@ -1461,7 +1518,7 @@ diagnostic after calibration failure.
 
 
 
-                                                                                                                                          19
+                                                                                                                                          20
                                                                                                                IEEE OPEN JOURNAL OF THE
                                                                                                                COMMUNICATIONS SOCIETY
 
@@ -1470,8 +1527,8 @@ diagnostic after calibration failure.
 
 Appendix B
 Complete Paired Comparisons
-Table 7 reports cost and miss differences for every comparator.
-TABLE 7. All paired contrasts, proposed minus comparator. Miss differences and upper endpoints are percentage points. No multiplicity-adjusted claim
+Table 8 reports cost and miss differences for every comparator.
+TABLE 8. All paired contrasts, proposed minus comparator. Miss differences and upper endpoints are percentage points. No multiplicity-adjusted claim
 is made.
 
                        Setting   Comparator                  ∆J [95% interval]     Mean (∆V0 , ∆V1 )     Upper (∆V0 , ∆V1 )
@@ -1514,104 +1571,97 @@ is made.
 
 
 
-                                                                                                                                                  20
+                                                                                                                                                  21
                                                                                                                    IEEE OPEN JOURNAL OF THE
                                                                                                                    COMMUNICATIONS SOCIETY
 
 
 
 
-Appendix C                                                                         lected Areas in Communications, vol. 42, no. 2, pp. 356–372, 2024.
-Reproducibility                                                                    10.1109/JSAC.2023.3336187.
-                                                                              [11] Y. Al-Karawi, R. S. Alhumaima, and H. Al-Raweshidy, “Energy-
-Run python reliability_study.py to reproduce                                       Aware Optimisation for Off-Grid ORAN With RIS and Edge
-the calibration and held-out matrix. Existing complete                             Computing,” IET Networks, vol. 14, no. 1, article e70012, 2025.
-checkpoints are reused only if the frozen protocol                                 10.1049/ntw2.70012.
-hash matches. Remove or relocate those specific                               [12] J. A. Ayala-Romero et al., “vrAIn: A Deep Learning Approach
-                                                                                   Tailoring Computing and Radio Resources in Virtualized RANs,”
-checkpoint files to execute all runs anew. Run python                              ACM MobiCom, 2019. 10.1145/3300061.3345431.
-verify_reliability.py to reconcile all metrics                                [13] G. Garcia-Aviles et al., “Nuberu: Reliable RAN virtualization in shared
-and selected deterministic replays, followed by python                             platforms,” ACM MobiCom, 2021. 10.1145/3447993.3483266.
-build_reliability_paper.py                and   python                        [14] X. Foukas and B. Radunovic, “Concordia: Teaching the 5G vRAN to
-                                                                                   Share Compute,” ACM SIGCOMM, 2021. Author/publisher source.
-build_release.py. The archive includes the exact
-                                                                              [15] M. Kalntis, G. Iosifidis, and F. A. Kuipers, “Adaptive Resource
-dependency versions and checksums. The manuscript tables                           Allocation for Virtualized Base Stations in O-RAN With Online
-and plots are generated from the saved execution records.                          Learning,” IEEE Transactions on Communications, vol. 73, no. 3, pp.
-The repository also includes vector schematics, figure                             1787–1800, 2025. 10.1109/TCOMM.2024.3461569.
-previews and their rendering script.                                          [16] O. Adamuz-Hinojosa, L. Zanzi, V. Sciancalepore, and X. Costa-
+Appendix C                                                                         of Cloud, Fronthaul, and Radio Resources,” IEEE Journal on Se-
+Reproducibility                                                                    lected Areas in Communications, vol. 42, no. 2, pp. 356–372, 2024.
+                                                                                   10.1109/JSAC.2023.3336187.
+Run python reliability_study.py to reproduce                                  [11] Y. Al-Karawi, R. S. Alhumaima, and H. Al-Raweshidy, “Energy-
+the calibration and held-out matrix. Existing complete                             Aware Optimisation for Off-Grid ORAN With RIS and Edge
+checkpoints are reused only if the frozen protocol                                 Computing,” IET Networks, vol. 14, no. 1, article e70012, 2025.
+                                                                                   10.1049/ntw2.70012.
+hash matches. Remove or relocate those specific
+                                                                              [12] J. A. Ayala-Romero et al., “vrAIn: A Deep Learning Approach
+checkpoint files to execute all runs anew. Run python                              Tailoring Computing and Radio Resources in Virtualized RANs,”
+verify_reliability.py to reconcile all metrics                                     ACM MobiCom, 2019. 10.1145/3300061.3345431.
+and selected deterministic replays, followed by python                        [13] G. Garcia-Aviles et al., “Nuberu: Reliable RAN virtualization in shared
+build_reliability_paper.py                and   python                             platforms,” ACM MobiCom, 2021. 10.1145/3447993.3483266.
+                                                                              [14] X. Foukas and B. Radunovic, “Concordia: Teaching the 5G vRAN to
+build_release.py. The archive includes the exact                                   Share Compute,” ACM SIGCOMM, 2021. Author/publisher source.
+dependency versions and checksums. The manuscript tables                      [15] M. Kalntis, G. Iosifidis, and F. A. Kuipers, “Adaptive Resource
+and plots are generated from the saved execution records.                          Allocation for Virtualized Base Stations in O-RAN With Online
+The repository also includes vector schematics, figure                             Learning,” IEEE Transactions on Communications, vol. 73, no. 3, pp.
+                                                                                   1787–1800, 2025. 10.1109/TCOMM.2024.3461569.
+previews and their rendering script.
+                                                                              [16] O. Adamuz-Hinojosa, L. Zanzi, V. Sciancalepore, and X. Costa-
                                                                                    Perez, “MAREA: A Delay-Aware Multi-Time-Scale Radio Resource
-                                                                                   Orchestrator for 6G O-RAN,” IEEE Transactions on Communications,
-Data and Code Availability                                                         vol. 73, no. 9, pp. 7695–7710, 2025. 10.1109/TCOMM.2025.3552296.
-The archive provides code, the frozen protocol, all 1176                      [17] S. D. A. Shah, M. Hafeez, A. Salama, and S. A. R. Zaidi,
-                                                                                   “Proactive AI-and-RAN Workload Orchestration in O-RAN Archi-
-execution records, verification tests, manuscript sources and                      tectures for 6G Networks,” author version, arXiv:2507.09124, 2025.
-vector figures. All reported diagnostics use the same execu-                       10.48550/arXiv.2507.09124.
-tion records. The workloads are generated synthetically from                  [18] F. W. Murti, S. Ali, G. Iosifidis, and M. Latva-aho, “Learning-
-the documented seeds and distributions. The code, frozen                           Based Orchestration for Dynamic Functional Split and Resource
-                                                                                   Allocation in vRANs,” EuCNC/6G Summit, 2022. 10.1109/Eu-
+Data and Code Availability                                                         Orchestrator for 6G O-RAN,” IEEE Transactions on Communications,
+                                                                                   vol. 73, no. 9, pp. 7695–7710, 2025. 10.1109/TCOMM.2025.3552296.
+The archive provides code, the frozen protocol, all 1176
+                                                                              [17] S. D. A. Shah, M. Hafeez, A. Salama, and S. A. R. Zaidi,
+primary execution records and 140 additional diagnostic                            “Proactive AI-and-RAN Workload Orchestration in O-RAN Archi-
+records, verification tests, manuscript sources and vector                         tectures for 6G Networks,” author version, arXiv:2507.09124, 2025.
+figures. All reported diagnostics use the same execution                           10.48550/arXiv.2507.09124.
+records. The workloads are generated synthetically from                       [18] F. W. Murti, S. Ali, G. Iosifidis, and M. Latva-aho, “Learning-
+                                                                                   Based Orchestration for Dynamic Functional Split and Resource
+the documented seeds and distributions. The code, frozen                           Allocation in vRANs,” EuCNC/6G Summit, 2022. 10.1109/Eu-
 execution records and reproduction instructions are available                      CNC/6GSummit54941.2022.9815815.
 at github.com/YassirALKarawi/oran-telemetry-elasticity.                       [19] Q. Wang et al., “Resource Allocation Based on Radio Intelligence
                                                                                    Controller for Open RAN Toward 6G,” IEEE Access, vol. 11, pp.
                                                                                    97909–97919, 2023. 10.1109/ACCESS.2023.3311888.
-REFERENCES
-                                                                              [20] V. Kasuluru et al., “Cloud-Native Multivariate Probabilistic Forecast-
+REFERENCES                                                                    [20] V. Kasuluru et al., “Cloud-Native Multivariate Probabilistic Forecast-
  [1] M. Polese et al., “Understanding O-RAN: Architecture, Interfaces,             ing for Next-Generation Resource Allocation in O-RAN,” IEEE Ac-
      Algorithms, Security, and Research Challenges,” IEEE Communica-               cess, vol. 14, pp. 2904–2923, 2026. 10.1109/ACCESS.2025.3648065.
-     tions Surveys & Tutorials, vol. 25, no. 2, pp. 1376–1411, 2023.
-     10.1109/COMST.2023.3239220.                                              [21] A. Tuerxun and A. Nakao, “SORA: Energy-Efficient Resource Al-
-                                                                                   location in Open Radio Access Network With Online Learning,”
+     tions Surveys & Tutorials, vol. 25, no. 2, pp. 1376–1411, 2023.          [21] A. Tuerxun and A. Nakao, “SORA: Energy-Efficient Resource Al-
+     10.1109/COMST.2023.3239220.                                                   location in Open Radio Access Network With Online Learning,”
  [2] D. Kreutz et al., “Software-Defined Networking: A Comprehensive               IEEE Access, vol. 13, pp. 113686–113701, 2025. 10.1109/AC-
      Survey,” Proceedings of the IEEE, vol. 103, no. 1, pp. 14–76, 2015.           CESS.2025.3584345.
-     10.1109/JPROC.2014.2371999.
-                                                                              [22] A. E. Giannopoulos et al., “COMIX: Generalized Conflict Man-
+     10.1109/JPROC.2014.2371999.                                              [22] A. E. Giannopoulos et al., “COMIX: Generalized Conflict Man-
  [3] A. Garcia-Saavedra and X. Costa-Perez, “O-RAN: Disrupting the                 agement in O-RAN xApps—Architecture, Workflow, and a Power
      Virtualized RAN Ecosystem,” IEEE Communications Standards                     Control Case,” IEEE Access, vol. 13, pp. 116684–116700, 2025.
      Magazine, vol. 5, no. 4, pp. 96–103, 2021. 10.1109/MCOM-                      10.1109/ACCESS.2025.3585774.
-     STD.101.2000014.
-                                                                              [23] M. Iqbal and A. Nakao, “5ERASI: 5G Service-Enabled Resource
+     STD.101.2000014.                                                         [23] M. Iqbal and A. Nakao, “5ERASI: 5G Service-Enabled Resource
  [4] Y. Al-Karawi, H. Al-Raweshidy, and R. Nilavalan, “Optimizing the              Allocation and Sub-Slice Isolation for Open RAN,” IEEE Access,
      Energy Efficiency Using Quantum Based Load Balancing in Open                  2026. 10.1109/ACCESS.2026.3693783.
-     Radio Access Networks,” IEEE Access, vol. 12, pp. 37903–37918,
-     2024. 10.1109/ACCESS.2024.3375530.                                       [24] Y. Chen, R. Yao, H. Hassanieh, and R. Mittal, “Channel-Aware 5G
-                                                                                   RAN Slicing with Customizable Schedulers,” USENIX NSDI, pp.
+     Radio Access Networks,” IEEE Access, vol. 12, pp. 37903–37918,           [24] Y. Chen, R. Yao, H. Hassanieh, and R. Mittal, “Channel-Aware 5G
+     2024. 10.1109/ACCESS.2024.3375530.                                            RAN Slicing with Customizable Schedulers,” USENIX NSDI, pp.
  [5] R. D. Yates et al., “Age of Information: An Introduction and Survey,”         1767–1782, 2023. Author/publisher source.
-     IEEE Journal on Selected Areas in Communications, vol. 39, no. 5,
-     pp. 1183–1210, 2021. 10.1109/JSAC.2021.3065072.                          [25] W.-H. Ko et al., “EdgeRIC: Empowering Real-time Intelligent Opti-
-                                                                                   mization and Control in NextG Cellular Networks,” USENIX NSDI,
+     IEEE Journal on Selected Areas in Communications, vol. 39, no. 5,        [25] W.-H. Ko et al., “EdgeRIC: Empowering Real-time Intelligent Opti-
+     pp. 1183–1210, 2021. 10.1109/JSAC.2021.3065072.                               mization and Control in NextG Cellular Networks,” USENIX NSDI,
  [6] J. P. Hespanha, P. Naghshtabrizi, and Y. Xu, “A Survey of Recent              pp. 1315–1330, 2024. Author/publisher source.
-     Results in Networked Control Systems,” Proceedings of the IEEE,
-     vol. 95, no. 1, pp. 138–162, 2007. 10.1109/JPROC.2006.887288.            [26] M. Polese, L. Bonati, S. D’Oro, S. Basagni, and T. Melodia, “ColO-
-                                                                                   RAN: Developing Machine Learning-based xApps for Open RAN
+     Results in Networked Control Systems,” Proceedings of the IEEE,          [26] M. Polese, L. Bonati, S. D’Oro, S. Basagni, and T. Melodia, “ColO-
+     vol. 95, no. 1, pp. 138–162, 2007. 10.1109/JPROC.2006.887288.                 RAN: Developing Machine Learning-based xApps for Open RAN
  [7] D. Q. Mayne, J. B. Rawlings, C. V. Rao, and P. O. M. Scokaert, “Con-          Closed-loop Control on Programmable Experimental Platforms,” IEEE
      strained model predictive control: Stability and optimality,” Automat-        Transactions on Mobile Computing, vol. 22, no. 10, pp. 5787–5800,
      ica, vol. 36, no. 6, pp. 789–814, 2000. 10.1016/S0005-1098(99)00214-          2023. 10.1109/TMC.2022.3188013.
-     9.
-                                                                              [27] L. Bonati, M. Polese, S. D’Oro, S. Basagni, and T. Melodia, “Open-
+     9.                                                                       [27] L. Bonati, M. Polese, S. D’Oro, S. Basagni, and T. Melodia, “Open-
  [8] S. D’Oro, L. Bonati, M. Polese, and T. Melodia, “OrchestRAN:                  RAN Gym: AI/ML Development, Data Collection, and Testing for
      Network Automation through Orchestrated Intelligence in the Open              O-RAN on PAWR Platforms,” Computer Networks, vol. 220, article
      RAN,” IEEE INFOCOM, 2022, author version arXiv:2201.05632.                    109502, 2023. 10.1016/j.comnet.2022.109502.
-     10.48550/arXiv.2201.05632.
-                                                                              [28] L. Bonati, S. D’Oro, S. Basagni, and T. Melodia, “SCOPE: An Open
+     10.48550/arXiv.2201.05632.                                               [28] L. Bonati, S. D’Oro, S. Basagni, and T. Melodia, “SCOPE: An Open
  [9] F. Mungari, C. Puligheddu, A. Garcia-Saavedra, and C. F.                      and Softwarized Prototyping Platform for NextG Systems,” ACM
      Chiasserini, “O-RAN Intelligence Orchestration Framework for                  MobiSys, 2021. 10.1145/3458864.3466863.
-     Quality-Driven xApp Deployment and Sharing,” IEEE Transac-
-     tions on Mobile Computing, vol. 24, no. 6, pp. 4811–4828, 2025.          [29] R. Schmidt, M. Irazabal, and N. Nikaein, “FlexRIC: an SDK for
-     10.1109/TMC.2025.3527707.                                                     next-generation SD-RANs,” ACM CoNEXT, pp. 411–425, 2021.
-                                                                                   10.1145/3485983.3494870.
+     Quality-Driven xApp Deployment and Sharing,” IEEE Transac-               [29] R. Schmidt, M. Irazabal, and N. Nikaein, “FlexRIC: an SDK for
+     tions on Mobile Computing, vol. 24, no. 6, pp. 4811–4828, 2025.               next-generation SD-RANs,” ACM CoNEXT, pp. 411–425, 2021.
+     10.1109/TMC.2025.3527707.                                                     10.1145/3485983.3494870.
 [10] O. T. Demir, M. Masoudi, E. Bjornson, and C. Cavdar, “Cell-
-     Free Massive MIMO in O-RAN: Energy-Aware Joint Orchestration             [30] A. Lacava et al., “ns-O-RAN: Simulating O-RAN 5G Systems in ns-
-     of Cloud, Fronthaul, and Radio Resources,” IEEE Journal on Se-                3,” ACM Workshop on ns-3, 2023. 10.1145/3592149.3592161.
+     Free Massive MIMO in O-RAN: Energy-Aware Joint Orchestration
 
 
-
-                                                                                                                                                       21
+                                                                                                                                                       22
                                                                             IEEE OPEN JOURNAL OF THE
                                                                             COMMUNICATIONS SOCIETY
 
 
 
 
+[30] A. Lacava et al., “ns-O-RAN: Simulating O-RAN 5G Systems in ns-
+     3,” ACM Workshop on ns-3, 2023. 10.1145/3592149.3592161.
 [31] M. Polese et al., “Colosseum: The Open RAN Digital Twin,” IEEE
      Open Journal of the Communications Society, vol. 5, pp. 5452–5466,
      2024. 10.1109/OJCOMS.2024.3447472.
@@ -1663,5 +1713,5 @@ REFERENCES
 
 
 
-                                                                                                       22
+                                                                                                       23
 

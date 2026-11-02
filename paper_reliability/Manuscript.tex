@@ -1469,6 +1469,30 @@ tightens the score, but it does not repair those omitted state variables.
 
 
 
+
+An additional matched diagnostic separates applied-action history from pending-command information. The applied-only variant retains the complete applied ledger $\mathcal L$ but removes $\mathcal P$ from Algorithm~1, holding the currently active command throughout the future projection interval. Its projected state is therefore $\widehat q^{-}_{is}(t+L)=\operatorname{Project}_{is}(\mathcal R_t,\mathcal L,\varnothing,L)$. The full controller uses the same projection with $\mathcal P$, where $\varnothing$ denotes an empty pending-command list. Both variants use the locked headroom $\eta=0.75$, identical reports, command delays, action grids and seed-indexed exogenous traces. This post-selection diagnostic adds 140 executions on the original twenty seeds in each setting, without selecting new parameters or changing the original reliability screen. It is distinct from the no-ledger ablation, which removes applied-action replay as well.
+
+Table~\ref{tab:pending} reports the applied-only cost and the paired difference $J_{\mathrm{full}}-J_{\mathrm{applied}}$. The violation columns report the larger of the two classwise seed-mean miss fractions. The intervals quantify seed-to-seed variation in the cost difference and do not certify reliability or adjust for multiple comparisons.
+\begin{table*}[t]
+\caption{Matched pending-command diagnostic. Cost differences are full minus applied-only, with paired 95\% intervals. Miss fractions are percentages.}
+\label{tab:pending}
+\centering\small
+\begin{tabular}{lrrrrr}
+\toprule
+Setting & Applied-only cost & Cost difference & 95\% interval & Applied-only misses & Full misses\\
+\midrule
+P & 4189.4 & -29.5 & [-58.2, 6.3] & 0.000 & 0.000\\
+M & 4533.9 & -34.7 & [-88.3, 20.3] & 0.855 & 0.881\\
+B & 5317.8 & -40.5 & [-85.5, 2.6] & 0.320 & 0.341\\
+C & 4190.7 & -17.1 & [-37.2, 2.3] & 0.000 & 0.000\\
+R & 4227.9 & -26.0 & [-61.4, 11.5] & 0.011 & 0.011\\
+L & 4568.5 & -44.9 & [-92.9, 1.2] & 6.804 & 8.785\\
+J & 4283.2 & 17.9 & [-5.5, 42.2] & 0.008 & 0.002\\
+\bottomrule
+\end{tabular}
+\end{table*}
+In P, retaining pending commands changes mean cost by -29.5 units (-0.71\% relative to applied-only). All seven paired cost intervals include zero. Thus, these runs do not establish an incremental cost advantage from pending-command information alone. In L, the worst-class mean miss fraction increases from 6.804\% to 8.785\% with full replay, so pending-command awareness does not remove the long-delay failure. This isolates a narrower information effect than the original no-ledger comparison. Pending commands change the service used to extrapolate $\widehat q_{is}(t+L)$, which changes the normalized demand ratios $\rho_s$ and the selected integer expansion. The net effect depends on whether scheduled commands add or remove capacity before activation, and therefore need not improve cost and deadline misses simultaneously. The full and applied-only columns must be interpreted jointly rather than treating a lower $J$ alone as a better controller.
+
 \section{Discussion and Deployment Boundary}
 The supported advantage is conditional. P and R test repeatability within
 the calibration traffic constructions, while J tests one announced-delay
@@ -1493,7 +1517,7 @@ reductions of 35.61--37.73\% against fixed provisioning in three of seven
 synthetic settings. Its nominal ledger ablation saves approximately 9.96\%,
 primarily through lower active capacity, with zero observed misses for both
 variants. Shifted traffic and long actuation nevertheless expose deadline
-failures despite frequent surrogate-feasible decisions. The study provides an auditable controller and identifies the conditions under which known-action replay reduces provisioning cost while satisfying the empirical comparison screen. Physical deployment and rare-event reliability validation remain future work.
+failures despite frequent surrogate-feasible decisions. The study provides an auditable controller and identifies the conditions under which known-action replay reduces provisioning cost while satisfying the empirical comparison screen. A separate matched diagnostic finds no resolved incremental cost benefit from pending-command information alone, narrowing attribution of the observed ledger effect. Physical deployment and rare-event reliability validation remain future work.
 
 \clearpage
 \onecolumn
@@ -1620,7 +1644,7 @@ versions and checksums. The manuscript tables and plots are generated from the s
 
 
 \section*{Data and Code Availability}
-The archive provides code, the frozen protocol, all 1176 execution records,
+The archive provides code, the frozen protocol, all 1176 primary execution records and 140 additional diagnostic records,
 verification tests, manuscript sources and vector figures. All reported diagnostics use the same execution records. The workloads are generated synthetically from the documented seeds and distributions. The code, frozen execution records and reproduction instructions are available at \href{https://github.com/YassirALKarawi/oran-telemetry-elasticity}{github.com/YassirALKarawi/oran-telemetry-elasticity}.
 
 
