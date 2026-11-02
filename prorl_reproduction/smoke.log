@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/d193691b86de/prorl_reproduction/smoke.py", line 15, in <module>
+    from prorl import SingleRunConfig
+  File "/workspace/scratch/d193691b86de/baseline_prorl/prorl/__init__.py", line 16, in <module>
+    single_run_config: SingleRunConfig = get_single_run_config(root_dir=ROOT_DIR,
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/d193691b86de/baseline_prorl/prorl/run/config.py", line 350, in get_single_run_config
+    config = SingleRunConfig(root_dir)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/d193691b86de/baseline_prorl/prorl/run/config.py", line 218, in __init__
+    super(SingleRunConfig, self).__init__(root_dir=root_dir,
+  File "/workspace/scratch/d193691b86de/baseline_prorl/prorl/common/config.py", line 32, in __init__
+    self._override_configs(**configs_to_override)
+  File "/workspace/scratch/d193691b86de/baseline_prorl/prorl/common/config.py", line 50, in _override_configs
+    self._after_override_configs()
+  File "/workspace/scratch/d193691b86de/baseline_prorl/prorl/run/config.py", line 286, in _after_override_configs
+    if AgentType.is_mc_method(self.environment.agent.type):
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/.local/share/uv/python/cpython-3.11.17-linux-x86_64-gnu/lib/python3.11/enum.py", line 786, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: is_mc_method

@@ -1,0 +1,14 @@
+diff --git a/prorl/run/config.py b/prorl/run/config.py
+index feee691..f5eff91 100644
+--- a/prorl/run/config.py
++++ b/prorl/run/config.py
+@@ -219,9 +219,6 @@ class SingleRunConfig(AbstractConfig):
+                                               config_object_name='SingleRunConfig', **configs_to_override)
+ 
+     def _after_override_configs(self):
+-        for res in self.environment.resources:
+-            self.emulator.model.nodes_demand_model_options.resource_absolute_values[res.name] = res.total_available
+-            self.emulator.model.auto_configurable_model_options.resource_absolute_values[res.name] = res.total_available
+         if self.emulator.model.type == ModelTypes.TimDatasetModel:
+             model_options = self.emulator.model.tim_dataset_model_options
+             n_nodes = len(self.emulator.model.base_station_names())
