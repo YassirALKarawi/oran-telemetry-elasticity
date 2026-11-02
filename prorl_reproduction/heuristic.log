@@ -1,0 +1,8 @@
+2026-11-02T19:26:35.228833+09:00 | global | (MainProcess) | (MainThread) | INFO | Initialized environment and agent with seed: 1000
+2026-11-02T19:26:35.230588+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Environment upstream-heuristic-smoke initialized with 4 nodes, 300 lives, reward function RewardFunctionType.GapSurplusCost, step size 1.0, 7 base state features 1 resources and 1 providers
+2026-11-02T19:26:35.231068+09:00 | global | (MainProcess) | (MainThread) | INFO | Initialized agent AgentType.Heuristic using device cpu
+2026-11-02T19:26:35.239213+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Environment upstream-heuristic-smoke_evaluation initialized with 4 nodes, 300 lives, reward function RewardFunctionType.GapSurplusCost, step size 1.0, 7 base state features 1 resources and 1 providers
+Evaluations performed:	######..............	1/32026-11-02T19:26:35.328799+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Environment upstream-heuristic-smoke_evaluation initialized with 4 nodes, 300 lives, reward function RewardFunctionType.GapSurplusCost, step size 1.0, 7 base state features 1 resources and 1 providers
+Evaluations performed:	#############.......	2/32026-11-02T19:26:35.408154+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Environment upstream-heuristic-smoke_evaluation initialized with 4 nodes, 300 lives, reward function RewardFunctionType.GapSurplusCost, step size 1.0, 7 base state features 1 resources and 1 providers
+Evaluations performed:	####################	3/3
+Evaluation completed: /workspace/scratch/d193691b86de/prorl_reproduction/heuristic_results.json

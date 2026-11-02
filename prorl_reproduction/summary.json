@@ -1,0 +1,89 @@
+{
+  "random": {
+    "evaluation/avg/times/choose_action": [
+      4.613872558351547e-05
+    ],
+    "evaluation/avg/reward/utility": [
+      -24.623334884643555
+    ],
+    "evaluation/avg/reward/remaining_gap": [
+      -1370.6666666666667
+    ],
+    "evaluation/avg/reward/surplus": [
+      261.0
+    ],
+    "evaluation/avg/reward/cost": [
+      249.66666666666666
+    ],
+    "evaluation/avg/problem_solved/count": [
+      0.0
+    ],
+    "evaluation/avg/hour_satisfied": [
+      0.0
+    ],
+    "evaluation/avg/resource_utilization": [
+      0.8978056251075657
+    ],
+    "evaluation/avg/episode/length": [
+      168.0
+    ]
+  },
+  "heuristic": {
+    "evaluation/avg/times/choose_action": [
+      3.166236574687655e-05
+    ],
+    "evaluation/avg/reward/utility": [
+      117.7300033569336
+    ],
+    "evaluation/avg/reward/remaining_gap": [
+      -248.66666666666666
+    ],
+    "evaluation/avg/reward/surplus": [
+      148.0
+    ],
+    "evaluation/avg/reward/cost": [
+      231.0
+    ],
+    "evaluation/avg/problem_solved/count": [
+      45.666666666666664
+    ],
+    "evaluation/avg/hour_satisfied": [
+      112.33333333333333
+    ],
+    "evaluation/avg/resource_utilization": [
+      0.9513128887032396
+    ],
+    "evaluation/avg/episode/length": [
+      168.0
+    ]
+  },
+  "greedy": {
+    "evaluation/avg/times/choose_action": [
+      0.0005479052899375795
+    ],
+    "evaluation/avg/reward/utility": [
+      117.47000122070312
+    ],
+    "evaluation/avg/reward/remaining_gap": [
+      -248.33333333333334
+    ],
+    "evaluation/avg/reward/surplus": [
+      151.33333333333334
+    ],
+    "evaluation/avg/reward/cost": [
+      233.0
+    ],
+    "evaluation/avg/problem_solved/count": [
+      45.0
+    ],
+    "evaluation/avg/hour_satisfied": [
+      114.0
+    ],
+    "evaluation/avg/resource_utilization": [
+      0.9502538174139051
+    ],
+    "evaluation/avg/episode/length": [
+      168.0
+    ]
+  }
+}

@@ -6,6 +6,7 @@ from pathlib import Path
 
 upstream = Path(sys.argv[1]).resolve()
 output = Path(sys.argv[2]).resolve()
+agent_name = sys.argv[3] if len(sys.argv) > 3 else 'random'
 sys.path.insert(0, str(upstream))
 os.chdir(upstream)
 os.environ['ENV'] = 'test'
@@ -16,12 +17,13 @@ from prorl import SingleRunConfig
 from prorl.run.runner import TestRunner
 
 raw = yaml.safe_load((upstream / 'config/sensitivity_analysis/0-constant_load-baselines.yaml').read_text())['base_run_config']
-raw['environment']['agent']['type'] = 'random'
-raw['random_seeds']['evaluation'] = [1000]
+raw['environment']['agent']['type'] = agent_name
+raw['random_seeds']['evaluation'] = [1000, 1100, 1200]
 raw['redis']['enabled'] = False
 raw['saver']['enabled'] = False
+raw['emulator']['model']['tim_dataset_model_options'].pop('ran_configurations_path', None)
 config = SingleRunConfig(root_dir=str(upstream), **raw)
-runner = TestRunner(run_code='upstream-random-smoke', config=config)
+runner = TestRunner(run_code='upstream-' + agent_name + '-smoke', config=config)
 runner._init()
 runner.do_evaluations()
 output.write_text(json.dumps(runner.stats_tracker.disk_stats(), default=lambda x: x.tolist() if hasattr(x, 'tolist') else str(x), indent=2))
