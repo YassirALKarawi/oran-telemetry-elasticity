@@ -1,0 +1,493 @@
+{
+  "repository": "wineslab/colosseum-oran-coloran-dataset",
+  "commit": "bd86629d07d5fbfb778ebe3afd9d0b05e5191c6b",
+  "scope": "One experimental run, six UE metric files. Descriptive inspection only. Throughput is not counterfactual service capacity. No per-packet end-to-end deadline validation.",
+  "files": [
+    {
+      "path": "rome_static_medium/sched0/tr0/exp1/bs1/slices_bs1/1010123456002_metrics.csv",
+      "blob_sha": "82e19574c1b256b5f1e694968a0507435f70e7e4",
+      "rows": 2090,
+      "columns": [
+        "Timestamp",
+        "num_ues",
+        "IMSI",
+        "RNTI",
+        "",
+        "slicing_enabled",
+        "slice_id",
+        "slice_prb",
+        "power_multiplier",
+        "scheduling_policy",
+        "",
+        "dl_mcs",
+        "dl_n_samples",
+        "dl_buffer [bytes]",
+        "tx_brate downlink [Mbps]",
+        "tx_pkts downlink",
+        "tx_errors downlink (%)",
+        "dl_cqi",
+        "",
+        "ul_mcs",
+        "ul_n_samples",
+        "ul_buffer [bytes]",
+        "rx_brate uplink [Mbps]",
+        "rx_pkts uplink",
+        "rx_errors uplink (%)",
+        "ul_rssi",
+        "ul_sinr",
+        "phr",
+        "",
+        "sum_requested_prbs",
+        "sum_granted_prbs",
+        "",
+        "dl_pmi",
+        "dl_ri",
+        "ul_n",
+        "ul_turbo_iters"
+      ],
+      "stats": {
+        "tx_brate downlink [Mbps]": {
+          "mean": 0.10734372059808626,
+          "min": 0,
+          "max": 0.208512,
+          "p95": 0.160578
+        },
+        "dl_buffer [bytes]": {
+          "mean": 80.20717703349283,
+          "min": 0,
+          "max": 2154,
+          "p95": 408
+        },
+        "dl_cqi": {
+          "mean": 6.9296082105263315,
+          "min": 3.2,
+          "max": 10.5,
+          "p95": 8.6
+        },
+        "slice_prb": {
+          "mean": 5,
+          "min": 5,
+          "max": 5,
+          "p95": 5
+        },
+        "sum_requested_prbs": {
+          "mean": 883.5430622009569,
+          "min": 0,
+          "max": 5000,
+          "p95": 1960
+        },
+        "sum_granted_prbs": {
+          "mean": 183.311004784689,
+          "min": 0,
+          "max": 599,
+          "p95": 357
+        }
+      }
+    },
+    {
+      "path": "rome_static_medium/sched0/tr0/exp1/bs1/slices_bs1/1010123456003_metrics.csv",
+      "blob_sha": "a7695271de893117d4dc58385d00514cce356cd9",
+      "rows": 2096,
+      "columns": [
+        "Timestamp",
+        "num_ues",
+        "IMSI",
+        "RNTI",
+        "",
+        "slicing_enabled",
+        "slice_id",
+        "slice_prb",
+        "power_multiplier",
+        "scheduling_policy",
+        "",
+        "dl_mcs",
+        "dl_n_samples",
+        "dl_buffer [bytes]",
+        "tx_brate downlink [Mbps]",
+        "tx_pkts downlink",
+        "tx_errors downlink (%)",
+        "dl_cqi",
+        "",
+        "ul_mcs",
+        "ul_n_samples",
+        "ul_buffer [bytes]",
+        "rx_brate uplink [Mbps]",
+        "rx_pkts uplink",
+        "rx_errors uplink (%)",
+        "ul_rssi",
+        "ul_sinr",
+        "phr",
+        "",
+        "sum_requested_prbs",
+        "sum_granted_prbs",
+        "",
+        "dl_pmi",
+        "dl_ri",
+        "ul_n",
+        "ul_turbo_iters"
+      ],
+      "stats": {
+        "tx_brate downlink [Mbps]": {
+          "mean": 0.4717088771755732,
+          "min": 0,
+          "max": 1.73046,
+          "p95": 0.777028
+        },
+        "dl_buffer [bytes]": {
+          "mean": 165119.963740458,
+          "min": 0,
+          "max": 184665,
+          "p95": 184545
+        },
+        "dl_cqi": {
+          "mean": 8.06796855438932,
+          "min": 4.33333,
+          "max": 12.4,
+          "p95": 9.83333
+        },
+        "slice_prb": {
+          "mean": 6,
+          "min": 6,
+          "max": 6,
+          "p95": 6
+        },
+        "sum_requested_prbs": {
+          "mean": 0.1693702290076336,
+          "min": 0,
+          "max": 230,
+          "p95": 0
+        },
+        "sum_granted_prbs": {
+          "mean": 451.6016221374046,
+          "min": 0,
+          "max": 1362,
+          "p95": 570
+        }
+      }
+    },
+    {
+      "path": "rome_static_medium/sched0/tr0/exp1/bs1/slices_bs1/1010123456004_metrics.csv",
+      "blob_sha": "7f1fec44362004eda0bdfd99721d07fb1d1aac8a",
+      "rows": 2104,
+      "columns": [
+        "Timestamp",
+        "num_ues",
+        "IMSI",
+        "RNTI",
+        "",
+        "slicing_enabled",
+        "slice_id",
+        "slice_prb",
+        "power_multiplier",
+        "scheduling_policy",
+        "",
+        "dl_mcs",
+        "dl_n_samples",
+        "dl_buffer [bytes]",
+        "tx_brate downlink [Mbps]",
+        "tx_pkts downlink",
+        "tx_errors downlink (%)",
+        "dl_cqi",
+        "",
+        "ul_mcs",
+        "ul_n_samples",
+        "ul_buffer [bytes]",
+        "rx_brate uplink [Mbps]",
+        "rx_pkts uplink",
+        "rx_errors uplink (%)",
+        "ul_rssi",
+        "ul_sinr",
+        "phr",
+        "",
+        "sum_requested_prbs",
+        "sum_granted_prbs",
+        "",
+        "dl_pmi",
+        "dl_ri",
+        "ul_n",
+        "ul_turbo_iters"
+      ],
+      "stats": {
+        "tx_brate downlink [Mbps]": {
+          "mean": 0.0551937302519012,
+          "min": 0,
+          "max": 0.137767,
+          "p95": 0.091759
+        },
+        "dl_buffer [bytes]": {
+          "mean": 3.1069391634980987,
+          "min": 0,
+          "max": 315,
+          "p95": 0
+        },
+        "dl_cqi": {
+          "mean": 7.064226040874591,
+          "min": 5,
+          "max": 10,
+          "p95": 8.16667
+        },
+        "slice_prb": {
+          "mean": 39,
+          "min": 39,
+          "max": 39,
+          "p95": 39
+        },
+        "sum_requested_prbs": {
+          "mean": 77.02661596958175,
+          "min": 0,
+          "max": 448,
+          "p95": 160
+        },
+        "sum_granted_prbs": {
+          "mean": 93.12119771863118,
+          "min": 0,
+          "max": 408,
+          "p95": 180
+        }
+      }
+    },
+    {
+      "path": "rome_static_medium/sched0/tr0/exp1/bs1/slices_bs1/1010123456005_metrics.csv",
+      "blob_sha": "11514e917b2d5a0a55901029b14dbc37bff26c70",
+      "rows": 2093,
+      "columns": [
+        "Timestamp",
+        "num_ues",
+        "IMSI",
+        "RNTI",
+        "",
+        "slicing_enabled",
+        "slice_id",
+        "slice_prb",
+        "power_multiplier",
+        "scheduling_policy",
+        "",
+        "dl_mcs",
+        "dl_n_samples",
+        "dl_buffer [bytes]",
+        "tx_brate downlink [Mbps]",
+        "tx_pkts downlink",
+        "tx_errors downlink (%)",
+        "dl_cqi",
+        "",
+        "ul_mcs",
+        "ul_n_samples",
+        "ul_buffer [bytes]",
+        "rx_brate uplink [Mbps]",
+        "rx_pkts uplink",
+        "rx_errors uplink (%)",
+        "ul_rssi",
+        "ul_sinr",
+        "phr",
+        "",
+        "sum_requested_prbs",
+        "sum_granted_prbs",
+        "",
+        "dl_pmi",
+        "dl_ri",
+        "ul_n",
+        "ul_turbo_iters"
+      ],
+      "stats": {
+        "tx_brate downlink [Mbps]": {
+          "mean": 0.11028844130912545,
+          "min": 0,
+          "max": 0.222848,
+          "p95": 0.165536
+        },
+        "dl_buffer [bytes]": {
+          "mean": 41.40707118967988,
+          "min": 0,
+          "max": 1035,
+          "p95": 227
+        },
+        "dl_cqi": {
+          "mean": 5.939268041089344,
+          "min": 0.1,
+          "max": 15,
+          "p95": 10.75
+        },
+        "slice_prb": {
+          "mean": 5,
+          "min": 5,
+          "max": 5,
+          "p95": 5
+        },
+        "sum_requested_prbs": {
+          "mean": 728.1987577639752,
+          "min": 0,
+          "max": 3133,
+          "p95": 1687
+        },
+        "sum_granted_prbs": {
+          "mean": 282.7009077878643,
+          "min": 0,
+          "max": 783,
+          "p95": 538
+        }
+      }
+    },
+    {
+      "path": "rome_static_medium/sched0/tr0/exp1/bs1/slices_bs1/1010123456006_metrics.csv",
+      "blob_sha": "39528f1514a5e6900109741a65aecdda42b4ef0d",
+      "rows": 2111,
+      "columns": [
+        "Timestamp",
+        "num_ues",
+        "IMSI",
+        "RNTI",
+        "",
+        "slicing_enabled",
+        "slice_id",
+        "slice_prb",
+        "power_multiplier",
+        "scheduling_policy",
+        "",
+        "dl_mcs",
+        "dl_n_samples",
+        "dl_buffer [bytes]",
+        "tx_brate downlink [Mbps]",
+        "tx_pkts downlink",
+        "tx_errors downlink (%)",
+        "dl_cqi",
+        "",
+        "ul_mcs",
+        "ul_n_samples",
+        "ul_buffer [bytes]",
+        "rx_brate uplink [Mbps]",
+        "rx_pkts uplink",
+        "rx_errors uplink (%)",
+        "ul_rssi",
+        "ul_sinr",
+        "phr",
+        "",
+        "sum_requested_prbs",
+        "sum_granted_prbs",
+        "",
+        "dl_pmi",
+        "dl_ri",
+        "ul_n",
+        "ul_turbo_iters"
+      ],
+      "stats": {
+        "tx_brate downlink [Mbps]": {
+          "mean": 0.8035964268166746,
+          "min": 0,
+          "max": 1.20916,
+          "p95": 1.00376
+        },
+        "dl_buffer [bytes]": {
+          "mean": 163721.74609189958,
+          "min": 0,
+          "max": 184665,
+          "p95": 184468
+        },
+        "dl_cqi": {
+          "mean": 7.7411055234483825,
+          "min": 6.42857,
+          "max": 9.66667,
+          "p95": 8
+        },
+        "slice_prb": {
+          "mean": 6,
+          "min": 6,
+          "max": 6,
+          "p95": 6
+        },
+        "sum_requested_prbs": {
+          "mean": 0.2572240644244434,
+          "min": 0,
+          "max": 437,
+          "p95": 0
+        },
+        "sum_granted_prbs": {
+          "mean": 873.5073424917101,
+          "min": 0,
+          "max": 1140,
+          "p95": 1050
+        }
+      }
+    },
+    {
+      "path": "rome_static_medium/sched0/tr0/exp1/bs1/slices_bs1/1010123456007_metrics.csv",
+      "blob_sha": "8584af75d1e90768d20330ab820edc9415fa5d3c",
+      "rows": 2095,
+      "columns": [
+        "Timestamp",
+        "num_ues",
+        "IMSI",
+        "RNTI",
+        "",
+        "slicing_enabled",
+        "slice_id",
+        "slice_prb",
+        "power_multiplier",
+        "scheduling_policy",
+        "",
+        "dl_mcs",
+        "dl_n_samples",
+        "dl_buffer [bytes]",
+        "tx_brate downlink [Mbps]",
+        "tx_pkts downlink",
+        "tx_errors downlink (%)",
+        "dl_cqi",
+        "",
+        "ul_mcs",
+        "ul_n_samples",
+        "ul_buffer [bytes]",
+        "rx_brate uplink [Mbps]",
+        "rx_pkts uplink",
+        "rx_errors uplink (%)",
+        "ul_rssi",
+        "ul_sinr",
+        "phr",
+        "",
+        "sum_requested_prbs",
+        "sum_granted_prbs",
+        "",
+        "dl_pmi",
+        "dl_ri",
+        "ul_n",
+        "ul_turbo_iters"
+      ],
+      "stats": {
+        "tx_brate downlink [Mbps]": {
+          "mean": 0.054228268801909334,
+          "min": 0,
+          "max": 0.13208,
+          "p95": 0.0910201
+        },
+        "dl_buffer [bytes]": {
+          "mean": 2.668257756563246,
+          "min": 0,
+          "max": 315,
+          "p95": 0
+        },
+        "dl_cqi": {
+          "mean": 7.830753575178936,
+          "min": 5,
+          "max": 11,
+          "p95": 9
+        },
+        "slice_prb": {
+          "mean": 39,
+          "min": 39,
+          "max": 39,
+          "p95": 39
+        },
+        "sum_requested_prbs": {
+          "mean": 65.46157517899762,
+          "min": 0,
+          "max": 434,
+          "p95": 115
+        },
+        "sum_granted_prbs": {
+          "mean": 73.56085918854416,
+          "min": 0,
+          "max": 405,
+          "p95": 132
+        }
+      }
+    }
+  ]
+}
