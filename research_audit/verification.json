@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "distinct_traces": 140,
+  "executions": 840,
+  "independent_matching_checks": 300,
+  "independent_edf_checks": 300,
+  "freshly_replayed_executions": 12,
+  "result_sha256": "76a82fa5cd03dcb97ea3225197e5f7d8ffaf85886222e36af10fb124117610b9"
+}

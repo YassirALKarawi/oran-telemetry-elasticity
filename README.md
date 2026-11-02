@@ -1,5 +1,7 @@
 # Reliability-Screened Capacity Elasticity under Delayed Telemetry and Actuation: An O-RAN-Motivated Study
 
+**Scientific status — 2 November 2026:** [An additional 840-run audit](research_audit/README.md) identifies both intrinsic radio-capacity limitations and avoidable long-actuation-delay failures. A scientific redesign is required before recommending submission. The PDF below remains the frozen research draft, not a newly validated final manuscript. [Audit protocol](research_audit/PROTOCOL.md) · [All audit records](research_audit/results.json.gz) · [Verification](research_audit/verification.json).
+
 <p align="center"><strong>Reproducible simulation · Delayed telemetry · Capacity elasticity</strong><br>1,176 execution records · 10 figures · 2 algorithms</p>
 
 <p align="center"><a href="paper_reliability/Manuscript.pdf">Read the paper</a> · <a href="docs/figures/README.md">Explore all figures</a> · <a href="PAPER_README.md">Reproduce the study</a></p>
