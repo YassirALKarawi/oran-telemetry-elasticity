@@ -1,0 +1,15 @@
+{
+  "system": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "tools": {
+    "git": "/usr/local/bin/git",
+    "cmake": null,
+    "make": "/usr/bin/make",
+    "g++": "/usr/bin/g++",
+    "swig": null,
+    "bison": null,
+    "flex": null,
+    "pkg-config": null
+  },
+  "sctp_header": false,
+  "build_prerequisites_present": false
+}
