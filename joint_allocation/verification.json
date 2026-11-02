@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "tests": 3,
+  "independent_exhaustive_cases": 20,
+  "instances": 100,
+  "algorithm_executions": 300,
+  "protocol_sha256": "49b44cfc89635a96d8d089042cf9c98307519af754469840d6820acf7762ccc8",
+  "model_sha256": "b41ad45ea4937714b2a532c6e1fca330e9ed66240454f54fe407b852ee83cf36"
+}

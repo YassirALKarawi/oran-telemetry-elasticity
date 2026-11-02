@@ -1,0 +1,7 @@
+# Initial software benchmark
+
+Freeze seeds 61000--61099, twelve requests per instance and the generator in experiment.py before execution. Use an exact binary optimization reference, joint route/placement greedy, and processing-placement-first greedy. These are generic baselines, not reproduced published O-RAN algorithms or established novel contributions.
+
+Each request must choose one complete route and one processing destination. Shared link bandwidth, processing capacity and deterministic path-plus-processing delay are constrained. Maximize number served, then minimize reserved-resource cost. Retain every rejection. Report cost gaps only separately for cases with identical service count, because serving less traffic can reduce cost. Even equal counts may serve different requests, which remains a limitation for application-level fairness.
+
+The tiny directed network, independent integer demands and constant per-node processing delay are synthetic. There is no wireless PHY, queueing delay guarantee, actual SDN controller, CPU provisioning, packet loss model, energy measurement or uncertainty model. Costs are abstract resource units. First verify the exact solver against independent exhaustive enumeration on twenty four-request instances, and separately test infeasible delay and zero link capacity. The purpose is a reproducible software foundation for the first research question, not evidence of Q1 publication readiness.
