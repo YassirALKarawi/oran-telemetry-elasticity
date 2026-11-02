@@ -55,6 +55,11 @@ def restore(path):
     np.random.set_state(payload['numpy_rng'])
     torch.set_rng_state(payload['torch_rng'])
     runner = payload['runner']
+    # The upstream factory registry is module-global and is not pickled with
+    # the runner. Reattach the restored clock before the next episode reset.
+    # Keep the saved clock object and its position; do not create a new clock.
+    from prorl.core.timestep import time_step_instances
+    time_step_instances[runner.env.run_code] = runner.env.time_step
     runner.resume_loop = payload['loop']
     runner.resume_index = payload['next_i']
     return runner
