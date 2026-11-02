@@ -1,0 +1,22 @@
+2026-11-03T02:33:48.027411+09:00 | global | (MainProcess) | (MainThread) | INFO | Initialized environment and agent with seed: 10
+2026-11-03T02:33:48.028665+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Environment resume-verification initialized with 4 nodes, 168 lives, reward function RewardFunctionType.GapSurplusCost, step size 1.0, 7 base state features 1 resources and 1 providers
+2026-11-03T02:33:48.301103+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Agent online network device is cpu
+2026-11-03T02:33:48.301382+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Agent target network device is cpu
+2026-11-03T02:33:48.307137+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Agent online network device is cpu
+2026-11-03T02:33:48.307365+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Agent target network device is cpu
+2026-11-03T02:33:48.307699+09:00 | global | (MainProcess) | (MainThread) | INFO | Initialized agent AgentType.DoubleDQN using device cpu and bootstrapping of 32 steps
+2026-11-03T02:33:48.308412+09:00 | global | (MainProcess) | (MainThread) | INFO | Starting training for 160 time steps with 1 steps per hour
+2026-11-03T02:33:48.333076+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Samples entities device: state cpu | action cpu  reward cpu | next_state cpu | done cpu| weights cpu
+2026-11-03T02:33:48.340733+09:00 | global | (MainProcess) | (MainThread) | DEBUG | Samples entities device: state cpu | action cpu  reward cpu | next_state cpu | done cpu| weights cpu
+/workspace/scratch/d193691b86de/baseline_prorl/prorl/environment/agent/experience_replay/replay_buffer.py:194: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  weights = torch.tensor([[self._calculate_weight(i, beta)] for i in indexes], dtype=torch.float, device=device)
+CHECKPOINT 64
+2026-11-03T02:33:51.684234+09:00 | global | (MainProcess) | (MainThread) | INFO | Starting training for 160 time steps with 1 steps per hour
+/workspace/scratch/d193691b86de/baseline_prorl/prorl/environment/agent/experience_replay/replay_buffer.py:194: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:261.)
+  weights = torch.tensor([[self._calculate_weight(i, beta)] for i in indexes], dtype=torch.float, device=device)
+CHECKPOINT 128
+2026-11-03T02:33:52.971426+09:00 | global | (MainProcess) | (MainThread) | INFO | Best validation run performance obtained at iteration 0 with performance None
+2026-11-03T02:33:52.971802+09:00 | global | (MainProcess) | (MainThread) | INFO | Starting model evaluation
+Evaluations performed:	######..............	1/3Evaluations performed:	#############.......	2/3Evaluations performed:	####################	3/3
+2026-11-03T02:33:53.805991+09:00 | global | (MainProcess) | (MainThread) | INFO | Evaluation completed | average episode length: 168.0 | hours solved count: 0.0 | problem solved count: 0.0 | utility total reward: -117.70000457763672 | remaining gap total: -1598.6666666666667 | surplus total: 1519.3333333333333 | cost total: 54.0 | avg resource utilization: 0.5319376242246378
+Evaluation completed: /workspace/scratch/d193691b86de/prorl_reproduction/split.json
