@@ -1,0 +1,17 @@
+{
+  "tests_passed": 8,
+  "execution": "stdlib unit tests, no live SDN",
+  "python": "3.12.14",
+  "runtime_tools": {
+    "ovs-ofctl": null,
+    "ovs-vsctl": null,
+    "ovs-vswitchd": null,
+    "docker": null,
+    "podman": null
+  },
+  "sha256": {
+    "contract.py": "ae40e8d632aafab781a97a04455ba16bdf8f2efa1a538104daf863bf9a399e70",
+    "test_contract.py": "57cc8b2a8ce3cec704e705d0267dd8d206b6dcce1e531bb57753c9540bfc8c01",
+    "README.md": "7025e4f606ac6d4a38de6d36d8115dba69bbf3d1cdaa790bb207debe5a5f5ee6"
+  }
+}
