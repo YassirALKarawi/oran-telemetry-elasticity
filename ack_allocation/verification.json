@@ -1,0 +1,14 @@
+{
+  "tests_passed": 9,
+  "deterministic_executions": 24,
+  "all_actuator_loads_feasible": true,
+  "novelty_established": false,
+  "reference_is_same_conventional_rule": true,
+  "sha256": {
+    "model.py": "6de723aa04f3a671b53c4744480348e5a76c5fd571609ad315dcc48865cc948b",
+    "test_model.py": "99875d5345c195f4125a27283cb49d6332ff3eaf723862dece4ebe22378d74aa",
+    "experiment.py": "108ac6e6b7eafbda59f914190b816acf556f407e4d750b60c9d481ceb18b78aa",
+    "results.json": "2f1dfbff37b0c5f5870d8fb7a66ced2409b43781748e4ecc81f8436ff66b4d0c",
+    "README.md": "883b8a1a17d5b4bf0284dd8d5067c69434b3e51a856b7e259605c1d10ffff2be"
+  }
+}
