@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "cases": 102,
+    "exact_envelope_equal": 102,
+    "greedy_suboptimal_cases": 33,
+    "seed": 20261103,
+    "novelty_established": false,
+    "note": "One-step robust assignment only; not a dynamic MPC reproduction."
+  },
+  "sha256": {
+    "experiment.py": "862d9e3224015d82608847f09d978b69bb68742c03871b38851e53a5c0d1c2cc",
+    "results.json": "ea2bbbf6e2445e4743beddd735f325399091378606c6db8df159c0dea7470a07",
+    "README.md": "398779dae4241c7fe9fd8630c6c73fa3033a9be9f8fddc5c7f58abe595894384"
+  }
+}
