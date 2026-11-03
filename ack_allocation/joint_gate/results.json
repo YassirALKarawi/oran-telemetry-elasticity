@@ -1,0 +1,9822 @@
+{
+  "summary": {
+    "cases": 102,
+    "exact_envelope_equal": 102,
+    "greedy_suboptimal_cases": 33,
+    "seed": 20261103,
+    "novelty_established": false,
+    "note": "One-step robust assignment only; not a dynamic MPC reproduction."
+  },
+  "results": [
+    {
+      "name": "flexible_before_constrained",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 2,
+      "envelope_value": 2,
+      "greedy_value": 1,
+      "exact_assignment": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "uncertain_migration",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 0,
+      "envelope_value": 0,
+      "greedy_value": 0,
+      "exact_assignment": [
+        -1
+      ]
+    },
+    {
+      "name": "generated_0",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          4,
+          4,
+          6
+        ],
+        [
+          1,
+          0,
+          4,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_1",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          0,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 15,
+      "envelope_value": 15,
+      "greedy_value": 15,
+      "exact_assignment": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_2",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          3,
+          1,
+          5
+        ],
+        [
+          6,
+          0,
+          6,
+          6
+        ],
+        [
+          1,
+          6,
+          4,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_3",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          5,
+          5,
+          5
+        ],
+        [
+          2,
+          4,
+          6,
+          3
+        ],
+        [
+          5,
+          3,
+          4,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "generated_4",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          6,
+          4,
+          6
+        ],
+        [
+          2,
+          3,
+          0,
+          2
+        ],
+        [
+          4,
+          2,
+          1,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_5",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          3,
+          1,
+          4
+        ],
+        [
+          3,
+          1,
+          6,
+          2
+        ],
+        [
+          4,
+          0,
+          6,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 13,
+      "envelope_value": 13,
+      "greedy_value": 13,
+      "exact_assignment": [
+        0,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_6",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          5,
+          6,
+          6
+        ],
+        [
+          5,
+          3,
+          0,
+          2
+        ],
+        [
+          4,
+          1,
+          3,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_7",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          5,
+          0,
+          4
+        ],
+        [
+          3,
+          4,
+          6,
+          1
+        ],
+        [
+          5,
+          6,
+          0,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 8,
+      "exact_assignment": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_8",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          1,
+          2,
+          6
+        ],
+        [
+          5,
+          5,
+          1,
+          3
+        ],
+        [
+          4,
+          2,
+          4,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 2,
+      "envelope_value": 2,
+      "greedy_value": 2,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_9",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          2,
+          3,
+          1
+        ],
+        [
+          5,
+          5,
+          5,
+          1
+        ],
+        [
+          4,
+          6,
+          4,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "generated_10",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          3,
+          0,
+          6
+        ],
+        [
+          5,
+          4,
+          4,
+          5
+        ],
+        [
+          6,
+          5,
+          6,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_11",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          4,
+          3,
+          0
+        ],
+        [
+          6,
+          3,
+          5,
+          6
+        ],
+        [
+          0,
+          0,
+          3,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 11,
+      "envelope_value": 11,
+      "greedy_value": 7,
+      "exact_assignment": [
+        1,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_12",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          5,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          3,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 10,
+      "envelope_value": 10,
+      "greedy_value": 10,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "generated_13",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          4,
+          2,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          4,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 10,
+      "envelope_value": 10,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "generated_14",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          6,
+          4,
+          6
+        ],
+        [
+          1,
+          6,
+          1,
+          5
+        ],
+        [
+          6,
+          5,
+          3,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_15",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          3,
+          2,
+          5
+        ],
+        [
+          5,
+          2,
+          3,
+          0
+        ],
+        [
+          4,
+          3,
+          1,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_16",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          6
+        ],
+        [
+          4,
+          5,
+          4,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_17",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          3,
+          5,
+          3
+        ],
+        [
+          2,
+          6,
+          0,
+          5
+        ],
+        [
+          5,
+          2,
+          5,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 12,
+      "envelope_value": 12,
+      "greedy_value": 12,
+      "exact_assignment": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_18",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          5,
+          2,
+          0
+        ],
+        [
+          6,
+          2,
+          0,
+          5
+        ],
+        [
+          3,
+          4,
+          6,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 7,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_19",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          0,
+          4,
+          2
+        ],
+        [
+          3,
+          0,
+          4,
+          1
+        ],
+        [
+          4,
+          2,
+          5,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 10,
+      "envelope_value": 10,
+      "greedy_value": 10,
+      "exact_assignment": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_20",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          2,
+          5,
+          5
+        ],
+        [
+          4,
+          6,
+          5,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              5,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_21",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          5,
+          6,
+          5
+        ],
+        [
+          5,
+          4,
+          4,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_22",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          3,
+          0,
+          4
+        ],
+        [
+          0,
+          2,
+          0,
+          4
+        ],
+        [
+          2,
+          5,
+          4,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 12,
+      "envelope_value": 12,
+      "greedy_value": 12,
+      "exact_assignment": [
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_23",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          2,
+          6,
+          0
+        ],
+        [
+          3,
+          6,
+          5,
+          5
+        ],
+        [
+          4,
+          4,
+          3,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 8,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_24",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          5,
+          1,
+          3
+        ],
+        [
+          5,
+          2,
+          4,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 7,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_25",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          1,
+          2,
+          1
+        ],
+        [
+          5,
+          1,
+          1,
+          1
+        ],
+        [
+          4,
+          3,
+          3,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 8,
+      "exact_assignment": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_26",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          0,
+          4,
+          4
+        ],
+        [
+          2,
+          1,
+          5,
+          6
+        ],
+        [
+          5,
+          2,
+          1,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_27",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          2,
+          6,
+          6
+        ],
+        [
+          4,
+          0,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          5,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        0,
+        1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_28",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          4,
+          5,
+          3
+        ],
+        [
+          1,
+          6,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          6,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_29",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          0,
+          3,
+          2
+        ],
+        [
+          5,
+          4,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          4,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_30",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          5,
+          5
+        ],
+        [
+          3,
+          0,
+          6,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 10,
+      "envelope_value": 10,
+      "greedy_value": 10,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_31",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          2,
+          3,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          2
+        ],
+        [
+          1,
+          4,
+          1,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 2,
+      "envelope_value": 2,
+      "greedy_value": 2,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_32",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          0,
+          2,
+          0
+        ],
+        [
+          5,
+          0,
+          5,
+          1
+        ],
+        [
+          1,
+          4,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 10,
+      "envelope_value": 10,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_33",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          6,
+          1,
+          1
+        ],
+        [
+          4,
+          2,
+          0,
+          4
+        ],
+        [
+          1,
+          4,
+          4,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 3,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_34",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          5,
+          1,
+          1
+        ],
+        [
+          6,
+          3,
+          2,
+          6
+        ],
+        [
+          1,
+          0,
+          5,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 3,
+      "envelope_value": 3,
+      "greedy_value": 3,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_35",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          6,
+          0,
+          2
+        ],
+        [
+          3,
+          6,
+          6,
+          2
+        ],
+        [
+          1,
+          5,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 1,
+      "envelope_value": 1,
+      "greedy_value": 1,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_36",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          3,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          6,
+          1
+        ],
+        [
+          6,
+          3,
+          5,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_37",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          4,
+          6,
+          1,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 1,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_38",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          2,
+          0,
+          2
+        ],
+        [
+          6,
+          5,
+          6,
+          0
+        ],
+        [
+          2,
+          2,
+          0,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_39",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          1,
+          6,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          5
+        ],
+        [
+          3,
+          6,
+          3,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 11,
+      "envelope_value": 11,
+      "greedy_value": 11,
+      "exact_assignment": [
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_40",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          1,
+          6,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 8,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_41",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          4,
+          1,
+          6
+        ],
+        [
+          4,
+          6,
+          4,
+          4
+        ],
+        [
+          4,
+          6,
+          2,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 8,
+      "exact_assignment": [
+        0,
+        1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_42",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          2,
+          0,
+          5
+        ],
+        [
+          0,
+          5,
+          4,
+          0
+        ],
+        [
+          6,
+          1,
+          5,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_43",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          0,
+          3,
+          2
+        ],
+        [
+          1,
+          6,
+          0,
+          3
+        ],
+        [
+          5,
+          5,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 11,
+      "envelope_value": 11,
+      "greedy_value": 11,
+      "exact_assignment": [
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_44",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          6,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          1,
+          0,
+          2,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 3,
+      "envelope_value": 3,
+      "greedy_value": 3,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "generated_45",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          4,
+          5,
+          5
+        ],
+        [
+          2,
+          1,
+          3,
+          0
+        ],
+        [
+          4,
+          1,
+          5,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 10,
+      "envelope_value": 10,
+      "greedy_value": 9,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_46",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          1,
+          6,
+          5
+        ],
+        [
+          5,
+          6,
+          4,
+          5
+        ],
+        [
+          2,
+          1,
+          5,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_47",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          5,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          4,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 14,
+      "envelope_value": 14,
+      "greedy_value": 11,
+      "exact_assignment": [
+        0,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_48",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          3,
+          3,
+          3
+        ],
+        [
+          2,
+          4,
+          1,
+          0
+        ],
+        [
+          4,
+          1,
+          1,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_49",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          2,
+          5,
+          4
+        ],
+        [
+          2,
+          3,
+          3,
+          1
+        ],
+        [
+          4,
+          5,
+          3,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "generated_50",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          6,
+          6,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 12,
+      "envelope_value": 12,
+      "greedy_value": 9,
+      "exact_assignment": [
+        1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_51",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          1,
+          3,
+          0
+        ],
+        [
+          6,
+          5,
+          6,
+          4
+        ],
+        [
+          1,
+          5,
+          5,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 5,
+      "exact_assignment": [
+        1,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_52",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          4,
+          2,
+          3
+        ],
+        [
+          4,
+          6,
+          0,
+          4
+        ],
+        [
+          1,
+          6,
+          6,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_53",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          0,
+          2,
+          5
+        ],
+        [
+          5,
+          2,
+          5,
+          2
+        ],
+        [
+          5,
+          3,
+          0,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 2,
+      "envelope_value": 2,
+      "greedy_value": 2,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_54",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          0,
+          5,
+          2
+        ],
+        [
+          6,
+          5,
+          4,
+          2
+        ],
+        [
+          5,
+          5,
+          1,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        0,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_55",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          4,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          4,
+          1
+        ],
+        [
+          4,
+          3,
+          4,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 9,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_56",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 12,
+      "envelope_value": 12,
+      "greedy_value": 9,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "generated_57",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          6,
+          3,
+          5
+        ],
+        [
+          4,
+          6,
+          0,
+          3
+        ],
+        [
+          0,
+          2,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 9,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_58",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          3,
+          0,
+          5
+        ],
+        [
+          1,
+          1,
+          2,
+          4
+        ],
+        [
+          2,
+          2,
+          5,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 4,
+      "exact_assignment": [
+        1,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_59",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          4,
+          3,
+          6
+        ],
+        [
+          2,
+          1,
+          5,
+          3
+        ],
+        [
+          5,
+          5,
+          5,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 2,
+      "envelope_value": 2,
+      "greedy_value": 2,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_60",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ],
+        [
+          5,
+          5,
+          5,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_61",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          1,
+          6,
+          5
+        ],
+        [
+          1,
+          2,
+          1,
+          5
+        ],
+        [
+          0,
+          2,
+          1,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 7,
+      "exact_assignment": [
+        -1,
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "generated_62",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          5,
+          2,
+          5
+        ],
+        [
+          1,
+          3,
+          4,
+          2
+        ],
+        [
+          0,
+          6,
+          4,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_63",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          2,
+          3,
+          2
+        ],
+        [
+          1,
+          6,
+          6,
+          3
+        ],
+        [
+          0,
+          6,
+          3,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 3,
+      "envelope_value": 3,
+      "greedy_value": 3,
+      "exact_assignment": [
+        -1,
+        -1,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "generated_64",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          6,
+          3,
+          0
+        ],
+        [
+          5,
+          5,
+          5,
+          0
+        ],
+        [
+          2,
+          5,
+          3,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 2,
+      "envelope_value": 2,
+      "greedy_value": 2,
+      "exact_assignment": [
+        -1,
+        1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_65",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          2,
+          6,
+          0
+        ],
+        [
+          4,
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          2,
+          0,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 9,
+      "exact_assignment": [
+        0,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_66",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_67",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          0,
+          5,
+          3
+        ],
+        [
+          3,
+          2,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          2,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_68",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          2,
+          5,
+          5
+        ],
+        [
+          6,
+          6,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          5,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 0,
+      "envelope_value": 0,
+      "greedy_value": 0,
+      "exact_assignment": [
+        -1,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_69",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          1,
+          0,
+          4
+        ],
+        [
+          3,
+          3,
+          3,
+          5
+        ],
+        [
+          1,
+          2,
+          3,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_70",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          5,
+          2,
+          6
+        ],
+        [
+          4,
+          1,
+          1,
+          4
+        ],
+        [
+          5,
+          2,
+          6,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_71",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          3,
+          4,
+          6
+        ],
+        [
+          4,
+          1,
+          3,
+          6
+        ],
+        [
+          6,
+          0,
+          0,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              3,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_72",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          1,
+          4,
+          1
+        ],
+        [
+          6,
+          6,
+          1,
+          1
+        ],
+        [
+          6,
+          3,
+          6,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 1,
+      "envelope_value": 1,
+      "greedy_value": 1,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_73",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          0,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          5,
+          4
+        ],
+        [
+          5,
+          1,
+          3,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_74",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          2,
+          5,
+          3
+        ],
+        [
+          5,
+          0,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          4,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 8,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_75",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          6,
+          5,
+          6
+        ],
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          5,
+          2,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 3,
+      "envelope_value": 3,
+      "greedy_value": 3,
+      "exact_assignment": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_76",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          0,
+          2,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          6
+        ],
+        [
+          4,
+          2,
+          6,
+          1
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_77",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          5,
+          0,
+          6
+        ],
+        [
+          3,
+          5,
+          1,
+          0
+        ],
+        [
+          3,
+          5,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 7,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_78",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          5,
+          3,
+          5
+        ],
+        [
+          4,
+          5,
+          6,
+          4
+        ],
+        [
+          0,
+          4,
+          6,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_79",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          2,
+          0,
+          5
+        ],
+        [
+          5,
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          6,
+          0,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 7,
+      "exact_assignment": [
+        -1,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_80",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          5,
+          1,
+          6
+        ],
+        [
+          4,
+          0,
+          0,
+          1
+        ],
+        [
+          2,
+          4,
+          5,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              5
+            ]
+          ]
+        }
+      ],
+      "exact_value": 8,
+      "envelope_value": 8,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_81",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          0,
+          1,
+          6
+        ],
+        [
+          4,
+          3,
+          6,
+          3
+        ],
+        [
+          6,
+          1,
+          2,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 3,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_82",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          1,
+          5
+        ],
+        [
+          2,
+          3,
+          4,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 3,
+      "envelope_value": 3,
+      "greedy_value": 3,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "generated_83",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          3,
+          6,
+          1
+        ],
+        [
+          6,
+          2,
+          4,
+          5
+        ],
+        [
+          5,
+          2,
+          2,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 1,
+      "envelope_value": 1,
+      "greedy_value": 1,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_84",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          2,
+          1,
+          6
+        ],
+        [
+          0,
+          2,
+          3,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        0,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_85",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          6,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 4,
+      "envelope_value": 4,
+      "greedy_value": 4,
+      "exact_assignment": [
+        -1,
+        -1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_86",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          3,
+          5,
+          3
+        ],
+        [
+          4,
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 8,
+      "exact_assignment": [
+        -1,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_87",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          5,
+          5,
+          4
+        ],
+        [
+          0,
+          2,
+          1,
+          2
+        ],
+        [
+          3,
+          6,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        1,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_88",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          6,
+          1,
+          1,
+          6
+        ],
+        [
+          4,
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          4,
+          3,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 3,
+      "envelope_value": 3,
+      "greedy_value": 3,
+      "exact_assignment": [
+        0,
+        -1,
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "generated_89",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          1,
+          5,
+          4
+        ],
+        [
+          6,
+          4,
+          2,
+          6
+        ],
+        [
+          2,
+          5,
+          0,
+          3
+        ]
+      ],
+      "requests": [
+        {
+          "value": 2,
+          "options": [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 3,
+      "exact_assignment": [
+        -1,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_90",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          3,
+          4,
+          4,
+          3
+        ],
+        [
+          4,
+          6,
+          5,
+          3
+        ],
+        [
+          5,
+          3,
+          4,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              6,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "name": "generated_91",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          5
+        ],
+        [
+          5,
+          5,
+          1,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 9,
+      "envelope_value": 9,
+      "greedy_value": 7,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_92",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          1,
+          4,
+          4
+        ],
+        [
+          4,
+          2,
+          0,
+          4
+        ],
+        [
+          3,
+          3,
+          1,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              6
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_93",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          1,
+          5,
+          3,
+          1
+        ],
+        [
+          4,
+          5,
+          1,
+          6
+        ],
+        [
+          6,
+          4,
+          5,
+          6
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              5,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 5,
+      "envelope_value": 5,
+      "greedy_value": 5,
+      "exact_assignment": [
+        -1,
+        1,
+        0,
+        -1
+      ]
+    },
+    {
+      "name": "generated_94",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          6,
+          5,
+          4
+        ],
+        [
+          1,
+          5,
+          5,
+          2
+        ],
+        [
+          0,
+          5,
+          3,
+          5
+        ]
+      ],
+      "requests": [
+        {
+          "value": 1,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              2,
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              4
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 6,
+      "exact_assignment": [
+        -1,
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_95",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          3,
+          6,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          3
+        ],
+        [
+          5,
+          3,
+          0,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 5,
+          "options": [
+            [
+              5,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              3,
+              5,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              3,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 2,
+          "options": [
+            [
+              6,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        }
+      ],
+      "exact_value": 6,
+      "envelope_value": 6,
+      "greedy_value": 6,
+      "exact_assignment": [
+        0,
+        -1,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_96",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          2,
+          0,
+          6,
+          4
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          4,
+          5,
+          2,
+          4
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 12,
+      "envelope_value": 12,
+      "greedy_value": 12,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "generated_97",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          4,
+          3,
+          0,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              1,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 1,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              3
+            ]
+          ]
+        }
+      ],
+      "exact_value": 11,
+      "envelope_value": 11,
+      "greedy_value": 11,
+      "exact_assignment": [
+        0,
+        0,
+        1,
+        -1
+      ]
+    },
+    {
+      "name": "generated_98",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          0,
+          6,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          0,
+          1,
+          2
+        ]
+      ],
+      "requests": [
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              6,
+              2
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              4,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              3
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ]
+        }
+      ],
+      "exact_value": 12,
+      "envelope_value": 12,
+      "greedy_value": 10,
+      "exact_assignment": [
+        -1,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "generated_99",
+      "capacity": [
+        10,
+        10,
+        10,
+        10
+      ],
+      "worlds": [
+        [
+          5,
+          6,
+          1,
+          5
+        ],
+        [
+          5,
+          4,
+          2,
+          4
+        ],
+        [
+          0,
+          4,
+          5,
+          0
+        ]
+      ],
+      "requests": [
+        {
+          "value": 4,
+          "options": [
+            [
+              4,
+              4,
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "value": 3,
+          "options": [
+            [
+              0,
+              0,
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "value": 4,
+          "options": [
+            [
+              0,
+              0,
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "value": 5,
+          "options": [
+            [
+              1,
+              5,
+              0,
+              0
+            ]
+          ]
+        }
+      ],
+      "exact_value": 7,
+      "envelope_value": 7,
+      "greedy_value": 7,
+      "exact_assignment": [
+        0,
+        0,
+        -1,
+        -1
+      ]
+    }
+  ]
+}
