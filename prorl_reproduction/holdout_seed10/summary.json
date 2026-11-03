@@ -1,0 +1,26 @@
+{
+  "prorl": {
+    "reward/utility": 137.12001037597656,
+    "reward/remaining_gap": -98.4,
+    "reward/surplus": 301.7,
+    "reward/cost": 19.4,
+    "hour_satisfied": 149.4,
+    "resource_utilization": 0.9100048835323603
+  },
+  "greedy": {
+    "reward/utility": 116.66999816894531,
+    "reward/remaining_gap": -251.7,
+    "reward/surplus": 155.6,
+    "reward/cost": 235.8,
+    "hour_satisfied": 115.2,
+    "resource_utilization": 0.9492189155111399
+  },
+  "heuristic": {
+    "reward/utility": 117.00899505615234,
+    "reward/remaining_gap": -247.6,
+    "reward/surplus": 157.9,
+    "reward/cost": 236.1,
+    "hour_satisfied": 116.4,
+    "resource_utilization": 0.9485907630596098
+  }
+}
