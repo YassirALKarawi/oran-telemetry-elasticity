@@ -1,0 +1,82 @@
+{
+  "completed_evaluation_episodes": 30,
+  "steps_per_episode": 168,
+  "total_evaluation_steps": 5040,
+  "new_training_steps": 0,
+  "paired_utility": {
+    "2000": {
+      "prorl": 137.4600067138672,
+      "greedy": 115.88999938964844,
+      "heuristic": 118.55999755859375
+    },
+    "2001": {
+      "prorl": 137.8000030517578,
+      "greedy": 118.56999206542969,
+      "heuristic": 117.83000183105469
+    },
+    "2002": {
+      "prorl": 136.6999969482422,
+      "greedy": 115.87001037597656,
+      "heuristic": 114.00999450683594
+    },
+    "2003": {
+      "prorl": 136.82000732421875,
+      "greedy": 115.7699966430664,
+      "heuristic": 116.75
+    },
+    "2004": {
+      "prorl": 136.82000732421875,
+      "greedy": 117.45999908447266,
+      "heuristic": 116.86000061035156
+    },
+    "2005": {
+      "prorl": 137.36000061035156,
+      "greedy": 114.51000213623047,
+      "heuristic": 118.29000091552734
+    },
+    "2006": {
+      "prorl": 137.27999877929688,
+      "greedy": 118.15999603271484,
+      "heuristic": 117.8800048828125
+    },
+    "2007": {
+      "prorl": 137.5,
+      "greedy": 116.99998474121094,
+      "heuristic": 114.94000244140625
+    },
+    "2008": {
+      "prorl": 136.04000854492188,
+      "greedy": 117.9699935913086,
+      "heuristic": 121.10999298095703
+    },
+    "2009": {
+      "prorl": 137.42001342773438,
+      "greedy": 115.5,
+      "heuristic": 113.86000061035156
+    }
+  },
+  "utility_differences": {
+    "greedy": {
+      "mean": 20.450006866455077,
+      "min": 18.07001495361328,
+      "max": 22.849998474121094,
+      "positive_count": 10
+    },
+    "heuristic": {
+      "mean": 20.111004638671876,
+      "min": 14.930015563964844,
+      "max": 23.560012817382812,
+      "positive_count": 10
+    }
+  },
+  "upstream_commit": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "upstream_diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+  "sha256": {
+    "protocol.json": "520b067a603938f67edd51a1e6f76756a007806560a76e4cef5b41e751a6304a",
+    "summary.json": "d80653661a6693ee6527bf8c188c56d9d592c1d70e85b86fa6814a086a3a7ce5",
+    "runtime.json": "8bcaf2f7d710a0be4e5ebc7e27c698f832c3f6de009c27cc71f667a21f2fb016",
+    "prorl.json": "0916fba4c5980ca0d24391a3a2e55e6790cc7766320701dcd8ef17979e930a47",
+    "greedy.json": "2bf969bd77fa3e3284014f2806f3fe2f4642c9395e4672cda4573aa53ad5df92",
+    "heuristic.json": "c931abb4411b88b2b52498adb723ec7ed3a70029810be1d844ecc8321589f3dd"
+  }
+}
