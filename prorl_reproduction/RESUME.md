@@ -6,7 +6,7 @@ Special reducers reconstruct upstream State arrays and metadata, namedtuple/data
 
 Verification: a 160-step integration run, split at step 64 and restored in a new process, matched the uninterrupted run on all 220 non-timing recorded metrics. Training seeds were explicitly set to 10. Timing metrics and config were excluded from comparison. This test does not establish equivalence for every workload or future software version.
 
-Full run (89,400 total steps including bootstrap) was restarted from scratch after the earlier process ended without a checkpoint. It retains validation and best-model selection. Every 1,000 steps a checkpoint is saved; this is not a completed experiment yet.
+Full run (89,400 total steps including bootstrap) was restarted from scratch after the earlier process ended without a checkpoint. It retains validation and best-model selection. Every 1,000 steps a checkpoint is saved. The full loop and final three-seed evaluation completed on 3 November 2026; see COMPLETED_RUN.md and completion_audit.json.
 
 ```sh
 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 baseline_prorl/.venv/bin/python prorl_reproduction/train_resumable.py baseline_prorl prorl_reproduction/recovered_full.json prorl
@@ -14,7 +14,7 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 baseline_prorl/.venv/bin/python prorl_reprod
 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 baseline_prorl/.venv/bin/python prorl_reproduction/train_resumable.py baseline_prorl prorl_reproduction/recovered_full.json prorl --resume
 ```
 
-Never run both commands concurrently on the same checkpoint/output. The local CPU snapshot includes PyTorch optimizer/replay state rather than a weights-only warm restart. The final .pt stores the validation-selected model. JSON stores the effective configuration and original metrics. Full-budget completion, repeated independent training seeds, paper-level parameter matching, TIM data evaluation and a novel SDN-aware contribution remain unestablished. No submission-ready manuscript is claimed.
+Never run both commands concurrently on the same checkpoint/output. The local CPU snapshot includes PyTorch optimizer/replay state rather than a weights-only warm restart. The final .pt stores the validation-selected model. JSON stores the effective configuration and original metrics. Full-budget completion is now audited. Repeated independent training seeds, paper-level parameter matching, TIM data evaluation and a novel SDN-aware contribution remain unestablished. No submission-ready manuscript is claimed.
 
 ## Episode-boundary recovery and local guard (2 November 2026)
 
