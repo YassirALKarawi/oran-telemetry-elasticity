@@ -1,0 +1,118 @@
+{
+  "model_and_results_hashes_match": true,
+  "new_training_runs": 0,
+  "training_seeds": [
+    10
+  ],
+  "evaluation_seeds": [
+    1000,
+    1100,
+    1200
+  ],
+  "paired_evaluation": {
+    "prorl": {
+      "1000": {
+        "reward/utility": 137.74000549316406,
+        "reward/surplus": 311,
+        "reward/cost": 16,
+        "hour_satisfied": 153
+      },
+      "1100": {
+        "reward/utility": 136.39999389648438,
+        "reward/surplus": 322,
+        "reward/cost": 20,
+        "hour_satisfied": 151
+      },
+      "1200": {
+        "reward/utility": 135.86001586914062,
+        "reward/surplus": 327,
+        "reward/cost": 20,
+        "hour_satisfied": 147
+      }
+    },
+    "greedy": {
+      "1000": {
+        "reward/utility": 117.68999481201172,
+        "reward/surplus": 150,
+        "reward/cost": 231,
+        "hour_satisfied": 111
+      },
+      "1100": {
+        "reward/utility": 117.27999877929688,
+        "reward/surplus": 149,
+        "reward/cost": 226,
+        "hour_satisfied": 109
+      },
+      "1200": {
+        "reward/utility": 117.44000244140625,
+        "reward/surplus": 155,
+        "reward/cost": 242,
+        "hour_satisfied": 122
+      }
+    },
+    "heuristic": {
+      "1000": {
+        "reward/utility": 118.6199951171875,
+        "reward/surplus": 157,
+        "reward/cost": 228,
+        "hour_satisfied": 117
+      },
+      "1100": {
+        "reward/utility": 116.5999984741211,
+        "reward/surplus": 147,
+        "reward/cost": 230,
+        "hour_satisfied": 106
+      },
+      "1200": {
+        "reward/utility": 117.97000122070312,
+        "reward/surplus": 140,
+        "reward/cost": 235,
+        "hour_satisfied": 114
+      }
+    },
+    "random": {
+      "1000": {
+        "reward/utility": -33.349998474121094,
+        "reward/surplus": 322,
+        "reward/cost": 247,
+        "hour_satisfied": 0
+      },
+      "1100": {
+        "reward/utility": 10.649999618530273,
+        "reward/surplus": 381,
+        "reward/cost": 249,
+        "hour_satisfied": 0
+      },
+      "1200": {
+        "reward/utility": -51.17000198364258,
+        "reward/surplus": 80,
+        "reward/cost": 253,
+        "hour_satisfied": 0
+      }
+    }
+  },
+  "input_sha256": {
+    "recovered_full.json": "7784faf699d74958cd07907c2364dd3d3cc03f3e7db620c77691cc5d0e939899",
+    "matched_greedy.json": "c3316f04ccee405809e9ff77efbacfca81e98ee3e45500de526548ba2c29d368",
+    "matched_heuristic.json": "e6472ce6bac8d9b12ce37163b9be581a44cdca9a49223d8e9b9b2772f88c63b6",
+    "matched_random.json": "b4c34634fe45ad69f611974fe391239fdf9e90e6fb68fe73bfbaf8329903d776"
+  },
+  "greedy_utility_difference": {
+    "per_evaluation_seed": [
+      20.050010681152344,
+      19.1199951171875,
+      18.420013427734375
+    ],
+    "mean": 19.196673075358074,
+    "all_positive": true
+  },
+  "heuristic_utility_difference": {
+    "per_evaluation_seed": [
+      19.120010375976562,
+      19.79999542236328,
+      17.8900146484375
+    ],
+    "mean": 18.936673482259113,
+    "all_positive": true
+  }
+}
