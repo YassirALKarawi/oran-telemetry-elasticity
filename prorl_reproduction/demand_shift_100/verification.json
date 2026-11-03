@@ -1,0 +1,14 @@
+{
+  "episodes": 30,
+  "evaluation_steps": 5040,
+  "new_training_steps": 0,
+  "demand_absolute_value": 100,
+  "sha256": {
+    "protocol.json": "cc73f01005f765882d031773d788430ec4a2b25ad938243cdf563c007dd86c3b",
+    "summary.json": "9c9fd3e59bb35d5020df2bb6f4914159230ad5c75f02ff8c0d016ab618ff45c2",
+    "runtime.json": "8bcaf2f7d710a0be4e5ebc7e27c698f832c3f6de009c27cc71f667a21f2fb016",
+    "prorl.json": "fca47be4db50a7e2e4b451cce06e18356f63f5de75414d19f370b804b27883c5",
+    "greedy.json": "6030aa74a111148253fbdd710866aad6732f4f7b9700a1f6741e77f0724e80c0",
+    "heuristic.json": "418603a373ca428ba3e268409dac4d6001d67e8875a612b99f3db0432ca18a9a"
+  }
+}
