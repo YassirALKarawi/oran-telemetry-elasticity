@@ -1,0 +1,15 @@
+{
+  "total_loop_steps": 89400,
+  "recorded_previous_transitions": 89399,
+  "evaluation_seeds": [
+    1000,
+    1100,
+    1200
+  ],
+  "steps_per_evaluation_seed": 168,
+  "finite_model_tensor_count": 146,
+  "sha256": {
+    "recovered_full.json": "7784faf699d74958cd07907c2364dd3d3cc03f3e7db620c77691cc5d0e939899",
+    "recovered_full.pt": "a18c6bdbce234d4f8804da87b9d06eacf3f04b1a68bd7ef600b059bcb5fb8c01"
+  }
+}
