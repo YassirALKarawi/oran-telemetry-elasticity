@@ -1,0 +1,1779 @@
+{
+  "status": "deterministic mechanism demonstration; novelty not established",
+  "scenarios": [
+    {
+      "name": "single_route_conflict",
+      "routes": 1,
+      "execution_delay": 3,
+      "acknowledgement_delay": 3,
+      "report_times": [
+        0
+      ],
+      "report_delay": 0,
+      "arrivals": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "fail_first": false,
+      "horizon": 12
+    },
+    {
+      "name": "alternative_route",
+      "routes": 2,
+      "execution_delay": 3,
+      "acknowledgement_delay": 3,
+      "report_times": [
+        0
+      ],
+      "report_delay": 0,
+      "arrivals": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "fail_first": false,
+      "horizon": 12
+    },
+    {
+      "name": "zero_delay",
+      "routes": 1,
+      "execution_delay": 0,
+      "acknowledgement_delay": 0,
+      "report_times": [
+        0,
+        1
+      ],
+      "report_delay": 0,
+      "arrivals": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "fail_first": false,
+      "horizon": 12
+    },
+    {
+      "name": "fresh_report_before_ack",
+      "routes": 1,
+      "execution_delay": 3,
+      "acknowledgement_delay": 3,
+      "report_times": [
+        0,
+        4
+      ],
+      "report_delay": 0,
+      "arrivals": [
+        [
+          0,
+          6
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "fail_first": false,
+      "horizon": 12
+    },
+    {
+      "name": "confirmed_failure",
+      "routes": 1,
+      "execution_delay": 1,
+      "acknowledgement_delay": 1,
+      "report_times": [
+        0
+      ],
+      "report_delay": 0,
+      "arrivals": [
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "fail_first": true,
+      "horizon": 12
+    },
+    {
+      "name": "missing_failure_ack",
+      "routes": 1,
+      "execution_delay": 1,
+      "acknowledgement_delay": null,
+      "report_times": [
+        0
+      ],
+      "report_delay": 0,
+      "arrivals": [
+        [
+          0,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "fail_first": true,
+      "horizon": 12
+    }
+  ],
+  "results": [
+    {
+      "scenario": "single_route_conflict",
+      "policy": "reports_only",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 1,
+      "capacity_conflicts": 1,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": false
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          7,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "single_route_conflict",
+      "policy": "issue_ledger",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "single_route_conflict",
+      "policy": "ack_aware",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "single_route_conflict",
+      "policy": "causal_reference",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "alternative_route",
+      "policy": "reports_only",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 1,
+      "capacity_conflicts": 1,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6,
+        "link_1": 0,
+        "cpu_1": 0
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0,
+            "link_1": 0,
+            "cpu_1": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0,
+            "link_1": 0,
+            "cpu_1": 0
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": false
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          7,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "alternative_route",
+      "policy": "issue_ledger",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6,
+        "link_1": 6,
+        "cpu_1": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6,
+            "link_1": 0,
+            "cpu_1": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_1",
+            "cpu_1"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6,
+            "link_1": 6,
+            "cpu_1": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          7,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "alternative_route",
+      "policy": "ack_aware",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6,
+        "link_1": 6,
+        "cpu_1": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6,
+            "link_1": 0,
+            "cpu_1": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_1",
+            "cpu_1"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6,
+            "link_1": 6,
+            "cpu_1": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          7,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "alternative_route",
+      "policy": "causal_reference",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6,
+        "link_1": 6,
+        "cpu_1": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6,
+            "link_1": 0,
+            "cpu_1": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_1",
+            "cpu_1"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6,
+            "link_1": 6,
+            "cpu_1": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          7,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "zero_delay",
+      "policy": "reports_only",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 0,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          0,
+          0
+        ],
+        [
+          "report",
+          1,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "zero_delay",
+      "policy": "issue_ledger",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 0,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          0,
+          0
+        ],
+        [
+          "report",
+          1,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "zero_delay",
+      "policy": "ack_aware",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 0,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          0,
+          0
+        ],
+        [
+          "report",
+          1,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "zero_delay",
+      "policy": "causal_reference",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 0,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 1,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          0,
+          0
+        ],
+        [
+          "report",
+          1,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "fresh_report_before_ack",
+      "policy": "reports_only",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 10,
+        "cpu_0": 10
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 7,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "report",
+          4,
+          4
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          10,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "fresh_report_before_ack",
+      "policy": "issue_ledger",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 10,
+        "cpu_0": 10
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 10,
+            "cpu_0": 10
+          }
+        },
+        {
+          "time": 7,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "report",
+          4,
+          4
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          10,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "fresh_report_before_ack",
+      "policy": "ack_aware",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 10,
+        "cpu_0": 10
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 10,
+            "cpu_0": 10
+          }
+        },
+        {
+          "time": 7,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "report",
+          4,
+          4
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          10,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "fresh_report_before_ack",
+      "policy": "causal_reference",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 2,
+      "capacity_conflicts": 0,
+      "injected_failures": 0,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 10,
+        "cpu_0": 10
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 3,
+          "event": "apply",
+          "request": 0,
+          "success": true
+        },
+        {
+          "time": 4,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 10,
+            "cpu_0": 10
+          }
+        },
+        {
+          "time": 7,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "report",
+          4,
+          4
+        ],
+        [
+          "ack",
+          6,
+          0
+        ],
+        [
+          "ack",
+          10,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "confirmed_failure",
+      "policy": "reports_only",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          2,
+          0
+        ],
+        [
+          "ack",
+          5,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "confirmed_failure",
+      "policy": "issue_ledger",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 0,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 0,
+        "cpu_0": 0
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          2,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "confirmed_failure",
+      "policy": "ack_aware",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          2,
+          0
+        ],
+        [
+          "ack",
+          5,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "confirmed_failure",
+      "policy": "causal_reference",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ],
+        [
+          "ack",
+          2,
+          0
+        ],
+        [
+          "ack",
+          5,
+          1
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "missing_failure_ack",
+      "policy": "reports_only",
+      "offered": 2,
+      "issued": 2,
+      "deferred": 0,
+      "applied": 1,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 6,
+        "cpu_0": 6
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 0,
+            "cpu_0": 0
+          }
+        },
+        {
+          "time": 4,
+          "event": "apply",
+          "request": 1,
+          "success": true
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "missing_failure_ack",
+      "policy": "issue_ledger",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 0,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 0,
+        "cpu_0": 0
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "missing_failure_ack",
+      "policy": "ack_aware",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 0,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 0,
+        "cpu_0": 0
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    },
+    {
+      "scenario": "missing_failure_ack",
+      "policy": "causal_reference",
+      "offered": 2,
+      "issued": 1,
+      "deferred": 1,
+      "applied": 0,
+      "capacity_conflicts": 0,
+      "injected_failures": 1,
+      "actual_overloads": 0,
+      "final_load": {
+        "link_0": 0,
+        "cpu_0": 0
+      },
+      "trace": [
+        {
+          "time": 0,
+          "event": "arrival",
+          "request": 0,
+          "route": [
+            "link_0",
+            "cpu_0"
+          ],
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        },
+        {
+          "time": 1,
+          "event": "apply",
+          "request": 0,
+          "success": false
+        },
+        {
+          "time": 3,
+          "event": "arrival",
+          "request": 1,
+          "route": null,
+          "controller_commitment": {
+            "link_0": 6,
+            "cpu_0": 6
+          }
+        }
+      ],
+      "received_messages": [
+        [
+          "report",
+          0,
+          0
+        ]
+      ],
+      "outstanding_at_horizon": 0
+    }
+  ],
+  "causal_reference_equal_in_all_scenarios": true
+}
