@@ -1,0 +1,98 @@
+\section{Independent PRORL Benchmark and Generalization Assessment}
+\label{sec:prorl-benchmark}
+We evaluated the published PRORL policy in its upstream four-node synthetic
+environment as a separate reproducibility benchmark. This environment differs
+from the packet-service elasticity simulator used in the earlier manuscript.
+Consequently, its reward values are not compared numerically with those of the
+proposed elasticity controller, and this experiment does not constitute a
+matched comparison between the two methods.
+
+The training-seed-10 run completed 89,400 loop steps, including 3,000 bootstrap
+steps. Model selection used validation seed 100. The saved selected checkpoint
+was then evaluated using seeds 1000, 1100, and 1200, each for 168 steps. An
+additional evaluation used seeds 2000--2009 without further training or model
+selection. The source model and results were checked against the archived
+SHA-256 fingerprints. Source revision, dependency versions, configuration and
+evaluation outputs are retained in the accompanying repository.
+
+For each policy, the resource initialization, emulator configuration, reward
+and evaluation length were matched. Only the agent configuration changed.
+Resource inputs were reconstructed from the original YAML configuration to
+avoid applying the upstream derived-allocation calculation twice to an
+already-mutated configuration export. The selected PRORL state was explicitly
+loaded into the evaluation agent. These checks establish the stated software
+comparison; they do not establish physical-model calibration.
+
+\begin{table}[t]
+\centering
+\caption{Additional evaluation at the original demand amplitude (ten evaluation
+seeds; one trained checkpoint). Metrics retain their upstream definitions.}
+\label{tab:prorl-original}
+\begin{tabular}{lrrr}
+\hline
+Metric & PRORL & Greedy & Heuristic\\
+\hline
+Utility & 137.120 & 116.670 & 117.009\\
+Surplus & 301.7 & 155.6 & 157.9\\
+Cost & 19.4 & 235.8 & 236.1\\
+Hours satisfied & 149.4 & 115.2 & 116.4\\
+Utilization & 0.9100 & 0.9492 & 0.9486\\
+\hline
+\end{tabular}
+\end{table}
+
+At the training demand amplitude of 80, PRORL achieved greater utility than
+both comparators on all ten additional evaluation seeds. The mean paired
+utility differences were 20.450 against Greedy and 20.111 against Heuristic.
+However, surplus increased and utilization decreased
+(Table~\ref{tab:prorl-original}). Thus, the observation supports a
+reward-specific advantage in this configuration rather than uniform
+dominance across resource metrics.
+
+We next changed only the synthetic demand amplitude to 60 and 100, retaining
+the saved model and the same ten evaluation seeds. The amplitudes were fixed
+before these runs. Because these seeds had already been examined in the
+same-load experiment, this assessment is an exploratory paired stress test,
+rather than an untouched confirmatory test set. No policy was tuned using the
+stress-test outcomes.
+
+\begin{table}[t]
+\centering
+\caption{Utility under changed synthetic demand amplitudes. No retraining was
+performed.}
+\label{tab:prorl-shift}
+\begin{tabular}{rrrr}
+\hline
+Amplitude & PRORL & Greedy & Heuristic\\
+\hline
+60 & 106.000 & 121.676 & 121.677\\
+100 & 108.964 & 110.844 & 111.800\\
+\hline
+\end{tabular}
+\end{table}
+
+The original utility advantage did not persist at either changed amplitude
+(Table~\ref{tab:prorl-shift}). At amplitude 60, PRORL's mean surplus reached
+925.5, compared with 160.7 for Greedy, while utilization was 0.7234 versus
+0.9329. At amplitude 100, the corresponding utilization values were 0.9974
+and 0.9992, and PRORL's utility remained lower. These outcomes identify a
+generalization limitation of this saved checkpoint; they do not isolate its
+cause. Establishing a mechanism requires inspection of reward terms and
+action histories, with matched ablations.
+
+The runtime was restored using Python 3.11.17, with all recorded dependency
+versions matching the saved environment list. The original interpreter patch
+version was not established. This qualification is retained with the results.
+The metrics are synthetic service and resource counters; cost is not measured
+energy, and the experiment does not measure packet latency or validate
+software-defined networking interfaces.
+
+Only one completed training seed supports the reported tables. An independent
+seed-20 replication is in progress and is excluded from the numerical results
+until training, final evaluation and integrity checks finish. Additional
+evaluation seeds cannot substitute for independent training replications.
+The benchmark establishes neither a new allocation algorithm nor the novelty
+of the thesis contribution. A direct PRORL comparison in the manuscript's
+service model requires a documented mapping of observations, actions,
+resource budgets and objectives, followed by training and evaluation under
+that shared model.
