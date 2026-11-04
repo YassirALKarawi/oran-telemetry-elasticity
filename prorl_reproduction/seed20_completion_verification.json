@@ -1,0 +1,98 @@
+{
+  "seed": 20,
+  "target_steps_including_bootstrap": 89400,
+  "training_iterations": 86400,
+  "bootstrap_steps": 3000,
+  "observed_action_decisions": 89400,
+  "tracker_previous_transition_count": 89399,
+  "evaluation_completed": true,
+  "evaluation_episodes": {
+    "1000": {
+      "length": 168,
+      "actions": 168,
+      "utility": [
+        136.55999755859375
+      ]
+    },
+    "1100": {
+      "length": 168,
+      "actions": 168,
+      "utility": [
+        136.86000061035156
+      ]
+    },
+    "1200": {
+      "length": 168,
+      "actions": 168,
+      "utility": [
+        136.3000030517578
+      ]
+    }
+  },
+  "all_result_numbers_finite": true,
+  "model_tensor_count": 146,
+  "all_model_tensors_finite": true,
+  "config_matches_seed10_except_training_seed": true,
+  "metrics": {
+    "reward/utility": {
+      "seed10": 136.6666717529297,
+      "seed20": 136.5733184814453,
+      "difference": -0.093353271484375
+    },
+    "reward/remaining_gap": {
+      "seed10": -93.33333333333333,
+      "seed20": -93.33333333333333,
+      "difference": 0.0
+    },
+    "reward/surplus": {
+      "seed10": 320.0,
+      "seed20": 322.6666666666667,
+      "difference": 2.6666666666666856
+    },
+    "reward/cost": {
+      "seed10": 18.666666666666668,
+      "seed20": 17.333333333333332,
+      "difference": -1.3333333333333357
+    },
+    "problem_solved/count": {
+      "seed10": 150.33333333333334,
+      "seed20": 151.33333333333334,
+      "difference": 1.0
+    },
+    "hour_satisfied": {
+      "seed10": 150.33333333333334,
+      "seed20": 151.66666666666666,
+      "difference": 1.3333333333333144
+    },
+    "resource_utilization": {
+      "seed10": 0.9045458826805577,
+      "seed20": 0.9037202636902716,
+      "difference": -0.0008256189902861033
+    },
+    "episode/length": {
+      "seed10": 168.0,
+      "seed20": 168.0,
+      "difference": 0.0
+    }
+  },
+  "sha256": {
+    "seed20_full.json": "144a517c716f2e82185b26c18787093112fb490d2e6f2aee6f16f447b217510d",
+    "seed20_full.pt": "57dae27db8b3753401c08b57e34877e905370bbbbfcabaa1e63351f0e6a86b9e",
+    "seed20_full.checkpoint": "c715ed0a12e2fb568bd0eb04f59de0b879979d814bf8d33f9b0d27370953399a",
+    "seed20_full.log": "d17d1b2971f13202fab92088eac7e28eba7be8e2bfb0370c03ab59ce70cb594d",
+    "train_seed20.py": "568dc1a9f5409e5f740c41735f88ab79a6971de888c5c9658254cbd8203baec1",
+    "checkpointing.py": "d7c03832396bb5f24e5539e702e134eac407cb2d688fdf3bcad06de8fcda9066",
+    "supervise_seed20.py": "ec43c10853bb23e4200a9104a16820a305c06574fd2738ff72913962121dd71d",
+    "environment.txt": "7b56719438a87b009fc914fba9b2b8c2c1301436ee7a3eb5ad5630b664186543",
+    "compatibility.patch": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+    "verify_seed20_completion.py": "ce38237ac1ac410a11f590742bf0b8b71a211179932e7ea9832be7bcc85cb504",
+    "recovered_full.json": "7784faf699d74958cd07907c2364dd3d3cc03f3e7db620c77691cc5d0e939899",
+    "recovered_full.pt": "a18c6bdbce234d4f8804da87b9d06eacf3f04b1a68bd7ef600b059bcb5fb8c01"
+  },
+  "limitations": [
+    "Two training seeds only; three shared evaluation seeds.",
+    "Final weights selected using validation seed 100, not evaluation seeds.",
+    "Only the upstream constant-load scenario is covered; no general superiority or novelty established.",
+    "Tracker counts previous transitions; 89400 action decisions confirm the full configured loop."
+  ]
+}
