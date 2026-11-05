@@ -1,0 +1,8 @@
+{
+  "seed": 30,
+  "resume_index": 3000,
+  "target": 89400,
+  "checkpoint_sha256": "bc6d573514ba0589e23733d7b275410a429b5173725a7fa6d597642619a3607f",
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb"
+}
