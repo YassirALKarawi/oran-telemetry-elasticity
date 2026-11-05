@@ -1,0 +1,44 @@
+{
+  "training_seeds": [
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "new_training_seeds": [
+    30,
+    40,
+    50
+  ],
+  "steps_per_seed_including_bootstrap": 89400,
+  "validation_seeds": [
+    100
+  ],
+  "initial_evaluation_seeds": [
+    1000,
+    1100,
+    1200
+  ],
+  "extended_evaluation_seeds": [
+    2000,
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006,
+    2007,
+    2008,
+    2009
+  ],
+  "demand_shifts": [
+    60,
+    80,
+    100
+  ],
+  "selection": "Validation only; no hyperparameter or model selection on evaluation data. Retain all seed results, including unfavorable ones.",
+  "new_seeds_status": "Prepared; seed30 launched separately, seed40 and seed50 not yet launched.",
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb"
+}
