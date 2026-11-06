@@ -1,0 +1,36 @@
+{
+  "seed": 30,
+  "decisions": 89400,
+  "initial_evaluation_seeds": [
+    1000,
+    1100,
+    1200
+  ],
+  "steps_per_evaluation": 168,
+  "all_numeric_results_finite": true,
+  "all_model_tensors_finite": true,
+  "counts": {
+    "numbers": 1217501,
+    "tensors": 146
+  },
+  "utility": 132.71665954589844,
+  "seed40_resume_index": 7000,
+  "environment_verified": true,
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+  "sha256": {
+    "seed30_full.json": "4e4070a9d52eb955d4595c138176b2f32d71a4d44af42cd60eb841394a8288a9",
+    "seed30_full.pt": "4bfc2d1afae36c98e911f7aae64fac1da0bc5ab5362d6d0e29f37cf0e81aedb5",
+    "seed30_full.log": "e6646e9218dbc1e2e0d259ea55be13d778f533906a2cd4ccbca9288520904c3b",
+    "seed40_full.log": "7488ad2fa73da696fd051a6a8ac09fec8b86a300aa60d6538188352e58f2de7b",
+    "train_seed30.py": "895a2b2a4d874acf3323ea4b518cd2c2e213f9327d5f56deed70203a18ac9bb1",
+    "train_seed40.py": "61ac7018d4a7595f1003adcda76e32f89f807b52266148520ce22297527c65d1",
+    "train_seed50.py": "844da8dde144102efc1da21bfb59796da97b71e7209572ce38c580a6b0a6f17d",
+    "run_remaining_seeds.py": "dc943c9bfdf1a31464086616c5ebc466aafc74184b1698a5520cb31ce08b5267",
+    "checkpointing.py": "d7c03832396bb5f24e5539e702e134eac407cb2d688fdf3bcad06de8fcda9066",
+    "environment.txt": "7b56719438a87b009fc914fba9b2b8c2c1301436ee7a3eb5ad5630b664186543",
+    "FIVE_SEED_PROTOCOL.json": "57ecf84574811feede83c639b9ba78e1b606875dfb57dcf4da96132398f165a9",
+    "baseline_compatibility.patch": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+    "seed40_full.checkpoint": "8a8d5cd9239849cac73b1a4455d3f48511b0ba965bc47ac7d1e8b8d237fc2844"
+  }
+}
