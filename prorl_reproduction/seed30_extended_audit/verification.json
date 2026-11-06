@@ -1,0 +1,57 @@
+{
+  "training_seed": 30,
+  "training_decisions": 89400,
+  "extended_evaluation_episodes": 90,
+  "steps_per_episode": 168,
+  "model_unchanged": true,
+  "all_results_finite": true,
+  "rows": [
+    {
+      "demand": 80,
+      "prorl": 135.89601135253906,
+      "greedy": 116.66999816894531,
+      "heuristic": 117.00899505615234
+    },
+    {
+      "demand": 60,
+      "prorl": 104.50399017333984,
+      "greedy": 121.67601013183594,
+      "heuristic": 121.677001953125
+    },
+    {
+      "demand": 100,
+      "prorl": 109.30599212646484,
+      "greedy": 110.843994140625,
+      "heuristic": 111.80000305175781
+    }
+  ],
+  "sha256": {
+    "holdout_seed30/runtime.json": "832398ee26920af5d25cc42302293ce02cb98541feb601f9f48a012861e51656",
+    "holdout_seed30/prorl.json": "086e7a3cfc34f37bcd7814bf557209c97d38244116044ff7dd2fad5bc56f3935",
+    "holdout_seed30/summary.json": "ebe13b8024d89c64eadd9e6d30dcb98b189617feba88c4c45805a37e73fe2813",
+    "holdout_seed30/heuristic.json": "8553219071e84c711503688a67267bf410c9368f4d42f45b49e7971b3647d2e2",
+    "holdout_seed30/greedy.json": "0f7bc85fc92b05411f9440b57b617876170b81349ee4ee60d5c4444d0a326ba4",
+    "holdout_seed30/protocol.json": "e5734e6b15ed9210ffa71828af46014ccb055bd59bb9eaaa6426333b21aeb52b",
+    "seed30_demand_shift_60/runtime.json": "832398ee26920af5d25cc42302293ce02cb98541feb601f9f48a012861e51656",
+    "seed30_demand_shift_60/prorl.json": "8b78c6069431741be2ee2618f5af15def1c022d049257cd8ec2f75c9325ba168",
+    "seed30_demand_shift_60/summary.json": "07e32aa725da041ab29362f7243e5be5c2d36d7c14d0af58a0d025020c7933b9",
+    "seed30_demand_shift_60/heuristic.json": "b967970f512784e634c88ac29ee5f0cfca7e9b267dfa1ba63e9c742b01e6f3d1",
+    "seed30_demand_shift_60/greedy.json": "324c2ec28bc8159ae9ee6ab77fa8ba7925a7ce021efb0fbdbd1fa15c4844fe0a",
+    "seed30_demand_shift_60/protocol.json": "3aee419e32d687315de272515292c2105c294ef9f456958267b88b74fec88aa2",
+    "seed30_demand_shift_100/runtime.json": "832398ee26920af5d25cc42302293ce02cb98541feb601f9f48a012861e51656",
+    "seed30_demand_shift_100/prorl.json": "45e0bb0ec24000b592f1716b56caff9a7bfb150037569afc1e6b121f43984776",
+    "seed30_demand_shift_100/summary.json": "13d2af17541547123a0daa459103cf82cee658299271c9d0f076f018c0bff0dc",
+    "seed30_demand_shift_100/heuristic.json": "2e442d39e76d794a5af939e2b3730e547ea6cb97e79f712e087ab21d3e5112a4",
+    "seed30_demand_shift_100/greedy.json": "9805e5bdf5d65258c3ec2fe6148789fa46029413c1fa6a156153b22df7a5e865",
+    "seed30_demand_shift_100/protocol.json": "e639c387a06d241d2658c658f2d90fedf391875615930be9c619a5155a94fd0e",
+    "seed30_full.json": "4e4070a9d52eb955d4595c138176b2f32d71a4d44af42cd60eb841394a8288a9",
+    "seed30_full.pt": "4bfc2d1afae36c98e911f7aae64fac1da0bc5ab5362d6d0e29f37cf0e81aedb5",
+    "seed30_full.log": "e6646e9218dbc1e2e0d259ea55be13d778f533906a2cd4ccbca9288520904c3b",
+    "seed30_completion_verification.json": "5ef2550b083456e40482d617021e664e0e35a015eb5b30c7a455212d32cfb9e1",
+    "evaluate_seed30_holdout.py": "89dff0e8fd7f322381ef189f45a7a1fdbfcbcec264c653daa453654b29010c62",
+    "evaluate_seed30_demand_shift.py": "9afef8edfe74ea36f7a21117f6240690773757388302d8c03049c3bc0718f871",
+    "environment.txt": "7b56719438a87b009fc914fba9b2b8c2c1301436ee7a3eb5ad5630b664186543",
+    "FIVE_SEED_PROTOCOL.json": "57ecf84574811feede83c639b9ba78e1b606875dfb57dcf4da96132398f165a9",
+    "baseline_compatibility.patch": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb"
+  }
+}
