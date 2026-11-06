@@ -1,0 +1,25 @@
+{
+  "seed": 40,
+  "decisions": 89400,
+  "initial_evaluation_seeds": [
+    1000,
+    1100,
+    1200
+  ],
+  "steps_per_evaluation": 168,
+  "all_numeric_results_finite": true,
+  "all_model_tensors_finite": true,
+  "counts": {
+    "numbers": 1217501,
+    "tensors": 146
+  },
+  "utility": 137.04000854492188,
+  "environment_verified": true,
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+  "sha256": {
+    "seed40_full.json": "cd55c98bc22985b100f0a427574a023ed6c84c9bd4129f0086dc4f4ffdacdf86",
+    "seed40_full.pt": "798872d4dca315b2441449d045d8ed17ac0721465a70afcc6a421295efc9aaa2",
+    "seed40_full.log": "6b5747e263770263afb5fc37270637219cb1d5cb9bdfd5fb0c8f606f6127aee7"
+  }
+}
