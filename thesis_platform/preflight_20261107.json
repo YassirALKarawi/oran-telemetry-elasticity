@@ -1,0 +1,21 @@
+{
+  "system": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "tools": {
+    "git": "/usr/local/bin/git",
+    "cmake": null,
+    "make": "/usr/bin/make",
+    "g++": "/usr/bin/g++",
+    "swig": null,
+    "bison": null,
+    "flex": null,
+    "pkg-config": "/usr/bin/pkg-config"
+  },
+  "sctp_header": false,
+  "build_prerequisites_present": false,
+  "native_ipv4_sctp": {
+    "round_trip": false,
+    "stage": "socket",
+    "errno": 93,
+    "error": "[Errno 93] Protocol not supported"
+  }
+}
