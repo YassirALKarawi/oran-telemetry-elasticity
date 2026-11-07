@@ -18,10 +18,20 @@ jobs:
         run: |
           mkdir evidence
           sudo apt-get update -qq
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libsctp-dev cmake swig bison flex libsqlite3-dev tcpdump tshark
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libsctp-dev cmake swig bison flex libsqlite3-dev tcpdump tshark iperf3 iproute2 autoconf automake libtool
           sudo modprobe sctp || true
           python3 thesis_platform/preflight.py | tee evidence/preflight.json
           jq -e '.native_ipv4_sctp.round_trip and .build_prerequisites_present' evidence/preflight.json
+      - name: Install pinned ASN.1 compiler for xApp dependencies
+        run: |
+          git init asn1c
+          git -C asn1c fetch --depth=1 https://github.com/mouse07410/asn1c 940dd5fa9f3917913fd487b13dfddfacd0ded06e
+          cd asn1c
+          git checkout --detach FETCH_HEAD
+          autoreconf -iv
+          ./configure --prefix=/opt/asn1c
+          make -j4
+          sudo make install
       - name: Build pinned FlexRIC
         run: |
           git init flexric
@@ -31,18 +41,64 @@ jobs:
           grep -Fx "$FLEXRIC_REV" evidence/flexric-revision.txt
           # This optional upstream test references a missing GTP fixture.
           sed -i '1i return()' flexric/test/agent-ric-xapp/CMakeLists.txt
+          git -C flexric apply "$PWD/thesis_platform/xapp/mac-event.patch"
           git -C flexric diff > evidence/build-only.patch
           cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
           # Build the two endpoints and their dynamically loaded service models.
           cmake --build build --target help > evidence/build-targets.txt
           mapfile -t models < <(awk '$2 ~ /_sm$/ && $2 !~ /^test_/ {print $2}' evidence/build-targets.txt)
-          tar -czf evidence/emulator-sources.tgz -C flexric examples/emulator examples/xApp/c
+          cp flexric/examples/emulator/agent/{sm_kpm.c,sm_mac.c} evidence/
+          cp flexric/examples/xApp/c/{ctrl/mac_ctrl.c,monitor/xapp_kpm_moni.c} evidence/
+          grep -inE "KPM_MEAS_LIST|install.*flexric" flexric/CMakeLists.txt || true
           cmake --build build -j4 --target nearRT-RIC emu_agent_gnb xapp_kpm_moni xapp_mac_ctrl "${models[@]}"
           sudo mkdir -p /usr/local/etc/flexric /usr/local/lib/flexric
           conf=$(find flexric -name flexric.conf -type f | head -1)
           sed -E 's/^NEAR_RIC_IP[[:space:]]*=.*/NEAR_RIC_IP = 127.0.0.1/' "$conf" > evidence/flexric.conf
           sudo cp evidence/flexric.conf /usr/local/etc/flexric/flexric.conf
           find build -name 'lib*_sm.so' -exec sudo cp {} /usr/local/lib/flexric/ \;
+          find flexric -type f -iname '*meas*' | grep -E '\.(txt|conf)/flexric > evidence/service-models.txt
+      - name: Run monitoring and control xApps
+        run: |
+          export E2_ACTION_FIFO="$RUNNER_TEMP/e2-action"
+          mkfifo "$E2_ACTION_FIFO"
+          bash thesis_platform/xapp/probe.sh setup
+          sudo tcpdump -U -i lo -w "$PWD/evidence/setup.pcap" 'sctp' >evidence/capture.log 2>&1 &
+          capture=$!
+          trap 'sudo kill -INT "$capture" 2>/dev/null || true' EXIT
+          sleep 1
+          stdbuf -oL -eL build/examples/ric/nearRT-RIC >evidence/ric.log 2>&1 &
+          ric=$!
+          sleep 2
+          kill -0 "$ric"
+          agent=$(find build -type f -name 'emu_agent_gnb' -executable -print -quit)
+          test -n "$agent"
+          stdbuf -oL -eL "$agent" >evidence/agent.log 2>&1 &
+          node=$!
+          sleep 2
+          monitor=$(find build -type f -name xapp_kpm_moni -executable -print -quit)
+          control=$(find build -type f -name xapp_mac_ctrl -executable -print -quit)
+          bash thesis_platform/xapp/probe.sh measure before
+          timeout 30s stdbuf -oL -eL "$monitor" >evidence/kpm.log 2>&1 || echo "$?" >evidence/kpm-exit.txt
+          timeout 35s bash thesis_platform/xapp/probe.sh act &
+          adapter=$!
+          timeout 20s stdbuf -oL -eL "$control" >evidence/control.log 2>&1 || echo "$?" >evidence/control-exit.txt
+          wait "$adapter"
+          bash thesis_platform/xapp/probe.sh measure after
+          kill -0 "$ric" "$node"
+          sudo kill -INT "$capture"
+          wait "$capture" || true
+          trap - EXIT
+          kill "$node" "$ric" || true
+          tshark -r evidence/setup.pcap -d sctp.port==36421,e2ap -Y 'sctp.port == 36421 && e2ap' -T fields -e frame.number -e sctp.srcport -e sctp.dstport -e _ws.col.Info >evidence/messages.tsv
+          for message in RICsubscriptionRequest RICsubscriptionResponse RICindication RICcontrolRequest; do
+            grep -iq "$message" evidence/messages.tsv
+          done
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: flexric-xapp-evidence
+          path: evidence/
+ | while read -r f; do sudo cp "$f" /usr/local/etc/flexric/; done
           ls -l /usr/local/lib/flexric > evidence/service-models.txt
       - name: Run monitoring and control xApps
         run: |
