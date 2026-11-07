@@ -1,0 +1,19 @@
+--- a/thesis_platform/transport_shares/trial.py
++++ b/thesis_platform/transport_shares/trial.py
+@@ -1,4 +1,5 @@
+ """Paired transport-share experiment on two shaped Linux veth links."""
++from collections import Counter
+ import json
+ import math
+ import os
+@@ -79,7 +80,9 @@
+             assert len(payload) == SIZE and seq not in seen[i]
+             seen[i].add(seq)
+             delays[i].append((time.monotonic_ns()-sent)/1e6)
+-    print(json.dumps(dict(received=[len(x) for x in seen],
++    histogram = [Counter(math.ceil(ms) for ms in values) for values in delays]
++    assert all(bucket >= 0 for counts in histogram for bucket in counts)
++    print(json.dumps(dict(delay_ms_ceiling_histogram=histogram, received=[len(x) for x in seen],
+                           p95_ms=[sorted(d)[math.ceil(.95*len(d))-1] if d else None for d in delays])))
+ 
+ 
