@@ -57,7 +57,7 @@ def meters(share, operation):
         rate = units * 800
         of(operation + "-meter", f"meter={i},kbps,burst,stats,bands=type=drop,rate={rate},burst_size=64")
         state = of("dump-meters", f"meter={i}")
-        assert f"rate={rate}," in state
+        assert re.search(rf"\brate={rate}\b", state), state
         config.append(state)
     (OUT / f"meters-{operation}.txt").write_text("".join(config))
 
