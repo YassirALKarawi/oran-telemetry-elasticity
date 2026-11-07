@@ -1,0 +1,26 @@
+--- a/examples/emulator/agent/sm_mac.c
++++ b/examples/emulator/agent/sm_mac.c
+@@ -4,6 +4,8 @@
+ #include "sm_mac.h"
+ #include "../../../test/rnd/fill_rnd_data_mac.h"
+ #include <assert.h>
++#include <stdio.h>
++#include <stdlib.h>
+ 
+ void init_mac_sm(void)
+ {
+@@ -43,6 +45,14 @@
+   assert(ctrl->hdr.dummy == 1);
+   assert(ctrl->msg.action == 42);
+ 
++  const char *fifo = getenv("E2_ACTION_FIFO");
++  if (fifo && ctrl->hdr.dummy == 1 && ctrl->msg.action == 42) {
++    FILE *event = fopen(fifo, "w");
++    if (!event) abort();
++    if (fprintf(event, "%d\n", (int)ctrl->msg.action) < 0 || fclose(event) != 0) abort();
++    puts("[test adapter] decoded MAC action 42 and notified the transport shaper");
++  }
++
+   sm_ag_if_ans_t ans = {.type = CTRL_OUTCOME_SM_AG_IF_ANS_V0 };
+   return ans;
+ }
