@@ -48,17 +48,22 @@ def choose(name, reports, t, previous):
         extra, weights, _ = solve_elastic(reports, t, previous, maximum=3, delay=COMMAND_DELAY)
     else:
         extra, weights = greedy(reports)
+    check_action(extra, weights)
+    return extra, weights
+
+
+def check_action(extra, weights):
+    assert len(extra) == 3
     assert extra[0] == 0 and all(type(n) is int and 0 <= n <= 3 for n in extra)
     assert len(weights) == 3 and all(w == weights[0] for w in weights)
     assert any(weights[0] == [k / 20, 1 - k / 20] for k in range(1, 20))
-    return extra, weights
 
 
 def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
 
 
-def run(name, events, drop):
+def run(name, events, drop, *, controller=None, write_logs=True):
     queues = [[deque(), deque()] for _ in range(3)]
     reports = [dict(q=[0, 0], arrival=[.9, 2.1], service=[2.5, 2.5], variance=[1, 1],
                     capacity=5, time=0) for _ in range(3)]
@@ -68,7 +73,10 @@ def run(name, events, drop):
     commands, messages, packets, epochs, checks = {}, {}, {}, [], []
     service, supply = [0]*3, [0]*3
     units = switches = delivered = 0
+    total_cost = 0.0
+    interval_cost = 0.0
     for t, (arrivals, base) in enumerate(events):
+        switch_before = switches
         if t in commands:
             extra, weights, log = commands.pop(t)
             switches += sum(abs(a-b) for a,b in zip(extra, active))
@@ -99,9 +107,13 @@ def run(name, events, drop):
             signature = digest([reports,t,previous])
             # Both adapters are exercised on identical inputs. Only the assigned action executes.
             actions, times = {}, {}
-            for policy in POLICIES:
+            for policy in (POLICIES if write_logs and controller is None else (name,)):
                 start = perf_counter_ns()
-                actions[policy] = choose(policy,reports,t,previous)
+                if controller is None:
+                    actions[policy] = choose(policy,reports,t,previous)
+                else:
+                    actions[policy] = controller.act(reports, t, previous, interval_cost)
+                    check_action(*actions[policy])
                 times[policy] = perf_counter_ns()-start
                 assert digest([reports,t,previous]) == signature
             extra, target_weights = actions[name]
@@ -110,6 +122,7 @@ def run(name, events, drop):
             epochs.append(log)
             commands[t+COMMAND_DELAY] = extra,target_weights,log
             previous = extra
+            interval_cost = 0.0
         for i in (2,1,0):
             served[i] = schedule(queues[i],weights[i],capacity[i],True)
             assert sum(served[i]) <= capacity[i]
@@ -130,22 +143,28 @@ def run(name, events, drop):
             history[i].append((ingress[i],served[i]))
         pending = sum(len(q) for stage in queues for q in stage)
         assert len(packets) == delivered + pending
+        slot_cost = pending / 20 + sum(active) / 5 + (switches-switch_before) / 20
+        interval_cost += slot_cost
+        total_cost += slot_cost
         checks.append([t,len(packets),delivered,pending,capacity,served])
+    if controller is not None:
+        controller.finish(interval_cost)
     unfinished = {pkt[0] for stage in queues for q in stage for pkt in q}
     assert unfinished == {key for key,end in packets.items() if end is None}
     assert all(e["applied"] == (e["due"] if e["due"] < len(events) else None) for e in epochs)
     delays = [end-birth+1 for (_,birth,_),end in packets.items() if end is not None]
     mature = [(key,end) for key,end in packets.items() if key[1]+DEADLINES[key[0]] <= len(events)]
     misses = sum(end is None or end-key[1]+1 > DEADLINES[key[0]] for key,end in mature)
-    with (OUT/f"{name}_packets.csv").open("w") as f:
-        writer = csv.writer(f)
-        writer.writerow(("class","birth_slot","sequence","delivered_slot"))
-        writer.writerows((*key,end) for key,end in packets.items())
-    (OUT/f"{name}_audit.json").write_text(json.dumps(dict(epochs=epochs,slots=checks),separators=(",",":")))
-    return dict(offered=len(packets),admitted=len(packets),delivered=delivered,lost=0,outstanding=len(unfinished),
+    if write_logs:
+        with (OUT/f"{name}_packets.csv").open("w") as f:
+            writer = csv.writer(f)
+            writer.writerow(("class","birth_slot","sequence","delivered_slot"))
+            writer.writerows((*key,end) for key,end in packets.items())
+        (OUT/f"{name}_audit.json").write_text(json.dumps(dict(epochs=epochs,slots=checks),separators=(",",":")))
+    return dict(total_cost=total_cost, offered=len(packets),admitted=len(packets),delivered=delivered,lost=0,outstanding=len(unfinished),
                 mature_packets=len(mature),deadline_misses=misses,delivered_p99_slots=sorted(delays)[math.ceil(.99*len(delays))-1],
                 extra_unit_slots=units,switching_units=switches,stage_service=service,stage_supply=supply,
-                paired_observation_checks=len(epochs),end_state_checked=True)
+                decision_epochs=len(epochs),paired_observation_checks=len(epochs) if write_logs and controller is None else 0,end_state_checked=True)
 
 
 if __name__ == "__main__":
