@@ -42,7 +42,8 @@ jobs:
           # This optional upstream test references a missing GTP fixture.
           sed -i '1i return()' flexric/test/agent-ric-xapp/CMakeLists.txt
           git -C flexric apply "$PWD/thesis_platform/xapp/mac-event.patch"
-          git -C flexric diff > evidence/build-only.patch
+          git -C flexric apply "$PWD/thesis_platform/xapp/kpm-window.patch"
+          git -C flexric diff > evidence/experiment.patch
           cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
           # Build the two endpoints and their dynamically loaded service models.
           cmake --build build --target help > evidence/build-targets.txt
@@ -79,19 +80,33 @@ jobs:
           monitor=$(find build -type f -name xapp_kpm_moni -executable -print -quit)
           control=$(find build -type f -name xapp_mac_ctrl -executable -print -quit)
           bash thesis_platform/xapp/probe.sh measure before
-          timeout 30s stdbuf -oL -eL "$monitor" >evidence/kpm.log 2>&1 || echo "$?" >evidence/kpm-exit.txt
+          timeout 30s stdbuf -oL -eL "$monitor" >evidence/kpm.log 2>&1
+          grep -q "KPM ind_msg latency" evidence/kpm.log
           timeout 35s bash thesis_platform/xapp/probe.sh act &
           adapter=$!
-          timeout 20s stdbuf -oL -eL "$control" >evidence/control.log 2>&1 || echo "$?" >evidence/control-exit.txt
+          timeout 20s stdbuf -oL -eL "$control" >evidence/control.log 2>&1
+          grep -q "CONTROL ACK rx" evidence/control.log
           wait "$adapter"
           bash thesis_platform/xapp/probe.sh measure after
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from statistics import median
+          phases = {}
+          for phase in ("before", "after"):
+              samples = sorted(Path("evidence").glob(f"iperf-{phase}-*.json"))
+              assert len(samples) == 3
+              phases[phase] = [json.loads(p.read_text())["end"]["sum_received"]["bits_per_second"] / 1e6 for p in samples]
+          Path("evidence/receiver-mbps.json").write_text(json.dumps(phases, indent=2))
+          assert median(phases["after"]) > 1.5 * median(phases["before"])
+          PY
           kill -0 "$ric" "$node"
           sudo kill -INT "$capture"
           wait "$capture" || true
           trap - EXIT
           kill "$node" "$ric" || true
           tshark -r evidence/setup.pcap -d sctp.port==36421,e2ap -Y 'sctp.port == 36421 && e2ap' -T fields -e frame.number -e sctp.srcport -e sctp.dstport -e _ws.col.Info >evidence/messages.tsv
-          for message in RICsubscriptionRequest RICsubscriptionResponse RICindication RICcontrolRequest; do
+          for message in RICsubscriptionRequest RICsubscriptionResponse RICindication RICcontrolRequest RICcontrolAcknowledge; do
             grep -iq "$message" evidence/messages.tsv
           done
       - uses: actions/upload-artifact@v4
