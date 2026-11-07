@@ -1,0 +1,35 @@
+{
+  "seed": 50,
+  "decisions": 89400,
+  "bootstrap": 3000,
+  "initial_evaluation_seeds": [
+    1000,
+    1100,
+    1200
+  ],
+  "steps_per_evaluation": 168,
+  "initial_episode_utilities": [
+    137.8800048828125,
+    136.67999267578125,
+    136.04000854492188
+  ],
+  "utility": 136.86666870117188,
+  "best_validation_iteration": 81,
+  "best_validation_utility": 137.45999145507812,
+  "counts": {
+    "numbers": 1127958,
+    "tensors": 146
+  },
+  "all_numeric_results_finite": true,
+  "all_model_tensors_finite": true,
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+  "sha256": {
+    "seed50_full.json": "c96ee9df135713ee8b604290fb229c6104a33d8e66e9328db356d6da05cd283a",
+    "seed50_full.pt": "c0e4b669b05881a7e650d7b3e0793ddb138687d64c79719ddb93d35ba7203de8",
+    "seed50_full.log": "c6307df879050bd39120aefabdee6bef48d896ed716e1b87e490950a0d3f92bf"
+  },
+  "validation_model_tensor_match": true,
+  "final_checkpoint_step": 89000,
+  "final_checkpoint_sha256": "1bcb4f42e844f0dd9bf1132a7a0254bac166c46d5dab5d99aa56f556350cb66f"
+}
