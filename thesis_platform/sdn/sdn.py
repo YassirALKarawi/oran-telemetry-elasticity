@@ -56,7 +56,7 @@ def meters(share, operation):
     for i, units in enumerate([share, 20-share], 1):
         rate = units * 800
         of(operation + "-meter", f"meter={i},kbps,burst,stats,bands=type=drop,rate={rate},burst_size=64")
-        state = of("dump-meters", str(i))
+        state = of("dump-meters", f"meter={i}")
         assert f"rate={rate}," in state
         config.append(state)
     (OUT / f"meters-{operation}.txt").write_text("".join(config))
@@ -66,7 +66,7 @@ def phase(label):
     def counters(tag):
         vals = []
         for i in [1, 2]:
-            stats = of("meter-stats", str(i))
+            stats = of("meter-stats", f"meter={i}")
             (OUT / f"{label}-{tag}-meter-{i}.txt").write_text(stats)
             vals.append([int(re.search(r"packet_in_count[=:]\s*(\d+)", stats).group(1)),
                          int(re.search(r"packet_count[=:]\s*(\d+)", stats).group(1))])
