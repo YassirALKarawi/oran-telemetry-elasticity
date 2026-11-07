@@ -1,8 +1,5 @@
 name: Independent cross-host frozen-policy validation
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/e2-independent-validation.yml']
   workflow_dispatch:
     inputs:
       runner:
@@ -18,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-22.04]
+        os: ${{ fromJSON(inputs.runner == 'ubuntu-22.04' && '["ubuntu-22.04"]' || inputs.runner == 'ubuntu-24.04' && '["ubuntu-24.04"]' || '["ubuntu-22.04","ubuntu-24.04"]') }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 70
     env:
