@@ -1,0 +1,30 @@
+name: SCTP transport preflight
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sctp-preflight.yml'
+      - 'thesis_platform/preflight.py'
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install build prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libsctp-dev cmake build-essential swig bison flex pkg-config
+      - name: Probe native SCTP
+        run: |
+          sudo modprobe sctp || true
+          python3 thesis_platform/preflight.py | tee preflight.json
+          jq -e '.build_prerequisites_present and .native_ipv4_sctp.round_trip' preflight.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sctp-preflight
+          path: preflight.json
