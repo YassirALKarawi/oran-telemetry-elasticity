@@ -1,0 +1,2916 @@
+{
+ "selection": {
+  "10": {
+   "episode": 18,
+   "validation": [
+    [
+     9,
+     760.3499999999999
+    ],
+    [
+     18,
+     642.3833333333333
+    ]
+   ],
+   "sha256": "4da828bb6ee872b6d13e4fdb306a258f89c89211d27307d26e15eaf0bef17348",
+   "training_decisions": 1296
+  },
+  "20": {
+   "episode": 9,
+   "validation": [
+    [
+     9,
+     701.4666666666666
+    ],
+    [
+     18,
+     924.5666666666666
+    ]
+   ],
+   "sha256": "96021245c2f21a762eeae72aff5ae7b6db9403a20ab48aa41822d5aaac42c46f",
+   "training_decisions": 1296
+  },
+  "30": {
+   "episode": 18,
+   "validation": [
+    [
+     9,
+     1205.5166666666669
+    ],
+    [
+     18,
+     813.6333333333334
+    ]
+   ],
+   "sha256": "fba4e4c3a159d3b55e2dba3dd945738a90a1aeacbdbde9d904ab8d02cdb52fa7",
+   "training_decisions": 1296
+  },
+  "40": {
+   "episode": 9,
+   "validation": [
+    [
+     9,
+     992.2833333333332
+    ],
+    [
+     18,
+     1001.8499999999998
+    ]
+   ],
+   "sha256": "cb6ab97c6b68cc5362220e7838014179b6041074ae6595863fd983ffe0582a67",
+   "training_decisions": 1296
+  },
+  "50": {
+   "episode": 9,
+   "validation": [
+    [
+     9,
+     646.1166666666667
+    ],
+    [
+     18,
+     1044.8833333333334
+    ]
+   ],
+   "sha256": "6b27a272e13d3fc33745842762f515f9c471224abc9a386cbafae01f509b1a70",
+   "training_decisions": 1296
+  }
+ },
+ "traces": [
+  {
+   "scenario": "nominal",
+   "trace_seed": 930000,
+   "trace_sha256": "d8c8f658562e160fda4b3d7cb6a65b2bc0c25ac833c1ea9c6528f016d7a36eed",
+   "results": {
+    "thesis": {
+     "total_cost": 116.94999999999995,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 20,
+     "switching_units": 8,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      1787,
+      1817
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 200.45000000000007,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 425,
+     "switching_units": 66,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      1952,
+      2057
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 390.1500000000001,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      2477,
+      2507
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 460.19999999999993,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      2827,
+      2507
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 190.25000000000014,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 385,
+     "switching_units": 31,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      2092,
+      1877
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 181.80000000000013,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      2127,
+      1807
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 398.95000000000016,
+     "offered": 1053,
+     "admitted": 1053,
+     "delivered": 1049,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 974,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1440,
+     "switching_units": 20,
+     "stage_service": [
+      1053,
+      1053,
+      1049
+     ],
+     "stage_supply": [
+      1790,
+      2497,
+      2527
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "nominal",
+   "trace_seed": 930001,
+   "trace_sha256": "952ad8869d593f8f516c4bc53197e2c6e16bd89fa7b0541a109fd262bdcd634d",
+   "results": {
+    "thesis": {
+     "total_cost": 119.79999999999993,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 25,
+     "switching_units": 4,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      1788,
+      1803
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 135.09999999999994,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 100,
+     "switching_units": 17,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      1853,
+      1813
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 391.5000000000002,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      2478,
+      2488
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 461.54999999999995,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      2828,
+      2488
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 190.6499999999998,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 380,
+     "switching_units": 31,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      2098,
+      1848
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 182.9499999999999,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      2128,
+      1788
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 400.3000000000001,
+     "offered": 1078,
+     "admitted": 1078,
+     "delivered": 1077,
+     "lost": 0,
+     "outstanding": 1,
+     "mature_packets": 998,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1440,
+     "switching_units": 20,
+     "stage_service": [
+      1078,
+      1077,
+      1077
+     ],
+     "stage_supply": [
+      1790,
+      2498,
+      2508
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "nominal",
+   "trace_seed": 930002,
+   "trace_sha256": "3d397e4f1118529afb54e58bed55ee077ac715d4dc514dc3545e7cebb0bdb496",
+   "results": {
+    "thesis": {
+     "total_cost": 116.80000000000004,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 10,
+     "switching_units": 4,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      1820,
+      1812
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 152.94999999999993,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 185,
+     "switching_units": 34,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      1910,
+      1897
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 391.5000000000001,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      2515,
+      2507
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 461.55,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      2865,
+      2507
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 188.64999999999992,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 370,
+     "switching_units": 19,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      2145,
+      1847
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 183.74999999999994,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      2165,
+      1807
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 396.1000000000001,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1064,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 984,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1420,
+     "switching_units": 16,
+     "stage_service": [
+      1070,
+      1068,
+      1064
+     ],
+     "stage_supply": [
+      1803,
+      2535,
+      2507
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "nominal",
+   "trace_seed": 930003,
+   "trace_sha256": "2c5ecfde13ac67e1eb672fcaf8940dcaaa1161d7830fec215cb20b682ebea91f",
+   "results": {
+    "thesis": {
+     "total_cost": 118.40000000000005,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 30,
+     "switching_units": 6,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      1816,
+      1795
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 165.39999999999998,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 255,
+     "switching_units": 52,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      1921,
+      1915
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 389.3500000000002,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      2496,
+      2485
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 459.39999999999986,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      2846,
+      2485
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 190.2000000000001,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 385,
+     "switching_units": 37,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      2111,
+      1855
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 181.40000000000012,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      2146,
+      1785
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 398.1500000000002,
+     "offered": 1045,
+     "admitted": 1045,
+     "delivered": 1036,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 944,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1440,
+     "switching_units": 20,
+     "stage_service": [
+      1044,
+      1040,
+      1036
+     ],
+     "stage_supply": [
+      1795,
+      2516,
+      2505
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "nominal",
+   "trace_seed": 930004,
+   "trace_sha256": "8d729f3962388a615bdc089e6aa49c14b67f11effbab47c2899035885cffd29e",
+   "results": {
+    "thesis": {
+     "total_cost": 117.55000000000005,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1065,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 20,
+     "switching_units": 4,
+     "stage_service": [
+      1070,
+      1069,
+      1065
+     ],
+     "stage_supply": [
+      1788,
+      1838,
+      1815
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 116.75000000000004,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1065,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 5,
+     "extra_unit_slots": 15,
+     "switching_units": 2,
+     "stage_service": [
+      1070,
+      1069,
+      1065
+     ],
+     "stage_supply": [
+      1788,
+      1838,
+      1810
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 391.15,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1066,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1070,
+      1069,
+      1066
+     ],
+     "stage_supply": [
+      1788,
+      2523,
+      2510
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 461.19999999999965,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1066,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1070,
+      1069,
+      1066
+     ],
+     "stage_supply": [
+      1788,
+      2873,
+      2510
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 189.75000000000006,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1065,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 380,
+     "switching_units": 31,
+     "stage_service": [
+      1070,
+      1069,
+      1065
+     ],
+     "stage_supply": [
+      1788,
+      2143,
+      1870
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 182.1500000000001,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1065,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1070,
+      1069,
+      1065
+     ],
+     "stage_supply": [
+      1788,
+      2173,
+      1810
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 397.9500000000001,
+     "offered": 1070,
+     "admitted": 1070,
+     "delivered": 1066,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 987,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 4,
+     "extra_unit_slots": 1430,
+     "switching_units": 20,
+     "stage_service": [
+      1070,
+      1069,
+      1066
+     ],
+     "stage_supply": [
+      1788,
+      2543,
+      2520
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_transport",
+   "trace_seed": 930100,
+   "trace_sha256": "416cef7ee0e31ea1205a1e1b133bb8ef789563f24ff0bc1f0725645c709f3d20",
+   "results": {
+    "thesis": {
+     "total_cost": 569.3499999999997,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 16,
+     "mature_packets": 1277,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 840,
+     "switching_units": 54,
+     "stage_service": [
+      1374,
+      1370,
+      1365
+     ],
+     "stage_supply": [
+      1800,
+      1942,
+      2221
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 537.3000000000002,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 16,
+     "mature_packets": 1277,
+     "deadline_misses": 12,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 810,
+     "switching_units": 68,
+     "stage_service": [
+      1374,
+      1370,
+      1365
+     ],
+     "stage_supply": [
+      1800,
+      1972,
+      2161
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 614.0500000000001,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1366,
+     "lost": 0,
+     "outstanding": 15,
+     "mature_packets": 1277,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1374,
+      1370,
+      1366
+     ],
+     "stage_supply": [
+      1800,
+      2217,
+      2506
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 662.3500000000001,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1366,
+     "lost": 0,
+     "outstanding": 15,
+     "mature_packets": 1277,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1374,
+      1370,
+      1366
+     ],
+     "stage_supply": [
+      1800,
+      2567,
+      2506
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1147.299999999999,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1317,
+     "lost": 0,
+     "outstanding": 64,
+     "mature_packets": 1277,
+     "deadline_misses": 171,
+     "delivered_p99_slots": 63,
+     "extra_unit_slots": 405,
+     "switching_units": 50,
+     "stage_service": [
+      1374,
+      1363,
+      1317
+     ],
+     "stage_supply": [
+      1800,
+      1822,
+      1906
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 741.6500000000002,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 16,
+     "mature_packets": 1277,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 30,
+     "extra_unit_slots": 510,
+     "switching_units": 9,
+     "stage_service": [
+      1374,
+      1370,
+      1365
+     ],
+     "stage_supply": [
+      1800,
+      2027,
+      1806
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 614.0500000000001,
+     "offered": 1381,
+     "admitted": 1381,
+     "delivered": 1366,
+     "lost": 0,
+     "outstanding": 15,
+     "mature_packets": 1277,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1374,
+      1370,
+      1366
+     ],
+     "stage_supply": [
+      1800,
+      2217,
+      2506
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_transport",
+   "trace_seed": 930101,
+   "trace_sha256": "9938a26e363265cc115c219d6f5e5c4ec28d8792bcbdb4d4e005722f8e7f2850",
+   "results": {
+    "thesis": {
+     "total_cost": 535.0999999999999,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1334,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 1243,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 690,
+     "switching_units": 32,
+     "stage_service": [
+      1339,
+      1337,
+      1334
+     ],
+     "stage_supply": [
+      1774,
+      1928,
+      2126
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 537.9999999999999,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1334,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 1243,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 20,
+     "extra_unit_slots": 670,
+     "switching_units": 56,
+     "stage_service": [
+      1339,
+      1337,
+      1334
+     ],
+     "stage_supply": [
+      1774,
+      2023,
+      2011
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 678.1,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1334,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 1243,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1339,
+      1337,
+      1334
+     ],
+     "stage_supply": [
+      1774,
+      2238,
+      2526
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 728.65,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1334,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 1243,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1339,
+      1337,
+      1334
+     ],
+     "stage_supply": [
+      1774,
+      2588,
+      2526
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1129.1499999999999,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1293,
+     "lost": 0,
+     "outstanding": 46,
+     "mature_packets": 1243,
+     "deadline_misses": 161,
+     "delivered_p99_slots": 49,
+     "extra_unit_slots": 385,
+     "switching_units": 26,
+     "stage_service": [
+      1339,
+      1337,
+      1293
+     ],
+     "stage_supply": [
+      1774,
+      1863,
+      1886
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 797.3999999999996,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1334,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 1243,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 33,
+     "extra_unit_slots": 480,
+     "switching_units": 9,
+     "stage_service": [
+      1339,
+      1337,
+      1334
+     ],
+     "stage_supply": [
+      1774,
+      2018,
+      1826
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 678.1,
+     "offered": 1339,
+     "admitted": 1339,
+     "delivered": 1334,
+     "lost": 0,
+     "outstanding": 5,
+     "mature_packets": 1243,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1339,
+      1337,
+      1334
+     ],
+     "stage_supply": [
+      1774,
+      2238,
+      2526
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_transport",
+   "trace_seed": 930102,
+   "trace_sha256": "340ffe8f45242fd6a5e020681c7b8b6010e47f7b91302045191ae56776ed8efe",
+   "results": {
+    "thesis": {
+     "total_cost": 622.3500000000005,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1353,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 1272,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 23,
+     "extra_unit_slots": 770,
+     "switching_units": 28,
+     "stage_service": [
+      1362,
+      1359,
+      1353
+     ],
+     "stage_supply": [
+      1801,
+      1947,
+      2151
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 563.1500000000007,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1353,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 1272,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 24,
+     "extra_unit_slots": 750,
+     "switching_units": 48,
+     "stage_service": [
+      1362,
+      1359,
+      1353
+     ],
+     "stage_supply": [
+      1801,
+      1982,
+      2096
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 683.8499999999999,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1354,
+     "lost": 0,
+     "outstanding": 8,
+     "mature_packets": 1272,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 24,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1362,
+      1359,
+      1354
+     ],
+     "stage_supply": [
+      1801,
+      2222,
+      2506
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 735.1999999999997,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1354,
+     "lost": 0,
+     "outstanding": 8,
+     "mature_packets": 1272,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 24,
+     "extra_unit_slots": 1730,
+     "switching_units": 7,
+     "stage_service": [
+      1362,
+      1359,
+      1354
+     ],
+     "stage_supply": [
+      1801,
+      2552,
+      2506
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1268.0999999999997,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1294,
+     "lost": 0,
+     "outstanding": 68,
+     "mature_packets": 1272,
+     "deadline_misses": 199,
+     "delivered_p99_slots": 65,
+     "extra_unit_slots": 400,
+     "switching_units": 32,
+     "stage_service": [
+      1362,
+      1336,
+      1294
+     ],
+     "stage_supply": [
+      1801,
+      1842,
+      1886
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 850.1999999999995,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1352,
+     "lost": 0,
+     "outstanding": 10,
+     "mature_packets": 1272,
+     "deadline_misses": 3,
+     "delivered_p99_slots": 40,
+     "extra_unit_slots": 480,
+     "switching_units": 9,
+     "stage_service": [
+      1362,
+      1359,
+      1352
+     ],
+     "stage_supply": [
+      1801,
+      2002,
+      1806
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 688.4499999999999,
+     "offered": 1362,
+     "admitted": 1362,
+     "delivered": 1354,
+     "lost": 0,
+     "outstanding": 8,
+     "mature_packets": 1272,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 24,
+     "extra_unit_slots": 1420,
+     "switching_units": 16,
+     "stage_service": [
+      1362,
+      1359,
+      1354
+     ],
+     "stage_supply": [
+      1801,
+      2237,
+      2511
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_transport",
+   "trace_seed": 930103,
+   "trace_sha256": "96d5043bf24c6bade5092c18971dcfdf79d79c5095a0e14a4c5c5b77cd492e96",
+   "results": {
+    "thesis": {
+     "total_cost": 595.7500000000003,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 10,
+     "mature_packets": 1278,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 23,
+     "extra_unit_slots": 725,
+     "switching_units": 24,
+     "stage_service": [
+      1375,
+      1369,
+      1365
+     ],
+     "stage_supply": [
+      1784,
+      1909,
+      2110
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 615.1500000000007,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 10,
+     "mature_packets": 1278,
+     "deadline_misses": 16,
+     "delivered_p99_slots": 23,
+     "extra_unit_slots": 740,
+     "switching_units": 78,
+     "stage_service": [
+      1375,
+      1369,
+      1365
+     ],
+     "stage_supply": [
+      1784,
+      1904,
+      2130
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 717.2499999999997,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 10,
+     "mature_packets": 1278,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 25,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1375,
+      1369,
+      1365
+     ],
+     "stage_supply": [
+      1784,
+      2194,
+      2500
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 765.7000000000005,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 10,
+     "mature_packets": 1278,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 23,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1375,
+      1369,
+      1365
+     ],
+     "stage_supply": [
+      1784,
+      2544,
+      2500
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1106.4999999999998,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1296,
+     "lost": 0,
+     "outstanding": 79,
+     "mature_packets": 1278,
+     "deadline_misses": 154,
+     "delivered_p99_slots": 54,
+     "extra_unit_slots": 375,
+     "switching_units": 25,
+     "stage_service": [
+      1375,
+      1336,
+      1296
+     ],
+     "stage_supply": [
+      1784,
+      1819,
+      1850
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 836.5,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1356,
+     "lost": 0,
+     "outstanding": 19,
+     "mature_packets": 1278,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 38,
+     "extra_unit_slots": 470,
+     "switching_units": 9,
+     "stage_service": [
+      1375,
+      1369,
+      1356
+     ],
+     "stage_supply": [
+      1784,
+      1964,
+      1800
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 721.4999999999995,
+     "offered": 1375,
+     "admitted": 1375,
+     "delivered": 1365,
+     "lost": 0,
+     "outstanding": 10,
+     "mature_packets": 1278,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 25,
+     "extra_unit_slots": 1420,
+     "switching_units": 12,
+     "stage_service": [
+      1375,
+      1369,
+      1365
+     ],
+     "stage_supply": [
+      1784,
+      2204,
+      2510
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_transport",
+   "trace_seed": 930104,
+   "trace_sha256": "1182818ed8195102cf0c6f069fa9918826fd0bc7c245b28b69ebc3d239fd18df",
+   "results": {
+    "thesis": {
+     "total_cost": 492.8500000000001,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1361,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 1269,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 760,
+     "switching_units": 42,
+     "stage_service": [
+      1367,
+      1365,
+      1361
+     ],
+     "stage_supply": [
+      1785,
+      1965,
+      2116
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 461.8,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1361,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 1269,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 660,
+     "switching_units": 54,
+     "stage_service": [
+      1367,
+      1365,
+      1361
+     ],
+     "stage_supply": [
+      1785,
+      1935,
+      2046
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 590.7499999999998,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1361,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 1269,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1367,
+      1366,
+      1361
+     ],
+     "stage_supply": [
+      1785,
+      2235,
+      2486
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 647.2999999999997,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1361,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 1269,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1367,
+      1366,
+      1361
+     ],
+     "stage_supply": [
+      1785,
+      2585,
+      2486
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1066.9499999999996,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1325,
+     "lost": 0,
+     "outstanding": 42,
+     "mature_packets": 1269,
+     "deadline_misses": 142,
+     "delivered_p99_slots": 53,
+     "extra_unit_slots": 410,
+     "switching_units": 38,
+     "stage_service": [
+      1367,
+      1366,
+      1325
+     ],
+     "stage_supply": [
+      1785,
+      1835,
+      1896
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 702.25,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1361,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 1269,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 32,
+     "extra_unit_slots": 440,
+     "switching_units": 9,
+     "stage_service": [
+      1367,
+      1366,
+      1361
+     ],
+     "stage_supply": [
+      1785,
+      1975,
+      1786
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 590.7499999999998,
+     "offered": 1367,
+     "admitted": 1367,
+     "delivered": 1361,
+     "lost": 0,
+     "outstanding": 6,
+     "mature_packets": 1269,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1367,
+      1366,
+      1361
+     ],
+     "stage_supply": [
+      1785,
+      2235,
+      2486
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_compute",
+   "trace_seed": 930200,
+   "trace_sha256": "2f339a72bd9364de7d71f36713ef790fe2a7d4d3721eeffe4b9ae09741375256",
+   "results": {
+    "thesis": {
+     "total_cost": 704.2000000000003,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1382,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1291,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 26,
+     "extra_unit_slots": 730,
+     "switching_units": 35,
+     "stage_service": [
+      1386,
+      1382,
+      1382
+     ],
+     "stage_supply": [
+      1803,
+      2131,
+      1885
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 696.6500000000002,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1382,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1291,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 805,
+     "switching_units": 58,
+     "stage_service": [
+      1386,
+      1382,
+      1382
+     ],
+     "stage_supply": [
+      1803,
+      2106,
+      1985
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 781.35,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1382,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1291,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1386,
+      1382,
+      1382
+     ],
+     "stage_supply": [
+      1803,
+      2471,
+      2215
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 851.3999999999999,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1382,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1291,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1386,
+      1382,
+      1382
+     ],
+     "stage_supply": [
+      1803,
+      2821,
+      2215
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 976.0,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1382,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1291,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 37,
+     "extra_unit_slots": 710,
+     "switching_units": 65,
+     "stage_service": [
+      1386,
+      1382,
+      1382
+     ],
+     "stage_supply": [
+      1803,
+      2136,
+      1860
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 2046.950000000001,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1156,
+     "lost": 0,
+     "outstanding": 230,
+     "mature_packets": 1291,
+     "deadline_misses": 456,
+     "delivered_p99_slots": 91,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1386,
+      1382,
+      1156
+     ],
+     "stage_supply": [
+      1803,
+      2121,
+      1515
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 788.1500000000001,
+     "offered": 1386,
+     "admitted": 1386,
+     "delivered": 1382,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1291,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 1430,
+     "switching_units": 20,
+     "stage_service": [
+      1386,
+      1382,
+      1382
+     ],
+     "stage_supply": [
+      1803,
+      2496,
+      2220
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_compute",
+   "trace_seed": 930201,
+   "trace_sha256": "a6e45a19161d034ebeeb0f674819ce0f5fabcee9e397ee24a5eeca9e98e913bd",
+   "results": {
+    "thesis": {
+     "total_cost": 499.0500000000001,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1321,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1232,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 19,
+     "extra_unit_slots": 610,
+     "switching_units": 30,
+     "stage_service": [
+      1325,
+      1322,
+      1321
+     ],
+     "stage_supply": [
+      1808,
+      2071,
+      1869
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 479.45000000000005,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1321,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1232,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 16,
+     "extra_unit_slots": 670,
+     "switching_units": 57,
+     "stage_service": [
+      1325,
+      1322,
+      1321
+     ],
+     "stage_supply": [
+      1808,
+      2126,
+      1874
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 577.0000000000001,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1321,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1232,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 17,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1325,
+      1322,
+      1321
+     ],
+     "stage_supply": [
+      1808,
+      2516,
+      2214
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 647.0500000000001,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1321,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1232,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 17,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1325,
+      1322,
+      1321
+     ],
+     "stage_supply": [
+      1808,
+      2866,
+      2214
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1015.7499999999998,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1321,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1232,
+     "deadline_misses": 179,
+     "delivered_p99_slots": 50,
+     "extra_unit_slots": 535,
+     "switching_units": 53,
+     "stage_service": [
+      1325,
+      1322,
+      1321
+     ],
+     "stage_supply": [
+      1808,
+      2136,
+      1729
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 1663.5999999999997,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1171,
+     "lost": 0,
+     "outstanding": 154,
+     "mature_packets": 1232,
+     "deadline_misses": 389,
+     "delivered_p99_slots": 80,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1325,
+      1322,
+      1171
+     ],
+     "stage_supply": [
+      1808,
+      2166,
+      1514
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 579.3000000000002,
+     "offered": 1325,
+     "admitted": 1325,
+     "delivered": 1321,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1232,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 16,
+     "extra_unit_slots": 1410,
+     "switching_units": 10,
+     "stage_service": [
+      1325,
+      1322,
+      1321
+     ],
+     "stage_supply": [
+      1808,
+      2526,
+      2214
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_compute",
+   "trace_seed": 930202,
+   "trace_sha256": "541c6f1e6c257ff8803b0bf894c11a266e4fdd62a12900533133113bbc8a4350",
+   "results": {
+    "thesis": {
+     "total_cost": 626.1000000000004,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1359,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1276,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 25,
+     "extra_unit_slots": 730,
+     "switching_units": 22,
+     "stage_service": [
+      1363,
+      1362,
+      1359
+     ],
+     "stage_supply": [
+      1793,
+      2158,
+      1898
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 620.9999999999998,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1359,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1276,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 24,
+     "extra_unit_slots": 690,
+     "switching_units": 49,
+     "stage_service": [
+      1363,
+      1362,
+      1359
+     ],
+     "stage_supply": [
+      1793,
+      2063,
+      1953
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 746.4000000000002,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1359,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1276,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 27,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1363,
+      1362,
+      1359
+     ],
+     "stage_supply": [
+      1793,
+      2513,
+      2213
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 816.4500000000002,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1359,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1276,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 27,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1363,
+      1362,
+      1359
+     ],
+     "stage_supply": [
+      1793,
+      2863,
+      2213
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1011.0000000000002,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1359,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1276,
+     "deadline_misses": 17,
+     "delivered_p99_slots": 41,
+     "extra_unit_slots": 715,
+     "switching_units": 81,
+     "stage_service": [
+      1363,
+      1362,
+      1359
+     ],
+     "stage_supply": [
+      1793,
+      2198,
+      1843
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 1970.3500000000004,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1156,
+     "lost": 0,
+     "outstanding": 207,
+     "mature_packets": 1276,
+     "deadline_misses": 443,
+     "delivered_p99_slots": 87,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1363,
+      1362,
+      1156
+     ],
+     "stage_supply": [
+      1793,
+      2163,
+      1513
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 748.6000000000001,
+     "offered": 1363,
+     "admitted": 1363,
+     "delivered": 1359,
+     "lost": 0,
+     "outstanding": 4,
+     "mature_packets": 1276,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 27,
+     "extra_unit_slots": 1410,
+     "switching_units": 8,
+     "stage_service": [
+      1363,
+      1362,
+      1359
+     ],
+     "stage_supply": [
+      1793,
+      2518,
+      2218
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_compute",
+   "trace_seed": 930203,
+   "trace_sha256": "df7b2a8ab4766e4d6f893a24ef1f99513bf3dda1f797a995c3b474b75acce82b",
+   "results": {
+    "thesis": {
+     "total_cost": 630.65,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1376,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 1284,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 650,
+     "switching_units": 34,
+     "stage_service": [
+      1385,
+      1381,
+      1376
+     ],
+     "stage_supply": [
+      1796,
+      2087,
+      1875
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 574.9499999999999,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1376,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 1284,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 21,
+     "extra_unit_slots": 595,
+     "switching_units": 46,
+     "stage_service": [
+      1385,
+      1381,
+      1376
+     ],
+     "stage_supply": [
+      1796,
+      2022,
+      1885
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 727.1999999999997,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1377,
+     "lost": 0,
+     "outstanding": 8,
+     "mature_packets": 1284,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 22,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1385,
+      1381,
+      1377
+     ],
+     "stage_supply": [
+      1796,
+      2497,
+      2215
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 797.2500000000005,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1377,
+     "lost": 0,
+     "outstanding": 8,
+     "mature_packets": 1284,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 22,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1385,
+      1381,
+      1377
+     ],
+     "stage_supply": [
+      1796,
+      2847,
+      2215
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1072.950000000001,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1376,
+     "lost": 0,
+     "outstanding": 9,
+     "mature_packets": 1284,
+     "deadline_misses": 173,
+     "delivered_p99_slots": 46,
+     "extra_unit_slots": 705,
+     "switching_units": 81,
+     "stage_service": [
+      1385,
+      1381,
+      1376
+     ],
+     "stage_supply": [
+      1796,
+      2152,
+      1865
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 1925.5500000000006,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1177,
+     "lost": 0,
+     "outstanding": 208,
+     "mature_packets": 1284,
+     "deadline_misses": 429,
+     "delivered_p99_slots": 89,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1385,
+      1381,
+      1177
+     ],
+     "stage_supply": [
+      1796,
+      2147,
+      1515
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 755.6999999999996,
+     "offered": 1385,
+     "admitted": 1385,
+     "delivered": 1377,
+     "lost": 0,
+     "outstanding": 8,
+     "mature_packets": 1284,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 23,
+     "extra_unit_slots": 1400,
+     "switching_units": 16,
+     "stage_service": [
+      1385,
+      1381,
+      1377
+     ],
+     "stage_supply": [
+      1796,
+      2512,
+      2200
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  },
+  {
+   "scenario": "bursty_compute",
+   "trace_seed": 930204,
+   "trace_sha256": "0080ec85bdff4ad22849379feaa18934229226261add7bba52c2952c84ecbe11",
+   "results": {
+    "thesis": {
+     "total_cost": 670.9500000000003,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1340,
+     "lost": 0,
+     "outstanding": 7,
+     "mature_packets": 1246,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 765,
+     "switching_units": 24,
+     "stage_service": [
+      1347,
+      1344,
+      1340
+     ],
+     "stage_supply": [
+      1768,
+      2155,
+      1918
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "greedy": {
+     "total_cost": 663.8999999999996,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1340,
+     "lost": 0,
+     "outstanding": 7,
+     "mature_packets": 1246,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 750,
+     "switching_units": 56,
+     "stage_service": [
+      1347,
+      1345,
+      1340
+     ],
+     "stage_supply": [
+      1768,
+      2135,
+      1923
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "10": {
+     "total_cost": 771.0000000000002,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1340,
+     "lost": 0,
+     "outstanding": 7,
+     "mature_packets": 1246,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 1400,
+     "switching_units": 4,
+     "stage_service": [
+      1347,
+      1345,
+      1340
+     ],
+     "stage_supply": [
+      1768,
+      2505,
+      2203
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "20": {
+     "total_cost": 841.0500000000002,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1340,
+     "lost": 0,
+     "outstanding": 7,
+     "mature_packets": 1246,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 1750,
+     "switching_units": 5,
+     "stage_service": [
+      1347,
+      1345,
+      1340
+     ],
+     "stage_supply": [
+      1768,
+      2855,
+      2203
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "30": {
+     "total_cost": 1026.8000000000002,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1340,
+     "lost": 0,
+     "outstanding": 7,
+     "mature_packets": 1246,
+     "deadline_misses": 194,
+     "delivered_p99_slots": 46,
+     "extra_unit_slots": 670,
+     "switching_units": 49,
+     "stage_service": [
+      1347,
+      1345,
+      1340
+     ],
+     "stage_supply": [
+      1768,
+      2190,
+      1788
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "40": {
+     "total_cost": 1857.0499999999988,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1150,
+     "lost": 0,
+     "outstanding": 197,
+     "mature_packets": 1246,
+     "deadline_misses": 409,
+     "delivered_p99_slots": 88,
+     "extra_unit_slots": 350,
+     "switching_units": 1,
+     "stage_service": [
+      1347,
+      1345,
+      1150
+     ],
+     "stage_supply": [
+      1768,
+      2155,
+      1503
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    },
+    "50": {
+     "total_cost": 777.8000000000003,
+     "offered": 1347,
+     "admitted": 1347,
+     "delivered": 1340,
+     "lost": 0,
+     "outstanding": 7,
+     "mature_packets": 1246,
+     "deadline_misses": 0,
+     "delivered_p99_slots": 28,
+     "extra_unit_slots": 1430,
+     "switching_units": 20,
+     "stage_service": [
+      1347,
+      1345,
+      1340
+     ],
+     "stage_supply": [
+      1768,
+      2525,
+      2213
+     ],
+     "paired_observation_checks": 0,
+     "end_state_checked": true,
+     "decision_epochs": 72
+    }
+   }
+  }
+ ]
+}
