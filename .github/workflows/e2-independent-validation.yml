@@ -1,9 +1,13 @@
 name: Independent cross-host frozen-policy validation
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/e2-independent-validation.yml']
+    inputs:
+      runner:
+        description: Runner image(s) to execute
+        required: true
+        default: all
+        type: choice
+        options: [all, ubuntu-22.04, ubuntu-24.04]
 permissions:
   contents: read
 jobs:
@@ -11,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-22.04, ubuntu-24.04]
+        os: ${{ fromJSON(inputs.runner == 'ubuntu-22.04' && '["ubuntu-22.04"]' || inputs.runner == 'ubuntu-24.04' && '["ubuntu-24.04"]' || '["ubuntu-22.04","ubuntu-24.04"]') }}
     runs-on: ${{ matrix.os }}
     timeout-minutes: 70
     env:
@@ -22,7 +26,7 @@ jobs:
         run: |
           mkdir evidence
           sudo apt-get update -qq
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libsctp-dev cmake swig bison flex libsqlite3-dev tcpdump tshark iperf3 iproute2 autoconf automake libtool
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y gcc-12 libsctp-dev cmake swig bison flex libsqlite3-dev tcpdump tshark iperf3 iproute2 autoconf automake libtool
           sudo modprobe sctp || true
           python3 thesis_platform/preflight.py | tee evidence/preflight.json
           jq -e '.native_ipv4_sctp.round_trip and .build_prerequisites_present' evidence/preflight.json
@@ -50,7 +54,7 @@ jobs:
           sed -i 's/req->msg.action == 42/req->msg.action >= 1 \&\& req->msg.action <= 19/' flexric/src/sm/mac_sm/mac_sm_ric.c
           sed -i 's/msg.action == 42/msg.action >= 1 \&\& msg.action <= 19/;s/Only action number 42 supported/Expected share in 1..19/' flexric/src/sm/mac_sm/mac_sm_agent.c
           git -C flexric diff > evidence/experiment.patch
-          cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
+          CC=gcc-12 cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
           # Build the two endpoints and their dynamically loaded service models.
           cmake --build build --target help > evidence/build-targets.txt
           mapfile -t models < <(awk '$2 ~ /_sm$/ && $2 !~ /^test_/ {print $2}' evidence/build-targets.txt)
