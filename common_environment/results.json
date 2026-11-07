@@ -1,0 +1,55 @@
+{
+  "seed": 74103,
+  "horizon": 360,
+  "trace_sha256": "b3409019ebda181032867636feb24836e76f13b35f3c1fb2c2d321bef6082413",
+  "policies": {
+    "thesis": {
+      "offered": 1311,
+      "admitted": 1311,
+      "delivered": 1304,
+      "lost": 0,
+      "outstanding": 7,
+      "mature_packets": 1204,
+      "deadline_misses": 0,
+      "delivered_p99_slots": 17,
+      "extra_unit_slots": 595,
+      "switching_units": 26,
+      "stage_service": [
+        1311,
+        1309,
+        1304
+      ],
+      "stage_supply": [
+        1791,
+        1853,
+        2089
+      ],
+      "paired_observation_checks": 72,
+      "end_state_checked": true
+    },
+    "greedy": {
+      "offered": 1311,
+      "admitted": 1311,
+      "delivered": 1304,
+      "lost": 0,
+      "outstanding": 7,
+      "mature_packets": 1204,
+      "deadline_misses": 0,
+      "delivered_p99_slots": 15,
+      "extra_unit_slots": 670,
+      "switching_units": 59,
+      "stage_service": [
+        1311,
+        1310,
+        1304
+      ],
+      "stage_supply": [
+        1791,
+        1918,
+        2099
+      ],
+      "paired_observation_checks": 72,
+      "end_state_checked": true
+    }
+  }
+}
