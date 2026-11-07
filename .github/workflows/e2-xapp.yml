@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['.github/workflows/e2-xapp.yml']
+    paths: ['.github/workflows/e2-xapp.yml', 'thesis_platform/xapp/**']
 permissions:
   contents: read
 jobs:
