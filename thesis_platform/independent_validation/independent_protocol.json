@@ -1,0 +1,826 @@
+{
+  "protocol_version": 1,
+  "frozen_before_execution": true,
+  "source_policy_commit": "382f530b8886ee2f049c6ebb2981b4a41c2ee471",
+  "policies": [
+    "adaptive",
+    "thesis_floor",
+    "proportional_floor"
+  ],
+  "transition_speeds": [
+    "fast",
+    "medium",
+    "slow"
+  ],
+  "seeds_by_speed": {
+    "fast": [
+      1108001,
+      1108002,
+      1108003,
+      1108004,
+      1108005,
+      1108006
+    ],
+    "medium": [
+      1108101,
+      1108102,
+      1108103,
+      1108104,
+      1108105,
+      1108106
+    ],
+    "slow": [
+      1108201,
+      1108202,
+      1108203,
+      1108204,
+      1108205,
+      1108206
+    ]
+  },
+  "windows_per_trace": 8,
+  "window_seconds": 2,
+  "deadlines_ms": [
+    15,
+    40
+  ],
+  "budget_mbps": 16,
+  "floor_pct": 40,
+  "traces": [
+    {
+      "speed": "fast",
+      "seed": 1108001,
+      "order": [
+        "adaptive",
+        "thesis_floor",
+        "proportional_floor"
+      ],
+      "rates_mbps": [
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ]
+      ]
+    },
+    {
+      "speed": "fast",
+      "seed": 1108002,
+      "order": [
+        "adaptive",
+        "proportional_floor",
+        "thesis_floor"
+      ],
+      "rates_mbps": [
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    },
+    {
+      "speed": "fast",
+      "seed": 1108003,
+      "order": [
+        "thesis_floor",
+        "adaptive",
+        "proportional_floor"
+      ],
+      "rates_mbps": [
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ]
+      ]
+    },
+    {
+      "speed": "fast",
+      "seed": 1108004,
+      "order": [
+        "thesis_floor",
+        "proportional_floor",
+        "adaptive"
+      ],
+      "rates_mbps": [
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ]
+      ]
+    },
+    {
+      "speed": "fast",
+      "seed": 1108005,
+      "order": [
+        "proportional_floor",
+        "adaptive",
+        "thesis_floor"
+      ],
+      "rates_mbps": [
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ]
+      ]
+    },
+    {
+      "speed": "fast",
+      "seed": 1108006,
+      "order": [
+        "proportional_floor",
+        "thesis_floor",
+        "adaptive"
+      ],
+      "rates_mbps": [
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    },
+    {
+      "speed": "medium",
+      "seed": 1108101,
+      "order": [
+        "adaptive",
+        "thesis_floor",
+        "proportional_floor"
+      ],
+      "rates_mbps": [
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ]
+      ]
+    },
+    {
+      "speed": "medium",
+      "seed": 1108102,
+      "order": [
+        "adaptive",
+        "proportional_floor",
+        "thesis_floor"
+      ],
+      "rates_mbps": [
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    },
+    {
+      "speed": "medium",
+      "seed": 1108103,
+      "order": [
+        "thesis_floor",
+        "adaptive",
+        "proportional_floor"
+      ],
+      "rates_mbps": [
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ]
+      ]
+    },
+    {
+      "speed": "medium",
+      "seed": 1108104,
+      "order": [
+        "thesis_floor",
+        "proportional_floor",
+        "adaptive"
+      ],
+      "rates_mbps": [
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ]
+      ]
+    },
+    {
+      "speed": "medium",
+      "seed": 1108105,
+      "order": [
+        "proportional_floor",
+        "adaptive",
+        "thesis_floor"
+      ],
+      "rates_mbps": [
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ]
+      ]
+    },
+    {
+      "speed": "medium",
+      "seed": 1108106,
+      "order": [
+        "proportional_floor",
+        "thesis_floor",
+        "adaptive"
+      ],
+      "rates_mbps": [
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    },
+    {
+      "speed": "slow",
+      "seed": 1108201,
+      "order": [
+        "adaptive",
+        "thesis_floor",
+        "proportional_floor"
+      ],
+      "rates_mbps": [
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ]
+      ]
+    },
+    {
+      "speed": "slow",
+      "seed": 1108202,
+      "order": [
+        "adaptive",
+        "proportional_floor",
+        "thesis_floor"
+      ],
+      "rates_mbps": [
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    },
+    {
+      "speed": "slow",
+      "seed": 1108203,
+      "order": [
+        "thesis_floor",
+        "adaptive",
+        "proportional_floor"
+      ],
+      "rates_mbps": [
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ]
+      ]
+    },
+    {
+      "speed": "slow",
+      "seed": 1108204,
+      "order": [
+        "thesis_floor",
+        "proportional_floor",
+        "adaptive"
+      ],
+      "rates_mbps": [
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ]
+      ]
+    },
+    {
+      "speed": "slow",
+      "seed": 1108205,
+      "order": [
+        "proportional_floor",
+        "adaptive",
+        "thesis_floor"
+      ],
+      "rates_mbps": [
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          17,
+          6
+        ]
+      ]
+    },
+    {
+      "speed": "slow",
+      "seed": 1108206,
+      "order": [
+        "proportional_floor",
+        "thesis_floor",
+        "adaptive"
+      ],
+      "rates_mbps": [
+        [
+          17,
+          6
+        ],
+        [
+          16,
+          7
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          18,
+          5
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          18
+        ]
+      ]
+    }
+  ],
+  "interpretation": "Descriptive paired contrasts by speed and host. Preserve negative results. Flag host contrast discrepancies over 2 percentage points; do not retune."
+}
