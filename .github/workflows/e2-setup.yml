@@ -35,13 +35,13 @@ jobs:
           cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
           # Build the two endpoints and their dynamically loaded service models.
           cmake --build build --target help > evidence/build-targets.txt
-          mapfile -t models < <(awk '$2 ~ /_sm$/ {print $2}' evidence/build-targets.txt)
+          mapfile -t models < <(awk '$2 ~ /_sm$/ && $2 !~ /^test_/ {print $2}' evidence/build-targets.txt)
           cmake --build build -j4 --target nearRT-RIC emu_agent_gnb "${models[@]}"
           sudo mkdir -p /usr/local/etc/flexric /usr/local/lib/flexric
           conf=$(find flexric -name flexric.conf -type f | head -1)
-          sudo cp "$conf" /usr/local/etc/flexric/flexric.conf
+          sed -E 's/^NEAR_RIC_IP[[:space:]]*=.*/NEAR_RIC_IP = 127.0.0.1/' "$conf" > evidence/flexric.conf
+          sudo cp evidence/flexric.conf /usr/local/etc/flexric/flexric.conf
           find build -name 'lib*_sm.so' -exec sudo cp {} /usr/local/lib/flexric/ \;
-          cat "$conf" > evidence/flexric.conf
           ls -l /usr/local/lib/flexric > evidence/service-models.txt
       - name: Capture one E2 registration
         run: |
