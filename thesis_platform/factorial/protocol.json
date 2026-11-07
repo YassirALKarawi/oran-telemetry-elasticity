@@ -1,0 +1,264 @@
+{
+  "traces": [
+    {
+      "seed": 982301,
+      "rates_mbps": [
+        [
+          14,
+          4
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "order": [
+        "thesis",
+        "proportional",
+        "proportional_floor",
+        "thesis_floor"
+      ]
+    },
+    {
+      "seed": 982302,
+      "rates_mbps": [
+        [
+          6,
+          15
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "order": [
+        "proportional",
+        "thesis_floor",
+        "thesis",
+        "proportional_floor"
+      ]
+    },
+    {
+      "seed": 982303,
+      "rates_mbps": [
+        [
+          13,
+          2
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          11,
+          5
+        ]
+      ],
+      "order": [
+        "thesis_floor",
+        "proportional_floor",
+        "proportional",
+        "thesis"
+      ]
+    },
+    {
+      "seed": 982304,
+      "rates_mbps": [
+        [
+          5,
+          14
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          5,
+          15
+        ]
+      ],
+      "order": [
+        "proportional_floor",
+        "thesis",
+        "thesis_floor",
+        "proportional"
+      ]
+    },
+    {
+      "seed": 982305,
+      "rates_mbps": [
+        [
+          11,
+          5
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          6,
+          10
+        ]
+      ],
+      "order": [
+        "thesis",
+        "proportional",
+        "proportional_floor",
+        "thesis_floor"
+      ]
+    },
+    {
+      "seed": 982306,
+      "rates_mbps": [
+        [
+          5,
+          15
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          11,
+          3
+        ]
+      ],
+      "order": [
+        "proportional",
+        "thesis_floor",
+        "thesis",
+        "proportional_floor"
+      ]
+    },
+    {
+      "seed": 982307,
+      "rates_mbps": [
+        [
+          11,
+          3
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "order": [
+        "thesis_floor",
+        "proportional_floor",
+        "proportional",
+        "thesis"
+      ]
+    },
+    {
+      "seed": 982308,
+      "rates_mbps": [
+        [
+          6,
+          15
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "order": [
+        "proportional_floor",
+        "thesis",
+        "thesis_floor",
+        "proportional"
+      ]
+    }
+  ],
+  "deadlines_ms": [
+    15,
+    40
+  ],
+  "budget_mbps": 16,
+  "floor_pct": 40,
+  "primary": "Equal-trace mean combined on-time delivery, thesis_floor minus proportional_floor, percentage points",
+  "secondary": [
+    "per-class delivery within deadline",
+    "floor effect within each algorithm",
+    "difference of floor effects"
+  ]
+}
