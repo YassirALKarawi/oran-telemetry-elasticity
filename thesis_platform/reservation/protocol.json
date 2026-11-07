@@ -1,0 +1,296 @@
+{
+  "phases": {
+    "development": [
+      {
+        "seed": 971100,
+        "rates_mbps": [
+          [
+            10,
+            3
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            5,
+            11
+          ]
+        ],
+        "order": [
+          "thesis",
+          "proportional",
+          "floor4",
+          "floor6",
+          "floor8"
+        ]
+      },
+      {
+        "seed": 971101,
+        "rates_mbps": [
+          [
+            4,
+            15
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            4,
+            14
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            3,
+            10
+          ]
+        ],
+        "order": [
+          "proportional",
+          "floor4",
+          "floor6",
+          "floor8",
+          "thesis"
+        ]
+      },
+      {
+        "seed": 971102,
+        "rates_mbps": [
+          [
+            13,
+            4
+          ],
+          [
+            2,
+            15
+          ],
+          [
+            6,
+            13
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            5,
+            14
+          ]
+        ],
+        "order": [
+          "floor4",
+          "floor6",
+          "floor8",
+          "thesis",
+          "proportional"
+        ]
+      }
+    ],
+    "evaluation": [
+      {
+        "seed": 971200,
+        "rates_mbps": [
+          [
+            11,
+            5
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            4,
+            15
+          ]
+        ],
+        "order": [
+          "thesis",
+          "proportional",
+          "guarded"
+        ]
+      },
+      {
+        "seed": 971201,
+        "rates_mbps": [
+          [
+            4,
+            14
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            11,
+            3
+          ],
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            2
+          ]
+        ],
+        "order": [
+          "thesis",
+          "guarded",
+          "proportional"
+        ]
+      },
+      {
+        "seed": 971202,
+        "rates_mbps": [
+          [
+            15,
+            3
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            14,
+            5
+          ]
+        ],
+        "order": [
+          "proportional",
+          "thesis",
+          "guarded"
+        ]
+      },
+      {
+        "seed": 971203,
+        "rates_mbps": [
+          [
+            5,
+            14
+          ],
+          [
+            14,
+            5
+          ],
+          [
+            5,
+            13
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            6,
+            14
+          ]
+        ],
+        "order": [
+          "proportional",
+          "guarded",
+          "thesis"
+        ]
+      },
+      {
+        "seed": 971204,
+        "rates_mbps": [
+          [
+            15,
+            5
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            12,
+            4
+          ],
+          [
+            13,
+            4
+          ]
+        ],
+        "order": [
+          "guarded",
+          "thesis",
+          "proportional"
+        ]
+      },
+      {
+        "seed": 971205,
+        "rates_mbps": [
+          [
+            3,
+            15
+          ],
+          [
+            15,
+            4
+          ],
+          [
+            11,
+            4
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            2,
+            14
+          ]
+        ],
+        "order": [
+          "guarded",
+          "proportional",
+          "thesis"
+        ]
+      }
+    ]
+  },
+  "class_deadlines_ms": [
+    15,
+    40
+  ],
+  "class2_floor_units": [
+    4,
+    6,
+    8
+  ],
+  "total_units": 20,
+  "selection": "Across development traces take the floor with highest mean class-2 on-time rate among those retaining half of any positive original class-1 advantage over proportional. If none qualifies, maximize class-1 rate then class-2. Remaining ties favor the smaller floor.",
+  "evaluation": "Success on the held-out macro averages requires a positive original class-1 advantage over proportional, at least half that advantage retained, and higher class-2 on-time delivery than the original."
+}
