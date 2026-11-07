@@ -1,0 +1,19 @@
+--- a/examples/xApp/c/monitor/xapp_kpm_moni.c
++++ b/examples/xApp/c/monitor/xapp_kpm_moni.c
+@@ -533,6 +533,7 @@
+     assert(hndl[i] != NULL);
+     for (size_t j = 0; j < sz_report_styles; j++) {
+       ric_report_style_item_t *report_item = &n->rf[idx].defn.kpm.ric_report_style_list[j];
++      if (report_item->act_def_format_type != FORMAT_4_ACTION_DEFINITION) continue;
+       // Generate KPM SUBSCRIPTION message
+       kpm_sub_data_t kpm_sub = gen_kpm_subs(&n->rf[idx].defn.kpm, report_item);
+ 
+@@ -546,7 +547,7 @@
+   // END KPM
+   ////////////
+ 
+-  xapp_wait_end_api();
++  sleep(8); /* Bounded per-UE reporting window for this experiment. */
+ 
+   for (int i = 0; i < nodes.len; ++i) {
+     e2_node_connected_xapp_t* n = &nodes.n[i];
