@@ -1,0 +1,92 @@
+name: adaptive frozen transport study
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/e2-adaptive.yml', 'thesis_platform/adaptive/**']
+permissions:
+  contents: read
+jobs:
+  experiment:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      FLEXRIC_REV: f56d4487507c7ace392f1ec3f598e7eeda670acc
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare runner
+        run: |
+          mkdir evidence
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libsctp-dev cmake swig bison flex libsqlite3-dev tcpdump tshark iperf3 iproute2 autoconf automake libtool
+          sudo modprobe sctp || true
+          python3 thesis_platform/preflight.py | tee evidence/preflight.json
+          jq -e '.native_ipv4_sctp.round_trip and .build_prerequisites_present' evidence/preflight.json
+      - name: Install pinned ASN.1 compiler for xApp dependencies
+        run: |
+          git init asn1c
+          git -C asn1c fetch --depth=1 https://github.com/mouse07410/asn1c 940dd5fa9f3917913fd487b13dfddfacd0ded06e
+          cd asn1c
+          git checkout --detach FETCH_HEAD
+          autoreconf -iv
+          ./configure --prefix=/opt/asn1c
+          make -j4
+          sudo make install
+      - name: Build pinned FlexRIC
+        run: |
+          git init flexric
+          git -C flexric fetch --depth=1 https://gitlab.eurecom.fr/mosaic5g/flexric.git "$FLEXRIC_REV"
+          git -C flexric checkout --detach FETCH_HEAD
+          git -C flexric rev-parse HEAD | tee evidence/flexric-revision.txt
+          grep -Fx "$FLEXRIC_REV" evidence/flexric-revision.txt
+          # This optional upstream test references a missing GTP fixture.
+          sed -i '1i return()' flexric/test/agent-ric-xapp/CMakeLists.txt
+          git -C flexric apply "$PWD/thesis_platform/transport_shares/share.patch"
+          # The upstream MAC example accepts only action 42 at both service-model endpoints.
+          sed -i 's/req->msg.action == 42/req->msg.action >= 1 \&\& req->msg.action <= 19/' flexric/src/sm/mac_sm/mac_sm_ric.c
+          sed -i 's/msg.action == 42/msg.action >= 1 \&\& msg.action <= 19/;s/Only action number 42 supported/Expected share in 1..19/' flexric/src/sm/mac_sm/mac_sm_agent.c
+          git -C flexric diff > evidence/experiment.patch
+          cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
+          # Build the two endpoints and their dynamically loaded service models.
+          cmake --build build --target help > evidence/build-targets.txt
+          mapfile -t models < <(awk '$2 ~ /_sm$/ && $2 !~ /^test_/ {print $2}' evidence/build-targets.txt)
+          cp flexric/examples/emulator/agent/{sm_kpm.c,sm_mac.c} evidence/
+          cp flexric/examples/xApp/c/{ctrl/mac_ctrl.c,monitor/xapp_kpm_moni.c} evidence/
+          grep -inE "KPM_MEAS_LIST|install.*flexric" flexric/CMakeLists.txt || true
+          cmake --build build -j4 --target nearRT-RIC emu_agent_gnb xapp_mac_ctrl "${models[@]}"
+          sudo mkdir -p /usr/local/etc/flexric /usr/local/lib/flexric
+          conf=$(find flexric -name flexric.conf -type f | head -1)
+          sed -E 's/^NEAR_RIC_IP[[:space:]]*=.*/NEAR_RIC_IP = 127.0.0.1/' "$conf" > evidence/flexric.conf
+          sudo cp evidence/flexric.conf /usr/local/etc/flexric/flexric.conf
+          find build -name 'lib*_sm.so' -exec sudo cp {} /usr/local/lib/flexric/ \;
+          find flexric -type f \( -iname '*meas*.txt' -o -iname '*meas*.conf' \) -exec sudo cp {} /usr/local/etc/flexric/ \;
+          ls -l /usr/local/lib/flexric > evidence/service-models.txt
+      - name: Compare thesis and demand-proportional policies on six frozen traces
+        run: |
+          export E2_SHARE_EVENTS="$PWD/evidence/agent-actions.txt"
+          sudo tcpdump -U -i lo -w "$PWD/evidence/control.pcap" 'sctp and port 36421' >evidence/capture.log 2>&1 &
+          capture=$!
+          sleep 1
+          stdbuf -oL -eL build/examples/ric/nearRT-RIC > evidence/ric.log 2>&1 &
+          ric=$!
+          sleep 2
+          agent=$(find build -name emu_agent_gnb -type f -executable -print -quit)
+          stdbuf -oL -eL "$agent" > evidence/agent.log 2>&1 &
+          node=$!
+          trap 'sudo kill -INT "$capture" || true; kill "$node" "$ric" || true' EXIT
+          sleep 2
+          cp thesis_platform/adaptive/protocol.json evidence/
+          git apply thesis_platform/deadlines/receiver.patch
+          python3 -u thesis_platform/adaptive/adaptive.py
+          sudo kill -INT "$capture"
+          wait "$capture" || true
+          kill "$node" "$ric"
+          trap - EXIT
+          tshark -r evidence/control.pcap -d sctp.port==36421,e2ap -Y e2ap -T fields -e frame.number -e _ws.col.Info > evidence/frames.tsv
+          test "$(grep -ci RICcontrolRequest evidence/frames.tsv)" -eq 72
+          test "$(grep -ci RICcontrolAcknowledge evidence/frames.tsv)" -eq 72
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: transport-factorial-evidence
+          path: evidence/
