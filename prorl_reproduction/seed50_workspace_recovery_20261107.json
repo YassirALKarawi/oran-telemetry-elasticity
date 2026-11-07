@@ -1,0 +1,41 @@
+{
+  "checked_at_utc": "2026-11-06T22:48:56.854451+00:00",
+  "seed": 50,
+  "resume_index": 39000,
+  "target_steps_including_bootstrap": 89400,
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+  "python": "3.11.17 (main, Oct 21 2026, 17:46:53) [Clang 23.1.3 ]",
+  "verified_pins": 55,
+  "previous_session_absent": true,
+  "locks_free_before_resume": true,
+  "sha256": {
+    "train_seed30.py": "895a2b2a4d874acf3323ea4b518cd2c2e213f9327d5f56deed70203a18ac9bb1",
+    "train_seed40.py": "61ac7018d4a7595f1003adcda76e32f89f807b52266148520ce22297527c65d1",
+    "train_seed50.py": "844da8dde144102efc1da21bfb59796da97b71e7209572ce38c580a6b0a6f17d",
+    "run_remaining_seeds.py": "dc943c9bfdf1a31464086616c5ebc466aafc74184b1698a5520cb31ce08b5267",
+    "checkpointing.py": "d7c03832396bb5f24e5539e702e134eac407cb2d688fdf3bcad06de8fcda9066",
+    "environment.txt": "7b56719438a87b009fc914fba9b2b8c2c1301436ee7a3eb5ad5630b664186543",
+    "FIVE_SEED_PROTOCOL.json": "57ecf84574811feede83c639b9ba78e1b606875dfb57dcf4da96132398f165a9",
+    "baseline_compatibility.patch": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+    "seed50_full.checkpoint": "53f0a9e300eee3edcfc0c41cedfba785ec24cf9e7809401724fcd632d11fc9f5",
+    "seed50_full.log": "2c7adb49ca284429198fddd0168f9980e5e389597ffd0520b30d68743a84e230"
+  },
+  "recovered_at_utc": "2026-11-07T00:12:53.862906+00:00",
+  "recovery_reason": "Previous scratch project removed by workspace maintenance",
+  "restored_root": "/workspace/scratch/fc875d6d6f7b/project",
+  "compatibility_path": "/workspace/scratch/d193691b86de",
+  "recovery_library_file_id": "libfile_cfde60f5104881918fb5384d9f8883d5",
+  "restored_completed_seeds": [
+    30,
+    40
+  ],
+  "python_executed": "3.11.17",
+  "all_55_pins_verified": true,
+  "resume_checkpoint_deserialized": true,
+  "manager_session": 99420,
+  "manager_and_seed50_locks_held": true,
+  "fresh_progress": 39144,
+  "fresh_progress_utc": "2026-11-07T00:12:40.792671+00:00",
+  "status": "Resumed; training and final evaluation are not complete"
+}
