@@ -1,0 +1,46 @@
+--- a/examples/emulator/agent/sm_mac.c
++++ b/examples/emulator/agent/sm_mac.c
+@@ -4,6 +4,8 @@
+ #include "sm_mac.h"
+ #include "../../../test/rnd/fill_rnd_data_mac.h"
+ #include <assert.h>
++#include <stdio.h>
++#include <stdlib.h>
+ 
+ void init_mac_sm(void)
+ {
+@@ -41,7 +43,10 @@
+ 
+   mac_ctrl_req_data_t* ctrl = (mac_ctrl_req_data_t*)data; 
+   assert(ctrl->hdr.dummy == 1);
+-  assert(ctrl->msg.action == 42);
++  int share = ctrl->msg.action;
++  if (share < 1 || share > 19) abort();
++  FILE *event = fopen(getenv("E2_SHARE_EVENTS"), "a");
++  if (!event || fprintf(event, "%d\n", share) < 0 || fclose(event) != 0) abort();
+ 
+   sm_ag_if_ans_t ans = {.type = CTRL_OUTCOME_SM_AG_IF_ANS_V0 };
+   return ans;
+--- a/examples/xApp/c/ctrl/mac_ctrl.c
++++ b/examples/xApp/c/ctrl/mac_ctrl.c
+@@ -14,6 +14,11 @@
+ 
+ int main(int argc, char *argv[])
+ {
++  const char *value = getenv("E2_SHARE");
++  if (!value) return 2;
++  char *end;
++  long share = strtol(value, &end, 10);
++  if (*end || share < 1 || share > 19) return 2;
+   fr_args_t args = init_fr_args(argc, argv);
+ 
+   //Init the xApp
+@@ -34,7 +39,7 @@
+       printf("Registered node %d ran func id = %d \n ", i, n->rf[j].id);
+ 
+     if(n->id.type == ngran_gNB || n->id.type == ngran_gNB_DU){
+-      mac_ctrl_req_data_t wr = {.hdr.dummy = 1, .msg.action = 42 };
++      mac_ctrl_req_data_t wr = {.hdr.dummy = 1, .msg.action = share };
+       sm_ans_xapp_t const a = control_sm_xapp_api(&nodes.n[i].id, 142, &wr);
+       assert(a.success == true);
+      } else {
