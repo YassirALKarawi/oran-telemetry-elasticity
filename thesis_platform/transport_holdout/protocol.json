@@ -1,0 +1,217 @@
+{
+  "primary": "Mean across traces of paired differences in overall UDP delivery percentage, thesis minus proportional",
+  "secondary": [
+    "class-specific delivery",
+    "delivery in first windows after a change of dominant class",
+    "per-trace totals"
+  ],
+  "baseline": "Round prior measured ingress proportion to the nearest of 19 allowed shares, half up; equal initial share",
+  "capacity_mbps": 16,
+  "window_seconds": 2,
+  "traces": [
+    {
+      "seed": 871201,
+      "family": "persistent",
+      "rates_mbps": [
+        [
+          12,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          6,
+          13
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          15
+        ]
+      ],
+      "order": [
+        "thesis",
+        "proportional"
+      ]
+    },
+    {
+      "seed": 871202,
+      "family": "persistent",
+      "rates_mbps": [
+        [
+          3,
+          14
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          15,
+          3
+        ]
+      ],
+      "order": [
+        "proportional",
+        "thesis"
+      ]
+    },
+    {
+      "seed": 871203,
+      "family": "alternating",
+      "rates_mbps": [
+        [
+          12,
+          3
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          4,
+          13
+        ]
+      ],
+      "order": [
+        "thesis",
+        "proportional"
+      ]
+    },
+    {
+      "seed": 871204,
+      "family": "alternating",
+      "rates_mbps": [
+        [
+          6,
+          12
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          13,
+          2
+        ]
+      ],
+      "order": [
+        "proportional",
+        "thesis"
+      ]
+    },
+    {
+      "seed": 871205,
+      "family": "mixed",
+      "rates_mbps": [
+        [
+          15,
+          4
+        ],
+        [
+          15,
+          3
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          12
+        ]
+      ],
+      "order": [
+        "thesis",
+        "proportional"
+      ]
+    },
+    {
+      "seed": 871206,
+      "family": "mixed",
+      "rates_mbps": [
+        [
+          6,
+          11
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          12,
+          5
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "order": [
+        "proportional",
+        "thesis"
+      ]
+    }
+  ]
+}
