@@ -1,0 +1,194 @@
+{
+  "nominal": {
+    "thesis": {
+      "mean_cost": 125.57000000000002,
+      "mean_extra": 35,
+      "mean_p99": 4,
+      "misses": 0,
+      "eligible": 5095
+    },
+    "greedy": {
+      "mean_cost": 157.95,
+      "mean_extra": 192,
+      "mean_p99": 4.2,
+      "misses": 0,
+      "eligible": 5095
+    },
+    "18": {
+      "mean_cost": 329.3299999999999,
+      "mean_extra": 1062.4,
+      "mean_p99": 4.04,
+      "misses": 0,
+      "eligible": 25475,
+      "paired_cost_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "seeds_improving": 0
+    },
+    "54": {
+      "mean_cost": 309.666,
+      "mean_extra": 956.2,
+      "mean_p99": 4.04,
+      "misses": 0,
+      "eligible": 25475,
+      "paired_cost_differences": [
+        -68.80999999999972,
+        -69.91999999999997,
+        -8.269999999999964,
+        91.39999999999988,
+        -42.719999999999786
+      ],
+      "mean_difference": -19.663999999999913,
+      "seeds_improving": 4
+    },
+    "162": {
+      "mean_cost": 287.4,
+      "mean_extra": 838.4,
+      "mean_p99": 4.16,
+      "misses": 0,
+      "eligible": 25475,
+      "paired_cost_differences": [
+        -172.0299999999999,
+        -329.9399999999998,
+        -26.959999999999997,
+        191.89,
+        127.39000000000009
+      ],
+      "mean_difference": -41.92999999999993,
+      "seeds_improving": 3
+    }
+  },
+  "bursty_transport": {
+    "thesis": {
+      "mean_cost": 664.0999999999999,
+      "mean_extra": 695,
+      "mean_p99": 25.2,
+      "misses": 0,
+      "eligible": 6395
+    },
+    "greedy": {
+      "mean_cost": 637.4599999999999,
+      "mean_extra": 656,
+      "mean_p99": 25.4,
+      "misses": 90,
+      "eligible": 6395
+    },
+    "18": {
+      "mean_cost": 894.708,
+      "mean_extra": 1084.2,
+      "mean_p99": 35.52,
+      "misses": 1383,
+      "eligible": 31975,
+      "paired_cost_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "seeds_improving": 0
+    },
+    "54": {
+      "mean_cost": 748.276,
+      "mean_extra": 1084,
+      "mean_p99": 31.12,
+      "misses": 1699,
+      "eligible": 31975,
+      "paired_cost_differences": [
+        13.379999999999654,
+        -68.00999999999956,
+        -522.53,
+        -125.1800000000002,
+        -29.82000000000005
+      ],
+      "mean_difference": -146.43200000000002,
+      "seeds_improving": 4
+    },
+    "162": {
+      "mean_cost": 796.162,
+      "mean_extra": 1138.8,
+      "mean_p99": 32.08,
+      "misses": 1390,
+      "eligible": 31975,
+      "paired_cost_differences": [
+        26.720000000000187,
+        -4.829999999999655,
+        -543.71,
+        -72.83000000000031,
+        101.92000000000012
+      ],
+      "mean_difference": -98.54599999999994,
+      "seeds_improving": 3
+    }
+  },
+  "bursty_compute": {
+    "thesis": {
+      "mean_cost": 722.4599999999999,
+      "mean_extra": 673,
+      "mean_p99": 25.8,
+      "misses": 0,
+      "eligible": 6353
+    },
+    "greedy": {
+      "mean_cost": 672.61,
+      "mean_extra": 653,
+      "mean_p99": 24.2,
+      "misses": 69,
+      "eligible": 6353
+    },
+    "18": {
+      "mean_cost": 1069.7219999999998,
+      "mean_extra": 1098.4,
+      "mean_p99": 40.64,
+      "misses": 2883,
+      "eligible": 31765,
+      "paired_cost_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "seeds_improving": 0
+    },
+    "54": {
+      "mean_cost": 1426.742,
+      "mean_extra": 1034,
+      "mean_p99": 60.52,
+      "misses": 8447,
+      "eligible": 31765,
+      "paired_cost_differences": [
+        942.42,
+        283.90999999999985,
+        197.00000000000028,
+        -698.8099999999995,
+        1060.5800000000004
+      ],
+      "mean_difference": 357.0200000000002,
+      "seeds_improving": 1
+    },
+    "162": {
+      "mean_cost": 889.642,
+      "mean_extra": 1109.2,
+      "mean_p99": 36.56,
+      "misses": 2987,
+      "eligible": 31765,
+      "paired_cost_differences": [
+        451.7700000000002,
+        -155.78000000000023,
+        -71.9400000000001,
+        -1199.3199999999993,
+        74.87000000000062
+      ],
+      "mean_difference": -180.07999999999976,
+      "seeds_improving": 3
+    }
+  }
+}
