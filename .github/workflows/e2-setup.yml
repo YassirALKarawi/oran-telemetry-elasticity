@@ -29,6 +29,9 @@ jobs:
           git -C flexric checkout --detach FETCH_HEAD
           git -C flexric rev-parse HEAD | tee evidence/flexric-revision.txt
           grep -Fx "$FLEXRIC_REV" evidence/flexric-revision.txt
+          # This optional upstream test references a missing GTP fixture.
+          sed -i '1i return()' flexric/test/agent-ric-xapp/CMakeLists.txt
+          git -C flexric diff > evidence/build-only.patch
           cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
           cmake --build build -j2
           sudo cmake --install build
