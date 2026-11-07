@@ -1,0 +1,19 @@
+{
+  "scope": "Development-scale common tandem environment; fixed round-robin telemetry, unlimited buffers, uniform replay, joint Double DQN using PRORL network and learning functions. No expert, native transfer actions, or native pretrained weights.",
+  "source": "4c3c70c11e070e93c7077ce9f22f6ed9d9e178d2",
+  "diff_sha256": "6b4c93254a7a01236a1c8a2ed0adf0ad518ee3d1de8d9c98afda985dde2f5fcb",
+  "training_seeds": [10,20,30,40,50],
+  "scenarios": ["nominal","bursty_transport","bursty_compute"],
+  "train_trace_rule": "910000 + episode (zero-based); cycle scenarios; shared across training seeds",
+  "validation_trace_rule": "920000 + scenario index; one trace per scenario",
+  "test_trace_rule": "930000 + 100 * scenario index + replicate, replicate=0..4",
+  "selection": "minimum mean validation total cost; earliest checkpoint on ties; no test tuning",
+  "episodes": 18, "candidate_episodes": [9,18], "slots": 360,
+  "actions": "4 transport capacities x 4 compute capacities x 19 shares",
+  "network": "fully connected 32 ReLU units, no batch normalization",
+  "reward": "negative sum over five slots of (outstanding packets at slot end / 20 + active extra units / 5 + absolute capacity change / 20)",
+  "optimizer": "Adam 0.001, gamma 0.97, batch 32, uniform replay 2048, one update per decision after warmup of 32, target sync every 80 decisions",
+  "exploration": "epsilon=max(0.05,1-steps/900)",
+  "endpoints": ["total cost","mature packet deadline miss count and denominator","delivered p99 slots","extra unit-slots","switching units","outstanding at end"],
+  "analysis": "Average within each scenario over 5 paired traces, then across the 5 trained policies. Fixed policies evaluated once per trace. Descriptive only."
+}
