@@ -1,0 +1,10 @@
+{
+  "parent_commit": "05ef1329bb1b901af82bca1dc4be444206fff1a2",
+  "budget_episodes": [18,54,162],
+  "budget_decisions": [1296,3888,11664],
+  "training": "One nested trajectory per original training seed; continue the same training trace formula, scenario cycle and epsilon schedule. No new hyperparameter search.",
+  "selection": "Two candidates per budget, at halfway and the endpoint. Use original validation traces and minimum mean total cost with earlier episode on ties. Verify the shortest selected tensors against archived weights. Freeze all models before opening test traces.",
+  "test_seeds": {"nominal":[961000,961001,961002,961003,961004],"bursty_transport":[962000,962001,962002,962003,962004],"bursty_compute":[963000,963001,963002,963003,963004]},
+  "primary": "Mean total cost per scenario, paired by training seed and trace. Compare each longer budget to the original and report how many of five seed-level mean differences favor it.",
+  "secondary": "Retain deadline misses and eligible counts, per-trace delivered delay p99 and every other original endpoint, plus the unchanged thesis and greedy policies. Descriptive analysis with no selection on test scores."
+}
