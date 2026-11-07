@@ -15,7 +15,6 @@ case "${1:?setup, act, or measure}" in
     sudo ip -n "$dst_ns" link set "$peer" up
     sudo ip -n "$dst_ns" link set lo up
     sudo tc qdisc add dev "$dev" root handle 1: tbf rate 8mbit burst 16kb latency 50ms
-    sudo ip netns exec "$dst_ns" iperf3 -s -D -B 198.18.0.2
     ;;
   act)
     # The emulator writes a fixed event only after decoding the MAC action.
@@ -28,7 +27,12 @@ case "${1:?setup, act, or measure}" in
     [[ "$phase" == before || "$phase" == after ]]
     sudo tc -s -j qdisc show dev "$dev" > "evidence/qdisc-$phase.json"
     for i in 1 2 3; do
-      iperf3 -c 198.18.0.2 -B 198.18.0.1 -t 4 -O 1 -J > "evidence/iperf-$phase-$i.json"
+      port=$((5201+i))
+      sudo ip netns exec "$dst_ns" iperf3 -s -1 -p "$port" -B 198.18.0.2 > "evidence/server-$phase-$i.log" 2>&1 &
+      server=$!
+      sleep 0.4
+      iperf3 -p "$port" -c 198.18.0.2 -B 198.18.0.1 -t 4 -O 1 -J > "evidence/iperf-$phase-$i.json"
+      wait "$server"
     done
     ;;
   *) exit 2 ;;
