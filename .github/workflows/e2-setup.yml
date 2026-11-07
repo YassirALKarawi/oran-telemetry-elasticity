@@ -1,0 +1,63 @@
+name: FlexRIC E2 setup
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/e2-setup.yml']
+permissions:
+  contents: read
+jobs:
+  registration:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      FLEXRIC_REV: f56d4487507c7ace392f1ec3f598e7eeda670acc
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare runner
+        run: |
+          mkdir evidence
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y libsctp-dev cmake swig bison flex libsqlite3-dev tcpdump tshark
+          sudo modprobe sctp || true
+          python3 thesis_platform/preflight.py | tee evidence/preflight.json
+          jq -e '.native_ipv4_sctp.round_trip and .build_prerequisites_present' evidence/preflight.json
+      - name: Build pinned FlexRIC
+        run: |
+          git init flexric
+          git -C flexric fetch --depth=1 https://gitlab.eurecom.fr/mosaic5g/flexric.git "$FLEXRIC_REV"
+          git -C flexric checkout --detach FETCH_HEAD
+          git -C flexric rev-parse HEAD | tee evidence/flexric-revision.txt
+          grep -Fx "$FLEXRIC_REV" evidence/flexric-revision.txt
+          cmake -S flexric -B build -DE2AP_VERSION=E2AP_V1 -DKPM_VERSION=KPM_V3_00
+          cmake --build build -j2
+          sudo cmake --install build
+      - name: Capture one E2 registration
+        run: |
+          sudo tcpdump -U -i lo -w "$PWD/evidence/setup.pcap" 'sctp' >evidence/capture.log 2>&1 &
+          capture=$!
+          trap 'sudo kill -INT "$capture" 2>/dev/null || true' EXIT
+          sleep 1
+          stdbuf -oL -eL build/examples/ric/nearRT-RIC >evidence/ric.log 2>&1 &
+          ric=$!
+          sleep 2
+          kill -0 "$ric"
+          agent=$(find build -type f -name 'emu_agent_gnb' -executable -print -quit)
+          test -n "$agent"
+          stdbuf -oL -eL "$agent" >evidence/agent.log 2>&1 &
+          node=$!
+          sleep 8
+          kill -0 "$ric" "$node"
+          sudo kill -INT "$capture"
+          wait "$capture" || true
+          trap - EXIT
+          kill "$node" "$ric" || true
+          tshark -r evidence/setup.pcap -d sctp.port==36421,e2ap -V >evidence/decode.txt
+          grep -iE 'E2setupRequest|E2setupResponse' evidence/decode.txt | tee evidence/setup-messages.txt
+          grep -iq 'E2setupRequest' evidence/setup-messages.txt
+          grep -iq 'E2setupResponse' evidence/setup-messages.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: flexric-e2-setup-evidence
+          path: evidence/
